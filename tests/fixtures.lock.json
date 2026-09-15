@@ -1,0 +1,13 @@
+{
+  "format": 1,
+  "template": "src/lima/pkg/embeddedassets/examples/alpine.yaml",
+  "fixtures": {
+    "alpine-x86_64": {
+      "url": "https://github.com/lima-vm/alpine-lima/releases/download/v0.2.23/alpine-lima-std-3.16.0-x86_64.iso",
+      "sha256": "07274016d23aef83a0c8a90995e0381f73db1638026dea233a67c21ccf124747",
+      "sha512": "2fe71bb7483cb9fa9a6f39b94d46818d27815dbd41bfa060df2846719e0bddf8d9073627a50ed773d7043c996b59182832cd8ce74404cdae09057a5a54b4f1ca",
+      "filename": "alpine-lima-std-3.16.0-x86_64.iso",
+      "size": 65011712
+    }
+  }
+}

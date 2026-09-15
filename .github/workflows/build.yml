@@ -1,0 +1,133 @@
+name: Experimental Intel macOS build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+
+jobs:
+  build:
+    runs-on: macos-15-intel
+    timeout-minutes: 120
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.11"
+          architecture: x64
+
+      - name: Record host and SDK
+        run: |
+          mkdir -p logs
+          {
+            uname -m
+            sw_vers
+            python3 --version
+            xcode-select -p
+            xcrun --show-sdk-path
+            xcrun --show-sdk-version
+            df -h .
+            python3 -B -c 'import platform; assert platform.system() == "Darwin" and platform.machine() == "x86_64"'
+          } 2>&1 | tee logs/ci-host.log
+
+      - name: Run offline unit tests
+        timeout-minutes: 5
+        run: python3 -B -m unittest discover -s tests -p 'test_*.py' -v 2>&1 | tee logs/ci-unit.log
+
+      - name: Build the single-file executable
+        timeout-minutes: 100
+        run: python3 -B build.py 2>&1 | tee logs/ci-build.log
+
+      - name: Verify source reconstruction with downloaded archives
+        timeout-minutes: 5
+        run: python3 -B -m unittest discover -s tests -p 'test_sources.py' -v 2>&1 | tee logs/ci-sources.log
+
+      - name: Run standalone non-VM smoke checks
+        timeout-minutes: 5
+        run: |
+          python3 -B - <<'PY' 2>&1 | tee logs/ci-smoke.log
+          import json
+          import os
+          from pathlib import Path
+          import shutil
+          import subprocess
+          import tempfile
+
+          binary = Path("output/limactl").resolve()
+          dylibs = subprocess.run(
+              ["xcrun", "otool", "-L", str(binary)],
+              check=True, text=True, stdout=subprocess.PIPE,
+              stderr=subprocess.STDOUT, timeout=30,
+          ).stdout
+          print(dylibs, flush=True)
+          for line in dylibs.splitlines()[1:]:
+              dependency = line.strip().split(" (", 1)[0]
+              assert dependency.startswith(("/usr/lib/", "/System/Library/")), dependency
+
+          with tempfile.TemporaryDirectory(prefix="lima-ci-") as directory:
+              work = Path(directory)
+              executable = work / "limactl"
+              shutil.copy2(binary, executable)
+              home, tmp = work / "home", work / "tmp"
+              home.mkdir()
+              tmp.mkdir()
+              env = {
+                  "HOME": str(home), "LIMA_HOME": str(home / "lima"),
+                  "TMPDIR": str(tmp), "PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+                  "LANG": "C", "LC_ALL": "C",
+              }
+              commands = [
+                  ["--version"],
+                  ["--help"],
+                  ["start", "--list-templates"],
+                  ["--internal-qemu", "--version"],
+                  ["--internal-qemu-img", "--version"],
+                  ["--internal-qemu-img", "create", "-f", "qcow2", "disk.qcow2", "16M"],
+                  ["--internal-qemu-img", "info", "--output=json", "disk.qcow2"],
+              ]
+              for args in commands:
+                  print("RUN:", args, flush=True)
+                  output = subprocess.run(
+                      [str(executable)] + args, cwd=work, env=env,
+                      stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
+                      stderr=subprocess.STDOUT, text=True, timeout=30, check=True,
+                  ).stdout
+                  print(output, flush=True)
+                  if args[:2] == ["start", "--list-templates"]:
+                      assert len(output.split()) == 37, output
+                  if args[:2] == ["--internal-qemu-img", "info"]:
+                      info = json.loads(output)
+                      assert info["format"] == "qcow2" and info["virtual-size"] == 16 * 1024 * 1024
+          print("PASS: standalone CLI, native workers, image operations, and system dylibs")
+          PY
+          shasum -a 256 output/limactl | tee logs/ci-artifact-sha256.log
+
+      - name: Retain diagnostic logs only
+        if: ${{ always() }}
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: intel-macos-build-logs
+          path: logs/
+          if-no-files-found: ignore
+          retention-days: 7

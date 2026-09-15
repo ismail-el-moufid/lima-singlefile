@@ -1,0 +1,38 @@
+{
+  "format": 1,
+  "description": "Exact Go/QEMU override inputs. link_lima.py retains its error-text and mutex-diagnostic transformations.",
+  "overrides": [
+    {
+      "source": "qemu",
+      "path": "os-posix.c",
+      "file": "native/overrides/os-posix.c",
+      "upstream_sha256": "2008c7b722fcfe3a0f1be49e2404247a6dbd7949dc1b1d3524a74a5ab711d47d",
+      "sha256": "ca47da2c52e45f22b049b490952270a052589b24938bb6942e420df2240a684d",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "util/main-loop.c",
+      "file": "native/overrides/util__main-loop.c",
+      "upstream_sha256": "d466a49614aa083cd502fa2629d8e8ca02fc347956959fc22c0ff60dee7ed175",
+      "sha256": "9593046a5cd6a3b1fbc821b2656d3b56b17b4ffdccb26e72262f60c984728d0b",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "util/qemu-thread-posix.c",
+      "file": "native/overrides/util__qemu-thread-posix.c",
+      "upstream_sha256": "68800368796eb9b4884dd4c486d07d0af3205a52b1db6ed811e8b0eba9c00299",
+      "sha256": "1dcf0d23dbc3b639ba4ce3cd939b4ad0dc922865c98e633d86a0a90be64c66aa",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "util/oslib-posix.c",
+      "file": "native/overrides/util__oslib-posix.c",
+      "upstream_sha256": "6a60207b4d8255aab16b8bd2fb6865ea0d0a7f019bba9037598174adeb3d0eca",
+      "sha256": "06fba5039fbae66e7f38b210b0d85b13644232c2811205fecbbc1c263cd335a6",
+      "mode": 420
+    }
+  ]
+}

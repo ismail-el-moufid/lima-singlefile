@@ -1,0 +1,470 @@
+{
+  "format": 1,
+  "resources": [
+    {
+      "name": "bios-256k.bin",
+      "offset": 0,
+      "size": 262144,
+      "sha256": "f1d4f396011197eb989029659cde250751cc711c336b8fbbe6f77cfe0dc5dcd8"
+    },
+    {
+      "name": "bios-microvm.bin",
+      "offset": 262144,
+      "size": 131072,
+      "sha256": "42780e1ab9161752848475529a25c39d7c76baee82a1b2ddff666c2f7de7bbee"
+    },
+    {
+      "name": "bios.bin",
+      "offset": 393216,
+      "size": 131072,
+      "sha256": "8244f3e5eaca828cc0a6a963f1fad15d68d8d3c0b5c80b8451b3067a85f14ae1"
+    },
+    {
+      "name": "edk2-i386-code.fd",
+      "offset": 524288,
+      "size": 3653632,
+      "sha256": "640a01c241810aecb9ed8b6bdac02b6cb3264b42817fc79e186e0e906687be85"
+    },
+    {
+      "name": "edk2-i386-secure-code.fd",
+      "offset": 4177920,
+      "size": 3653632,
+      "sha256": "ae1a8e7ecc68a3fde0e1415180d6c6987a7e83596d57dbe61c8313d0ac247437"
+    },
+    {
+      "name": "edk2-i386-secure-vars.fd",
+      "offset": 7831552,
+      "size": 340992,
+      "sha256": "8686f255ecea2a07803f4eb9c0481778d651267e20688466a2c265980db3ca85"
+    },
+    {
+      "name": "edk2-i386-vars.fd",
+      "offset": 8172544,
+      "size": 328704,
+      "sha256": "a5c722949ba13c60b08c1ad3507ef751424941781f66d529f5f1feded8320ccb"
+    },
+    {
+      "name": "edk2-licenses.txt",
+      "offset": 8501248,
+      "size": 42903,
+      "sha256": "1ddeaed2e7d2e9ecb960bdfc1b8ee45387aff70d056d985d145949af3951657c"
+    },
+    {
+      "name": "edk2-x86_64-code.fd",
+      "offset": 8544160,
+      "size": 3653632,
+      "sha256": "d23e35c96cbf47468e5c7c2ce82cfa0c825d4e916bb6bacbf3d8d81556350fe3"
+    },
+    {
+      "name": "edk2-x86_64-secure-code.fd",
+      "offset": 12197792,
+      "size": 3653632,
+      "sha256": "503a256ecc227373c92a96b7c625415489df09dfdd59a1a5beee82dd847ac296"
+    },
+    {
+      "name": "efi-e1000.rom",
+      "offset": 15851424,
+      "size": 159232,
+      "sha256": "f37222fcdf0481bfbaf7a16d9aaf740aeb41d3d24c187801eb6e9a628cec0fc8"
+    },
+    {
+      "name": "efi-e1000e.rom",
+      "offset": 16010656,
+      "size": 159232,
+      "sha256": "102c20348be2d0ebe45a77b076b31848182c2f7b4364775b6bc2ece6e97b4024"
+    },
+    {
+      "name": "efi-eepro100.rom",
+      "offset": 16169888,
+      "size": 159232,
+      "sha256": "2b5b55ba8afae7b5ef7116606babf60e6ceaa531c345d54542857cc3fbe3912e"
+    },
+    {
+      "name": "efi-ne2k_pci.rom",
+      "offset": 16329120,
+      "size": 157696,
+      "sha256": "9925e0a34547118110479d8fc4e01092a0a73e0a236416e9ff862655b46751f7"
+    },
+    {
+      "name": "efi-pcnet.rom",
+      "offset": 16486816,
+      "size": 157696,
+      "sha256": "71c494fde94efa9871cf43868d7e3c8f4190e406d47a5102a2a21b36ded8a162"
+    },
+    {
+      "name": "efi-rtl8139.rom",
+      "offset": 16644512,
+      "size": 160768,
+      "sha256": "4cdd69a7f5c6ce7aec3a3f20a034dc80e1d22aa37a739c364378952d997a32c7"
+    },
+    {
+      "name": "efi-virtio.rom",
+      "offset": 16805280,
+      "size": 160768,
+      "sha256": "26be36901db7f8181c306cc62bd74891d8646528965a78e40cceadba5dd7c8e7"
+    },
+    {
+      "name": "efi-vmxnet3.rom",
+      "offset": 16966048,
+      "size": 156672,
+      "sha256": "33e833123ad9831df94b2d623a17f91e4c779e3cb799baa97058f5972676a32a"
+    },
+    {
+      "name": "firmware-COPYING",
+      "offset": 17122720,
+      "size": 17992,
+      "sha256": "6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100"
+    },
+    {
+      "name": "firmware-COPYING.LIB",
+      "offset": 17140720,
+      "size": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    {
+      "name": "firmware-notices.txt",
+      "offset": 17167264,
+      "size": 4847,
+      "sha256": "1081566cf16981574fca680cad318d013da7440e37297f1245452ad919b285a3"
+    },
+    {
+      "name": "keymaps/ar",
+      "offset": 17172112,
+      "size": 28605,
+      "sha256": "059ab719df4296edb800d399501e3823e1e6f470cc06a3a4564f4bb2dbd5c1fc"
+    },
+    {
+      "name": "keymaps/bepo",
+      "offset": 17200720,
+      "size": 27809,
+      "sha256": "01ccdb7e2d0b20f517e03d39cc70802ad83dfc1ed2e5d50ff9b4a4f77e37a9f8"
+    },
+    {
+      "name": "keymaps/cz",
+      "offset": 17228544,
+      "size": 29209,
+      "sha256": "3664b3f13e6cfff0e6d05f12000aa6610eff04f570707261ec35ca830ded6c36"
+    },
+    {
+      "name": "keymaps/da",
+      "offset": 17257760,
+      "size": 29230,
+      "sha256": "95ef0c168f0b25e936a7ff944da820a43af8028b515cc6709724f457e105c187"
+    },
+    {
+      "name": "keymaps/de",
+      "offset": 17286992,
+      "size": 29183,
+      "sha256": "cda7dc9656f007ca3e88e5bac50f20c7f61f934bcec2e87c6d61859e632ddb98"
+    },
+    {
+      "name": "keymaps/de-ch",
+      "offset": 17316176,
+      "size": 29214,
+      "sha256": "3260cb64fdcdf48e2b53c5d0573dc2a9410d7d3aae227ed42dda945f9ab74e06"
+    },
+    {
+      "name": "keymaps/en-gb",
+      "offset": 17345392,
+      "size": 29219,
+      "sha256": "e14229b7f9165bf226bf4de968fd5f6a504014a2179de08c2b2184cefe68174e"
+    },
+    {
+      "name": "keymaps/en-us",
+      "offset": 17374624,
+      "size": 27086,
+      "sha256": "52cf4c523e686078699ed58761c7e1443080305237a5f67a3716832570c5c8e5"
+    },
+    {
+      "name": "keymaps/es",
+      "offset": 17401712,
+      "size": 29203,
+      "sha256": "d9b1da8193232882705bd4a312c0923b6d91268f1e1a8eed2afbd7fc37681c06"
+    },
+    {
+      "name": "keymaps/et",
+      "offset": 17430928,
+      "size": 27291,
+      "sha256": "95af1e25132185e3cb271d491086ccf09cb667033afb718f1a11e974e80a838f"
+    },
+    {
+      "name": "keymaps/fi",
+      "offset": 17458224,
+      "size": 28604,
+      "sha256": "4c5cd5359c18635187d7af9570088a7bbd21f96d961aedbc4c9fb1e5df099281"
+    },
+    {
+      "name": "keymaps/fo",
+      "offset": 17486832,
+      "size": 29217,
+      "sha256": "3750b8090caea3cf6c827b97f5ecc2d1172c33d960141c50f96e61c53f682ccf"
+    },
+    {
+      "name": "keymaps/fr",
+      "offset": 17516064,
+      "size": 29204,
+      "sha256": "60d9baa3565b7727b4178704100bffb02cbd5b527a9dcc9f9ca76d76767b166e"
+    },
+    {
+      "name": "keymaps/fr-be",
+      "offset": 17545280,
+      "size": 29211,
+      "sha256": "522b5e758375e3d796fba096a46077766bd44548c8c61a4abe946e3116c1ad97"
+    },
+    {
+      "name": "keymaps/fr-ca",
+      "offset": 17574496,
+      "size": 27564,
+      "sha256": "9ee3fc13beec6e74f40fb6d150d7fe3b0afe4557fdf0769601e662a122a88cc0"
+    },
+    {
+      "name": "keymaps/fr-ch",
+      "offset": 17602064,
+      "size": 29215,
+      "sha256": "7b2ad2929f3b7b4f5d60176bd7e1852f91efbcfe2700e8df9bc9b891609a7170"
+    },
+    {
+      "name": "keymaps/hr",
+      "offset": 17631280,
+      "size": 29255,
+      "sha256": "e8391ed09015ce8459a98e3470daddd3a6d95c4c7e93b750098f5a321fd57482"
+    },
+    {
+      "name": "keymaps/hu",
+      "offset": 17660544,
+      "size": 29207,
+      "sha256": "763a938ed2fdd224b9cb8ad606d02aabc93a0e3fb7a5e5e9caafa0ec8c05d422"
+    },
+    {
+      "name": "keymaps/is",
+      "offset": 17689760,
+      "size": 29254,
+      "sha256": "6eb4e5bd93ca2f7a2059a31fd014444108eb684ecd97902da2492b0a0f6e3cdc"
+    },
+    {
+      "name": "keymaps/it",
+      "offset": 17719024,
+      "size": 29312,
+      "sha256": "12d090cdcb6af0e95a0c0330b8b7f0ac0446ab8cf7140b4f8c6c797c08e9c219"
+    },
+    {
+      "name": "keymaps/ja",
+      "offset": 17748336,
+      "size": 27163,
+      "sha256": "a4561aefcc2fd2f4ba01604001c9c0dc67469514ea0a665063b72e79d5d9c687"
+    },
+    {
+      "name": "keymaps/lt",
+      "offset": 17775504,
+      "size": 29166,
+      "sha256": "0bfc98e913451c0b9082d0317deffa03c6f0c53a1422cb4f4c1ef64dc3939d2f"
+    },
+    {
+      "name": "keymaps/lv",
+      "offset": 17804672,
+      "size": 28618,
+      "sha256": "be4f1e28325ae2ea927bd51e31863a327e64c0a938725fd02c2a7260660bdf77"
+    },
+    {
+      "name": "keymaps/mk",
+      "offset": 17833296,
+      "size": 27685,
+      "sha256": "71068ffe163ce6684b35f423e897e00c97debe0c3df555c43d26b46a79ca68e7"
+    },
+    {
+      "name": "keymaps/nl",
+      "offset": 17860992,
+      "size": 29268,
+      "sha256": "70cb1b41f184d61520867e639e6b69cddea4b0e2458c5502c7c40512301876c7"
+    },
+    {
+      "name": "keymaps/no",
+      "offset": 17890272,
+      "size": 29563,
+      "sha256": "95b3fe5258264b827ba01acc7a774bd9edbaec52c54e582a0737c33087a92514"
+    },
+    {
+      "name": "keymaps/pl",
+      "offset": 17919840,
+      "size": 29327,
+      "sha256": "5f3da802f81f385c58179272e48c4f8680dfdfe55383c504a6d84b3b7a8aadfb"
+    },
+    {
+      "name": "keymaps/pt",
+      "offset": 17949168,
+      "size": 29195,
+      "sha256": "29161e1b8b61b761c3f3bff237ca73ce4ee3316a99090890b32469824b5eed8a"
+    },
+    {
+      "name": "keymaps/pt-br",
+      "offset": 17978368,
+      "size": 29175,
+      "sha256": "fbb9491c0bfc4253cced9d8a20965aca98d0249c4626fe6e7d31358b24e34e8d"
+    },
+    {
+      "name": "keymaps/ru",
+      "offset": 18007552,
+      "size": 27704,
+      "sha256": "afa015a736cd935fc38a0df62fd6ab2f3c64b44c48b3e6d95969cbbfcdc43e91"
+    },
+    {
+      "name": "keymaps/sl",
+      "offset": 18035264,
+      "size": 4632,
+      "sha256": "bea8fe8ac0ca281038ac0e1788c39f090507ff0646bd4f57cc18f6873b030147"
+    },
+    {
+      "name": "keymaps/sv",
+      "offset": 18039904,
+      "size": 3346,
+      "sha256": "97731fbe91f254d81c005ffc232180a8dd7baeb6d699f0f0fc15e341672f96b3"
+    },
+    {
+      "name": "keymaps/th",
+      "offset": 18043264,
+      "size": 27829,
+      "sha256": "6dd9562a2b10c81f658ad96075fd87832777e87357620e89c7d070e4097fbbb9"
+    },
+    {
+      "name": "keymaps/tr",
+      "offset": 18071104,
+      "size": 29142,
+      "sha256": "f59f8cc154f0dc8b45166b524b9c1e649ba027e39381aac286663ad2227ddce8"
+    },
+    {
+      "name": "kvmvapic.bin",
+      "offset": 18100256,
+      "size": 9216,
+      "sha256": "cdf057a71b07e3b52b19cbe210bdefa59250d01a9810b960f7fe1f98eed95a27"
+    },
+    {
+      "name": "linuxboot.bin",
+      "offset": 18109472,
+      "size": 1024,
+      "sha256": "1ecfb26c19da9dc00cdec0d0d738db69aeea4f1231c0c0ffc483ff69b3cda6ce"
+    },
+    {
+      "name": "linuxboot_dma.bin",
+      "offset": 18110496,
+      "size": 1536,
+      "sha256": "9c49e255340c78fc12e54ed043462bca02fb7fca29b7cfab62ff88a5344b6950"
+    },
+    {
+      "name": "multiboot.bin",
+      "offset": 18112032,
+      "size": 1024,
+      "sha256": "13a3f9f119797b8776105f020f36572ce6a20fa2c60d3b8112818bfaefcdd348"
+    },
+    {
+      "name": "multiboot_dma.bin",
+      "offset": 18113056,
+      "size": 1024,
+      "sha256": "e01667420ee78a318ea44627d2dd68058d3377d024e6eb7237700afe2e86507d"
+    },
+    {
+      "name": "pvh.bin",
+      "offset": 18114080,
+      "size": 1536,
+      "sha256": "918ff03a118615c2f4611a5df2d9496aabe099b5cfaaf69e544ebf973305d59d"
+    },
+    {
+      "name": "pxe-e1000.rom",
+      "offset": 18115616,
+      "size": 67072,
+      "sha256": "981a728f95b7a01645645e9b753cfb764c9eb59266fa888ac58d7008fbb48c10"
+    },
+    {
+      "name": "pxe-eepro100.rom",
+      "offset": 18182688,
+      "size": 61440,
+      "sha256": "07b89a742e0f6d0e92dafe57b0f28c493436d0e1e07b7b77e728490c1f7b45dd"
+    },
+    {
+      "name": "pxe-ne2k_pci.rom",
+      "offset": 18244128,
+      "size": 61440,
+      "sha256": "bb9c0eaad36b9b4ce26c5f348bd05a832c8bf83ef38391db0ce9b51de8523ac7"
+    },
+    {
+      "name": "pxe-pcnet.rom",
+      "offset": 18305568,
+      "size": 61440,
+      "sha256": "92358396c05b3346c6bfd52bbf2a47978d0a8c6ddea932ee091a24faefbd489e"
+    },
+    {
+      "name": "pxe-rtl8139.rom",
+      "offset": 18367008,
+      "size": 61440,
+      "sha256": "d491351e37a50eb5a40e98a9f6b4d85010ee60fb9e64129d65ea10839287f138"
+    },
+    {
+      "name": "pxe-virtio.rom",
+      "offset": 18428448,
+      "size": 60416,
+      "sha256": "6994337fe07783a6233072e33771dc4f58260edc3269debe677a5227b264bfdc"
+    },
+    {
+      "name": "qboot.rom",
+      "offset": 18488864,
+      "size": 65536,
+      "sha256": "9b9dfc6c25740d6225625570d71cab6805cc9216e68c8932e343266daaeb8c4b"
+    },
+    {
+      "name": "vgabios-ati.bin",
+      "offset": 18554400,
+      "size": 39424,
+      "sha256": "9d4d1f32a7e059de82c09c19fc25e276a39d96a1a516605a32ba704596e10d8e"
+    },
+    {
+      "name": "vgabios-bochs-display.bin",
+      "offset": 18593824,
+      "size": 28672,
+      "sha256": "d5fd6992dfdf0c980996b79c5ea13b9c8b36342c1dc94fcd682a6c3e8df850ff"
+    },
+    {
+      "name": "vgabios-cirrus.bin",
+      "offset": 18622496,
+      "size": 38912,
+      "sha256": "305d3b15f67e65f1899a1664621f6b471e4345d33fd9eb4f6320b4559f6a04f2"
+    },
+    {
+      "name": "vgabios-qxl.bin",
+      "offset": 18661408,
+      "size": 39424,
+      "sha256": "e81cc2807ebb9a1467b1933d192a4313424b499b73e7674257f07cd2171e01c7"
+    },
+    {
+      "name": "vgabios-ramfb.bin",
+      "offset": 18700832,
+      "size": 28672,
+      "sha256": "31b26b2288ed5594b65a234e797ee7105d225d48086170b27ab518c3fb69b7de"
+    },
+    {
+      "name": "vgabios-stdvga.bin",
+      "offset": 18729504,
+      "size": 39424,
+      "sha256": "651513519f9e0d5b99d3b051a8f5c68db69e987339b59a441d371068c34c146b"
+    },
+    {
+      "name": "vgabios-virtio.bin",
+      "offset": 18768928,
+      "size": 39424,
+      "sha256": "746f38c2023dbbc071503113f970bcf69d49c6e7c55fa8c0e3748dbccba42772"
+    },
+    {
+      "name": "vgabios-vmware.bin",
+      "offset": 18808352,
+      "size": 39424,
+      "sha256": "c12841eb2b057b6d99bfbc7ab72bea896e2b5cd694c93b026d7510de2b68ca11"
+    },
+    {
+      "name": "vgabios.bin",
+      "offset": 18847776,
+      "size": 38912,
+      "sha256": "f0defab87465236d0d22b6000bd2c270e05a56ff3bb7fd209a56069caed86d57"
+    }
+  ],
+  "resource_bytes": 18886417,
+  "blob_bytes": 18886688,
+  "blob_sha256": "4f4a697785e3e70a6d514d31ae54cd246e4d9aa77a4f8918d0005c20eb90bbf6"
+}

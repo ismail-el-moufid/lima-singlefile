@@ -1,0 +1,40 @@
+# Reconstructed sources, native builds, preparation stamps, and staging backups.
+/build/
+
+# Reusable local toolchain and installed native dependencies.
+/tools/
+/prefix/
+
+# Executables, generated checksums/validation reports, and build logs.
+/output/
+/logs/
+
+# Reusable download/module caches and disposable temporary state.
+/cache/
+/tmp/
+
+# Downloaded archives and VM images; retain source provenance metadata.
+/downloads/*
+!/downloads/*.json
+
+# Prevent legacy authoring-tree CGO flags from returning to source control.
+# Active generated linker flags live under the ignored /build/ directory.
+/src/lima/cmd/limactl/native_link_flags.go
+
+# Generated validator state: fixtures, VM disks, SSH keys, logs, and results.
+# Retain runs referenced by output reports when cleaning the local workspace.
+/tests/b-*/
+/tests/p-*/
+/tests/native-cli-*/
+/tests/native-validation-*/
+/tests/smoke-*/
+
+# Python caches and macOS filesystem metadata.
+__pycache__/
+*.py[cod]
+.DS_Store
+._*
+
+# Keep src/, native/, lock/overlay manifests, licenses, and provenance metadata.
+# Do not blanket-ignore binary extensions: embedded firmware, ROMs, and
+# src/lima/pkg/embeddedassets/lima-guestagent.Linux-x86_64 are build inputs.

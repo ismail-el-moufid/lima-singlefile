@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "description": "Source archives only. Downloads are verified before extraction; destinations are relative to build/self-contained/sources.",
+  "lima_endpoint_verification": {
+    "date": "2026-09-15",
+    "bytes": 304053,
+    "method": "HTTPS fetch of the exact sources.lima.url; bytes matched the cached archive and its PAX commit."
+  },
+  "sources": {
+    "lima": {
+      "url": "https://github.com/lima-vm/lima/archive/refs/tags/v0.13.0.tar.gz",
+      "sha256": "2df48d219bd8f67a3d7cfe43770f768aeb20a1b2242aaba18c58d441d5bd0d0e",
+      "filename": "lima-v0.13.0.tar.gz",
+      "revision": "6b6073ff536ea3ae7605129489a33ed2ba11fc46",
+      "archive_root": "lima-0.13.0",
+      "destination": "lima"
+    },
+    "qemu": {
+      "url": "https://api.github.com/repos/utmapp/qemu/tarball/refs/tags/v10.0.2-utm",
+      "sha256": "dbeaa6019cc3506a51805d1b7966ff530fbfd72e872ca75387a21bbab07d8644",
+      "filename": "qemu-v10.0.2-utm.tar.gz",
+      "revision": "37ba092d59aff24900dfd0d5e01d4ed68441ba07",
+      "archive_root": "utmapp-qemu-37ba092",
+      "destination": "qemu"
+    },
+    "libslirp": {
+      "url": "https://gitlab.freedesktop.org/slirp/libslirp/-/archive/9c744e1e52aa0d9646ed91d789d588696292c21e/libslirp-9c744e1e52aa0d9646ed91d789d588696292c21e.tar.gz",
+      "sha256": "7c7928eacaad5e5436bc5b1ac799eb0f5dd93b996c7773852a77ebacf800fdef",
+      "filename": "libslirp-9c744e1e52aa0d9646ed91d789d588696292c21e.tar.gz",
+      "revision": "9c744e1e52aa0d9646ed91d789d588696292c21e",
+      "archive_root": "libslirp-9c744e1e52aa0d9646ed91d789d588696292c21e",
+      "destination": "libslirp"
+    },
+    "keycodemapdb": {
+      "url": "https://gitlab.com/qemu-project/keycodemapdb/-/archive/f5772a62ec52591ff6870b7e8ef32482371f22c6/keycodemapdb-f5772a62ec52591ff6870b7e8ef32482371f22c6.tar.gz",
+      "sha256": "d014b53382dbb17b8196ad12f50de7f20d0ef1b9f7d54b0be51a6cbb14209195",
+      "filename": "keycodemapdb-f5772a62ec52591ff6870b7e8ef32482371f22c6.tar.gz",
+      "revision": "f5772a62ec52591ff6870b7e8ef32482371f22c6",
+      "archive_root": "keycodemapdb-f5772a62ec52591ff6870b7e8ef32482371f22c6",
+      "destination": "qemu/subprojects/keycodemapdb"
+    },
+    "berkeley-softfloat-3": {
+      "url": "https://gitlab.com/qemu-project/berkeley-softfloat-3/-/archive/b64af41c3276f97f0e181920400ee056b9c88037/berkeley-softfloat-3-b64af41c3276f97f0e181920400ee056b9c88037.tar.gz",
+      "sha256": "faae889814ea6a292f7ca03d9b36e6c7e95bab2a64777804883cc822b8d48757",
+      "filename": "berkeley-softfloat-3-b64af41c3276f97f0e181920400ee056b9c88037.tar.gz",
+      "revision": "b64af41c3276f97f0e181920400ee056b9c88037",
+      "archive_root": "berkeley-softfloat-3-b64af41c3276f97f0e181920400ee056b9c88037",
+      "destination": "qemu/subprojects/berkeley-softfloat-3"
+    },
+    "berkeley-testfloat-3": {
+      "url": "https://gitlab.com/qemu-project/berkeley-testfloat-3/-/archive/e7af9751d9f9fd3b47911f51a5cfd08af256a9ab/berkeley-testfloat-3-e7af9751d9f9fd3b47911f51a5cfd08af256a9ab.tar.gz",
+      "sha256": "e7a09d51dc7e96cb8422c919c85fc3833d4f788567638c9162ef5cd7db59b1df",
+      "filename": "berkeley-testfloat-3-e7af9751d9f9fd3b47911f51a5cfd08af256a9ab.tar.gz",
+      "revision": "e7af9751d9f9fd3b47911f51a5cfd08af256a9ab",
+      "archive_root": "berkeley-testfloat-3-e7af9751d9f9fd3b47911f51a5cfd08af256a9ab",
+      "destination": "qemu/subprojects/berkeley-testfloat-3"
+    }
+  },
+  "copies": [
+    {
+      "from": "qemu/subprojects/packagefiles/berkeley-softfloat-3/meson.build",
+      "to": "qemu/subprojects/berkeley-softfloat-3/meson.build",
+      "sha256": "8104589664dc6ba779c1a213be5244c408c45f10f948a6bfd97a4cd2769a8776"
+    },
+    {
+      "from": "qemu/subprojects/packagefiles/berkeley-softfloat-3/meson_options.txt",
+      "to": "qemu/subprojects/berkeley-softfloat-3/meson_options.txt",
+      "sha256": "47c42c20a764882121e5249331b8bc86cf7732c3ef0962d3d201fd8cfef8f225"
+    },
+    {
+      "from": "qemu/subprojects/packagefiles/berkeley-testfloat-3/meson.build",
+      "to": "qemu/subprojects/berkeley-testfloat-3/meson.build",
+      "sha256": "66dfc76a49e9213074ef71d57e86ff8731aad2137cf97163aba7fdac65d65f23"
+    },
+    {
+      "from": "qemu/subprojects/packagefiles/berkeley-testfloat-3/meson_options.txt",
+      "to": "qemu/subprojects/berkeley-testfloat-3/meson_options.txt",
+      "sha256": "47c42c20a764882121e5249331b8bc86cf7732c3ef0962d3d201fd8cfef8f225"
+    }
+  ]
+}

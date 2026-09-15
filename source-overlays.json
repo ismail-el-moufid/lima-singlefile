@@ -1,0 +1,969 @@
+{
+  "format": 1,
+  "description": "Explicit local source and asset overlays; files remain in src and are never modified by source preparation.",
+  "overlays": [
+    {
+      "source": "lima",
+      "path": "README.ja.md",
+      "file": "src/lima/README.ja.md",
+      "upstream_sha256": "44e607b9782a179dce35eaeee244c5ff529227b975f5712b375ac8c7acc0e1d4",
+      "upstream_mode": 436,
+      "sha256": "418741415660e90afbcc36505a05f29670eb6188de9f11b9508df7b80cc62db0",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "README.md",
+      "file": "src/lima/README.md",
+      "upstream_sha256": "ab1fc28161d715e842266cf710325561ea2c546b3c0e1b5e51992cb97f62c209",
+      "upstream_mode": 436,
+      "sha256": "d5f695be483cb454acc1ae127711ebf841772361e02adc7c4f81e6a5c3e59be7",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "cmd/limactl/edit.go",
+      "file": "src/lima/cmd/limactl/edit.go",
+      "upstream_sha256": "c29fa7517a947cf68bc628862b48072450dd175d656c93264e9638f0437acf5c",
+      "upstream_mode": 436,
+      "sha256": "897eb4a0da6ac746d3bd27545f26a070e70d8e3efef9a5f1f44e13ac8cfe0628",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "cmd/limactl/licenses.go",
+      "file": "src/lima/cmd/limactl/licenses.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "addbc6c5b066eccda4498831ea8623e61f27fb1c5ef8188eed66d957d52f6225",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "cmd/limactl/main.go",
+      "file": "src/lima/cmd/limactl/main.go",
+      "upstream_sha256": "89bd48021be6a5668b295c7dc0987ddcb64f879cd1e966ae6c8264856973fcff",
+      "upstream_mode": 436,
+      "sha256": "6d1fd1f968a7b48040604899b4988217e698bc4f084f1dc93106b76dfc30771f",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "cmd/limactl/native.go",
+      "file": "src/lima/cmd/limactl/native.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "15cb70677cdbe191f38703839ca1ed88bc8a767bb837921a5e4b2e52c4332bef",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "cmd/limactl/native_darwin_amd64.go",
+      "file": "src/lima/cmd/limactl/native_darwin_amd64.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "551eac042f8baa35f5f890d2951bc37f6316a6d75cefbc50a1d2648911bbd337",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "cmd/limactl/native_test.go",
+      "file": "src/lima/cmd/limactl/native_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "a7ccbc282e80887ea1aa8f3be5759d9c0f1bf6e08a125564a7b48547bce36886",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "cmd/limactl/native_unsupported.go",
+      "file": "src/lima/cmd/limactl/native_unsupported.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "3da3ed2adb13f33ae524448162c10873ba94012dbcbffc5002d0943c21fa74a2",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "cmd/limactl/prune.go",
+      "file": "src/lima/cmd/limactl/prune.go",
+      "upstream_sha256": "903ffa0614a0c30fe2c666f16e9774fc7f2dd087ac6e3f6558ff2a96b35e270c",
+      "upstream_mode": 436,
+      "sha256": "787c4cada5c6bb4d7574d9d5d7afc857ff83b2423194210d43e3ba5951692083",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "cmd/limactl/start.go",
+      "file": "src/lima/cmd/limactl/start.go",
+      "upstream_sha256": "375c2668307c1922f4e3d0eab88f91410428eaee549e883c8dd3f5fb3485eb9d",
+      "upstream_mode": 436,
+      "sha256": "89b6cfa92a0a67924893da1ceea683deb17fadf6e6de0384247aa13c0b1dcb97",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "cmd/limactl/start_templates_test.go",
+      "file": "src/lima/cmd/limactl/start_templates_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "f95fb880f1d038737d6904b2083c75ed74fe4a7f29bc27cf3a66dccfc79c1f4f",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "cmd/limactl/stop.go",
+      "file": "src/lima/cmd/limactl/stop.go",
+      "upstream_sha256": "0e2e2b8354556f7a24a3a6dcda58c4e97cf3542e968db6cd12db6c2a7d558dae",
+      "upstream_mode": 436,
+      "sha256": "903649290dc6ae5b7806dd641ad8aa7b4f66ea730e983bf547dabeeae1fd3860",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "cmd/limactl/stop_test.go",
+      "file": "src/lima/cmd/limactl/stop_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "8ed5b9d806de0d347f71b343bc7d97a52804db57074e147be1b13987c490e981",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "docs/internal.md",
+      "file": "src/lima/docs/internal.md",
+      "upstream_sha256": "1917e15a05e8b58ce5844a22f989070e63ef34db571550be3138b29242b0d6c2",
+      "upstream_mode": 436,
+      "sha256": "c102cc7b41e6af0cce419c04f5afb0f306b3375b55c063b3c5e374c93bbfc210",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "docs/single-file.md",
+      "file": "src/lima/docs/single-file.md",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "853a2eda4f1d5518d9c3d4e856036092181e7291ca18378a917f8fb035d13905",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/cidata/cidata.go",
+      "file": "src/lima/pkg/cidata/cidata.go",
+      "upstream_sha256": "c266e601bf1604c7ff7cbcf34ba14ead87f7b13895e120b52ac427d58a55380b",
+      "upstream_mode": 436,
+      "sha256": "10525934df582e8f0956ace17b3b679089349d33a66ead90c97717f48cb7eeba",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/cidata/embedded_test.go",
+      "file": "src/lima/pkg/cidata/embedded_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "3b247fff27959830684a74bb3bb0cc5d1fde8a9526dd274c68ae644aa2ed6b26",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/downloader/cache_test.go",
+      "file": "src/lima/pkg/downloader/cache_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "2dd259c68445bebb0382bceaa595ad417b3d2627015f8b93a454decc17b42700",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/downloader/downloader.go",
+      "file": "src/lima/pkg/downloader/downloader.go",
+      "upstream_sha256": "700002a8787d244063ded7bed4ba47f0f1704d0612ec9678f14fd5285b9004e5",
+      "upstream_mode": 436,
+      "sha256": "f9c8a92a2f7061cc372b71cbf5f0e6573aa9be17ec00058710d70f7c4d9ab85a",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/editutil/editutil.go",
+      "file": "src/lima/pkg/editutil/editutil.go",
+      "upstream_sha256": "19f8f60f919738654727b411068e58581e831460ee10da5c047ac510daa3601e",
+      "upstream_mode": 436,
+      "sha256": "3117a7883fa6a696961e9bdf1c6ab06703e5cb6fb43f2b7bd02fccf409ad5f8d",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/editutil/storage_test.go",
+      "file": "src/lima/pkg/editutil/storage_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "1b6cae0d13e58849fc3779429a37a177b955fcfd04b611f7c36d1e65b09c91b5",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/LICENSE",
+      "file": "src/lima/pkg/embeddedassets/LICENSE",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/NOTES.md",
+      "file": "src/lima/pkg/embeddedassets/NOTES.md",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "d9a595069fd746c30e08dc44e62359ad0a217bb2e32e13c08b113036db29e64b",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/assets.go",
+      "file": "src/lima/pkg/embeddedassets/assets.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "678758ac9859eafc897cfaa2150e1484077a7010017a7c299a62c4afb85b0d9b",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/assets_test.go",
+      "file": "src/lima/pkg/embeddedassets/assets_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "dbd19f1627cbaeed4eedb7cc64de2f1ab3b440a769442555492ef5461347c84e",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/README.md",
+      "file": "src/lima/pkg/embeddedassets/examples/README.md",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "45c162839a4adc345b6b6c716587df5cbeb7cc78d596c646ca98cacc70bde12f",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/almalinux-8.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/almalinux-8.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "eec68b3b6d8fe63d4caf1116150d0e4c698a43d9f19dd75c6016bbc04122dd94",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/almalinux-9.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/almalinux-9.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "d05057b9e41daf21f41aaedea31b9b44fbcae9cfae54935e20fa9659de405311",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/almalinux.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/almalinux.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "d05057b9e41daf21f41aaedea31b9b44fbcae9cfae54935e20fa9659de405311",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/alpine.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/alpine.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "9d939625215624e5ac964bc9c72ab2002063ba4ba3c31c9071307680169954ff",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/apptainer-rootful.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/apptainer-rootful.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "f9b277668c79a96052598ef2f21fc4be78f67f4e6ee727287ec1fc7b3ca6c4ab",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/apptainer.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/apptainer.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "f915035a6fafb91a5701c97513ae9ac292044ca8bed7cbe7170a3ebddbadd41d",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/archlinux.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/archlinux.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "9fab4ce55c8b23f0f6e9b08b74e8bbc43b02a4d42bd8e28a1a28aac121dd4f35",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/buildkit.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/buildkit.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "c1b096af4c8ab19c402eb65b0be7c36dd31b467c35102a806a5ff3bdf83c1284",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/centos-stream-8.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/centos-stream-8.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "43670708801007ea9ad63c2999e07576868aec9436c06d49d1ec2a1f5ad2784d",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/centos-stream-9.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/centos-stream-9.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "957e96deb27a3d6bb15f277c461e3cebfafd6ca7b4c7e987fa400af9ff8c2e1c",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/centos-stream.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/centos-stream.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "957e96deb27a3d6bb15f277c461e3cebfafd6ca7b4c7e987fa400af9ff8c2e1c",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/debian.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/debian.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "29e72492447bf29b62cd482982c63f6f200c42e289eb8ea2da15bb165b66b325",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/default.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/default.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "5e229e39a56ec7752f1a8d5db456e0a2323c189185f66a7940dd3acaab5f9822",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/deprecated/centos-7.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/deprecated/centos-7.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "352969f885d652c8418ab83e615b492ba972d10e5cfba70213612ee505f79a7d",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/docker-rootful.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/docker-rootful.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "07b9744b59329f99510b71c9a04476a8973cf3356d392d4d991ca7a2a251cad0",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/docker.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/docker.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "85af5be49ee04566349900baf02402d91b09e1275ddaee01b84d875bdcbb96c2",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/experimental/9p.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/experimental/9p.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "cd850168bcd83b5b75c5fbac6bc36d3a2fa83efa2f9472cff7c7fcf01b072c1b",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/experimental/opensuse-tumbleweed.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/experimental/opensuse-tumbleweed.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "a620b2816ab621520af52878a909dba87e31ef27888cf04a33ba6def0e95c0e5",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/experimental/riscv64.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/experimental/riscv64.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "89f5e53928868535e43a68a4b91e5f754ed992ebf551c182abc5f74ec1bc9937",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/experimental/vz.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/experimental/vz.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "ebd5e736bb140d1ea4bf267f7d997941833c26832839d7b762f6b866bde4ba82",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/faasd.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/faasd.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "8bf115bcbc68e815088ebcef481825c9e664016e21889642ab942759abfbb8a5",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/fedora.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/fedora.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "4c9e35860d46958b75681396add367820410dba809e89332d81d3e267ad3db51",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/k3s.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/k3s.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "fe39dc7dff55bccfec4e6644f20850f4bce60a0702005d5d09a2894bef4f923e",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/k8s.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/k8s.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "3f6cd442bde2e67705b78d8c9a21a843b5058d449a4a797cc29011d842fd0436",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/nomad.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/nomad.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "d5b0a4753e1f1baae5cff043f54c92db561d756d4c01a797d2db120c793829e6",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/opensuse.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/opensuse.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "6d20af5a5b223a1709e89546ef3d8d5ec118219bbda961b6c0557e6279b4798d",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/oraclelinux-8.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/oraclelinux-8.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "82753e8ec4aec9534cf858548253a9984860e8e1952cb7dfa09ac7dd83d06290",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/oraclelinux-9.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/oraclelinux-9.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "f517fa910a8f5912351f04e5d9adc065bdcb8aea4a1e137d985392a08cd97bd9",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/oraclelinux.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/oraclelinux.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "f517fa910a8f5912351f04e5d9adc065bdcb8aea4a1e137d985392a08cd97bd9",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/podman-rootful.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/podman-rootful.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "ede9448ed44d36a5ab17e250eeb35633fb9002b852d434d30b33a6cea6c530f8",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/podman.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/podman.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "be37a13ba4da5380519b8da1954e4c5c0bd0b48f2eca0c3516cc67c6217abd8f",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/rocky-8.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/rocky-8.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "fb1575b389e11fa23c4948d92c4d4956f977549e6fc7d48a9dad4bfd4188260e",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/rocky-9.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/rocky-9.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "89cf906c2591d53d5d6cf705c4d886fc2c6983e9d90f0fd2dcc2dbc6599babe4",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/rocky.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/rocky.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "89cf906c2591d53d5d6cf705c4d886fc2c6983e9d90f0fd2dcc2dbc6599babe4",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/ubuntu-lts.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/ubuntu-lts.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "e91a0b00a2e301c84bf3eed6a2d7afd9cfb64bc2a73dd97f16ca529834a172a1",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/ubuntu.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/ubuntu.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "856864af9113dd8654644fa24e817c0a30c159c6eb46fc0eb27acb77f318ffd5",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/vmnet.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/vmnet.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "4f8ce404ee7030f922464aad724925d012d37c206a97f977cc66d8f91afed746",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/lima-guestagent.Linux-x86_64",
+      "file": "src/lima/pkg/embeddedassets/lima-guestagent.Linux-x86_64",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "b10989ec96ac40392b4d49494577fe308de8d6e734c5024722be82cdd29c464c",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/iso9660util/direct.go",
+      "file": "src/lima/pkg/iso9660util/direct.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "579b9f66355f373f8fe701d9359cd5b24c40b0c90a3f0cadeeee9e7c5413c0c9",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/iso9660util/direct_test.go",
+      "file": "src/lima/pkg/iso9660util/direct_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "4f5a657b5a1325cf5426c9325441d004779e7721ef825ee023ada59841de2c5e",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/iso9660util/iso9660util.go",
+      "file": "src/lima/pkg/iso9660util/iso9660util.go",
+      "upstream_sha256": "db5d020465ee1ecdef1af80a0af095425e2d014d19410828f8daee56fe08ba08",
+      "upstream_mode": 436,
+      "sha256": "05f8d6c5c16bf6776761d1f41dced0ac3b89060d1a432bd8f9d43d43b7814e91",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/networks/reconcile/reconcile.go",
+      "file": "src/lima/pkg/networks/reconcile/reconcile.go",
+      "upstream_sha256": "07f41d24b69d9716dafe4ccc9105620523cf623dfea1106d9db258506f035e2b",
+      "upstream_mode": 436,
+      "sha256": "dfb5eb57e162f20f3ca590f29a09f72ba4af322cf80e68462898a4af4a2e1fff",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/networks/reconcile/reconcile_test.go",
+      "file": "src/lima/pkg/networks/reconcile/reconcile_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "687f1d9d7398e903e935d5581a20066726269322a6ff57d2b69ccf07d08fe66a",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/qemu/command/command.go",
+      "file": "src/lima/pkg/qemu/command/command.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "572287349a5e982ced018722c1e29af592c501881d219f6dd07c366474cfb759",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/qemu/command/command_test.go",
+      "file": "src/lima/pkg/qemu/command/command_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "16ef140c20c9c0c78b73e25c315a481db8cf1ee5ea2ee3814367f2016b8196c5",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/qemu/embedded_test.go",
+      "file": "src/lima/pkg/qemu/embedded_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "9d4dcecd6ca574db99bdc2e780cbca35cbc86116998d1d830d69790b4389d6bf",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/qemu/imgutil/imgutil.go",
+      "file": "src/lima/pkg/qemu/imgutil/imgutil.go",
+      "upstream_sha256": "7162833609bd9b14b36a42c7f7ca2cd9ac7ab99d1ad5ced498cddc579c17d166",
+      "upstream_mode": 436,
+      "sha256": "56d346ffaf546e8fef0fe9d63a446328cb310e622e4f80e750d180f422deaa65",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/qemu/imgutil/imgutil_test.go",
+      "file": "src/lima/pkg/qemu/imgutil/imgutil_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "d5f8e96471fbcf4c4b31a8efcbdd3e0ab8ca171428a3898078e067cade87bfa6",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/qemu/qemu.go",
+      "file": "src/lima/pkg/qemu/qemu.go",
+      "upstream_sha256": "98e521548ae843573ecf23e86864f581912d5aa9045c6001f4940225461f7511",
+      "upstream_mode": 436,
+      "sha256": "8cbda87cdd4d7452b41f024302229242bcbc7ba46def8c31c719bfc8a1fc72dc",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/store/dirnames/dirnames.go",
+      "file": "src/lima/pkg/store/dirnames/dirnames.go",
+      "upstream_sha256": "753cbc6f5ffde7eb9e86d2dc6dd995141c9b33d8465592e201939c8973556978",
+      "upstream_mode": 436,
+      "sha256": "19d04cba87e667b18d24c1b9072d48ce4cc3ad033615755939275eb796878c0d",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/store/dirnames/storage.go",
+      "file": "src/lima/pkg/store/dirnames/storage.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "b704cdb013a465614c7251cd0c63acc52ecfa108d1f974010f13658399af8cea",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/store/dirnames/storage_test.go",
+      "file": "src/lima/pkg/store/dirnames/storage_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "8e5ac8ea67c764d22f10e3b762857cde7d2d7ca98913e60e28380bd6650d5ee2",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/templatestore/templatestore.go",
+      "file": "src/lima/pkg/templatestore/templatestore.go",
+      "upstream_sha256": "b5d56a2f28d00eb7b27557a743bad0a56daf7acb0518a7c23658f33828a2285f",
+      "upstream_mode": 436,
+      "sha256": "e0e92c510667727f1cae1fc1ccc344a1a4574c68c4db991b4311ef68012eae2c",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/templatestore/templatestore_test.go",
+      "file": "src/lima/pkg/templatestore/templatestore_test.go",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "fdf0baa13371d6f533dd00f40f5ffaf12134b63d8b0fd73c8966f4a48c065955",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "accel/hvf/hvf-all.c",
+      "file": "src/qemu/accel/hvf/hvf-all.c",
+      "upstream_sha256": "5eb6bf198836273f08ad227c2fe9fbcf4b2fdf80017129ce3c56c7616306ddb6",
+      "upstream_mode": 436,
+      "sha256": "da7cb474f99b57e20fc14bbdedaba406c093454fddacafb7fcd2e4f4dd863a88",
+      "mode": 436
+    },
+    {
+      "source": "qemu",
+      "path": "block/builtin.c",
+      "file": "src/qemu/block/builtin.c",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "fefeaf28c1b6149f6568f78651b1c9319712c7f39dd8835a13185225bc4c1b67",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "block/file-posix.c",
+      "file": "src/qemu/block/file-posix.c",
+      "upstream_sha256": "f573b0313ed26c622d84c70a882992a32f3156af282f07058370985a62b68271",
+      "upstream_mode": 436,
+      "sha256": "81e19205b3008024a12e5579bf03d5ba69ac2d79e41e99d3c3b7fffdef6bb77e",
+      "mode": 436
+    },
+    {
+      "source": "qemu",
+      "path": "block/meson.build",
+      "file": "src/qemu/block/meson.build",
+      "upstream_sha256": "c6943e497f45f21c1db858a6eb49ab58de357bdb618765b27535f5ae8e2e4ef5",
+      "upstream_mode": 436,
+      "sha256": "78ea9829d4c40e7c818eb47883e0ba6b5204d0692830c841b087d76d0735de0b",
+      "mode": 436
+    },
+    {
+      "source": "qemu",
+      "path": "hw/core/loader.c",
+      "file": "src/qemu/hw/core/loader.c",
+      "upstream_sha256": "bf0c1acbfa8100c90b6bb26942a1d8c15a9e260eced301ead0e8cf149f21919f",
+      "upstream_mode": 436,
+      "sha256": "89d3b7800bbe1056b9d3bf19bacba7ea957e04438f229e418dcf8d44e62a0f62",
+      "mode": 436
+    },
+    {
+      "source": "qemu",
+      "path": "hw/nvram/fw_cfg.c",
+      "file": "src/qemu/hw/nvram/fw_cfg.c",
+      "upstream_sha256": "0460c7327c38978704a595ed3e2ec10678636bab07e3043528820054ad2bb6e0",
+      "upstream_mode": 436,
+      "sha256": "24ca4b5ac47ecb373684cfaacd2801642790b4a1c0c7a9efcb8f815362801b3b",
+      "mode": 436
+    },
+    {
+      "source": "qemu",
+      "path": "include/qemu/builtin.h",
+      "file": "src/qemu/include/qemu/builtin.h",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "5554423608fce07193fe8e056a4046907213d4105ecd54addc7cf6d041242018",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "include/qemu/datadir.h",
+      "file": "src/qemu/include/qemu/datadir.h",
+      "upstream_sha256": "ae8c80d8b8303abafaff80d5946e3e00490fa9c2acb3b26f98b4062f32558641",
+      "upstream_mode": 436,
+      "sha256": "490ed9e628fd366c099711e445fe2b8da8966cb281675e49f8a6128063be423c",
+      "mode": 436
+    },
+    {
+      "source": "qemu",
+      "path": "include/qemu/resource.h",
+      "file": "src/qemu/include/qemu/resource.h",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "5015238484bc88b8feccb9c2aeb27fb1dea103fa37651217ffe327de50ec9e85",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "qapi/block-core.json",
+      "file": "src/qemu/qapi/block-core.json",
+      "upstream_sha256": "e5825de5e7ca364d08f4023a91c98af667be5d8e9a2989ec5f34a8dffa35ba64",
+      "upstream_mode": 436,
+      "sha256": "ea1bc5f9d548a0fc6c903bd0ea814378d16d71ccc6811ec6d770e998c9bfffc6",
+      "mode": 436
+    },
+    {
+      "source": "qemu",
+      "path": "qemu-img.c",
+      "file": "src/qemu/qemu-img.c",
+      "upstream_sha256": "4757cb690b25524d3fdd012bac55399cf13c82e8a4682e04970d32df60240391",
+      "upstream_mode": 436,
+      "sha256": "f95ed5c7e7da2d970b48dbec293e9fae75145e48a820f515f1a308e371197ba3",
+      "mode": 436
+    },
+    {
+      "source": "qemu",
+      "path": "scripts/gen-builtin-resources.py",
+      "file": "src/qemu/scripts/gen-builtin-resources.py",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "95052080b9869fe371657ee3af2bf6180c5af770620b265c79997c528839830d",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "subprojects/.gitignore",
+      "file": "src/qemu/subprojects/.gitignore",
+      "upstream_sha256": "13d42b271c8cb246d18c882b2a48897661ee13e40914a3f70d0a989ffa0c0808",
+      "upstream_mode": 436,
+      "sha256": "fe156d444a785b444b229a6898397f690f885ffe05661b9d7151c3b047f5c559",
+      "mode": 436
+    },
+    {
+      "source": "qemu",
+      "path": "system/datadir.c",
+      "file": "src/qemu/system/datadir.c",
+      "upstream_sha256": "ee6764731c88211025c4102553777bbf4b39964c8b47f32ab68ea094090d4ea5",
+      "upstream_mode": 436,
+      "sha256": "80ce30797b3998a5821c7c3c05bc64e3ec89783cc73898e63ecd5d3fea1aa8db",
+      "mode": 436
+    },
+    {
+      "source": "qemu",
+      "path": "target/i386/hvf/hvf.c",
+      "file": "src/qemu/target/i386/hvf/hvf.c",
+      "upstream_sha256": "8f13761d7156ed158bf1b97a5369e3d9a9a00525421a0c222a6cd12b79c84706",
+      "upstream_mode": 436,
+      "sha256": "add8bdded6a0ef91fb392030c360bc544f0c9d6c81695d354cd1dc8f2839566e",
+      "mode": 436
+    },
+    {
+      "source": "qemu",
+      "path": "ui/keymaps.c",
+      "file": "src/qemu/ui/keymaps.c",
+      "upstream_sha256": "ac1509c7455031c54ab470e9993303ca24ec325324bc4a5e4a2f168770d2929c",
+      "upstream_mode": 436,
+      "sha256": "c92d14213473976ddf78fd316e960a452baa2bcfb9c77c97c72555e138eb2b75",
+      "mode": 436
+    },
+    {
+      "source": "qemu",
+      "path": "util/builtin-resources/README.md",
+      "file": "src/qemu/util/builtin-resources/README.md",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "fab54ef683b20cb789787c77f29d7a91e98c5a5574e9601ce85a5c943f9b9cba",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "util/builtin-resources/builtin-data.S",
+      "file": "src/qemu/util/builtin-resources/builtin-data.S",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "ed54a2c8320f2a90478862a9f03411c59522607080fc46e3f20bf4ea8255918b",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "util/builtin-resources/builtin-data.bin",
+      "file": "src/qemu/util/builtin-resources/builtin-data.bin",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "4f4a697785e3e70a6d514d31ae54cd246e4d9aa77a4f8918d0005c20eb90bbf6",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "util/builtin-resources/builtin-table.inc",
+      "file": "src/qemu/util/builtin-resources/builtin-table.inc",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "816c51967c21822733872cfa4685718525196bb24a5a7fa672151cf140215295",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "util/builtin-resources/manifest.json",
+      "file": "src/qemu/util/builtin-resources/manifest.json",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "740af07c2321e280e7f5baf22bae34f6a438b5c9d38b0c7dd6c6ba5bb6ede946",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "util/builtin-resources/meson.build",
+      "file": "src/qemu/util/builtin-resources/meson.build",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "b89d77f4707faded03ab85f00a2483fa358497be5a03f9a3685acaf791d543e6",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "util/builtin-resources/registry.c",
+      "file": "src/qemu/util/builtin-resources/registry.c",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "152feca8986df61fc54fdbd7682668d65548e9af80caae33030be30671e0dd2e",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "util/builtin-resources/test.py",
+      "file": "src/qemu/util/builtin-resources/test.py",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "156b10be4bd20e4fa9ae8423cf778794898f23daaaf8f317c7327d100a8b6949",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "util/builtin-resources.c",
+      "file": "src/qemu/util/builtin-resources.c",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "60122dff59845ce803220534048cc2b0d7a2e04aa253cc93e6fb4e82dfcb0063",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
+      "path": "util/meson.build",
+      "file": "src/qemu/util/meson.build",
+      "upstream_sha256": "ea84a207384cf71f54834bbb33f8a187c286dedaeff611147a30f32f7f8cc4d1",
+      "upstream_mode": 436,
+      "sha256": "755093e70bcf750203478b8bad10e1910a4aac91d4f3e05875c758e3057d0259",
+      "mode": 436
+    }
+  ]
+}

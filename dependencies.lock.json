@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "platform": "darwin/amd64",
+  "python_prerequisite": ">=3.8 with venv and ensurepip; audited with 3.9.5",
+  "inputs": {
+    "go": {
+      "version": "1.22.12",
+      "filename": "go1.22.12.darwin-amd64.tar.gz",
+      "url": "https://go.dev/dl/go1.22.12.darwin-amd64.tar.gz",
+      "sha256": "e7bbe07e96f0bd3df04225090fe1e7852ed33af37c43a23e16edbbb3b90a5b7c",
+      "size": 70358300
+    },
+    "llvm": {
+      "version": "10.0.1",
+      "filename": "clang+llvm-10.0.1-x86_64-apple-darwin.tar.xz",
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.1/clang%2Bllvm-10.0.1-x86_64-apple-darwin.tar.xz",
+      "sha256": "1154a24597ab77801980dfd5ae4a13c117d6b482bab015baa410aeba443ffd92",
+      "size": 448541784
+    },
+    "ninja": {
+      "version": "1.13.2",
+      "filename": "ninja-1.13.2.tar.gz",
+      "url": "https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.2.tar.gz",
+      "sha256": "974d6b2f4eeefa25625d34da3cb36bdcebe7fbce40f4c16ac0835fd1c0cbae17",
+      "size": 292385
+    },
+    "meson": {
+      "version": "1.5.0",
+      "filename": "meson-1.5.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c4/cd/47e45d3abada2e1edb9e2ca9334be186d2e7f97a01b09b5b82799c4d7bd3/meson-1.5.0-py3-none-any.whl",
+      "sha256": "52b34f4903b882df52ad0d533146d4b992c018ea77399f825579737672ae7b20",
+      "size": 959846
+    },
+    "pycotap": {
+      "version": "1.3.1",
+      "filename": "pycotap-1.3.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/36/f4/77b5a41d53ae3c530b204ed9a35137171b20f8ee0f337e2ec4993d6026a5/pycotap-1.3.1-py3-none-any.whl",
+      "sha256": "1c3a25b3ff89e48f4e00f1f71dbbc1642b4f65c65d416524d07e73492fff25ea",
+      "size": 5119
+    },
+    "packaging": {
+      "version": "24.2",
+      "filename": "packaging-24.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl",
+      "sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759",
+      "size": 65451
+    },
+    "tomli": {
+      "version": "2.2.1",
+      "filename": "tomli-2.2.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/6e/c2/61d3e0f47e2b74ef40a68b9e6ad5984f6241a942f7cd3bbfbdbd03861ea9/tomli-2.2.1-py3-none-any.whl",
+      "sha256": "cb55c73c5f4408779d0cf3eef9f762b9c9f147a77de7b258bef0a5628adc85cc",
+      "size": 14257
+    },
+    "pkgconf": {
+      "version": "2.3.0",
+      "filename": "pkgconf-2.3.0.tar.xz",
+      "url": "https://distfiles.ariadne.space/pkgconf/pkgconf-2.3.0.tar.xz",
+      "sha256": "3a9080ac51d03615e7c1910a0a2a8df08424892b5f13b0628a204d3fcce0ea8b",
+      "size": 316160
+    },
+    "libffi": {
+      "version": "3.4.6",
+      "filename": "libffi-3.4.6.tar.gz",
+      "url": "https://github.com/libffi/libffi/releases/download/v3.4.6/libffi-3.4.6.tar.gz",
+      "sha256": "b0dea9df23c863a7a50e825440f3ebffabd65df1497108e5d437747843895a4e",
+      "size": 1391684
+    },
+    "zlib": {
+      "version": "1.3.1",
+      "filename": "zlib-1.3.1.tar.gz",
+      "url": "https://zlib.net/fossils/zlib-1.3.1.tar.gz",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "size": 1512791
+    },
+    "glib": {
+      "version": "2.66.8",
+      "filename": "glib-2.66.8.tar.xz",
+      "url": "https://download.gnome.org/sources/glib/2.66/glib-2.66.8.tar.xz",
+      "sha256": "97bc87dd91365589af5cbbfea2574833aea7a1b71840fd365ecd2852c76b9c8b",
+      "size": 4845548
+    },
+    "proxy-libintl": {
+      "version": "0.1",
+      "filename": "proxy-libintl-0.1.tar.gz",
+      "url": "https://github.com/frida/proxy-libintl/archive/refs/tags/0.1.tar.gz",
+      "sha256": "202d90855943091b11ac91863ff5884f0eaf80318a32dc8504fcfdafc65992ed",
+      "size": 12856
+    }
+  }
+}

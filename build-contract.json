@@ -1,0 +1,15 @@
+{
+  "host": "darwin/amd64",
+  "guest": "x86_64",
+  "qemu_worker": "--internal-qemu",
+  "image_worker": "--internal-qemu-img",
+  "qemu_entry": "qemu_embedded_main",
+  "image_entry": "qemu_img_embedded_main",
+  "firmware_protocol": "builtin:",
+  "default_firmware": "builtin:edk2-x86_64-code.fd",
+  "runtime_dependency_extraction": false,
+  "storage_default": "~/goinfre/lima-home",
+  "build_entrypoint": "python3 build.py",
+  "source_lock": "sources.lock.json",
+  "dependency_lock": "dependencies.lock.json"
+}
