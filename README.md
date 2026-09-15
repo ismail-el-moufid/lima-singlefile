@@ -151,6 +151,16 @@ Apple's SDK/tools and the bootstrap Python interpreter are host prerequisites,
 not redistributed or silently installed by this project. Newer SDKs/macOS versions
 are not assumed compatible merely because the deployment target is set to 10.15.
 
+The default compiler is pinned LLVM/Clang 10 (`LIMA_COMPILER=llvm`). For an
+experimental build with a modern SDK, use `LIMA_COMPILER=apple python3 -B build.py`
+to select Apple Clang and Clang++ through `xcrun` for Ninja, native libraries, QEMU,
+and cgo. Keep the same setting for preparation, builds, and offline reuse. The
+compiler mode is part of the build identity: switching modes rejects existing
+incompatible build state rather than silently reusing it. Use a fresh workspace
+when switching. Both modes retain the 10.15 deployment target; Apple-Clang mode
+does not establish Catalina runtime compatibility. The pinned LLVM archive tool
+is still used for final archive assembly.
+
 ### Download, build, and resume
 
 ```mermaid
@@ -297,7 +307,8 @@ these local results as CI.
 from the Actions tab. It explicitly selects **`macos-15-intel`** and Python 3.11;
 `macos-latest` is not suitable because this build requires an Intel host.
 
-The workflow runs offline unit tests, builds with the pinned project toolchain,
+The workflow runs offline unit tests, builds with `LIMA_COMPILER=apple` so the
+compiler matches the runner's modern SDK (other dependencies remain pinned),
 checks source reconstruction using the downloaded archives, and smoke-tests a
 relocated executable with no project toolchain on its runtime `PATH`. Checks cover
 the CLI, embedded template inventory, native-worker versions, image operations,

@@ -735,7 +735,9 @@ def bootstrap(download_only=False):
         if list(PREFIX.rglob("*.dylib")):
             raise RuntimeError("Unexpected shared library in dependency prefix")
         support.run([GO, "version"], ROOT, "bootstrap-go-version")
-        support.run([LLVM / "clang", "--version"], ROOT, "bootstrap-clang-version")
+        support.run(
+            [support.environment()["CC"], "--version"], ROOT, "bootstrap-clang-version"
+        )
         support.run([NINJA, "--version"], ROOT, "bootstrap-ninja-version")
         support.run([MESON, "--version"], ROOT, "bootstrap-meson-version")
         print("Native bootstrap complete:", PREFIX, flush=True)

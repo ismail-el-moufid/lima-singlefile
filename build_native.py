@@ -104,9 +104,9 @@ def configure():
     flags = [
         "--prefix=" + str(PREFIX),
         "--target-list=x86_64-softmmu",
-        "--cc=" + str(support.LLVM / "clang"),
-        "--cxx=" + str(support.LLVM / "clang++"),
-        "--objcc=" + str(support.LLVM / "clang"),
+        "--cc=" + ENV["CC"],
+        "--cxx=" + ENV["CXX"],
+        "--objcc=" + ENV["OBJC"],
         "--python=" + str(support.PYTHON),
         "--ninja=" + NINJA,
         "--without-default-features",

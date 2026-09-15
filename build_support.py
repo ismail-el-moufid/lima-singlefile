@@ -32,8 +32,16 @@ def check_host():
         raise RuntimeError("This toolchain requires an Intel (Darwin/amd64) macOS host")
 
 
+def compiler_mode():
+    mode = os.environ.get("LIMA_COMPILER", "llvm")
+    if mode not in {"llvm", "apple"}:
+        raise RuntimeError("LIMA_COMPILER must be 'llvm' or 'apple'")
+    return mode
+
+
 def apple_tools():
     """Discover the selected SDK/tools, not a fixed Xcode installation."""
+    compiler_mode()
     check_host()
 
     def query(*args):
@@ -41,10 +49,13 @@ def apple_tools():
             ["/usr/bin/xcrun", *args], text=True, timeout=30
         ).strip()
 
-    tools = {name: query("--find", name) for name in ("ar", "ranlib", "ld", "clang")}
+    tools = {
+        name: query("--find", name)
+        for name in ("ar", "ranlib", "ld", "clang", "clang++")
+    }
     tools.update(sdk=query("--show-sdk-path"), sdk_version=query("--show-sdk-version"))
     if not Path(tools["sdk"]).is_dir() or not all(
-        Path(tools[n]).is_file() for n in ("ar", "ranlib", "ld", "clang")
+        Path(tools[n]).is_file() for n in ("ar", "ranlib", "ld", "clang", "clang++")
     ):
         raise RuntimeError(
             "xcrun did not resolve an installed macOS SDK and Apple toolchain"
@@ -53,6 +64,9 @@ def apple_tools():
 
 
 def _environment(tools):
+    mode = compiler_mode()
+    cc = tools["clang"] if mode == "apple" else str(LLVM / "clang")
+    cxx = tools["clang++"] if mode == "apple" else str(LLVM / "clang++")
     env = os.environ.copy()
     for name in list(env):
         if name.startswith(("GO", "CGO_", "PIP_", "PYTHON", "DYLD_")) or name in {
@@ -100,7 +114,7 @@ def _environment(tools):
     env.update(
         PATH=":".join(
             [
-                str(LLVM),
+                str(Path(cc).parent),
                 str(PYTHON.parent),
                 str(ROOT / "tools/bin"),
                 str(GO.parent),
@@ -112,9 +126,10 @@ def _environment(tools):
                 "/sbin",
             ]
         ),
-        CC=str(LLVM / "clang"),
-        CXX=str(LLVM / "clang++"),
-        OBJC=str(LLVM / "clang"),
+        LIMA_COMPILER=mode,
+        CC=cc,
+        CXX=cxx,
+        OBJC=cc,
         AR=tools["ar"],
         RANLIB=tools["ranlib"],
         LD=tools["ld"],
@@ -172,7 +187,7 @@ def fingerprint():
     tools = apple_tools()
     env = _environment(tools)
     identities = {}
-    for name in ("ar", "ranlib", "ld", "clang"):
+    for name in ("ar", "ranlib", "ld", "clang", "clang++"):
         identities[name] = hashlib.sha256(Path(tools[name]).read_bytes()).hexdigest()
     settings = Path(tools["sdk"]) / "SDKSettings.plist"
     return {
@@ -189,6 +204,7 @@ def fingerprint():
             k: env[k]
             for k in (
                 "PATH",
+                "LIMA_COMPILER",
                 "CC",
                 "CXX",
                 "OBJC",

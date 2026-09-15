@@ -424,11 +424,16 @@ class SupportTests(unittest.TestCase):
                 "GOFLAGS": "-mod=mod",
                 "GOPROXY": "https://poison",
                 "MAKEFLAGS": "-e",
+                "LIMA_COMPILER": "llvm",
             },
         ):
             env = build_support._environment(tools)
         for name in ("CPATH", "PYTHONPATH", "GOFLAGS", "MAKEFLAGS"):
             self.assertNotIn(name, env)
+        self.assertEqual(env["CC"], str(build_support.LLVM / "clang"))
+        self.assertEqual(env["CXX"], str(build_support.LLVM / "clang++"))
+        self.assertEqual(env["OBJC"], env["CC"])
+        self.assertEqual(env["PATH"].split(":")[0], str(build_support.LLVM))
         self.assertEqual(env["MACOSX_DEPLOYMENT_TARGET"], "10.15")
         self.assertIn("-mmacosx-version-min=10.15", env["LDFLAGS"])
         self.assertEqual(env["GOPROXY"], "off")
@@ -442,6 +447,92 @@ class SupportTests(unittest.TestCase):
             "PIP_CACHE_DIR",
         ):
             self.assertTrue(Path(env[name]).relative_to(build_support.ROOT).parts)
+
+    def test_compiler_mode_defaults_to_llvm_and_rejects_unknown_values(self):
+        with mock.patch.dict(os.environ, {}, clear=True):
+            self.assertEqual(build_support.compiler_mode(), "llvm")
+        for mode in ("", "clang", "Apple"):
+            with (
+                self.subTest(mode=mode),
+                mock.patch.dict(os.environ, {"LIMA_COMPILER": mode}),
+            ):
+                with self.assertRaisesRegex(RuntimeError, "LIMA_COMPILER"):
+                    build_support._environment({})
+
+    def test_apple_mode_uses_discovered_compilers_and_isolated_flags(self):
+        tools = {
+            "ar": "/apple/bin/ar",
+            "ranlib": "/apple/bin/ranlib",
+            "ld": "/apple/bin/ld",
+            "clang": "/apple/bin/clang",
+            "clang++": "/apple/bin/clang++",
+            "sdk": "/apple/sdk",
+        }
+        with mock.patch.dict(
+            os.environ,
+            {"LIMA_COMPILER": "apple", "CC": "/poison", "CXXFLAGS": "-I/poison"},
+        ):
+            env = build_support._environment(tools)
+        self.assertEqual(env["LIMA_COMPILER"], "apple")
+        self.assertEqual(env["CC"], tools["clang"])
+        self.assertEqual(env["CXX"], tools["clang++"])
+        self.assertEqual(env["OBJC"], tools["clang"])
+        self.assertEqual(env["PATH"].split(":")[0], "/apple/bin")
+        self.assertNotIn(str(build_support.LLVM), env["PATH"].split(":"))
+        for name in ("CFLAGS", "CXXFLAGS", "OBJCFLAGS", "LDFLAGS"):
+            self.assertIn("-mmacosx-version-min=10.15", env[name])
+            self.assertIn("-isysroot /apple/sdk", env[name])
+            self.assertNotIn("/poison", env[name])
+
+    def test_xcrun_discovers_cxx_and_fingerprint_distinguishes_modes(self):
+        def query(args, **kwargs):
+            self.assertEqual(kwargs["timeout"], 30)
+            if args[1] == "--find":
+                return "/apple/bin/" + args[2]
+            return "/apple/sdk" if args[1] == "--show-sdk-path" else "15.5"
+
+        with (
+            mock.patch.object(build_support, "check_host"),
+            mock.patch.object(subprocess, "check_output", side_effect=query),
+            mock.patch.object(Path, "is_dir", return_value=True),
+            mock.patch.object(Path, "is_file", return_value=True),
+            mock.patch.object(Path, "read_bytes", return_value=b"tool identity"),
+        ):
+            with mock.patch.dict(os.environ, {"LIMA_COMPILER": "llvm"}):
+                llvm = build_support.fingerprint()
+            with mock.patch.dict(os.environ, {"LIMA_COMPILER": "apple"}):
+                apple = build_support.fingerprint()
+        self.assertEqual(apple["tools"]["clang++"], "/apple/bin/clang++")
+        self.assertIn("clang++", apple["apple_sha256"])
+        self.assertNotEqual(llvm, apple)
+        self.assertEqual(llvm["environment"]["LIMA_COMPILER"], "llvm")
+        self.assertEqual(apple["environment"]["LIMA_COMPILER"], "apple")
+
+    def test_qemu_configure_uses_selected_environment_compilers(self):
+        import importlib.util
+
+        spec = importlib.util.spec_from_file_location(
+            "native_compiler_test", build_support.ROOT / "build_native.py"
+        )
+        for compiler in (build_support.LLVM, Path("/apple/bin")):
+            with self.subTest(compiler=compiler):
+                env = {
+                    "CC": str(compiler / "clang"),
+                    "CXX": str(compiler / "clang++"),
+                    "OBJC": str(compiler / "clang"),
+                }
+                with mock.patch.object(build_support, "environment", return_value=env):
+                    native = importlib.util.module_from_spec(spec)
+                    spec.loader.exec_module(native)
+                with (
+                    mock.patch.object(Path, "mkdir"),
+                    mock.patch.object(native, "run") as run,
+                ):
+                    native.configure()
+                args = run.call_args.args[0]
+                self.assertIn("--cc=" + env["CC"], args)
+                self.assertIn("--cxx=" + env["CXX"], args)
+                self.assertIn("--objcc=" + env["OBJC"], args)
 
 
 if __name__ == "__main__":

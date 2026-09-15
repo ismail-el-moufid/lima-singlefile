@@ -57,6 +57,8 @@ jobs:
 
       - name: Build the single-file executable
         timeout-minutes: 100
+        env:
+          LIMA_COMPILER: apple
         run: python3 -B build.py 2>&1 | tee logs/ci-build.log
 
       - name: Verify source reconstruction with downloaded archives
