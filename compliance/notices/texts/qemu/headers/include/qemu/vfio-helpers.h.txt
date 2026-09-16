@@ -1,0 +1,11 @@
+/*
+ * QEMU VFIO helpers
+ *
+ * Copyright 2016 - 2018 Red Hat, Inc.
+ *
+ * Authors:
+ *   Fam Zheng <famz@redhat.com>
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2 or later.
+ * See the COPYING file in the top-level directory.
+ */

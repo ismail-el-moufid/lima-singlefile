@@ -1,0 +1,26 @@
+{
+  "format": 1,
+  "version": "go1.19.2",
+  "url": "https://go.dev/dl/go1.19.2.src.tar.gz",
+  "filename": "go1.19.2.src.tar.gz",
+  "sha256": "2ce930d70a931de660fdaf271d70192793b1b240272645bf0275779f6704df6b",
+  "size": 26534465,
+  "archive_root": "go",
+  "catalog": {
+    "url": "https://go.dev/dl/?mode=json&include=all",
+    "retrieved_date": "2026-09-15",
+    "response_sha256": "1ed915f72633d0a72eaa2f462740153db4fe347cb56f7d1e25ec44868568f13e",
+    "local_response": "compliance/notices/inputs/go-release-catalog.json",
+    "selection": "release.version == go1.19.2; files[].kind == source",
+    "file_record": {
+      "filename": "go1.19.2.src.tar.gz",
+      "os": "",
+      "arch": "",
+      "version": "go1.19.2",
+      "sha256": "2ce930d70a931de660fdaf271d70192793b1b240272645bf0275779f6704df6b",
+      "size": 26534465,
+      "kind": "source"
+    }
+  },
+  "authentication": "Official HTTPS release catalog retrieved with curl using TLS verification; source archive bytes matched catalog size and SHA-256 and go/VERSION read go1.19.2. This is not a signature or a guest-binary rebuild attestation. The catalog file_record is a selected JSON object, not a verbatim HTTP response."
+}

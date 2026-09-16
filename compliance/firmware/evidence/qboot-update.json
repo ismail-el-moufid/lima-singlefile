@@ -1,0 +1,100 @@
+{
+  "sha": "2fc7eb689704687f890688507e15bbbe71275f63",
+  "node_id": "C_kwDOCppwedoAKDJmYzdlYjY4OTcwNDY4N2Y4OTA2ODg1MDdlMTViYmJlNzEyNzVmNjM",
+  "commit": {
+    "author": {
+      "name": "Paolo Bonzini",
+      "email": "pbonzini@redhat.com",
+      "date": "2022-09-22T09:22:37Z"
+    },
+    "committer": {
+      "name": "Paolo Bonzini",
+      "email": "pbonzini@redhat.com",
+      "date": "2022-09-27T09:30:59Z"
+    },
+    "message": "qboot: rebuild based on latest commit\n\ndf22fbb751 (\"qboot: update to latest submodule\") updated the qboot\nsubmodule from a5300c49 to 8ca302e8. However, qboot isn't built during\nthe QEMU's build process but rather is included in binary form. So\nrebuild it here.\n\nCc: Paolo Bonzini <pbonzini@redhat.com>\nSigned-off-by: Jason A. Donenfeld <Jason@zx2c4.com>\n[Rebuilt it myself for paranoia. - Paolo]\nSigned-off-by: Paolo Bonzini <pbonzini@redhat.com>",
+    "tree": {
+      "sha": "fafa3cdd70018522a56afd092900c0139739e022",
+      "url": "https://api.github.com/repos/utmapp/qemu/git/trees/fafa3cdd70018522a56afd092900c0139739e022"
+    },
+    "url": "https://api.github.com/repos/utmapp/qemu/git/commits/2fc7eb689704687f890688507e15bbbe71275f63",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/utmapp/qemu/commits/2fc7eb689704687f890688507e15bbbe71275f63",
+  "html_url": "https://github.com/utmapp/qemu/commit/2fc7eb689704687f890688507e15bbbe71275f63",
+  "comments_url": "https://api.github.com/repos/utmapp/qemu/commits/2fc7eb689704687f890688507e15bbbe71275f63/comments",
+  "author": {
+    "login": "bonzini",
+    "id": 42082,
+    "node_id": "MDQ6VXNlcjQyMDgy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42082?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bonzini",
+    "html_url": "https://github.com/bonzini",
+    "followers_url": "https://api.github.com/users/bonzini/followers",
+    "following_url": "https://api.github.com/users/bonzini/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bonzini/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bonzini/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bonzini/subscriptions",
+    "organizations_url": "https://api.github.com/users/bonzini/orgs",
+    "repos_url": "https://api.github.com/users/bonzini/repos",
+    "events_url": "https://api.github.com/users/bonzini/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bonzini/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "bonzini",
+    "id": 42082,
+    "node_id": "MDQ6VXNlcjQyMDgy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42082?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bonzini",
+    "html_url": "https://github.com/bonzini",
+    "followers_url": "https://api.github.com/users/bonzini/followers",
+    "following_url": "https://api.github.com/users/bonzini/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bonzini/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bonzini/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bonzini/subscriptions",
+    "organizations_url": "https://api.github.com/users/bonzini/orgs",
+    "repos_url": "https://api.github.com/users/bonzini/repos",
+    "events_url": "https://api.github.com/users/bonzini/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bonzini/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ffe2d2382e5f1aae1abc4081af407905ef380311",
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/ffe2d2382e5f1aae1abc4081af407905ef380311",
+      "html_url": "https://github.com/utmapp/qemu/commit/ffe2d2382e5f1aae1abc4081af407905ef380311"
+    }
+  ],
+  "stats": {
+    "total": 0,
+    "additions": 0,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "684000f57aad8925c81890d97345500eb266827e",
+      "filename": "pc-bios/qboot.rom",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/2fc7eb689704687f890688507e15bbbe71275f63/pc-bios%2Fqboot.rom",
+      "raw_url": "https://github.com/utmapp/qemu/raw/2fc7eb689704687f890688507e15bbbe71275f63/pc-bios%2Fqboot.rom",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fqboot.rom?ref=2fc7eb689704687f890688507e15bbbe71275f63"
+    }
+  ]
+}

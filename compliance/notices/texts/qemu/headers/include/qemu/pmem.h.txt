@@ -1,0 +1,10 @@
+/*
+ * QEMU header file for libpmem.
+ *
+ * Copyright (c) 2018 Intel Corporation.
+ *
+ * Author: Haozhong Zhang <address@hidden>
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2 or later.
+ * See the COPYING file in the top-level directory.
+ */

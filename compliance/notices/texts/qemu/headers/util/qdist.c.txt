@@ -1,0 +1,8 @@
+/*
+ * qdist.c - QEMU helpers for handling frequency distributions of data.
+ *
+ * Copyright (C) 2016, Emilio G. Cota <cota@braap.org>
+ *
+ * License: GNU GPL, version 2 or later.
+ *   See the COPYING file in the top-level directory.
+ */

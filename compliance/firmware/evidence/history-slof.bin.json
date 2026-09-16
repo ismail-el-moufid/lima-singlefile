@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "7f98b4f25ed94a3565acb1d6b54f43c1e3da1709",
+    "node_id": "C_kwDOCppwedoAKDdmOThiNGYyNWVkOTRhMzU2NWFjYjFkNmI1NGY0M2MxZTNkYTE3MDk",
+    "commit": {
+      "author": {
+        "name": "Alexey Kardashevskiy",
+        "email": "aik@ozlabs.ru",
+        "date": "2024-11-06T04:32:28Z"
+      },
+      "committer": {
+        "name": "Nicholas Piggin",
+        "email": "npiggin@gmail.com",
+        "date": "2025-03-11T12:43:18Z"
+      },
+      "message": "pseries: Update SLOF firmware image\n\nThis adds TPM pass through API.\nAlso, moves SLOF from github to gitlab.\n\nSigned-off-by: Alexey Kardashevskiy <aik@ozlabs.ru>\nSigned-off-by: Nicholas Piggin <npiggin@gmail.com>",
+      "tree": {
+        "sha": "4f6f32f3cff77189450a774e03d7724dd44a4018",
+        "url": "https://api.github.com/repos/utmapp/qemu/git/trees/4f6f32f3cff77189450a774e03d7724dd44a4018"
+      },
+      "url": "https://api.github.com/repos/utmapp/qemu/git/commits/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/utmapp/qemu/commits/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709",
+    "html_url": "https://github.com/utmapp/qemu/commit/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709",
+    "comments_url": "https://api.github.com/repos/utmapp/qemu/commits/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709/comments",
+    "author": {
+      "login": "aik",
+      "id": 1146004,
+      "node_id": "MDQ6VXNlcjExNDYwMDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1146004?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aik",
+      "html_url": "https://github.com/aik",
+      "followers_url": "https://api.github.com/users/aik/followers",
+      "following_url": "https://api.github.com/users/aik/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aik/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aik/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aik/subscriptions",
+      "organizations_url": "https://api.github.com/users/aik/orgs",
+      "repos_url": "https://api.github.com/users/aik/repos",
+      "events_url": "https://api.github.com/users/aik/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aik/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "npiggin",
+      "id": 19833002,
+      "node_id": "MDQ6VXNlcjE5ODMzMDAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19833002?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/npiggin",
+      "html_url": "https://github.com/npiggin",
+      "followers_url": "https://api.github.com/users/npiggin/followers",
+      "following_url": "https://api.github.com/users/npiggin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/npiggin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/npiggin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/npiggin/subscriptions",
+      "organizations_url": "https://api.github.com/users/npiggin/orgs",
+      "repos_url": "https://api.github.com/users/npiggin/repos",
+      "events_url": "https://api.github.com/users/npiggin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/npiggin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9cbbe72924b4be1870563b5101548ee2241b279d",
+        "url": "https://api.github.com/repos/utmapp/qemu/commits/9cbbe72924b4be1870563b5101548ee2241b279d",
+        "html_url": "https://github.com/utmapp/qemu/commit/9cbbe72924b4be1870563b5101548ee2241b279d"
+      }
+    ]
+  }
+]

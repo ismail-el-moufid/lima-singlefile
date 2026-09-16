@@ -1,0 +1,46 @@
+/* gdatetime.c
+ *
+ * Copyright (C) 2009-2010 Christian Hergert <chris@dronelabs.com>
+ * Copyright (C) 2010 Thiago Santos <thiago.sousa.santos@collabora.co.uk>
+ * Copyright (C) 2010 Emmanuele Bassi <ebassi@linux.intel.com>
+ * Copyright © 2010 Codethink Limited
+ * Copyright © 2018 Tomasz Miąsko
+ *
+ * This library is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of the
+ * licence, or (at your option) any later version.
+ *
+ * This is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public
+ * License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this library; if not, see <http://www.gnu.org/licenses/>.
+ *
+ * Authors: Christian Hergert <chris@dronelabs.com>
+ *          Thiago Santos <thiago.sousa.santos@collabora.co.uk>
+ *          Emmanuele Bassi <ebassi@linux.intel.com>
+ *          Ryan Lortie <desrt@desrt.ca>
+ *          Robert Ancell <robert.ancell@canonical.com>
+ */
+
+/* Algorithms within this file are based on the Calendar FAQ by
+ * Claus Tondering.  It can be found at
+ * http://www.tondering.dk/claus/cal/calendar29.txt
+ *
+ * Copyright and disclaimer
+ * ------------------------
+ *   This document is Copyright (C) 2008 by Claus Tondering.
+ *   E-mail: claus@tondering.dk. (Please include the word
+ *   "calendar" in the subject line.)
+ *   The document may be freely distributed, provided this
+ *   copyright notice is included and no money is charged for
+ *   the document.
+ *
+ *   This document is provided "as is". No warranties are made as
+ *   to its correctness.
+ */
+
+/* Prologue {{{1 */

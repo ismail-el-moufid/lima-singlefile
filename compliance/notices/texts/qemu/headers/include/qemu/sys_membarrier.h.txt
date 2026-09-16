@@ -1,0 +1,7 @@
+/*
+ * Process-global memory barriers
+ *
+ * Copyright (c) 2018 Red Hat, Inc.
+ *
+ * Author: Paolo Bonzini <pbonzini@redhat.com>
+ */

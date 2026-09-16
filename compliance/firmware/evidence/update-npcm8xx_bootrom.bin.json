@@ -1,0 +1,148 @@
+{
+  "sha": "269b7effd906d6b22071971b7f5b4cb344403b86",
+  "node_id": "C_kwDOCppwedoAKDI2OWI3ZWZmZDkwNmQ2YjIyMDcxOTcxYjdmNWI0Y2IzNDQ0MDNiODY",
+  "commit": {
+    "author": {
+      "name": "Hao Wu",
+      "email": "wuhaotsh@google.com",
+      "date": "2025-02-19T18:45:53Z"
+    },
+    "committer": {
+      "name": "Peter Maydell",
+      "email": "peter.maydell@linaro.org",
+      "date": "2025-02-20T14:20:29Z"
+    },
+    "message": "pc-bios: Add NPCM8XX vBootrom\n\nThe bootrom is a minimal bootrom used to load an NPCM8XX image.\nThe source code is located in the same repo as the NPCM7XX one:\ngithub.com/google/vbootrom/tree/master/npcm8xx.\n\nReviewed-by: Peter Maydell <peter.maydell@linaro.org>\nSigned-off-by: Hao Wu <wuhaotsh@google.com>\nMessage-id: 20250219184609.1839281-3-wuhaotsh@google.com\nSigned-off-by: Peter Maydell <peter.maydell@linaro.org>",
+    "tree": {
+      "sha": "c28db73f032cc5facf242357dbd90989fa8f1521",
+      "url": "https://api.github.com/repos/utmapp/qemu/git/trees/c28db73f032cc5facf242357dbd90989fa8f1521"
+    },
+    "url": "https://api.github.com/repos/utmapp/qemu/git/commits/269b7effd906d6b22071971b7f5b4cb344403b86",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/utmapp/qemu/commits/269b7effd906d6b22071971b7f5b4cb344403b86",
+  "html_url": "https://github.com/utmapp/qemu/commit/269b7effd906d6b22071971b7f5b4cb344403b86",
+  "comments_url": "https://api.github.com/repos/utmapp/qemu/commits/269b7effd906d6b22071971b7f5b4cb344403b86/comments",
+  "author": {
+    "login": "haowu4682",
+    "id": 5589683,
+    "node_id": "MDQ6VXNlcjU1ODk2ODM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5589683?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/haowu4682",
+    "html_url": "https://github.com/haowu4682",
+    "followers_url": "https://api.github.com/users/haowu4682/followers",
+    "following_url": "https://api.github.com/users/haowu4682/following{/other_user}",
+    "gists_url": "https://api.github.com/users/haowu4682/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/haowu4682/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/haowu4682/subscriptions",
+    "organizations_url": "https://api.github.com/users/haowu4682/orgs",
+    "repos_url": "https://api.github.com/users/haowu4682/repos",
+    "events_url": "https://api.github.com/users/haowu4682/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/haowu4682/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pm215",
+    "id": 1682716,
+    "node_id": "MDQ6VXNlcjE2ODI3MTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1682716?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pm215",
+    "html_url": "https://github.com/pm215",
+    "followers_url": "https://api.github.com/users/pm215/followers",
+    "following_url": "https://api.github.com/users/pm215/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pm215/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pm215/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pm215/subscriptions",
+    "organizations_url": "https://api.github.com/users/pm215/orgs",
+    "repos_url": "https://api.github.com/users/pm215/repos",
+    "events_url": "https://api.github.com/users/pm215/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pm215/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "70ce076fa6dff60585c229a4b641b13e64bf03cf",
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/70ce076fa6dff60585c229a4b641b13e64bf03cf",
+      "html_url": "https://github.com/utmapp/qemu/commit/70ce076fa6dff60585c229a4b641b13e64bf03cf"
+    }
+  ],
+  "stats": {
+    "total": 16,
+    "additions": 12,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "e145017d5331552c27d58a43e082c2d83c4816ee",
+      "filename": "MAINTAINERS",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/utmapp/qemu/blob/269b7effd906d6b22071971b7f5b4cb344403b86/MAINTAINERS",
+      "raw_url": "https://github.com/utmapp/qemu/raw/269b7effd906d6b22071971b7f5b4cb344403b86/MAINTAINERS",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/MAINTAINERS?ref=269b7effd906d6b22071971b7f5b4cb344403b86",
+      "patch": "@@ -878,6 +878,7 @@ F: include/hw/*/npcm*\n F: tests/qtest/npcm*\n F: tests/qtest/adm1266-test.c\n F: pc-bios/npcm7xx_bootrom.bin\n+F: pc-bios/npcm8xx_bootrom.bin\n F: roms/vbootrom\n F: docs/system/arm/nuvoton.rst\n F: tests/functional/test_arm_quanta_gsj.py"
+    },
+    {
+      "sha": "700dcaab523f0dc46a39102a5ca270969305562e",
+      "filename": "pc-bios/README",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/utmapp/qemu/blob/269b7effd906d6b22071971b7f5b4cb344403b86/pc-bios%2FREADME",
+      "raw_url": "https://github.com/utmapp/qemu/raw/269b7effd906d6b22071971b7f5b4cb344403b86/pc-bios%2FREADME",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2FREADME?ref=269b7effd906d6b22071971b7f5b4cb344403b86",
+      "patch": "@@ -70,10 +70,10 @@\n   source code also contains code reused from other projects described here:\n   https://github.com/riscv/opensbi/blob/master/ThirdPartyNotices.md.\n \n-- npcm7xx_bootrom.bin is a simplified, free (Apache 2.0) boot ROM for Nuvoton\n-  NPCM7xx BMC devices. It currently implements the bare minimum to load, parse,\n-  initialize and run boot images stored in SPI flash, but may grow more\n-  features over time as needed. The source code is available at:\n+- npcm{7xx,8xx}_bootrom.bin is a simplified, free (Apache 2.0) boot ROM for\n+  Nuvoton NPCM7xx/8xx BMC devices. It currently implements the bare minimum to\n+  load, parse, initialize and run boot images stored in SPI flash, but may grow\n+  more features over time as needed. The source code is available at:\n   https://github.com/google/vbootrom\n \n - hppa-firmware.img (32-bit) and hppa-firmware64.img (64-bit) are firmware"
+    },
+    {
+      "sha": "51e95cc903160df045397407fa46bae97158c873",
+      "filename": "pc-bios/meson.build",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/utmapp/qemu/blob/269b7effd906d6b22071971b7f5b4cb344403b86/pc-bios%2Fmeson.build",
+      "raw_url": "https://github.com/utmapp/qemu/raw/269b7effd906d6b22071971b7f5b4cb344403b86/pc-bios%2Fmeson.build",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fmeson.build?ref=269b7effd906d6b22071971b7f5b4cb344403b86",
+      "patch": "@@ -80,6 +80,7 @@ blobs = [\n   'opensbi-riscv32-generic-fw_dynamic.bin',\n   'opensbi-riscv64-generic-fw_dynamic.bin',\n   'npcm7xx_bootrom.bin',\n+  'npcm8xx_bootrom.bin',\n   'vof.bin',\n   'vof-nvram.bin',\n ]"
+    },
+    {
+      "sha": "6370d6475635c4d445d2b927311edcd591949c82",
+      "filename": "pc-bios/npcm8xx_bootrom.bin",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/269b7effd906d6b22071971b7f5b4cb344403b86/pc-bios%2Fnpcm8xx_bootrom.bin",
+      "raw_url": "https://github.com/utmapp/qemu/raw/269b7effd906d6b22071971b7f5b4cb344403b86/pc-bios%2Fnpcm8xx_bootrom.bin",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fnpcm8xx_bootrom.bin?ref=269b7effd906d6b22071971b7f5b4cb344403b86"
+    },
+    {
+      "sha": "beff58d9d50c5d2098e6fbe2c754ca2c62d638f4",
+      "filename": "roms/Makefile",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/utmapp/qemu/blob/269b7effd906d6b22071971b7f5b4cb344403b86/roms%2FMakefile",
+      "raw_url": "https://github.com/utmapp/qemu/raw/269b7effd906d6b22071971b7f5b4cb344403b86/roms%2FMakefile",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/roms%2FMakefile?ref=269b7effd906d6b22071971b7f5b4cb344403b86",
+      "patch": "@@ -34,6 +34,7 @@ find-cross-gcc = $(firstword $(wildcard $(patsubst %ld,%gcc,$(call find-cross-ld\n # finally strip off path + toolname so we get the prefix\n find-cross-prefix = $(subst gcc,,$(notdir $(call find-cross-gcc,$(1))))\n \n+aarch64_cross_prefix := $(call find-cross-prefix,aarch64)\n arm_cross_prefix := $(call find-cross-prefix,arm)\n powerpc64_cross_prefix := $(call find-cross-prefix,powerpc64)\n powerpc_cross_prefix := $(call find-cross-prefix,powerpc)\n@@ -66,6 +67,7 @@ default help:\n \t@echo \"  u-boot.e500        -- update u-boot.e500\"\n \t@echo \"  u-boot.sam460      -- update u-boot.sam460\"\n \t@echo \"  npcm7xx_bootrom    -- update vbootrom for npcm7xx\"\n+\t@echo \"  npcm8xx_bootrom    -- update vbootrom for npcm8xx\"\n \t@echo \"  efi                -- update UEFI (edk2) platform firmware\"\n \t@echo \"  opensbi32-generic  -- update OpenSBI for 32-bit generic machine\"\n \t@echo \"  opensbi64-generic  -- update OpenSBI for 64-bit generic machine\"\n@@ -194,6 +196,10 @@ npcm7xx_bootrom:\n \t$(MAKE) -C vbootrom CROSS_COMPILE=$(arm_cross_prefix)\n \tcp vbootrom/npcm7xx_bootrom.bin ../pc-bios/npcm7xx_bootrom.bin\n \n+npcm8xx_bootrom:\n+\t$(MAKE) -C vbootrom CROSS_COMPILE=$(aarch64_cross_prefix)\n+\tcp vbootrom/npcm8xx_bootrom.bin ../pc-bios/npcm8xx_bootrom.bin\n+\n hppa-firmware:\n \t$(MAKE) -C seabios-hppa parisc\n \tcp seabios-hppa/out/hppa-firmware.img      ../pc-bios/"
+    }
+  ]
+}

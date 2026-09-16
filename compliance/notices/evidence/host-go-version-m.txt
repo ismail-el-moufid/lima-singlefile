@@ -1,0 +1,63 @@
+output/limactl: go1.22.12
+	path	github.com/lima-vm/lima/cmd/limactl
+	mod	github.com/lima-vm/lima	(devel)	
+	dep	github.com/AlecAivazis/survey/v2	v2.3.6	h1:NvTuVHISgTHEHeBFqt6BHOe4Ny/NwGZr7w+F8S9ziyw=
+	dep	github.com/VividCortex/ewma	v1.1.1	h1:MnEK4VOv6n0RSY4vtRe3h11qjxL3+t0B8yOL8iMXdcM=
+	dep	github.com/alessio/shellescape	v1.4.1	h1:V7yhSDDn8LP4lc4jS8pFkt0zCnzVJlG5JXy9BVKJUX0=
+	dep	github.com/cheggaaa/pb/v3	v3.1.0	h1:3uouEsl32RL7gTiQsuaXD4Bzbfl5tGztXGUvXbs4O04=
+	dep	github.com/containerd/containerd	v1.6.9	h1:IN/r8DUes/B5lEGTNfIiUkfZBtIQJGx2ai703dV6lRA=
+	dep	github.com/containerd/continuity	v0.3.0	h1:nisirsYROK15TAMVukJOUyGJjz4BNQJBVsNvAXZJ/eg=
+	dep	github.com/coreos/go-semver	v0.3.0	h1:wkHLiw0WNATZnSG7epLsujiMCgPAc9xhjJ4tgnAxmfM=
+	dep	github.com/digitalocean/go-libvirt	v0.0.0-20201209184759-e2a69bcd5bd1	h1:j6vGflaQ2T7yOWqVgPdiRF73j/U2Zmpbbzab8nyDCRQ=
+	dep	github.com/digitalocean/go-qemu	v0.0.0-20210326154740-ac9e0b687001	h1:WAg57gnaAWWjMAELcwHjc2xy0PoXQ5G+vn3+XS6s1jI=
+	dep	github.com/diskfs/go-diskfs	v1.2.0	h1:Ow4xorEDw1VNYKbC+SA/qQNwi5gWIwdKUxmUcLFST24=
+	dep	github.com/docker/go-units	v0.5.0	h1:69rxXcBk27SvSaaxTtLh/8llcHD8vYHT7WSdRZ/jvr4=
+	dep	github.com/fatih/color	v1.13.0	h1:8LOYc1KYPPmyKMuN8QV2DNRWNbLo6LZ0iLs8+mlH53w=
+	dep	github.com/fsnotify/fsnotify	v1.5.1	h1:mZcQUHVQUQWoPXXtuf9yuEXKudkV2sx1E06UadKWpgI=
+	dep	github.com/goccy/go-yaml	v1.9.5	h1:Eh/+3uk9kLxG4koCX6lRMAPS1OaMSAi+FJcya0INdB0=
+	dep	github.com/golang/protobuf	v1.5.2	h1:ROPKBNFfQgOUMifHyP+KYbvpjbdoFNs+aK7DXlji0Tw=
+	dep	github.com/gorilla/mux	v1.8.0	h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
+	dep	github.com/hashicorp/errwrap	v1.1.0	h1:OxrOeh75EUXMY8TBjag2fzXGZ40LB6IKw45YeGUDY2I=
+	dep	github.com/hashicorp/go-multierror	v1.1.1	h1:H5DkEtf6CXdFp0N0Em5UCwQpXMWke8IA0+lD48awMYo=
+	dep	github.com/kballard/go-shellquote	v0.0.0-20180428030007-95032a82bc51	h1:Z9n2FFNUXsshfwJMBgNA0RU6/i7WVaAegv3PtuIHPMs=
+	dep	github.com/kr/fs	v0.1.0	h1:Jskdu9ieNAYnjxsi0LbQp1ulIKZV1LAFgK1tWhpZgl8=
+	dep	github.com/lima-vm/sshocker	v0.3.0	h1:4W7AFfwqkhPwBIOtwfnxxggdS3/bs6JkTYT1RfrXwfQ=
+	dep	github.com/mattn/go-colorable	v0.1.12	h1:jF+Du6AlPIjs2BiUiQlKOX0rt3SujHxPnksPKZbaA40=
+	dep	github.com/mattn/go-isatty	v0.0.16	h1:bq3VjFmv/sOjHtdEhmkEV4x1AJtvUvOJ2PFAZ5+peKQ=
+	dep	github.com/mattn/go-runewidth	v0.0.12	h1:Y41i/hVW3Pgwr8gV+J23B9YEY0zxjptBuCWEaxmAOow=
+	dep	github.com/mattn/go-shellwords	v1.0.12	h1:M2zGm7EW6UQJvDeQxo4T51eKPurbeFbe8WtebGE2xrk=
+	dep	github.com/mgutz/ansi	v0.0.0-20170206155736-9520e82c474b	h1:j7+1HpAFS1zy5+Q4qx1fWh90gTKwiN4QCGoY9TWyyO4=
+	dep	github.com/miekg/dns	v1.1.50	h1:DQUfb9uc6smULcREF09Uc+/Gd46YWqJd5DbpPE9xkcA=
+	dep	github.com/norouter/norouter	v0.6.4	h1:a4XBFacd5tZmdP2xgXV8ojsuCKYdJHGNt/X3YHdHhH8=
+	dep	github.com/nxadm/tail	v1.4.8	h1:nPr65rt6Y5JFSKQO7qToXr7pePgD6Gwiw05lkbyAQTE=
+	dep	github.com/opencontainers/go-digest	v1.0.0	h1:apOUWs51W5PlhuyGyz9FCeeBIOUDA/6nW8Oi/yOhh5U=
+	dep	github.com/pkg/sftp	v1.13.4	h1:Lb0RYJCmgUcBgZosfoi9Y9sbl6+LJgOIgk/2Y4YjMFg=
+	dep	github.com/rivo/uniseg	v0.2.0	h1:S1pD9weZBuJdFmowNwbpi7BJ8TNftyUImj/0WQi72jY=
+	dep	github.com/sirupsen/logrus	v1.9.0	h1:trlNQbNUG3OdDrDil03MCb1H2o9nJ1x4/5LYw7byDE0=
+	dep	github.com/spf13/cobra	v1.6.1	h1:o94oiPyS4KD1mPy2fmcYYHHfCxLqYjJOhGsCHFZtEzA=
+	dep	github.com/spf13/pflag	v1.0.5	h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA=
+	dep	github.com/xorcare/pointer	v1.2.1	h1:iJKGuxJcv37Ikp3DE/w9y5qYUMlRL+jJS5GekvbVUVc=
+	dep	golang.org/x/crypto	v0.0.0-20220315160706-3147a52a75dd	h1:XcWmESyNjXJMLahc3mqVQJcgSTDxFxhETVlfk9uGc38=
+	dep	golang.org/x/net	v0.0.0-20220722155237-a158d28d115b	h1:PxfKdU9lEEDYjdIzOtC4qFWgkU2rGHdKlKowJSMN9h0=
+	dep	golang.org/x/sync	v0.0.0-20210220032951-036812b2e83c	h1:5KslGYwFpkhGh+Q16bwMP3cOontH8FOep7tGV86Y7SQ=
+	dep	golang.org/x/sys	v0.0.0-20220811171246-fbc7d0a398ab	h1:2QkjZIsXupsJbJIdSjjUOgWK3aEtzyuh2mPt3l/CkeU=
+	dep	golang.org/x/term	v0.0.0-20210927222741-03fcf44c2211	h1:JGgROgKl9N8DuW20oFS5gxc+lE67/N3FcwmBPMe7ArY=
+	dep	golang.org/x/text	v0.3.7	h1:olpwvP2KacW1ZWvsR7uQhoyTYvKAupfQrRGBFM352Gk=
+	dep	golang.org/x/xerrors	v0.0.0-20200804184101-5ec99f83aff1	h1:go1bK/D/BFZV2I8cIQd1NKEZ+0owSTG1fDTci4IqFcE=
+	dep	google.golang.org/genproto	v0.0.0-20220502173005-c8bf987b8c21	h1:hrbNEivu7Zn1pxvHk6MBrq9iE22woVILTHqexqBxe6I=
+	dep	google.golang.org/grpc	v1.47.0	h1:9n77onPX5F3qfFCqjy9dhn8PbNQsIKeVU04J9G7umt8=
+	dep	google.golang.org/protobuf	v1.28.0	h1:w43yiav+6bVFTBQFZX0r7ipe9JQ1QsbMgHwbBziscLw=
+	dep	gopkg.in/djherbis/times.v1	v1.2.0	h1:UCvDKl1L/fmBygl2Y7hubXCnY7t4Yj46ZrBFNUipFbM=
+	dep	gopkg.in/tomb.v1	v1.0.0-20141024135613-dd632973f1e7	h1:uRGJdciOHaEIrze2W8Q3AKkepLTh2hOroT7a+7czfdQ=
+	build	-buildmode=exe
+	build	-compiler=gc
+	build	-ldflags="-linkmode=external -X github.com/lima-vm/lima/pkg/version.Version=0.13.0-singlefile"
+	build	DefaultGODEBUG=httplaxcontentlength=1,httpmuxgo121=1,panicnil=1,tls10server=1,tlsrsakex=1,tlsunsafeekm=1
+	build	CGO_ENABLED=1
+	build	CGO_CFLAGS="-O2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mmacosx-version-min=10.15"
+	build	CGO_CPPFLAGS=-I/goinfre/isel-mou/lima-build/lima-singlefile/prefix/include
+	build	CGO_CXXFLAGS=
+	build	CGO_LDFLAGS="-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mmacosx-version-min=10.15 -B/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin -L/goinfre/isel-mou/lima-build/lima-singlefile/prefix/lib"
+	build	GOARCH=amd64
+	build	GOOS=darwin
+	build	GOAMD64=v1

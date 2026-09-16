@@ -2,15 +2,27 @@
 
 **One executable for Lima, QEMU, and their runtime assets—without unpacking a dependency bundle.**
 
-An experimental, headless build for **Intel macOS Catalina** that links Lima and
-QEMU into a single `limactl` executable. Firmware, templates, and the Linux guest
-agent are embedded; third-party native libraries are statically linked. VM disks
-and instance state remain ordinary files.
+**Intel macOS Catalina, with 42 school Macs in mind.** This experimental, headless build
+links Lima and QEMU into a single `limactl` executable. Firmware, templates, and
+the Linux guest agent are embedded; third-party native libraries are statically
+linked. VM disks and instance state remain ordinary files.
 
-> **Status:** locally built and boot-tested on macOS 10.15.7 (x86_64). This is not
-> a signed/notarized release. The build downloads its pinned dependencies. See
-> [building from source](#building-from-source) and [licensing](#licensing) before
-> building or redistributing it.
+> **Experimental:** the local build was boot-tested on macOS Catalina 10.15.7
+> (x86_64). CI uses macOS 15 Intel and a modern SDK; its smoke checks do not establish
+> Catalina compatibility or VM/HVF support. Executables are not signed or notarized.
+
+## Contents
+
+- [Quick start](#quick-start)
+- [Storage](#storage)
+- [How it works](#how-it-works)
+- [Building from source](#building-from-source)
+- [Validation](#validation)
+- [CI and releases](#ci-and-releases)
+- [Repository layout](#repository-layout)
+- [Limitations](#limitations)
+- [Licensing](#licensing)
+- [Contributing](CONTRIBUTING.md)
 
 ## Features
 
@@ -23,8 +35,32 @@ and instance state remain ordinary files.
 
 ## Quick start
 
-After building, the executable is at `output/limactl`. Copy **only that file** to
-a directory of your choice, then run:
+### Get the executable
+
+For CI-built artifacts, check the repository's
+[GitHub releases](https://github.com/ismail-el-moufid/lima-singlefile-ci/releases).
+Successful `v*` tag builds publish experimental prereleases, not stable/latest
+releases. If no suitable artifact is available, [build from source](#building-from-source).
+
+Download `limactl-macos-x86_64` and `SHA256SUMS` from the **same release** into an
+empty directory. From that directory, verify the checksum before making it executable:
+
+```sh
+shasum -a 256 -c SHA256SUMS
+chmod +x limactl-macos-x86_64
+mv limactl-macos-x86_64 limactl
+```
+
+Stop if checksum verification fails. Checksums detect mismatched or corrupted
+assets; they are not a signature.
+
+For a local build, the executable is at `output/limactl`. Copy **only that file**
+to a directory of your choice. Neither route needs an installed QEMU or a
+third-party runtime bundle.
+
+### Start a VM
+
+From the directory containing `limactl`:
 
 ```sh
 ./limactl --version
@@ -112,6 +148,10 @@ commands below describe the supported workflow and the latest verified executabl
 | `build-contract.json` | Worker, firmware, platform, and storage contract |
 | `tests/validate_*.py` | Native, interactive-prompt, and VM boot validators |
 | `downloads/*.json` | Download provenance metadata |
+| `.github/workflows/build.yml` | Intel macOS CI checks and tag-triggered prereleases |
+| `compliance/`, `RELEASE-REVIEW.md` | License evidence, notices, source-delivery materials, and unresolved findings |
+| `LICENSE-ORIGINAL.md` | License scope for original project contributions only |
+| `CONTRIBUTING.md` | Change, validation, and release checklist |
 
 Build directories, installed dependency prefixes, downloaded images/archives,
 logs, final binaries, generated link flags, and disposable test state are covered
@@ -229,7 +269,10 @@ archive checksum is in [download metadata](downloads/libslirp.json).
 
 ## Validation
 
-The rebuilt macOS 10.15.7 executable was validated on **2026-09-15**:
+### Historical local validation
+
+The following results were recorded for the rebuilt macOS 10.15.7 executable on
+**2026-09-15**. They are not results for the current working tree or a CI release:
 
 | Coverage | Result |
 | --- | --- |
@@ -253,11 +296,18 @@ process-exit orders, timeout, and cancellation.
 The tested executable is **81,235,004 bytes (about 77.5 MiB)**. Its checksum is in
 `output/limactl.sha256`; artifact size and hashes may change when rebuilt.
 
-Test the bootstrap and source-preparation safeguards without network access:
+### Run checks locally
+
+Run the offline unit suite, including bootstrap, source-preparation, and
+compliance-integrity checks, from the repository root:
 
 ```sh
 python3 -B -m unittest discover -s tests -p 'test_*.py' -v
 ```
+
+Integrity checks validate retained evidence against its recorded hashes. If a
+check reports a mismatch, investigate the changed input and its provenance rather
+than regenerating hashes merely to silence the failure.
 
 With a freshly built executable, run:
 
@@ -301,10 +351,11 @@ these local results as CI.
 - `.gitignore` prevents generated outputs from being added accidentally; it does
   not make every ignored file safe to delete or replace filesystem backups.
 
-## Experimental GitHub Actions build
+## CI and releases
 
-`.github/workflows/build.yml` runs on pushes and pull requests to `main`, or manually
-from the Actions tab. It explicitly selects **`macos-15-intel`** and Python 3.11;
+`.github/workflows/build.yml` runs on pushes and pull requests to `main`, pushes of
+`v*` tags, or manually from the Actions tab. It explicitly selects
+**`macos-15-intel`** and Python 3.11;
 `macos-latest` is not suitable because this build requires an Intel host.
 
 The workflow runs offline unit tests, builds with `LIMA_COMPILER=apple` so the
@@ -320,14 +371,24 @@ compatibility. The previously validated Catalina build and hardware-accelerated 
 checks remain separate. Each job is limited to two hours; private repositories
 consume the account's included or billable Actions minutes.
 
-Actions are pinned to commit SHAs, checkout credentials are not persisted, and the
-workflow has read-only repository permissions. Diagnostic logs are retained for
-seven days. It does **not** upload the executable, create releases, or change the
-licensing release hold.
+Actions are pinned to commit SHAs and checkout credentials are not persisted.
+The build job has `contents: write` permission to create releases. After all build
+and verification steps succeed, a `v*` tag push immediately publishes a GitHub
+prerelease (not a draft or the latest release) with `limactl-macos-x86_64` and
+`SHA256SUMS`. These assets come from that CI run, not the retained local executable.
+Branch pushes, pull requests, and manual runs do not publish releases. An existing
+release for the tag is not overwritten; release creation fails instead.
+Diagnostic logs are retained for seven days.
+
+Verify the downloaded assets with `shasum -a 256 -c SHA256SUMS`, then run
+`chmod +x limactl-macos-x86_64` before use. CI does not validate Catalina runtime
+compatibility or VM/HVF operation.
 
 ## Limitations
 
-- Tested only on Intel macOS Catalina 10.15.7, with x86_64 guests.
+- Local VM validation covers Intel macOS Catalina 10.15.7 with x86_64 guests;
+  CI on macOS 15 Intel runs non-VM smoke checks only. Apple Silicon is not supported
+  by this build workflow.
 - Headless: no GUI display stack, vmnet, or plugins.
 - Native-worker daemonization and memory preallocation are rejected.
 - Writable firmware and persistent UEFI VARS are not provided.
@@ -338,22 +399,14 @@ licensing release hold.
 
 ## Licensing
 
-This tree combines upstream projects with different licenses. See
-[Lima's license](src/lima/LICENSE), [QEMU's licensing information](src/qemu/LICENSE),
-[QEMU's COPYING](src/qemu/COPYING), and
-[libslirp's copyright notices](src/libslirp-9c744e1e52aa0d9646ed91d789d588696292c21e/COPYRIGHT).
-Embedded asset notices and provenance must also be preserved.
+[MIT covers original project contributions only](LICENSE-ORIGINAL.md).
+Third-party components retain their own licenses: [Lima](src/lima/LICENSE),
+[QEMU](src/qemu/LICENSE) ([COPYING](src/qemu/COPYING)), and
+[libslirp](src/libslirp-9c744e1e52aa0d9646ed91d789d588696292c21e/COPYRIGHT).
 
-`./limactl licenses` exposes Lima's license and asset notes; it does **not** replace
-all native-component notices or source obligations.
+`./limactl licenses` displays Lima's license and asset notes. Additional component
+notices, firmware provenance, and source-delivery materials are retained under
+[`compliance/`](compliance/).
 
-**Release hold:** the current executable links Apache-2.0 Lima with verified
-GPLv2-only QEMU code. The firmware corresponding-source/provenance package and
-component notice bundle are also incomplete. Source publication or a blanket
-license label does not resolve these issues; even the source export contains
-prebuilt firmware and a guest agent with distribution obligations.
-
-See the [licensing and corresponding-source review](RELEASE-REVIEW.md) for evidence,
-missing materials, and release gates. This is an engineering review, not legal
-clearance. There is no claim that the combined work is covered by Lima's Apache-2.0
-license, and redistribution has not been cleared.
+The [licensing and source inventory](RELEASE-REVIEW.md) documents the reviewed
+Apache-2.0/GPLv2-only combination and remaining notice and source-delivery gaps.

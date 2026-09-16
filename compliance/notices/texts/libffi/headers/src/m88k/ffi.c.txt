@@ -1,0 +1,44 @@
+/*
+ * Copyright (c) 2013 Miodrag Vallat.  <miod@openbsd.org>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining
+ * a copy of this software and associated documentation files (the
+ * ``Software''), to deal in the Software without restriction, including
+ * without limitation the rights to use, copy, modify, merge, publish,
+ * distribute, sublicense, and/or sell copies of the Software, and to
+ * permit persons to whom the Software is furnished to do so, subject to
+ * the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included
+ * in all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED ``AS IS'', WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+ * CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+/*
+ * m88k Foreign Function Interface
+ *
+ * This file attempts to provide all the FFI entry points which can reliably
+ * be implemented in C.
+ *
+ * Only OpenBSD/m88k is currently supported; other platforms (such as
+ * Motorola's SysV/m88k) could be supported with the following tweaks:
+ *
+ * - non-OpenBSD systems use an `outgoing parameter area' as part of the
+ *   88BCS calling convention, which is not supported under OpenBSD from
+ *   release 3.6 onwards.  Supporting it should be as easy as taking it
+ *   into account when adjusting the stack, in the assembly code.
+ *
+ * - the logic deciding whether a function argument gets passed through
+ *   registers, or on the stack, has changed several times in OpenBSD in
+ *   edge cases (especially for structs larger than 32 bytes being passed
+ *   by value). The code below attemps to match the logic used by the
+ *   system compiler of OpenBSD 5.3, i.e. gcc 3.3.6 with many m88k backend
+ *   fixes.
+ */

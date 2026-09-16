@@ -1,0 +1,90 @@
+/*
+ * Parsing KEY=VALUE,... strings
+ *
+ * Copyright (C) 2017 Red Hat Inc.
+ *
+ * Authors:
+ *  Markus Armbruster <armbru@redhat.com>,
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2 or later.
+ * See the COPYING file in the top-level directory.
+ */
+
+/*
+ * KEY=VALUE,... syntax:
+ *
+ *   key-vals     = [ key-val { ',' key-val } [ ',' ] ]
+ *   key-val      = key '=' val | help
+ *   key          = key-fragment { '.' key-fragment }
+ *   key-fragment = qapi-name | index
+ *   qapi-name    = '__' / [a-z0-9.-]+ / '_' / [A-Za-z][A-Za-z0-9_-]* /
+ *   index        = / [0-9]+ /
+ *   val          = { / [^,]+ / | ',,' }
+ *   help         = 'help' | '?'
+ *
+ * Semantics defined by reduction to JSON:
+ *
+ *   key-vals specifies a JSON object, i.e. a tree whose root is an
+ *   object, inner nodes other than the root are objects or arrays,
+ *   and leaves are strings.
+ *
+ *   Each key-val = key-fragment '.' ... '=' val specifies a path from
+ *   root to a leaf (left of '='), and the leaf's value (right of
+ *   '=').
+ *
+ *   A path from the root is defined recursively:
+ *       L '.' key-fragment is a child of the node denoted by path L
+ *       key-fragment is a child of the tree root
+ *   If key-fragment is numeric, the parent is an array and the child
+ *   is its key-fragment-th member, counting from zero.
+ *   Else, the parent is an object, and the child is its member named
+ *   key-fragment.
+ *
+ *   This constrains inner nodes to be either array or object.  The
+ *   constraints must be satisfiable.  Counter-example: a.b=1,a=2 is
+ *   not, because root.a must be an object to satisfy a.b=1 and a
+ *   string to satisfy a=2.
+ *
+ *   Array subscripts can occur in any order, but the set of
+ *   subscripts must not have gaps.  For instance, a.1=v is not okay,
+ *   because root.a[0] is missing.
+ *
+ *   If multiple key-val denote the same leaf, the last one determines
+ *   the value.
+ *
+ * Key-fragments must be valid QAPI names or consist only of decimal
+ * digits.
+ *
+ * The length of any key-fragment must be between 1 and 127.
+ *
+ * If any key-val is help, the object is to be treated as a help
+ * request.
+ *
+ * Design flaw: there is no way to denote an empty array or non-root
+ * object.  While interpreting "key absent" as empty seems natural
+ * (removing a key-val from the input string removes the member when
+ * there are more, so why not when it's the last), it doesn't work:
+ * "key absent" already means "optional object/array absent", which
+ * isn't the same as "empty object/array present".
+ *
+ * Design flaw: scalar values can only be strings; there is no way to
+ * denote numbers, true, false or null.  The special QObject input
+ * visitor returned by qobject_input_visitor_new_keyval() mostly hides
+ * this by automatically converting strings to the type the visitor
+ * expects.  Breaks down for type 'any', where the visitor's
+ * expectation isn't clear.  Code visiting 'any' needs to do the
+ * conversion itself, but only when using this keyval visitor.
+ * Awkward.  Note that we carefully restrict alternate types to avoid
+ * similar ambiguity.
+ *
+ * Alternative syntax for use with an implied key:
+ *
+ *   key-vals     = [ key-val-1st { ',' key-val } [ ',' ] ]
+ *   key-val-1st  = val-no-key | key-val
+ *   val-no-key   = / [^=,]+ / - help
+ *
+ * where val-no-key is syntactic sugar for implied-key=val-no-key.
+ *
+ * Note that you can't use the sugared form when the value contains
+ * '=' or ','.
+ */

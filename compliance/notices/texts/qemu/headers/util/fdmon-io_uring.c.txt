@@ -1,0 +1,44 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+/*
+ * Linux io_uring file descriptor monitoring
+ *
+ * The Linux io_uring API supports file descriptor monitoring with a few
+ * advantages over existing APIs like poll(2) and epoll(7):
+ *
+ * 1. Userspace polling of events is possible because the completion queue (cq
+ *    ring) is shared between the kernel and userspace.  This allows
+ *    applications that rely on userspace polling to also monitor file
+ *    descriptors in the same userspace polling loop.
+ *
+ * 2. Submission and completion is batched and done together in a single system
+ *    call.  This minimizes the number of system calls.
+ *
+ * 3. File descriptor monitoring is O(1) like epoll(7) so it scales better than
+ *    poll(2).
+ *
+ * 4. Nanosecond timeouts are supported so it requires fewer syscalls than
+ *    epoll(7).
+ *
+ * This code only monitors file descriptors and does not do asynchronous disk
+ * I/O.  Implementing disk I/O efficiently has other requirements and should
+ * use a separate io_uring so it does not make sense to unify the code.
+ *
+ * File descriptor monitoring is implemented using the following operations:
+ *
+ * 1. IORING_OP_POLL_ADD - adds a file descriptor to be monitored.
+ * 2. IORING_OP_POLL_REMOVE - removes a file descriptor being monitored.  When
+ *    the poll mask changes for a file descriptor it is first removed and then
+ *    re-added with the new poll mask, so this operation is also used as part
+ *    of modifying an existing monitored file descriptor.
+ * 3. IORING_OP_TIMEOUT - added every time a blocking syscall is made to wait
+ *    for events.  This operation self-cancels if another event completes
+ *    before the timeout.
+ *
+ * io_uring calls the submission queue the "sq ring" and the completion queue
+ * the "cq ring".  Ring entries are called "sqe" and "cqe", respectively.
+ *
+ * The code is structured so that sq/cq rings are only modified within
+ * fdmon_io_uring_wait().  Changes to AioHandlers are made by enqueuing them on
+ * ctx->submit_list so that fdmon_io_uring_wait() can submit IORING_OP_POLL_ADD
+ * and/or IORING_OP_POLL_REMOVE sqes for them.
+ */

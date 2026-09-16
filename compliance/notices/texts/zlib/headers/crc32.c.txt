@@ -1,0 +1,21 @@
+/* crc32.c -- compute the CRC-32 of a data stream
+ * Copyright (C) 1995-2022 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ *
+ * This interleaved implementation of a CRC makes use of pipelined multiple
+ * arithmetic-logic units, commonly found in modern CPU cores. It is due to
+ * Kadatch and Jenkins (2010). See doc/crc-doc.1.0.pdf in this distribution.
+ */
+
+/* @(#) $Id$ */
+
+/*
+  Note on the use of DYNAMIC_CRC_TABLE: there is no mutex or semaphore
+  protection on the static variables used to control the first-use generation
+  of the crc tables. Therefore, if you #define DYNAMIC_CRC_TABLE, you should
+  first call get_crc_table() to initialize the tables before allowing more than
+  one thread to use crc32().
+
+  MAKECRCH can be #defined to write out crc32.h. A main() routine is also
+  produced, so that this one source file can be compiled to an executable.
+ */

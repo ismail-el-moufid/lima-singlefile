@@ -1,0 +1,123 @@
+{
+  "sha": "b3a34eb90d8264bd73ccb25295b1a7e271a9029c",
+  "node_id": "C_kwDOCppwedoAKGIzYTM0ZWI5MGQ4MjY0YmQ3M2NjYjI1Mjk1YjFhN2UyNzFhOTAyOWM",
+  "commit": {
+    "author": {
+      "name": "Daniel Henrique Barboza",
+      "email": "dbarboza@ventanamicro.com",
+      "date": "2024-08-03T18:12:24Z"
+    },
+    "committer": {
+      "name": "Alistair Francis",
+      "email": "alistair.francis@wdc.com",
+      "date": "2024-08-06T05:01:01Z"
+    },
+    "message": "roms/opensbi: Update to v1.5.1\n\nA new minor version of OpenSBI was just released after our bump to\nOpenSBI 1.5. It contains significant bug fixes that it's worth doing\na new update for QEMU 9.1.\n\nSubmodule roms/opensbi 455de672dd..43cace6c36:\n  > lib: sbi: check result of pmp_get() in is_pmp_entry_mapped()\n  > lib: sbi: fwft: fix incorrect size passed to sbi_zalloc()\n  > lib: sbi: dbtr: fix potential NULL pointer dereferences\n  > include: Adjust Sscofpmf mhpmevent mask for upper 8 bits\n  > lib: sbi_hsm: Save/restore menvcfg only when it exists\n\nSigned-off-by: Daniel Henrique Barboza <dbarboza@ventanamicro.com>\nMessage-ID: <20240805120259.1705016-2-dbarboza@ventanamicro.com>\nReviewed-by: Alistair Francis <alistair.francis@wdc.com>\nSigned-off-by: Alistair Francis <alistair.francis@wdc.com>",
+    "tree": {
+      "sha": "dda36165b4ee70f93b337ddfb0236083e75cef24",
+      "url": "https://api.github.com/repos/utmapp/qemu/git/trees/dda36165b4ee70f93b337ddfb0236083e75cef24"
+    },
+    "url": "https://api.github.com/repos/utmapp/qemu/git/commits/b3a34eb90d8264bd73ccb25295b1a7e271a9029c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/utmapp/qemu/commits/b3a34eb90d8264bd73ccb25295b1a7e271a9029c",
+  "html_url": "https://github.com/utmapp/qemu/commit/b3a34eb90d8264bd73ccb25295b1a7e271a9029c",
+  "comments_url": "https://api.github.com/repos/utmapp/qemu/commits/b3a34eb90d8264bd73ccb25295b1a7e271a9029c/comments",
+  "author": {
+    "login": "danielhb",
+    "id": 866780,
+    "node_id": "MDQ6VXNlcjg2Njc4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/866780?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielhb",
+    "html_url": "https://github.com/danielhb",
+    "followers_url": "https://api.github.com/users/danielhb/followers",
+    "following_url": "https://api.github.com/users/danielhb/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielhb/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielhb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielhb/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielhb/orgs",
+    "repos_url": "https://api.github.com/users/danielhb/repos",
+    "events_url": "https://api.github.com/users/danielhb/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielhb/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "alistair23",
+    "id": 171674,
+    "node_id": "MDQ6VXNlcjE3MTY3NA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171674?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alistair23",
+    "html_url": "https://github.com/alistair23",
+    "followers_url": "https://api.github.com/users/alistair23/followers",
+    "following_url": "https://api.github.com/users/alistair23/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alistair23/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alistair23/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alistair23/subscriptions",
+    "organizations_url": "https://api.github.com/users/alistair23/orgs",
+    "repos_url": "https://api.github.com/users/alistair23/repos",
+    "events_url": "https://api.github.com/users/alistair23/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alistair23/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "73b0195416c4063c7cbf22b305ee6c48d6cd2d24",
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/73b0195416c4063c7cbf22b305ee6c48d6cd2d24",
+      "html_url": "https://github.com/utmapp/qemu/commit/73b0195416c4063c7cbf22b305ee6c48d6cd2d24"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "b2e740010b26835d28ba49a8041e7b28881b37d4",
+      "filename": "pc-bios/opensbi-riscv32-generic-fw_dynamic.bin",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/b3a34eb90d8264bd73ccb25295b1a7e271a9029c/pc-bios%2Fopensbi-riscv32-generic-fw_dynamic.bin",
+      "raw_url": "https://github.com/utmapp/qemu/raw/b3a34eb90d8264bd73ccb25295b1a7e271a9029c/pc-bios%2Fopensbi-riscv32-generic-fw_dynamic.bin",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fopensbi-riscv32-generic-fw_dynamic.bin?ref=b3a34eb90d8264bd73ccb25295b1a7e271a9029c"
+    },
+    {
+      "sha": "018b4731a710d13926559766a3433a4d058edacd",
+      "filename": "pc-bios/opensbi-riscv64-generic-fw_dynamic.bin",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/b3a34eb90d8264bd73ccb25295b1a7e271a9029c/pc-bios%2Fopensbi-riscv64-generic-fw_dynamic.bin",
+      "raw_url": "https://github.com/utmapp/qemu/raw/b3a34eb90d8264bd73ccb25295b1a7e271a9029c/pc-bios%2Fopensbi-riscv64-generic-fw_dynamic.bin",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fopensbi-riscv64-generic-fw_dynamic.bin?ref=b3a34eb90d8264bd73ccb25295b1a7e271a9029c"
+    },
+    {
+      "sha": "43cace6c3671e5172d0df0a8963e552bb04b7b20",
+      "filename": "roms/opensbi",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": null,
+      "raw_url": null,
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/roms%2Fopensbi?ref=b3a34eb90d8264bd73ccb25295b1a7e271a9029c",
+      "patch": "@@ -1 +1 @@\n-Subproject commit 455de672dd7c2aa1992df54dfb08dc11abbc1b1a\n+Subproject commit 43cace6c3671e5172d0df0a8963e552bb04b7b20"
+    }
+  ]
+}

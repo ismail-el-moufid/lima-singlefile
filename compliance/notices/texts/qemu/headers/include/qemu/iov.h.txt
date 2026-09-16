@@ -1,0 +1,13 @@
+/*
+ * Helpers for using (partial) iovecs.
+ *
+ * Copyright (c) 2024 Seagate Technology LLC and/or its Affiliates
+ * Copyright (C) 2010 Red Hat, Inc.
+ *
+ * Author(s):
+ *  Amit Shah <amit.shah@redhat.com>
+ *  Michael Tokarev <mjt@tls.msk.ru>
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2.  See
+ * the COPYING file in the top-level directory.
+ */

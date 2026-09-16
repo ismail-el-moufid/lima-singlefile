@@ -1,0 +1,71 @@
+/*************************************************
+*      Perl-Compatible Regular Expressions       *
+*************************************************/
+
+/* PCRE is a library of functions to support regular expressions whose syntax
+and semantics are as close as possible to those of the Perl 5 language (but see
+below for why this module is different).
+
+                       Written by Philip Hazel
+           Copyright (c) 1997-2012 University of Cambridge
+
+-----------------------------------------------------------------------------
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+
+    * Neither the name of the University of Cambridge nor the names of its
+      contributors may be used to endorse or promote products derived from
+      this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+-----------------------------------------------------------------------------
+*/
+
+/* This module contains the external function pcre_dfa_exec(), which is an
+alternative matching function that uses a sort of DFA algorithm (not a true
+FSM). This is NOT Perl-compatible, but it has advantages in certain
+applications. */
+
+
+/* NOTE ABOUT PERFORMANCE: A user of this function sent some code that improved
+the performance of his patterns greatly. I could not use it as it stood, as it
+was not thread safe, and made assumptions about pattern sizes. Also, it caused
+test 7 to loop, and test 9 to crash with a segfault.
+
+The issue is the check for duplicate states, which is done by a simple linear
+search up the state list. (Grep for "duplicate" below to find the code.) For
+many patterns, there will never be many states active at one time, so a simple
+linear search is fine. In patterns that have many active states, it might be a
+bottleneck. The suggested code used an indexing scheme to remember which states
+had previously been used for each character, and avoided the linear search when
+it knew there was no chance of a duplicate. This was implemented when adding
+states to the state lists.
+
+I wrote some thread-safe, not-limited code to try something similar at the time
+of checking for duplicates (instead of when adding states), using index vectors
+on the stack. It did give a 13% improvement with one specially constructed
+pattern for certain subject strings, but on other strings and on many of the
+simpler patterns in the test suite it did worse. The major problem, I think,
+was the extra time to initialize the index. This had to be done for each call
+of internal_dfa_exec(). (The supplied patch used a static vector, initialized
+only once - I suspect this was the cause of the problems with the tests.)
+
+Overall, I concluded that the gains in some cases did not outweigh the losses
+in others, so I abandoned this code. */

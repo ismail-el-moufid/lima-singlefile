@@ -3,6 +3,7 @@ name: Experimental Intel macOS build
 on:
   push:
     branches: [main]
+    tags: ['v*']
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -23,6 +24,8 @@ env:
 
 jobs:
   build:
+    permissions:
+      contents: write
     runs-on: macos-15-intel
     timeout-minutes: 120
     steps:
@@ -124,6 +127,44 @@ jobs:
           print("PASS: standalone CLI, native workers, image operations, and system dylibs")
           PY
           shasum -a 256 output/limactl | tee logs/ci-artifact-sha256.log
+
+      - name: Publish CI-built release
+        if: ${{ github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') }}
+        timeout-minutes: 5
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          python3 -B - <<'PY'
+          import hashlib
+          import os
+          from pathlib import Path
+          import shutil
+          import subprocess
+
+          binary = Path("output/limactl-macos-x86_64")
+          shutil.copy2("output/limactl", binary)
+          checksum = Path("output/SHA256SUMS")
+          checksum.write_text(
+              hashlib.sha256(binary.read_bytes()).hexdigest() + "  " + binary.name + "\n",
+              encoding="utf-8",
+          )
+          subprocess.run([
+              "gh", "release", "create", os.environ["RELEASE_TAG"],
+              str(binary), str(checksum), "--verify-tag", "--prerelease", "--latest=false",
+              "--title", os.environ["RELEASE_TAG"],
+              "--notes", (
+                  "Experimental Intel macOS single-file executable built and smoke-tested "
+                  "by GitHub Actions from this tag, not a locally supplied release binary. "
+                  "Download limactl-macos-x86_64 and SHA256SUMS; verify with "
+                  "`shasum -a 256 -c SHA256SUMS`, then `chmod +x limactl-macos-x86_64`. "
+                  "Catalina compatibility and VM/HVF operation were not validated by CI.\n\n"
+                  "Component licenses, notices, and source-delivery evidence are documented "
+                  "in RELEASE-REVIEW.md and compliance/ at this tag."
+              ),
+          ], check=True, timeout=240)
+          PY
 
       - name: Retain diagnostic logs only
         if: ${{ always() }}

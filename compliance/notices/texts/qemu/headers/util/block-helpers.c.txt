@@ -1,0 +1,9 @@
+/*
+ * Block utility functions
+ *
+ * Copyright IBM, Corp. 2011
+ * Copyright (c) 2020 Coiby Xu <coiby.xu@gmail.com>
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2 or later.
+ * See the COPYING file in the top-level directory.
+ */

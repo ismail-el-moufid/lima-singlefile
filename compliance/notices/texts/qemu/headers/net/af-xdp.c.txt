@@ -1,0 +1,11 @@
+/*
+ * AF_XDP network backend.
+ *
+ * Copyright (c) 2023 Red Hat, Inc.
+ *
+ * Authors:
+ *  Ilya Maximets <i.maximets@ovn.org>
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2 or later.
+ * See the COPYING file in the top-level directory.
+ */

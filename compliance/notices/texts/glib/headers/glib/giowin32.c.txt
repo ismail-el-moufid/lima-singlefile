@@ -1,0 +1,66 @@
+/* GLIB - Library of useful routines for C programming
+ * Copyright (C) 1995-1997  Peter Mattis, Spencer Kimball and Josh MacDonald
+ *
+ * giowin32.c: IO Channels for Win32.
+ * Copyright 1998 Owen Taylor and Tor Lillqvist
+ * Copyright 1999-2000 Tor Lillqvist and Craig Setera
+ * Copyright 2001-2003 Andrew Lanoix
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*
+ * Modified by the GLib Team and others 1997-2000.  See the AUTHORS
+ * file for a list of people on the GLib Team.  See the ChangeLog
+ * files for a list of changes.  These files are distributed with
+ * GLib at ftp://ftp.gtk.org/pub/gtk/.
+ */
+
+/*
+ * Bugs that are related to the code in this file:
+ *
+ * Bug 137968 - Sometimes a GIOFunc on Win32 is called with zero condition
+ * http://bugzilla.gnome.org/show_bug.cgi?id=137968
+ *
+ * Bug 324234 - Using g_io_add_watch_full() to wait for connect() to return on a non-blocking socket returns prematurely
+ * http://bugzilla.gnome.org/show_bug.cgi?id=324234
+ *
+ * Bug 331214 - g_io_channel async socket io stalls
+ * http://bugzilla.gnome.org/show_bug.cgi?id=331214
+ *
+ * Bug 338943 - Multiple watches on the same socket
+ * http://bugzilla.gnome.org/show_bug.cgi?id=338943
+ *
+ * Bug 357674 - 2 serious bugs in giowin32.c making glib iochannels useless
+ * http://bugzilla.gnome.org/show_bug.cgi?id=357674
+ *
+ * Bug 425156 - GIOChannel deadlocks on a win32 socket
+ * http://bugzilla.gnome.org/show_bug.cgi?id=425156
+ *
+ * Bug 468910 - giofunc condition=0
+ * http://bugzilla.gnome.org/show_bug.cgi?id=468910
+ *
+ * Bug 500246 - Bug fixes for giowin32
+ * http://bugzilla.gnome.org/show_bug.cgi?id=500246
+ *
+ * Bug 548278 - Async GETs connections are always terminated unexpectedly on windows
+ * http://bugzilla.gnome.org/show_bug.cgi?id=548278
+ *
+ * Bug 548536 - giowin32 problem when adding and removing watches
+ * http://bugzilla.gnome.org/show_bug.cgi?id=548536
+ *
+ * When fixing bugs related to the code in this file, either the above
+ * bugs or others, make sure that the test programs attached to the
+ * above bugs continue to work.
+ */

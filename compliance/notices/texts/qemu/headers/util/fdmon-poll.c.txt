@@ -1,0 +1,6 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+/*
+ * poll(2) file descriptor monitoring
+ *
+ * Uses ppoll(2) when available, g_poll() otherwise.
+ */

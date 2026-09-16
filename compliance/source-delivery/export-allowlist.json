@@ -1,0 +1,2721 @@
+{
+  "additions": [
+    {
+      "path": "compliance/source-delivery/README.md",
+      "sha256": "61f0e5f70884a9ddb1926c358ab7d591c2823ba65c471539e8e12e4ac5d39040",
+      "size": 17349
+    },
+    {
+      "path": "compliance/source-delivery/acquisition.json",
+      "sha256": "1e1e552ad7247c62afdfe60fb4bfd98b3aae12cf263f6e9f79051219d0cbfcf9",
+      "size": 260292
+    },
+    {
+      "path": "compliance/source-delivery/archives/berkeley-softfloat-3-b64af41c3276f97f0e181920400ee056b9c88037.tar.gz",
+      "sha256": "faae889814ea6a292f7ca03d9b36e6c7e95bab2a64777804883cc822b8d48757",
+      "size": 148741
+    },
+    {
+      "path": "compliance/source-delivery/archives/berkeley-testfloat-3-e7af9751d9f9fd3b47911f51a5cfd08af256a9ab.tar.gz",
+      "sha256": "e7a09d51dc7e96cb8422c919c85fc3833d4f788567638c9162ef5cd7db59b1df",
+      "size": 139308
+    },
+    {
+      "path": "compliance/source-delivery/archives/glib-2.66.8.tar.xz",
+      "sha256": "97bc87dd91365589af5cbbfea2574833aea7a1b71840fd365ecd2852c76b9c8b",
+      "size": 4845548
+    },
+    {
+      "path": "compliance/source-delivery/archives/go1.19.2.src.tar.gz",
+      "sha256": "2ce930d70a931de660fdaf271d70192793b1b240272645bf0275779f6704df6b",
+      "size": 26534465
+    },
+    {
+      "path": "compliance/source-delivery/archives/go1.22.12-source-subset.tar.gz",
+      "sha256": "28e5a981ac69d28d4b4d6f6430a046298e0024e32ded6e098872b1a4c0dcbf79",
+      "size": 23792562
+    },
+    {
+      "path": "compliance/source-delivery/archives/keycodemapdb-f5772a62ec52591ff6870b7e8ef32482371f22c6.tar.gz",
+      "sha256": "d014b53382dbb17b8196ad12f50de7f20d0ef1b9f7d54b0be51a6cbb14209195",
+      "size": 29580
+    },
+    {
+      "path": "compliance/source-delivery/archives/libffi-3.4.6.tar.gz",
+      "sha256": "b0dea9df23c863a7a50e825440f3ebffabd65df1497108e5d437747843895a4e",
+      "size": 1391684
+    },
+    {
+      "path": "compliance/source-delivery/archives/libslirp-9c744e1e52aa0d9646ed91d789d588696292c21e.tar.gz",
+      "sha256": "7c7928eacaad5e5436bc5b1ac799eb0f5dd93b996c7773852a77ebacf800fdef",
+      "size": 173451
+    },
+    {
+      "path": "compliance/source-delivery/archives/lima-v0.13.0.tar.gz",
+      "sha256": "2df48d219bd8f67a3d7cfe43770f768aeb20a1b2242aaba18c58d441d5bd0d0e",
+      "size": 304053
+    },
+    {
+      "path": "compliance/source-delivery/archives/meson-1.5.0-py3-none-any.whl",
+      "sha256": "52b34f4903b882df52ad0d533146d4b992c018ea77399f825579737672ae7b20",
+      "size": 959846
+    },
+    {
+      "path": "compliance/source-delivery/archives/ninja-1.13.2.tar.gz",
+      "sha256": "974d6b2f4eeefa25625d34da3cb36bdcebe7fbce40f4c16ac0835fd1c0cbae17",
+      "size": 292385
+    },
+    {
+      "path": "compliance/source-delivery/archives/packaging-24.2-py3-none-any.whl",
+      "sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759",
+      "size": 65451
+    },
+    {
+      "path": "compliance/source-delivery/archives/pkgconf-2.3.0.tar.xz",
+      "sha256": "3a9080ac51d03615e7c1910a0a2a8df08424892b5f13b0628a204d3fcce0ea8b",
+      "size": 316160
+    },
+    {
+      "path": "compliance/source-delivery/archives/proxy-libintl-0.1.tar.gz",
+      "sha256": "202d90855943091b11ac91863ff5884f0eaf80318a32dc8504fcfdafc65992ed",
+      "size": 12856
+    },
+    {
+      "path": "compliance/source-delivery/archives/pycotap-1.3.1-py3-none-any.whl",
+      "sha256": "1c3a25b3ff89e48f4e00f1f71dbbc1642b4f65c65d416524d07e73492fff25ea",
+      "size": 5119
+    },
+    {
+      "path": "compliance/source-delivery/archives/qemu-v10.0.2-utm.tar.gz",
+      "sha256": "dbeaa6019cc3506a51805d1b7966ff530fbfd72e872ca75387a21bbab07d8644",
+      "size": 37113579
+    },
+    {
+      "path": "compliance/source-delivery/archives/tomli-2.2.1-py3-none-any.whl",
+      "sha256": "cb55c73c5f4408779d0cf3eef9f762b9c9f147a77de7b258bef0a5628adc85cc",
+      "size": 14257
+    },
+    {
+      "path": "compliance/source-delivery/archives/zlib-1.3.1.tar.gz",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "size": 1512791
+    },
+    {
+      "path": "compliance/source-delivery/go1.22.12-members.json",
+      "sha256": "6ae90efd08b99882c229cc20c46410b38394474d2900121cff95b7f467604716",
+      "size": 2471276
+    },
+    {
+      "path": "compliance/source-delivery/manifest.json",
+      "sha256": "ba484146cae7e8971bb2c1979724d1cf515e57175091fb98b0966aa9470f28f2",
+      "size": 95851
+    },
+    {
+      "path": "compliance/source-delivery/modules/4d63.com/gochecknoinits/@v/v0.0.0-20200108094044-eb73b47b9fc4.mod",
+      "sha256": "d35b643b70597d8f527f949559c00bac1445a8a690e084a88ffa9b73ba8cbf74",
+      "size": 31
+    },
+    {
+      "path": "compliance/source-delivery/modules/cloud.google.com/go/@v/v0.26.0.mod",
+      "sha256": "2218a34f20b971bc195216d4195f57520a2acbd85de7fc31acfc440266704c11",
+      "size": 27
+    },
+    {
+      "path": "compliance/source-delivery/modules/cloud.google.com/go/@v/v0.34.0.mod",
+      "sha256": "2218a34f20b971bc195216d4195f57520a2acbd85de7fc31acfc440266704c11",
+      "size": 27
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/!alec!aivazis/survey/v2/@v/v2.3.6.info",
+      "sha256": "8d9c885425af59aa70bb0242f1e9ec957be57067988bd4814b4efdd83025648e",
+      "size": 194
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/!alec!aivazis/survey/v2/@v/v2.3.6.mod",
+      "sha256": "21f0672a3ddfd7e9515160bed0741420ca66fae3a257eb21454e77535e43d4e1",
+      "size": 660
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/!alec!aivazis/survey/v2/@v/v2.3.6.zip",
+      "sha256": "8ade65a28424f2fd9fb89208da5a612abf7707e4b4faf384d4b613ac201b217f",
+      "size": 159884
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/!burnt!sushi/toml/@v/v0.3.1.mod",
+      "sha256": "28021b4180a59c3993607a95b18e230dd0bc6bea5242ffe8ea8bbfb4f4f7b4d7",
+      "size": 34
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/!microsoft/go-winio/@v/v0.5.2.mod",
+      "sha256": "19b8fbe9d4419278bb1e9d0cf2fd5aec879e42829c53ba3efd5656b8d1b35ae7",
+      "size": 147
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/!netflix/go-expect/@v/v0.0.0-20220104043353-73e0943537d2.mod",
+      "sha256": "7e6a4e2dcf2df58a58cb81042f0d0ed99506f8c87667a89b11445116e6100b90",
+      "size": 125
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/!vivid!cortex/ewma/@v/v1.1.1.info",
+      "sha256": "b98758ea7d6fbec0a2d771ec10659376f6de7181d481c40627d3aa7f3495f12a",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/!vivid!cortex/ewma/@v/v1.1.1.mod",
+      "sha256": "dea72064cf5bd0499f16acecd41788b587a09e62a5d9ad5cd8d378982761613a",
+      "size": 35
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/!vivid!cortex/ewma/@v/v1.1.1.zip",
+      "sha256": "eebee7c0f20e96abbda1611ed2a3d26b4c2c10393caa6a2dfd1605763a5c1a12",
+      "size": 8064
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/alessio/shellescape/@v/v1.4.1.info",
+      "sha256": "6a951a1219668a713976790631f117f92a22028b62497941c1074a94dc6d0af4",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/alessio/shellescape/@v/v1.4.1.mod",
+      "sha256": "abd1aee2a74241ed49697406913c78ba0a17ae9804fe6467dda3165ca8b2ba7e",
+      "size": 47
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/alessio/shellescape/@v/v1.4.1.zip",
+      "sha256": "e28d444e73b803a15cf83e6179149d34c6c132baa60cb8137e5f0aea50a543bf",
+      "size": 11037
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/antihax/optional/@v/v1.0.0.mod",
+      "sha256": "d2c22137f5621027f874b122546cf1587229df8618f9615ba9fe4e630e280beb",
+      "size": 44
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/census-instrumentation/opencensus-proto/@v/v0.2.1.mod",
+      "sha256": "dae64639296402235b55587d14d2640615eb3736fa840e4327d3c15db63cc345",
+      "size": 58
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/cespare/xxhash/v2/@v/v2.1.1.mod",
+      "sha256": "a090f8eaaf59cc2adf163299ebefe797e1dca3f6add2c8e88a6a3b90ba538b02",
+      "size": 45
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/cheggaaa/pb/v3/@v/v3.1.0.info",
+      "sha256": "c96390403769fa309de99f3fe9bfc5bafca722bb86290ed22ffe2ca2825b65fe",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/cheggaaa/pb/v3/@v/v3.1.0.mod",
+      "sha256": "bdfdc7616524108b65720de800f8b67cd4810cf86c370481c1c542bd9c512e78",
+      "size": 344
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/cheggaaa/pb/v3/@v/v3.1.0.zip",
+      "sha256": "9f48d16622a97188c91033bc45455ae097987aa034abb0128515a0327fd96b60",
+      "size": 28811
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/client9/misspell/@v/v0.3.4.mod",
+      "sha256": "d1bc362dddd96fb3a43ed4b92aaab70aa6c7ef5a500d7f09564e3eb24abcf0b8",
+      "size": 35
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/cncf/udpa/go/@v/v0.0.0-20191209042840-269d4d468f6f.mod",
+      "sha256": "05f5d4a77a84be45dedc80ebac5a38ef2fd1c6ff3faedad9c00eb31231181218",
+      "size": 170
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/cncf/udpa/go/@v/v0.0.0-20201120205902-5459f2c99403.mod",
+      "sha256": "61b2f61201da64caab0b1fda78e56ecb966bf5a400500f292b7ee67f60c4cb98",
+      "size": 170
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/cncf/udpa/go/@v/v0.0.0-20210930031921-04548b0d99d4.mod",
+      "sha256": "a0ed6d5c370a1473671b8b0e288bab175dfeb64a7af5ce2fc9874b139aea0207",
+      "size": 158
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/cncf/xds/go/@v/v0.0.0-20210922020428-25de7278fc84.mod",
+      "sha256": "3a725cfba3582e5dfdd2bdad9662e0fca3cadd8a91bbcb1b484251526f4ac857",
+      "size": 169
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/cncf/xds/go/@v/v0.0.0-20211001041855-01bcc9b48dfe.mod",
+      "sha256": "3a725cfba3582e5dfdd2bdad9662e0fca3cadd8a91bbcb1b484251526f4ac857",
+      "size": 169
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/cncf/xds/go/@v/v0.0.0-20211011173535-cb28da3451f1.mod",
+      "sha256": "3a725cfba3582e5dfdd2bdad9662e0fca3cadd8a91bbcb1b484251526f4ac857",
+      "size": 169
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/containerd/containerd/@v/v1.6.9.info",
+      "sha256": "b80021819369ef7bbd1e39da821cab86e12bf853698fe1490683d1095d61d359",
+      "size": 197
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/containerd/containerd/@v/v1.6.9.mod",
+      "sha256": "58e2755e6e9fc1fb5c3af008aa4a09f5276a5932090e47ef2ba55d563847d373",
+      "size": 6314
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/containerd/containerd/@v/v1.6.9.zip",
+      "sha256": "9ed9949368c017a9f4daac51b572b575952405d3278068bc03559433efbdee89",
+      "size": 2791680
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/containerd/continuity/@v/v0.3.0.info",
+      "sha256": "951b54225555e14e5a9d1650deb9f0939f6eb4e3acd1412c5d41bca7d4282b3f",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/containerd/continuity/@v/v0.3.0.mod",
+      "sha256": "c3f29f2669a9aa576bfc38092c3af9a1d53a868f720ab84e49de76b60c99a32d",
+      "size": 378
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/containerd/continuity/@v/v0.3.0.zip",
+      "sha256": "16fc80789184fad70748b4972aa2630c95f56d8eb46b530c2a69fe43c1d6e64b",
+      "size": 123375
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/coreos/go-semver/@v/v0.3.0.info",
+      "sha256": "6f4eab0fa9bd291a56daea6d569738ee1d1a5afc3c615bcaf0e18b3e860da204",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/coreos/go-semver/@v/v0.3.0.mod",
+      "sha256": "ee50112db8a41c9d7c852cb88ea4a087f21d68e367a8f76ad6ee0fb79ac6bd1c",
+      "size": 35
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/coreos/go-semver/@v/v0.3.0.zip",
+      "sha256": "b2fc075395ffc34cff4b964681d0ae3cd22096cfcadd2970eeaa877596ceb210",
+      "size": 13848
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/cpuguy83/go-md2man/v2/@v/v2.0.2.mod",
+      "sha256": "14c3afa2ef623555c1b4834d1f88b14df77549afee85e5750c19102465b78aba",
+      "size": 100
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/creack/pty/@v/v1.1.17.mod",
+      "sha256": "0413a4191dccd6c75b0cc74cb71af1564070f2ecbfce3ab4ba3ccc9d701fd82c",
+      "size": 38
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/cyphar/filepath-securejoin/@v/v0.2.3.mod",
+      "sha256": "dc7d8764738f2d231ba1f2ef5a4573a48fe40f645bcb8b291e42069634572537",
+      "size": 54
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/davecgh/go-spew/@v/v1.1.0.mod",
+      "sha256": "bcb29393251237b79a17b6c19bf29134f43e8f438c3198988fcd461a1cdf05cc",
+      "size": 34
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/davecgh/go-spew/@v/v1.1.1.mod",
+      "sha256": "bcb29393251237b79a17b6c19bf29134f43e8f438c3198988fcd461a1cdf05cc",
+      "size": 34
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/digitalocean/go-libvirt/@v/v0.0.0-20201209184759-e2a69bcd5bd1.info",
+      "sha256": "74720d5f144826dcc1257ea13aa1a56262cf91dd83b8d77ef6661d041baf134a",
+      "size": 78
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/digitalocean/go-libvirt/@v/v0.0.0-20201209184759-e2a69bcd5bd1.mod",
+      "sha256": "43e31a3f4a69dc55fd71b9a999c4ea1b571a2483579e1bb7dd653f182fd30809",
+      "size": 208
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/digitalocean/go-libvirt/@v/v0.0.0-20201209184759-e2a69bcd5bd1.zip",
+      "sha256": "f9dab14a2b3ac13a59c2e35945fa61f34c2a7b5d265eafeb32bd95ec61121b75",
+      "size": 186084
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/digitalocean/go-qemu/@v/v0.0.0-20210326154740-ac9e0b687001.info",
+      "sha256": "e2f634df3807ebb0722495e6ff8fff5a096f8dd8eeb4762b9112e73b1ca3491a",
+      "size": 78
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/digitalocean/go-qemu/@v/v0.0.0-20210326154740-ac9e0b687001.mod",
+      "sha256": "b2188ad1799da190d21e82c90a9b704ba571ae38d2bff3c189f95b8443df5438",
+      "size": 220
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/digitalocean/go-qemu/@v/v0.0.0-20210326154740-ac9e0b687001.zip",
+      "sha256": "7057c622024dd8c319eca5b3ad9fb74c59098e734f482229a8d1990eb8117577",
+      "size": 244279
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/diskfs/go-diskfs/@v/v1.2.0.info",
+      "sha256": "186babf91305c8f97e5a89cacfea236da30fa23493ace982564d3f8dee2ddda1",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/diskfs/go-diskfs/@v/v1.2.0.mod",
+      "sha256": "a23b4abda670e9635388d8530e85dd4af2fe92f4a287968742129c078685048e",
+      "size": 1010
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/diskfs/go-diskfs/@v/v1.2.0.zip",
+      "sha256": "fe9671c5097980a2014fff885749339a70c775392d723c6fc56e933376b44f3c",
+      "size": 16806911
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/docker/go-units/@v/v0.5.0.info",
+      "sha256": "95bce0de30f6b012916147b2a5b4df375b414920b1af3d27778c7d9464135d6d",
+      "size": 191
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/docker/go-units/@v/v0.5.0.mod",
+      "sha256": "ed45577dfb3562bc693dced91b172f710f1a9089c40808529f447348754e0c58",
+      "size": 34
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/docker/go-units/@v/v0.5.0.zip",
+      "sha256": "039d53ebe64af1aefa0be94ce42c621a17a3052c58ad15e5b3f357529beeaff6",
+      "size": 14824
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/elastic/go-libaudit/v2/@v/v2.3.2.info",
+      "sha256": "4b0cbeafdcc9212fcca6b0f3e69047d6ca80a4f8c2fffcf58e8636a78751ba42",
+      "size": 195
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/elastic/go-libaudit/v2/@v/v2.3.2.mod",
+      "sha256": "3eb05f730804ffea9c2964d9e5b8b40d05bd1aa608af55ea0f4a377acc61aca6",
+      "size": 276
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/elastic/go-libaudit/v2/@v/v2.3.2.zip",
+      "sha256": "1b199ac2a0dbb3b28494c20f2d56eb5ed9a36b0b45c505b6be064d89d1e920f7",
+      "size": 220978
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/envoyproxy/go-control-plane/@v/v0.10.2-0.20220325020618-49ff273808a1.mod",
+      "sha256": "d878bbd8c995c166139f116a34c3dc2f8a255378b659783c7b17c9c229d3f4d5",
+      "size": 711
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/envoyproxy/go-control-plane/@v/v0.9.0.mod",
+      "sha256": "2e0f3c5940c6930bce03f0c8cd1724dd93d4d30c6b1c5ae2ee4e3039f0215c07",
+      "size": 378
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/envoyproxy/go-control-plane/@v/v0.9.1-0.20191026205805-5f8ba28d4473.mod",
+      "sha256": "2e0f3c5940c6930bce03f0c8cd1724dd93d4d30c6b1c5ae2ee4e3039f0215c07",
+      "size": 378
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/envoyproxy/go-control-plane/@v/v0.9.4.mod",
+      "sha256": "6309f752f7d45b74c97e3f8e0e54fc47e604d965b528e60fa68a46317ecb44dc",
+      "size": 471
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/envoyproxy/go-control-plane/@v/v0.9.9-0.20201210154907-fd9021fe5dad.mod",
+      "sha256": "cc8287c039c16a7a526f69120f92102245757a368b2718268d091c3cbc8a997e",
+      "size": 543
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/envoyproxy/protoc-gen-validate/@v/v0.1.0.mod",
+      "sha256": "c8e2e1bf931ad31ab4a5a32673eff764398fbf9cbc6c31bbf005c7c904fc69aa",
+      "size": 49
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/fatih/camelcase/@v/v1.0.0.mod",
+      "sha256": "240f802fd91b1cabe3126514745c285e59b3cc34c19b758169d8044e837ec742",
+      "size": 34
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/fatih/color/@v/v1.10.0.mod",
+      "sha256": "539fce7cf49c4dc6135f300ad471370fd0e15dff38f5cb0cc432d4131363eb8b",
+      "size": 126
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/fatih/color/@v/v1.13.0.info",
+      "sha256": "1915cc36c5a23eb19e6bc5aa2f9dff6fff2ab4c19fb45ef6ca7f6dc0f5c84df1",
+      "size": 51
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/fatih/color/@v/v1.13.0.mod",
+      "sha256": "f0ac49fdf878d4b36897025bfb18639e2fe67d884cea8e324e5c1915697f8b1c",
+      "size": 126
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/fatih/color/@v/v1.13.0.zip",
+      "sha256": "8f22a92816d9461b2ff967754d30e9bc8279d045af1b755854ebe765e84cab20",
+      "size": 12921
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/foxcpp/go-mockdns/@v/v1.0.0.mod",
+      "sha256": "1a0eaa08f0d695462598d4d159b97cd279e0667bc40b93e10adff068b3573b19",
+      "size": 83
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/fsnotify/fsnotify/@v/v1.4.9.mod",
+      "sha256": "0dab08a9d390fa423979b281c8a30adf6368579945519dffa568ebe6f754a036",
+      "size": 106
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/fsnotify/fsnotify/@v/v1.5.1.info",
+      "sha256": "fe24de0e290f7af09e09f16770a3ce99cb761484cba4987964a75b8bf83f58a1",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/fsnotify/fsnotify/@v/v1.5.1.mod",
+      "sha256": "9a7fc8090ac4fa04d63c2ed7c8e4d08a38b681a1b61c82d7e5d84676a7d27385",
+      "size": 122
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/fsnotify/fsnotify/@v/v1.5.1.zip",
+      "sha256": "f38d7e395bc45f08a34e9591c9c4900031f81c1ddc7d761a785cbbb9aaee0db0",
+      "size": 43496
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/ghodss/yaml/@v/v1.0.0.mod",
+      "sha256": "78a1ae1e7f0cdb8547e903fd0aeda6d3d67a18a63e0bd19bfb4b689184410bcc",
+      "size": 30
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/go-playground/assert/v2/@v/v2.0.1.mod",
+      "sha256": "817256f9cba4a191e90bd32d71f2536f1ddd7d4b72f9b670daa6515bbd70eff6",
+      "size": 51
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/go-playground/locales/@v/v0.13.0.mod",
+      "sha256": "8791a0357b09084876469c97470df1bec97fc9675d530c76ac927befb4d751d3",
+      "size": 83
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/go-playground/universal-translator/@v/v0.17.0.mod",
+      "sha256": "52611925a45316ea8cc2ed570ab3db7459fb2f8afaf34381094e78aba9c2be44",
+      "size": 112
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/go-playground/validator/v10/@v/v10.4.1.mod",
+      "sha256": "e8ba331e121ea0697ac2b9579ca489b147221c6583381963202665c1554f57b3",
+      "size": 298
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/goccy/go-yaml/@v/v1.9.5.info",
+      "sha256": "94289dc9f1a6e4215d5d47e7334e9e94a1fa3ef7c1c9acb7b68d1666eca6a964",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/goccy/go-yaml/@v/v1.9.5.mod",
+      "sha256": "2bbca6250a17b2ced034789921a8a45ffaabe7b41b30ea564c8c1a95a8a3c855",
+      "size": 229
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/goccy/go-yaml/@v/v1.9.5.zip",
+      "sha256": "011f512b999fd17a22a1e3c17b0e8c3d728dfd64b7b2bf13696a9f18fdc91568",
+      "size": 97897
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/glog/@v/v0.0.0-20160126235308-23def4e6c14b.mod",
+      "sha256": "9c9bafc0f52905afaa7164858b3a01a0cc3dc07da23030177ce487f727438958",
+      "size": 30
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/mock/@v/v1.1.1.mod",
+      "sha256": "5c47c4f981ac63d37f1308647a20d75a148eb2a8f9cc0e7531f030afd0b229e0",
+      "size": 30
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.2.0.mod",
+      "sha256": "c0a2031bf277087749d8ccc432449f6b1375787eac8641dd2f930074231aafb4",
+      "size": 34
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.3.2.mod",
+      "sha256": "c0a2031bf277087749d8ccc432449f6b1375787eac8641dd2f930074231aafb4",
+      "size": 34
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.3.3.mod",
+      "sha256": "d52e12ad0b2848aeb7ab2522c3ef6d7e5762180f556216843612d2618e94f281",
+      "size": 43
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.4.0-rc.1.0.20200221234624-67d41d38c208.mod",
+      "sha256": "78c95913aee9dfebd1e84f8b862e98bb1848d1d3e9f22aaf909c4ef4f7e7293d",
+      "size": 151
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.4.0-rc.1.mod",
+      "sha256": "eb386ed18bb8d6092974524bd0cda610ad87bee1a4485c9f01bccb713e7dab1e",
+      "size": 151
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.4.0-rc.2.mod",
+      "sha256": "e2622048b96cd87173bd9aeb801a1010807a412e89529509e9a5099f1fc69ab4",
+      "size": 151
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.4.0-rc.4.0.20200313231945-b860323f09d0.mod",
+      "sha256": "1edf9512236391b88764083bde0391fc49864738432acfdcdd3229572dc71be1",
+      "size": 154
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.4.0.mod",
+      "sha256": "0d092f7aa2877feb9e55aee2668286ebbf7e3d0711b1702d84c9225e4cca73f8",
+      "size": 124
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.4.1.mod",
+      "sha256": "b7ebbef0f2166a73c7ab79ec37a01b25206b6327e684e3898ba7cb75ecd6ec00",
+      "size": 124
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.4.2.mod",
+      "sha256": "4bf5885d1ebdc6d270958379a741cd3b4f7aca016e874d8e8b1059110dfe9e15",
+      "size": 124
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.4.3.mod",
+      "sha256": "4bf5885d1ebdc6d270958379a741cd3b4f7aca016e874d8e8b1059110dfe9e15",
+      "size": 124
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.5.0.mod",
+      "sha256": "738cbb1de96b67a6238ac3b8081cd8b1bfb0daebcf6c9bbe8cbdb6d73baecd19",
+      "size": 129
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.5.2.info",
+      "sha256": "b88610aebae92edae590508f62741b3045f9721b4a1d4aff748744d6e827427a",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.5.2.mod",
+      "sha256": "7c8e7610527afd7724c7e8b7e843f132b0db61e8c9dd49dc589d430e8929bcc4",
+      "size": 192
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/golang/protobuf/@v/v1.5.2.zip",
+      "sha256": "5d1c817bebc1202ab3b42a418e584e0008e8027baf212ce69c2ae3e9e7b8c64b",
+      "size": 206858
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/google/go-cmp/@v/v0.2.0.mod",
+      "sha256": "9c2736ea2c03fb1d94b2a1d496aa1a51726c764f158b9f6cde1d7465fc90f412",
+      "size": 32
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/google/go-cmp/@v/v0.3.0.mod",
+      "sha256": "81df7917c225a9da7604b230d952fa278c60a8832c10d799385d134b05d5b087",
+      "size": 40
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/google/go-cmp/@v/v0.3.1.mod",
+      "sha256": "81df7917c225a9da7604b230d952fa278c60a8832c10d799385d134b05d5b087",
+      "size": 40
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/google/go-cmp/@v/v0.4.0.mod",
+      "sha256": "4036ab5636aa42bd313296cd3bfcb4c88912760c56a9e6655ae422d8767c80da",
+      "size": 105
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/google/go-cmp/@v/v0.5.0.mod",
+      "sha256": "4036ab5636aa42bd313296cd3bfcb4c88912760c56a9e6655ae422d8767c80da",
+      "size": 105
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/google/go-cmp/@v/v0.5.5.mod",
+      "sha256": "4036ab5636aa42bd313296cd3bfcb4c88912760c56a9e6655ae422d8767c80da",
+      "size": 105
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/google/go-cmp/@v/v0.5.6.mod",
+      "sha256": "4036ab5636aa42bd313296cd3bfcb4c88912760c56a9e6655ae422d8767c80da",
+      "size": 105
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/google/go-cmp/@v/v0.5.9.mod",
+      "sha256": "e7c7669d4a1dd589ba3e024ba27f43f293db611fe075ce20d7b884370d63febd",
+      "size": 41
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/google/renameio/@v/v0.1.0.mod",
+      "sha256": "ba9b5eb0878008a891e16b08c17922b03f92c76a03e7bfe1832635eada1c1a35",
+      "size": 34
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/google/uuid/@v/v1.1.1.mod",
+      "sha256": "73da47b6338b00a082fd451aa35a3273d3adc09b8e9bba98dab01091e402af6e",
+      "size": 30
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/google/uuid/@v/v1.1.2.mod",
+      "sha256": "73da47b6338b00a082fd451aa35a3273d3adc09b8e9bba98dab01091e402af6e",
+      "size": 30
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/gordonklaus/ineffassign/@v/v0.0.0-20190601041439-ed7b1b5ee0f8.mod",
+      "sha256": "2cb38f954ad06222f5875d17551de0b0f4a1d9c8ca43da96cc4d1174237c76d8",
+      "size": 42
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/gorilla/mux/@v/v1.8.0.info",
+      "sha256": "453e87486f5e0800b16f4acc27e5e2bf696a79b08adee1057a725a96ddf3543e",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/gorilla/mux/@v/v1.8.0.mod",
+      "sha256": "47f94f3829136dccbbaa7f3c4110f740db37ff90dde79e6b336c732e1fda8d9c",
+      "size": 39
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/gorilla/mux/@v/v1.8.0.zip",
+      "sha256": "7641911e00af9c91f089868333067c9cb9a58702d2c9ea821ee374940091c385",
+      "size": 57100
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/grpc-ecosystem/grpc-gateway/@v/v1.16.0.mod",
+      "sha256": "992a51d5c4cf888774083d23a8e1c87ffd9b045585ab778572e51ee318baa0aa",
+      "size": 588
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/hashicorp/errwrap/@v/v1.0.0.mod",
+      "sha256": "93985e11af40e6301f25d7f83cc4032d2d6d22f338aee277471a89364c700b29",
+      "size": 36
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/hashicorp/errwrap/@v/v1.1.0.info",
+      "sha256": "d2206055e4d6bce4374b8859b4fada0cb0473d36f982dd66b31943507aac5212",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/hashicorp/errwrap/@v/v1.1.0.mod",
+      "sha256": "93985e11af40e6301f25d7f83cc4032d2d6d22f338aee277471a89364c700b29",
+      "size": 36
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/hashicorp/errwrap/@v/v1.1.0.zip",
+      "sha256": "209ae99bc039443e28e4d6bb66517d1756d9468b7578d31f1b63a28103d8e18c",
+      "size": 9497
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/hashicorp/go-multierror/@v/v1.1.1.info",
+      "sha256": "05e4a631fa3994cc89b577ae7eb411db5d1de28aaefe350aad597296a1b68a0c",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/hashicorp/go-multierror/@v/v1.1.1.mod",
+      "sha256": "6b44c7b8cf8c5ec59df682c5e882d5daf4d4a2f036a98f9e5add13919bc22d0d",
+      "size": 96
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/hashicorp/go-multierror/@v/v1.1.1.zip",
+      "sha256": "972cd841ee51fdeac69c5a301e57f8ea27aebf15fddd7f621d5c240f28c3000c",
+      "size": 19419
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/hinshun/vt10x/@v/v0.0.0-20220119200601-820417d04eec.mod",
+      "sha256": "5791a0eeb9d7793b7d4c4c8429c889f2dea3196a2f5e8ac401173471bfb8ca36",
+      "size": 41
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/inconshreveable/mousetrap/@v/v1.0.1.mod",
+      "sha256": "1c1b15911aa8a0bd5cd0f6670ec23d1086496f3615fdf53306aff2b476ce9be1",
+      "size": 53
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/intel-go/cpuid/@v/v0.0.0-20220614022739-219e067757cb.mod",
+      "sha256": "9b5b76f238dfc73d94ef7c4db21c542fd49d697d0eb861ccd75f64fdb1feba08",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/jgautheron/goconst/@v/v0.0.0-20170703170152-9740945f5dcb.mod",
+      "sha256": "61ad56afe542ca32c1d3ff02253257c4bf49210064d6351d09b3d8f7958790d2",
+      "size": 37
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/kballard/go-shellquote/@v/v0.0.0-20180428030007-95032a82bc51.info",
+      "sha256": "d6f6034c911ee4f7583394452662b95695e9c3807a48e9292e48b52d252d79d5",
+      "size": 78
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/kballard/go-shellquote/@v/v0.0.0-20180428030007-95032a82bc51.mod",
+      "sha256": "49a2d6c73f667dc0f46322a0d6acfcba14209bfb76ef7e622d61e1091962ff34",
+      "size": 41
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/kballard/go-shellquote/@v/v0.0.0-20180428030007-95032a82bc51.zip",
+      "sha256": "ae4cb7b097dc4eb0c248dff00ed3bbf0f36984c4162ad1d615266084e58bd6cc",
+      "size": 7034
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/kisielk/gotool/@v/v1.0.0.mod",
+      "sha256": "77aca7bffc0ec29fc9f088d5962ab3128f405d7b10c7ceb9693ff7a08958955d",
+      "size": 35
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/kr/fs/@v/v0.1.0.info",
+      "sha256": "2420b80ee71cc069d2c8a998f9ef9ad0881f1054b43b077c9069227719be7c93",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/kr/fs/@v/v0.1.0.mod",
+      "sha256": "b5bced587ede9949a28f1a460313c49b08f5715b9880dbb57978327f8582efc0",
+      "size": 26
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/kr/fs/@v/v0.1.0.zip",
+      "sha256": "d376bd98e81aea34585fc3b04bab76363e9e87cde69383964e57e9779f2af81e",
+      "size": 5552
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/kr/pretty/@v/v0.1.0.mod",
+      "sha256": "e3d5d46d2f6ac94a666a54b5e867ec16bf199d9f4b700827cd731607efdd109a",
+      "size": 67
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/kr/pty/@v/v1.1.1.mod",
+      "sha256": "6da4c9c7364446894e5ef877e19f985cd51d671ce6e8f4ca87862b449f6dd7f6",
+      "size": 25
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/kr/text/@v/v0.1.0.mod",
+      "sha256": "2fba9529e5c13dde62f371ef7383baf04d7132501dac6aa08e910f9ec0bf85c5",
+      "size": 64
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/leodido/go-urn/@v/v1.2.0.mod",
+      "sha256": "01132c6044599c41bbc19a5361e6fcc580fd5982f2acb7cab3b3b35b06a75243",
+      "size": 86
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/lima-vm/sshocker/@v/v0.3.0.info",
+      "sha256": "8dc56a1075367c8e7beae95c41d4d67fb5b4c52a78f41842d92fb309966a7dad",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/lima-vm/sshocker/@v/v0.3.0.mod",
+      "sha256": "551492f115c8f750411a4651ae1a2f07163adeb812b42e1d766183575fa02cf3",
+      "size": 537
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/lima-vm/sshocker/@v/v0.3.0.zip",
+      "sha256": "e5d0c455474c7c0e596493092cc8004c3b65375a9ef9509ffd249f699b1875ff",
+      "size": 22134
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-colorable/@v/v0.1.12.info",
+      "sha256": "8ce95ae54e31f868098e2353586768ca90605d90f7c5cc4a8dc731d5b66b3e94",
+      "size": 51
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-colorable/@v/v0.1.12.mod",
+      "sha256": "301b4efcc69da40b91ccc8d2cc58e88595e8ad8712aca01403f10086d96b1813",
+      "size": 160
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-colorable/@v/v0.1.12.zip",
+      "sha256": "c4637499409a4081fbbd7ea0640aa0af30c0e06a70aa1b207780b0251650d8cd",
+      "size": 13979
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-colorable/@v/v0.1.2.mod",
+      "sha256": "a1161e694ac3bdfebf8550b34d8273fafddbe76fda0c62e85440f71799e56b9d",
+      "size": 80
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-colorable/@v/v0.1.8.mod",
+      "sha256": "adff3e24384bcd2ecf0c6d6a1a9e4e31065401e9b5d29ce6a120255ab3c02313",
+      "size": 160
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-colorable/@v/v0.1.9.mod",
+      "sha256": "adff3e24384bcd2ecf0c6d6a1a9e4e31065401e9b5d29ce6a120255ab3c02313",
+      "size": 160
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-isatty/@v/v0.0.12.mod",
+      "sha256": "1a062e56c0266d004bea51115acf8c2b597d1407ca55ad56cce01e97ada3da4b",
+      "size": 104
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-isatty/@v/v0.0.14.mod",
+      "sha256": "e9299133cd7243ec2667aa25a04b2dac6009234ae4c1cda4edb45749970dae9f",
+      "size": 104
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-isatty/@v/v0.0.16.info",
+      "sha256": "c541218848d70b298ab016b4d5dc7ceeccc7efaff5a622121cf803f98eb8b570",
+      "size": 193
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-isatty/@v/v0.0.16.mod",
+      "sha256": "714766ec82d67db895ade8af6b8054ad430c3cea5e15b3a888f23ed2f3e1b863",
+      "size": 104
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-isatty/@v/v0.0.16.zip",
+      "sha256": "3d5ff19c4b2a2a164feb84f5cc38af349380c0c4a03d0443dce40bbd6ec3fd2b",
+      "size": 8927
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-isatty/@v/v0.0.8.mod",
+      "sha256": "4f775a89be9a80189a826ef22dc303e389557c558f14bfd40b75b5ef2845e56f",
+      "size": 95
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-runewidth/@v/v0.0.12.info",
+      "sha256": "2554fc5690f2764c5de99e6c819067127fe21017807d865b5e9e405e8198f639",
+      "size": 51
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-runewidth/@v/v0.0.12.mod",
+      "sha256": "4136aaa23fcb3176a292822f2a8a98ccc7b2fde38a59922c152b006f59d59695",
+      "size": 84
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-runewidth/@v/v0.0.12.zip",
+      "sha256": "88d1f897fe2a1d24b3fdcc6509ae8094f00540394710b3a29bf36e6730faaaca",
+      "size": 20977
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-shellwords/@v/v1.0.12.info",
+      "sha256": "99e96a054f3d0e73b62c808ac6d0560beaa901e8390793a43698ea193cbf5012",
+      "size": 51
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-shellwords/@v/v1.0.12.mod",
+      "sha256": "29bfff16ff57b7dada64e6a74806d931549acce61cb70c458a389d099c2d0ec2",
+      "size": 47
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mattn/go-shellwords/@v/v1.0.12.zip",
+      "sha256": "6d35c3edc92e47a06988788d683c1ad389719b55ef19d5a7f239ab4708b6da11",
+      "size": 9134
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mgutz/ansi/@v/v0.0.0-20170206155736-9520e82c474b.info",
+      "sha256": "e057c361e63eeda34a835e34186d7526251495e198fa22663387c69340fac217",
+      "size": 78
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mgutz/ansi/@v/v0.0.0-20170206155736-9520e82c474b.mod",
+      "sha256": "12e14b97ea604f1fcb9f7fcc85ee93d9ba7f858a03469ee29e929a07d55d0a4d",
+      "size": 29
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mgutz/ansi/@v/v0.0.0-20170206155736-9520e82c474b.zip",
+      "sha256": "d7c0ff88c53dfca384bb82108a6e5fdc9e11b358d68b67144ff6a285be20a16a",
+      "size": 7444
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/mibk/dupl/@v/v1.0.0.mod",
+      "sha256": "5bf9355ea22a06dbd7477fda4236605c5e9f56ff3c95329723a7b3b2e06ed8fc",
+      "size": 28
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/miekg/dns/@v/v1.1.25.mod",
+      "sha256": "6eb991a350aa2636f05e9a120a49ddc49ec352a69f6862e2eae898934c16c159",
+      "size": 371
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/miekg/dns/@v/v1.1.50.info",
+      "sha256": "f21c92d21c0bfd105ed3a5997098226e6fdd927200cbcdc5eec2b1e397c44b0d",
+      "size": 51
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/miekg/dns/@v/v1.1.50.mod",
+      "sha256": "8d11636ffeb00b1dd8bba457f7d532f52cbc360f24471491e47dc491678a1f62",
+      "size": 267
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/miekg/dns/@v/v1.1.50.zip",
+      "sha256": "a53fefa345d75d3483d6fa19de2fa0820914935c07e3c2f359a00657e6b0d3da",
+      "size": 245127
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/norouter/norouter/@v/v0.6.4.info",
+      "sha256": "dd2e431ed28d1445a0b2b8ef71b467ac124d6759c94b2f7c7dcc82c3bbb6edb9",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/norouter/norouter/@v/v0.6.4.mod",
+      "sha256": "e2087489aef3e9b8c46ec1134d9440cc31dfec7738cbe81e7aa6ba63743916ac",
+      "size": 1890
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/norouter/norouter/@v/v0.6.4.zip",
+      "sha256": "533c4b2f79d1f85e559726602bfc2ba6e307d2e444f998dbe422c54bd513d958",
+      "size": 256310
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/nxadm/tail/@v/v1.4.8.info",
+      "sha256": "8c3dd2330bcb90fde277d6d201ee949955d2efcac7e350a4e42446a9c7b337cf",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/nxadm/tail/@v/v1.4.8.mod",
+      "sha256": "a65f8a958855bf707d326b76b72f9c428bd226304ab8cc317a67315333b4e4c7",
+      "size": 141
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/nxadm/tail/@v/v1.4.8.zip",
+      "sha256": "70bf6e142f90694059792f7d5b31a915df989e8a6a554a836de36fa075377ff9",
+      "size": 31499
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/opencontainers/go-digest/@v/v1.0.0.info",
+      "sha256": "38e2187cf8b5583ca240efee88162eb8b5bfc19b92a4e390cc142dd4b591167c",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/opencontainers/go-digest/@v/v1.0.0.mod",
+      "sha256": "8de0250a4ba6811f7703fbb499ed889672597699f335b12f47d788d1df087b4a",
+      "size": 52
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/opencontainers/go-digest/@v/v1.0.0.zip",
+      "sha256": "615efb31ff6cd71035b8aa38c3659d8b4da46f3cd92ac807cb50449adfe37c86",
+      "size": 34573
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/pierrec/lz4/@v/v2.3.0+incompatible.mod",
+      "sha256": "2a50cf1993308244414372349e500770dde0671ee259159cf305f4b1f84ebae9",
+      "size": 30
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/pkg/sftp/@v/v1.13.4.info",
+      "sha256": "08a0ab883855570da849748c32825f4fdb57bcd4c05a49fde1af9cf172f268e7",
+      "size": 51
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/pkg/sftp/@v/v1.13.4.mod",
+      "sha256": "39e928500cf1daeb13f7e26a5bf3bbd51aee76adbbbdc966f86f97cf162904bd",
+      "size": 231
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/pkg/sftp/@v/v1.13.4.zip",
+      "sha256": "ff564a14f25614145553091c8f5b400b6de096d926efdbceb7ca41a160d8e212",
+      "size": 162710
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/pkg/xattr/@v/v0.4.1.mod",
+      "sha256": "338862f52e742081cb24606cc9ecbd885e1e5cf1501a59eb6d640d613446a120",
+      "size": 89
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/pmezard/go-difflib/@v/v1.0.0.mod",
+      "sha256": "74b2e766eb215377864d587badf57e95521f692d2a7860b3c7759093f9c9bec2",
+      "size": 37
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/prometheus/client_model/@v/v0.0.0-20190812154241-14fe0d1b01d4.mod",
+      "sha256": "8ae247f8b1ced742fbc4aa7ebc6b6c935172eaafa61a2be52ba0bd41286db031",
+      "size": 164
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/rivo/uniseg/@v/v0.1.0.mod",
+      "sha256": "6c7318a27a8d5473a8eb661e75fb00528176e0efc59310ed277ca13bd12a53f1",
+      "size": 39
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/rivo/uniseg/@v/v0.2.0.info",
+      "sha256": "be7ffa2dc08b419cd4af7f410ef4efa527852c375a43b1eb632637152bd1b8e1",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/rivo/uniseg/@v/v0.2.0.mod",
+      "sha256": "6c7318a27a8d5473a8eb661e75fb00528176e0efc59310ed277ca13bd12a53f1",
+      "size": 39
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/rivo/uniseg/@v/v0.2.0.zip",
+      "sha256": "3199d94be50284142220662ca3b00e19ddd1debe4e80ddc745ff4203ecb601c0",
+      "size": 45731
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/rogpeppe/fastuuid/@v/v1.2.0.mod",
+      "sha256": "6df13891d67344ca0c8d6e8d7d392f24674bf3d9b39d9393b4073e4909755a0c",
+      "size": 45
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/rogpeppe/go-internal/@v/v1.3.0.mod",
+      "sha256": "33b55e839b0754283c3eeec1f33e16cc66432dffb8b8a96d24f536d01e51495b",
+      "size": 73
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/russross/blackfriday/v2/@v/v2.1.0.mod",
+      "sha256": "c39547cce6e866e8cfa395d2937bce30801cd07f0b901c2133248f1fba12f58d",
+      "size": 42
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/sirupsen/logrus/@v/v1.7.0.mod",
+      "sha256": "da2caaacef970c4c3f36c137d5567faef9403e6f62194804c7672a3975219322",
+      "size": 242
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/sirupsen/logrus/@v/v1.9.0.info",
+      "sha256": "351845e448caaf073b44a9d6c6947bde26d6e1dec6c5547b1a22c09b60f8c278",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/sirupsen/logrus/@v/v1.9.0.mod",
+      "sha256": "01e82122d547d1228151a623fe6cacc4d7a9cb318a0f668ce08bb6b67fdb28b1",
+      "size": 192
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/sirupsen/logrus/@v/v1.9.0.zip",
+      "sha256": "bf01c93f49912b88ee2e95dc99cab91a503ec3b526d1c756145391d555b98d14",
+      "size": 68377
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/spf13/cobra/@v/v1.6.1.info",
+      "sha256": "0e4c127f48baf664a84899c828912af7bdfb2dc13ea4b4481d855b90eb5eb4f6",
+      "size": 187
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/spf13/cobra/@v/v1.6.1.mod",
+      "sha256": "8ee92fc1c5a63f6f4ac6d03c2e303ca55b512d00ed7ed2844a3ed669118c9eac",
+      "size": 194
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/spf13/cobra/@v/v1.6.1.zip",
+      "sha256": "10945bdd829f0abbedbeaecd722f4077ad3b317dedcbfc6eacde72fc8e5b3879",
+      "size": 151246
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/spf13/pflag/@v/v1.0.5.info",
+      "sha256": "712a021b2bdd074d2e88a74975237fe0332e22f7135c1e969dd6ab2fab01a6a2",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/spf13/pflag/@v/v1.0.5.mod",
+      "sha256": "16c6dfc0eb58eb3c9113ce197d460c6725c647e4688ac26d31c8ed69f1ebbc68",
+      "size": 39
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/spf13/pflag/@v/v1.0.5.zip",
+      "sha256": "fc6e704f2f6a84ddcdce6de0404e5340fa20c8676181bf5d381b17888107ba84",
+      "size": 88931
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/stretchr/objx/@v/v0.1.0.mod",
+      "sha256": "1350354d52d2287a62336ecc0d56232d4c47699af9bba49c67c2b48254da98f1",
+      "size": 32
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/stretchr/testify/@v/v1.2.2.mod",
+      "sha256": "4ab463f68c370041f950c10cab5104903d4598c50cf824f9aad1b7b7f69255af",
+      "size": 35
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/stretchr/testify/@v/v1.3.0.mod",
+      "sha256": "ab063d5154a8e8730bced4c52698e5770eb50bfae347bebc35eca488b8e3f6e3",
+      "size": 154
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/stretchr/testify/@v/v1.4.0.mod",
+      "sha256": "6b0c7b71030d4fc55d4e6e6e24c0bfc025621341f76141e3aec0044c4ce89950",
+      "size": 179
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/stretchr/testify/@v/v1.5.1.mod",
+      "sha256": "e3a11c2a6c5fe06f8a221e7289684917ac49ad01233f81b51c8360773707e700",
+      "size": 188
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/stretchr/testify/@v/v1.6.1.mod",
+      "sha256": "fff8168d98e6a07156c454a1b6e925509f3177e96c155516d7f96b4079cca3bf",
+      "size": 216
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/stretchr/testify/@v/v1.7.0.mod",
+      "sha256": "fff8168d98e6a07156c454a1b6e925509f3177e96c155516d7f96b4079cca3bf",
+      "size": 216
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/stripe/safesql/@v/v0.2.0.mod",
+      "sha256": "5cb17711a7c6e682f08865906393f937626e6e64fa252961026bc0ac0e28d618",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/tsenart/deadcode/@v/v0.0.0-20160724212837-210d2dc333e9.mod",
+      "sha256": "6272044791b76dc3bd2681278dbb06c732cdbec0757d208d12513d94aa77de68",
+      "size": 35
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/ulikunitz/xz/@v/v0.5.6.mod",
+      "sha256": "d7437f4c0f1110c7a007ebbdd3314768c61210f38d2cc5f41fe1870892a5b698",
+      "size": 31
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/xorcare/pointer/@v/v1.2.1.info",
+      "sha256": "89cec7a60d2705f175b90d535ba3798c7559a9d40fc8ed7c22d56fc7191656ab",
+      "size": 191
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/xorcare/pointer/@v/v1.2.1.mod",
+      "sha256": "db9f016aee38b1ccfee13cb855ad33074f3e850128db717559e0d3013ee1f6e6",
+      "size": 43
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/xorcare/pointer/@v/v1.2.1.zip",
+      "sha256": "b87f9f3fe5b24abebd17c76cab2f5ea4633a38f07d48c0a0c9053b06650285c1",
+      "size": 10404
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/yalue/native_endian/@v/v1.0.2.info",
+      "sha256": "cfb4d4376938f56e6680365ea4758c5c92d3cd18c2442c44b4bba51056b9ef79",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/yalue/native_endian/@v/v1.0.2.mod",
+      "sha256": "31418424afef895368e9e4eb1f520af683e24daeb7e97a326898ebc2764e503d",
+      "size": 47
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/yalue/native_endian/@v/v1.0.2.zip",
+      "sha256": "22df5543af9b615e510a11d7aa70376a9640284eacdb53ee9423ec0b1a2141a0",
+      "size": 2994
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/yuin/goldmark/@v/v1.1.32.mod",
+      "sha256": "e2c763f861ada05c6150c32f804bca31c96a18b944320e0ee9bbf0d6c6075ad7",
+      "size": 41
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/yuin/goldmark/@v/v1.2.1.mod",
+      "sha256": "e2c763f861ada05c6150c32f804bca31c96a18b944320e0ee9bbf0d6c6075ad7",
+      "size": 41
+    },
+    {
+      "path": "compliance/source-delivery/modules/github.com/yuin/goldmark/@v/v1.3.5.mod",
+      "sha256": "dab1d663b860ebe545fcdcec24e5f933d517bd2019af68d7a6b5a8764aa61b0f",
+      "size": 41
+    },
+    {
+      "path": "compliance/source-delivery/modules/go.opentelemetry.io/proto/otlp/@v/v0.7.0.mod",
+      "sha256": "4d19a74ffbd5a735d78d71fbbe378cd7e897a50765a0d218a701c4e8ed69454a",
+      "size": 211
+    },
+    {
+      "path": "compliance/source-delivery/modules/go.uber.org/atomic/@v/v1.7.0.info",
+      "sha256": "8a50ddb2f4d7c9edd394c7e0c3918d77eeb2166c76659e44ed46cf242f7d826a",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/go.uber.org/atomic/@v/v1.7.0.mod",
+      "sha256": "f7476ceca88ad6eceea6936b4902d27c5071e88c24ed262e814923260e9778c7",
+      "size": 131
+    },
+    {
+      "path": "compliance/source-delivery/modules/go.uber.org/atomic/@v/v1.7.0.zip",
+      "sha256": "0417b4203eb1454a0eeda59e79f426c27fcfb9e3c74077060303429cc16db307",
+      "size": 53254
+    },
+    {
+      "path": "compliance/source-delivery/modules/go.uber.org/multierr/@v/v1.7.0.info",
+      "sha256": "4eb1d17e2f3460c4f509b74e02c15463911e1f577fd1ce03a0d89fe4ea34a0c2",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/go.uber.org/multierr/@v/v1.7.0.mod",
+      "sha256": "cf7acfd2bdb788cf05304dec9d8c9231ff165579a6d7adcdeb24a428c80b5313",
+      "size": 178
+    },
+    {
+      "path": "compliance/source-delivery/modules/go.uber.org/multierr/@v/v1.7.0.zip",
+      "sha256": "abee21bbd1cb62b0721680430ef8e098717299d10b4382876b9aa40664e6556c",
+      "size": 20319
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/crypto/@v/v0.0.0-20190308221718-c2843e01d9a2.mod",
+      "sha256": "33ed070a5a66e0960685ac5386440e1b59899e74d8a38a1180685e72a2195ded",
+      "size": 88
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/crypto/@v/v0.0.0-20190510104115-cbcb75029529.mod",
+      "sha256": "3ab9f01f4610fe7b39bd85d68e8d97825351e7e282c39cda41457c2a276f3be3",
+      "size": 146
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/crypto/@v/v0.0.0-20190923035154-9ee001bba392.mod",
+      "sha256": "6a69415ab4710e7227372341cf3852a619bc860d68d421cd86b662b70747ac3f",
+      "size": 146
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/crypto/@v/v0.0.0-20191011191535-87dc89f01550.mod",
+      "sha256": "3ab9f01f4610fe7b39bd85d68e8d97825351e7e282c39cda41457c2a276f3be3",
+      "size": 146
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/crypto/@v/v0.0.0-20200622213623-75b288015ac9.mod",
+      "sha256": "b2b12d09f81915fbcf4226009e50f9efda8bd3757d2055d8ec07977e65bc6618",
+      "size": 155
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/crypto/@v/v0.0.0-20210421170649-83a5a9bb288b.mod",
+      "sha256": "dda18d19fba9f47bca8269cf4aef580e0ce992c73e2aa54abf226216b1e3a729",
+      "size": 209
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/crypto/@v/v0.0.0-20220315160706-3147a52a75dd.info",
+      "sha256": "78ead925ddd46b742561bb6ad37097458c968974accca1922dc0776da8226337",
+      "size": 78
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/crypto/@v/v0.0.0-20220315160706-3147a52a75dd.mod",
+      "sha256": "af2c88eebff03e3a2afecb1b03669fc54e9d122c88f7b2ecfed051ec5dbc8bbb",
+      "size": 255
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/crypto/@v/v0.0.0-20220315160706-3147a52a75dd.zip",
+      "sha256": "78f482d7aa3cf3003028400f6726b1d97d9a91694ffbb537c507376bb4653caa",
+      "size": 1775692
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/exp/@v/v0.0.0-20190121172915-509febef88a4.mod",
+      "sha256": "9ff1d07ca8c09458450eb5f4076aa0390ef5c7db0c7a942150e88258a78b5383",
+      "size": 24
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/lint/@v/v0.0.0-20181026193005-c67002cb31c3.mod",
+      "sha256": "169b05225c8e2729727e0679ae3911918dfe1c4b18bed5ee0fae29f9ed77b207",
+      "size": 25
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/lint/@v/v0.0.0-20190227174305-5b3e6a55c961.mod",
+      "sha256": "8e86b5869db58a7659e485b07dbce3beb1170a153631579e50f4cbf544bb1342",
+      "size": 88
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/lint/@v/v0.0.0-20190313153728-d0100b6bd8b3.mod",
+      "sha256": "79df4350b922a8d193782e5600f88280a2b9d41781bfb3760c09bf52ad3023bf",
+      "size": 88
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/mod/@v/v0.0.0-20190513183733-4bf6d317e70e.mod",
+      "sha256": "ac221647647b0b59618b2e312ba252fc36d6e5cf33d0f2ca64f1fac65a1d6034",
+      "size": 97
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/mod/@v/v0.1.1-0.20191105210325-c90efee705ee.mod",
+      "sha256": "d76bbdea81d196d09858967a67ac805dacecdd1fb30c5001a187d24c129b1597",
+      "size": 159
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/mod/@v/v0.3.0.mod",
+      "sha256": "b288f088fd851885a6d348339e2f588e58a94e6c76e5e634ae1d67c2749eb413",
+      "size": 214
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/mod/@v/v0.4.2.mod",
+      "sha256": "b288f088fd851885a6d348339e2f588e58a94e6c76e5e634ae1d67c2749eb413",
+      "size": 214
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/mod/@v/v0.5.0.mod",
+      "sha256": "b95421189b64764ede9f68472f4dfd21de3c972b28dcb8eb2aa929d106bc690b",
+      "size": 214
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20180724234803-3673e40ba225.mod",
+      "sha256": "3e08f487ddda1851b891df5b1d04bb1a01b84d6d702aa82d9efbccde0aa7df81",
+      "size": 24
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20180826012351-8a410e7b638d.mod",
+      "sha256": "3e08f487ddda1851b891df5b1d04bb1a01b84d6d702aa82d9efbccde0aa7df81",
+      "size": 24
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20190108225652-1e06a53dbb7e.mod",
+      "sha256": "3e08f487ddda1851b891df5b1d04bb1a01b84d6d702aa82d9efbccde0aa7df81",
+      "size": 24
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20190213061140-3a22650c66bd.mod",
+      "sha256": "3e08f487ddda1851b891df5b1d04bb1a01b84d6d702aa82d9efbccde0aa7df81",
+      "size": 24
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20190311183353-d8887717615a.mod",
+      "sha256": "f7046769daac02beb57cbcc481280df59fb403c96fe8262282aba858c7f7fa4d",
+      "size": 119
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20190404232315-eb5bcb51f2a3.mod",
+      "sha256": "f7046769daac02beb57cbcc481280df59fb403c96fe8262282aba858c7f7fa4d",
+      "size": 119
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20190620200207-3b0461eec859.mod",
+      "sha256": "e6efdaf78a29503f080cf6d2615e289cfb1d9e3ab7d570f53668eca2b4ab41da",
+      "size": 181
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20190923162816-aa69164e4478.mod",
+      "sha256": "e6efdaf78a29503f080cf6d2615e289cfb1d9e3ab7d570f53668eca2b4ab41da",
+      "size": 181
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20200625001655-4c5254603344.mod",
+      "sha256": "d8c9dbbdfd59f4ab080c62199f9364d10b463e4efdba91a582fbaef42ce7512f",
+      "size": 181
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20200822124328-c89045814202.mod",
+      "sha256": "d8c9dbbdfd59f4ab080c62199f9364d10b463e4efdba91a582fbaef42ce7512f",
+      "size": 181
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20201021035429-f5854403a974.mod",
+      "sha256": "66fc44a0644a506da780f7a22a5d73dd025d44a6e58740b62d27f74d7c3a4948",
+      "size": 181
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20210226172049-e18ecbb05110.mod",
+      "sha256": "fef5896d103a0bce5055fdb5e96e830944334792437865347718edceb633348a",
+      "size": 179
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20210405180319-a5a99cb37ef4.mod",
+      "sha256": "f6b0f9968f5a7d986fcb57ebe2a14095118bbd1cbf6785d003f7afd711dcb1bd",
+      "size": 179
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20210726213435-c6fcb2dbf985.mod",
+      "sha256": "fa915f5d022cfb0cb865aa2ee37d3a7741b406f84eb4a837862e29cc69ab4ef4",
+      "size": 179
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20220722155237-a158d28d115b.info",
+      "sha256": "381a3737a9847cf1d354d43d9d2233b5fe6c045fbfb790cfafedf85fc1b4f18f",
+      "size": 78
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20220722155237-a158d28d115b.mod",
+      "sha256": "b315c52647d2da2f76e5cdb9d367e1d6727784236a9bffb612192b19b10a128d",
+      "size": 179
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/net/@v/v0.0.0-20220722155237-a158d28d115b.zip",
+      "sha256": "1decf7a324a0916bc66304da1b68a834ce679379422de3a2855f3031f6dc39bd",
+      "size": 1582191
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/oauth2/@v/v0.0.0-20180821212333-d2e6202438be.mod",
+      "sha256": "cbbb618da87d4f943b54bfd4f4d3a2fff3610298f04fbeeb3db388cb075f351a",
+      "size": 27
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/oauth2/@v/v0.0.0-20200107190931-bf48bf16ab8d.mod",
+      "sha256": "869f44e4ecd5cda53165510a308515670dd7edc92005e8079ca0a5c864529b2b",
+      "size": 233
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sync/@v/v0.0.0-20180314180146-1d60e4601c6f.mod",
+      "sha256": "421f6139686d5891f3dc5a563d0995780d3279f65cad4d225cea52686794161c",
+      "size": 25
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sync/@v/v0.0.0-20181108010431-42b317875d0f.mod",
+      "sha256": "421f6139686d5891f3dc5a563d0995780d3279f65cad4d225cea52686794161c",
+      "size": 25
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sync/@v/v0.0.0-20181221193216-37e7f081c4d4.mod",
+      "sha256": "421f6139686d5891f3dc5a563d0995780d3279f65cad4d225cea52686794161c",
+      "size": 25
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sync/@v/v0.0.0-20190423024810-112230192c58.mod",
+      "sha256": "421f6139686d5891f3dc5a563d0995780d3279f65cad4d225cea52686794161c",
+      "size": 25
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sync/@v/v0.0.0-20200625203802-6e8e738ad208.mod",
+      "sha256": "421f6139686d5891f3dc5a563d0995780d3279f65cad4d225cea52686794161c",
+      "size": 25
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sync/@v/v0.0.0-20201020160332-67f06af15bc9.mod",
+      "sha256": "421f6139686d5891f3dc5a563d0995780d3279f65cad4d225cea52686794161c",
+      "size": 25
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sync/@v/v0.0.0-20210220032951-036812b2e83c.info",
+      "sha256": "693dd9ad086551b2c99e3678bed8609005a8ffdfd0485036693c28f37d336f84",
+      "size": 78
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sync/@v/v0.0.0-20210220032951-036812b2e83c.mod",
+      "sha256": "421f6139686d5891f3dc5a563d0995780d3279f65cad4d225cea52686794161c",
+      "size": 25
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sync/@v/v0.0.0-20210220032951-036812b2e83c.zip",
+      "sha256": "92a8663af035a6831dcc9cc9d895a1f4bb51fc21efe97f04fa0676fc14992a46",
+      "size": 28693
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20180830151530-49385e6e1522.mod",
+      "sha256": "8969115e4a39108848324e79a1bd8a8445230e6e3aaccbe9f8057fb50fffc8c1",
+      "size": 24
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20181021155630-eda9bb28ed51.mod",
+      "sha256": "8969115e4a39108848324e79a1bd8a8445230e6e3aaccbe9f8057fb50fffc8c1",
+      "size": 24
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20190215142949-d0b11bdaac8a.mod",
+      "sha256": "8969115e4a39108848324e79a1bd8a8445230e6e3aaccbe9f8057fb50fffc8c1",
+      "size": 24
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20190222072716-a9d3bda3a223.mod",
+      "sha256": "8969115e4a39108848324e79a1bd8a8445230e6e3aaccbe9f8057fb50fffc8c1",
+      "size": 24
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20190412213103-97732733099d.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20190804053845-51ab0e2deafa.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20190922100055-0a153f010e69.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20190924154521-2837fb4f24fe.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20191005200804-aed5e4c7ecf9.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20191026070338-33540a1f6037.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20200116001909-b77594299b42.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20200223170610-d5e6a3e2c0ae.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20200323222414-85ca7c5b95cd.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20200420163511-1957bb5e6d1f.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20200615200032-f1bc736245b1.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20200930185726-fdedc70b468f.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20201119102817-f84b799fce68.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20210119212857-b64e53b001e4.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20210124154548-22da62e12c0c.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20210330210617-4fbd30eecc44.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20210423082822-04245dca01da.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20210423185535-09eb48e85fd7.mod",
+      "sha256": "181979e8bd57d2d9e064182da86c9a6111aa69755e888f08431ece4742aec343",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20210510120138-977fb7262007.mod",
+      "sha256": "f033333096fe198f3151deed93f2deba74e50bbfe7739134045bc3b7ce4a5024",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20210630005230-0f9fa26af87c.mod",
+      "sha256": "f033333096fe198f3151deed93f2deba74e50bbfe7739134045bc3b7ce4a5024",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20210927094055-39ccf1dd6fa6.mod",
+      "sha256": "f033333096fe198f3151deed93f2deba74e50bbfe7739134045bc3b7ce4a5024",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20220422013727-9388b58f7150.mod",
+      "sha256": "f033333096fe198f3151deed93f2deba74e50bbfe7739134045bc3b7ce4a5024",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20220503163025-988cb79eb6c6.mod",
+      "sha256": "f033333096fe198f3151deed93f2deba74e50bbfe7739134045bc3b7ce4a5024",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20220715151400-c0bba94af5f8.mod",
+      "sha256": "f033333096fe198f3151deed93f2deba74e50bbfe7739134045bc3b7ce4a5024",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20220811171246-fbc7d0a398ab.info",
+      "sha256": "89016540f242941d9441e6cebd897e80b6847ab79c4c91d30845063508eb5930",
+      "size": 191
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20220811171246-fbc7d0a398ab.mod",
+      "sha256": "f033333096fe198f3151deed93f2deba74e50bbfe7739134045bc3b7ce4a5024",
+      "size": 33
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/sys/@v/v0.0.0-20220811171246-fbc7d0a398ab.zip",
+      "sha256": "5ebd34faf34cfb7824ed6d12e95e793c8564ccc989af9f9c7998422c36ec9838",
+      "size": 1814667
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/term/@v/v0.0.0-20201126162022-7de9c90e9dd1.mod",
+      "sha256": "4cbab14f7706771b271d995a1b3cc131fe5a246aadc7ee6d1ba6f0bd894781fa",
+      "size": 95
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/term/@v/v0.0.0-20210503060354-a79de5458b56.mod",
+      "sha256": "2a3d48c672737e428ce190ec0ac8f7cb8979d764ead34487474d181d84fd6bf1",
+      "size": 95
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/term/@v/v0.0.0-20210927222741-03fcf44c2211.info",
+      "sha256": "5562b645b70cdbe68a0db982b36cf73a9b8d7eb21ce62de40562e31b06479acc",
+      "size": 78
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/term/@v/v0.0.0-20210927222741-03fcf44c2211.mod",
+      "sha256": "740794e2914f5cc87e25656c5843222b2c65665821205f45632a0477c8d3f79b",
+      "size": 95
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/term/@v/v0.0.0-20210927222741-03fcf44c2211.zip",
+      "sha256": "3adf713afa49fe26580ffe4adb1f4fb2f4921c945301aa5a9fb6d34031fa30cd",
+      "size": 21653
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/text/@v/v0.3.0.mod",
+      "sha256": "36879d586fd8001e84da8787190a11e4f78749e2a81dfe8b9b6931899fff31cf",
+      "size": 25
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/text/@v/v0.3.2.mod",
+      "sha256": "6c3c7adf2b0ad7143d913f4698d1908422369a5e6f198620f97f3e52f9a1b8dd",
+      "size": 88
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/text/@v/v0.3.3.mod",
+      "sha256": "fbb7a88ed140515e790eca7a10ffd319c9786b11c6a6c7e59f80f7fb37bb4542",
+      "size": 97
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/text/@v/v0.3.5.mod",
+      "sha256": "fbb7a88ed140515e790eca7a10ffd319c9786b11c6a6c7e59f80f7fb37bb4542",
+      "size": 97
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/text/@v/v0.3.6.mod",
+      "sha256": "fbb7a88ed140515e790eca7a10ffd319c9786b11c6a6c7e59f80f7fb37bb4542",
+      "size": 97
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/text/@v/v0.3.7.info",
+      "sha256": "07a984d83d461c5449347de5869c013136a0e60beed8434ac168447afcdea568",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/text/@v/v0.3.7.mod",
+      "sha256": "c45d669089427bc4635d07b185f9b9680332d1c48c75b3c49cb715b81a04a5b0",
+      "size": 97
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/text/@v/v0.3.7.zip",
+      "sha256": "e1a9115e61a38da8bdc893d0ba83b65f89cc1114f152a98eb572c5ea6551e8d4",
+      "size": 8610883
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/tools/@v/v0.0.0-20180917221912-90fa682c2a6e.mod",
+      "sha256": "a0e02f0678fe62dc3c4b4bc77fa912c9b70de10fa9f7cf2f7aad0337392b52af",
+      "size": 26
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/tools/@v/v0.0.0-20190114222345-bf090417da8b.mod",
+      "sha256": "a0e02f0678fe62dc3c4b4bc77fa912c9b70de10fa9f7cf2f7aad0337392b52af",
+      "size": 26
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/tools/@v/v0.0.0-20190226205152-f727befe758c.mod",
+      "sha256": "2503823869125550d3f88bdef72820024fe27b141f44b81fc3b4f59ef78370eb",
+      "size": 194
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/tools/@v/v0.0.0-20190311212946-11955173bddd.mod",
+      "sha256": "029638674bdf4fce7437ebc25cda0c8172674ec534b1d2edeb0b474c7d618f00",
+      "size": 87
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/tools/@v/v0.0.0-20190524140312-2c0ae7006135.mod",
+      "sha256": "135189df02315d75d62e27551d1accad1db5bd3c1a2a8756f63a69f73b1b5217",
+      "size": 146
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/tools/@v/v0.0.0-20190621195816-6e04913cbbac.mod",
+      "sha256": "7eeccd01252b0a8983093e5b905aac5a041528477e1348f54b8aa35b6bb3406f",
+      "size": 155
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/tools/@v/v0.0.0-20190907020128-2ca718005c18.mod",
+      "sha256": "88d479265f886f5e598d76c003d0f257b42dbf1b895d820a12b5ab0b3501aca1",
+      "size": 212
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/tools/@v/v0.0.0-20191119224855-298f0cb1881e.mod",
+      "sha256": "88d479265f886f5e598d76c003d0f257b42dbf1b895d820a12b5ab0b3501aca1",
+      "size": 212
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/tools/@v/v0.0.0-20200102200121-6de373a2766c.mod",
+      "sha256": "5ea469c803b6ef8d41d1561b9e301a003fdd93976468bda5574b26b056ea7f49",
+      "size": 267
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/tools/@v/v0.0.0-20200711155855-7342f9734a7d.mod",
+      "sha256": "c8c1ac35d2ab87e2af4def0399268b1643f940ea35fa3c4601852db99b2363cc",
+      "size": 271
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/tools/@v/v0.1.0.mod",
+      "sha256": "675904bc2b2e2bedf02a811b1d1da02030c2552efc9c152a9276a44684ad313f",
+      "size": 323
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/tools/@v/v0.1.6-0.20210726203631-07bc1bf47fb2.mod",
+      "sha256": "03697605374ee3b0fa9b502ea456d9c6ae1835dac22e35baa2a99c4058a0fe31",
+      "size": 323
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/xerrors/@v/v0.0.0-20190717185122-a985d3407aa7.mod",
+      "sha256": "aa5e3ec9bb7b9f681609efac019d9de1a7ba7719248ff1eaa27e78882db3d7f5",
+      "size": 37
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/xerrors/@v/v0.0.0-20191011141410-1b5146add898.mod",
+      "sha256": "aa5e3ec9bb7b9f681609efac019d9de1a7ba7719248ff1eaa27e78882db3d7f5",
+      "size": 37
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/xerrors/@v/v0.0.0-20191204190536-9bdfabe68543.mod",
+      "sha256": "aa5e3ec9bb7b9f681609efac019d9de1a7ba7719248ff1eaa27e78882db3d7f5",
+      "size": 37
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/xerrors/@v/v0.0.0-20200804184101-5ec99f83aff1.info",
+      "sha256": "f8e55e8d1af8d0bdfb63492476c7f5f57f634db918bc2b26e34594e25dd2b024",
+      "size": 78
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/xerrors/@v/v0.0.0-20200804184101-5ec99f83aff1.mod",
+      "sha256": "aa5e3ec9bb7b9f681609efac019d9de1a7ba7719248ff1eaa27e78882db3d7f5",
+      "size": 37
+    },
+    {
+      "path": "compliance/source-delivery/modules/golang.org/x/xerrors/@v/v0.0.0-20200804184101-5ec99f83aff1.zip",
+      "sha256": "380aaa3368ae165628bb487cf4e695a55c1420072b8b7a6f59c122f6a23bb255",
+      "size": 22295
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/appengine/@v/v1.1.0.mod",
+      "sha256": "d0fb3f328a95259ddeeb7ef934f2abae0327c6a052ff1ab05a2b882178a953b8",
+      "size": 35
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/appengine/@v/v1.4.0.mod",
+      "sha256": "f95b808fed2c6febb23a8d11e92743583b37861584d302349ada5ae02a3874dd",
+      "size": 162
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/genproto/@v/v0.0.0-20180817151627-c66870c02cf8.mod",
+      "sha256": "4379a64312660353b2dadb20fd55d9968674bbc2bbcf09d50c0aba80111a64b2",
+      "size": 34
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/genproto/@v/v0.0.0-20190819201941-24fa4b261c55.mod",
+      "sha256": "4b8edb9554439c665a29e584eda81870cbb699092227d97ba8fa9641538d541d",
+      "size": 331
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/genproto/@v/v0.0.0-20200513103714-09dca8ec2884.mod",
+      "sha256": "fbd05816c9b7b0f8e4efa837a4255eea84a28e52ff1810f8072923878fecf703",
+      "size": 287
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/genproto/@v/v0.0.0-20200526211855-cb27e3aa2013.mod",
+      "sha256": "4ec394d3eca73687d111a3e0e88808b100687302b463b17869bcd026016748bd",
+      "size": 353
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/genproto/@v/v0.0.0-20220502173005-c8bf987b8c21.info",
+      "sha256": "7b409f22cd1fa69ab4d5b76ae754e0579ab1de9654e5319b8b1ee3f39ac2b347",
+      "size": 78
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/genproto/@v/v0.0.0-20220502173005-c8bf987b8c21.mod",
+      "sha256": "a3ba08dcb6cf4c7e1456f08dc2a31864cc0c739180e13eafdd8e9d6cbdc4a31d",
+      "size": 327
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/genproto/@v/v0.0.0-20220502173005-c8bf987b8c21.zip",
+      "sha256": "d687760d8e58a8a0c81b70e2fd4118d981a7025e38153f833a08e798bff7c501",
+      "size": 15770461
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/grpc/@v/v1.19.0.mod",
+      "sha256": "71de2597fd082e882ef08965ba0c3ee19d38f2df25920733cd434cf80a27ac35",
+      "size": 833
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/grpc/@v/v1.23.0.mod",
+      "sha256": "587c9b854d7f5f0181487c854a24fc4c01982e5641d302ce1d0f3d041951cb8b",
+      "size": 762
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/grpc/@v/v1.25.1.mod",
+      "sha256": "3c4690179945744ec5b01279df99be86153fd386d6fa6b8ef9888ace428cb182",
+      "size": 532
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/grpc/@v/v1.27.0.mod",
+      "sha256": "8ad8b97a2a43c2c76572c43a01c469a6e8ec3b049e739a8d3353c9c2ee4cd3d6",
+      "size": 562
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/grpc/@v/v1.33.1.mod",
+      "sha256": "7e56c2383c6f9d9dba76e9183e69621be3da99fb24f579c794bf7637696d083b",
+      "size": 542
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/grpc/@v/v1.36.0.mod",
+      "sha256": "57f7605ce8696d191a8c7d1c4d2529b9566d60b62e1952a5332a958af436adcc",
+      "size": 608
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/grpc/@v/v1.46.0.mod",
+      "sha256": "2fafe0f7cea22e8f193feb58d5ed5ba68c645eb9210543cfcdfe307ffd2254bb",
+      "size": 705
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/grpc/@v/v1.47.0.info",
+      "sha256": "8baa1235a7910daed22ea32f88c38dd882d70019cb5513d2fc72e5dd2288cf93",
+      "size": 51
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/grpc/@v/v1.47.0.mod",
+      "sha256": "2fafe0f7cea22e8f193feb58d5ed5ba68c645eb9210543cfcdfe307ffd2254bb",
+      "size": 705
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/grpc/@v/v1.47.0.zip",
+      "sha256": "30dde2a858d77414c283994f1ace3dd52f2fa75e43a9b13057d458525808917f",
+      "size": 1850525
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v0.0.0-20200109180630-ec00e32a8dfd.mod",
+      "sha256": "a23990efb67ee10bb16d1d1936109cefa4e4262ae3da8d0748efb691614dbb78",
+      "size": 83
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v0.0.0-20200221191635-4d8936d0db64.mod",
+      "sha256": "a6d950dd2a7eb82e51cf459d3f61f614b09d730adb9e8094d5bf96b043f38174",
+      "size": 128
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v0.0.0-20200228230310-ab0ca4ff8a60.mod",
+      "sha256": "3b808d19947fb29e4db24ed5cb88941afc1927f538d80ad6f880ae4664a5d016",
+      "size": 158
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v1.20.1-0.20200309200217-e05f789c0967.mod",
+      "sha256": "420ec9fba7793b96dff1c5ae9983656e72e1c0bd1d14dda2398aec1b294780ff",
+      "size": 128
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v1.21.0.mod",
+      "sha256": "a532d488ff1097b330ff2e2929f39ecff8c2fa09dc7650b66ca5430c2d8303fb",
+      "size": 158
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v1.22.0.mod",
+      "sha256": "394a49462cbf6dca4dd86f3cf0e8ddcbb9adc9397f73e82fecae54c79e9e4d53",
+      "size": 123
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v1.23.0.mod",
+      "sha256": "394a49462cbf6dca4dd86f3cf0e8ddcbb9adc9397f73e82fecae54c79e9e4d53",
+      "size": 123
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v1.23.1-0.20200526195155-81db48ad09cc.mod",
+      "sha256": "394a49462cbf6dca4dd86f3cf0e8ddcbb9adc9397f73e82fecae54c79e9e4d53",
+      "size": 123
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v1.25.0.mod",
+      "sha256": "6dea80873d2758a81de6d16bcf6a7f45a27f2ad4c047b7b4da1e88481a974903",
+      "size": 186
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v1.26.0-rc.1.mod",
+      "sha256": "b2c4fe1a66ff5be6eb7c0c5388f080d08821c327ac5cf975dee51d8b0fb49e9f",
+      "size": 83
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v1.26.0.mod",
+      "sha256": "08ec2e20f38efcb651462800069ece4891e252a261007fa9d5a1b157f516ee5f",
+      "size": 123
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v1.27.1.mod",
+      "sha256": "08ec2e20f38efcb651462800069ece4891e252a261007fa9d5a1b157f516ee5f",
+      "size": 123
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v1.28.0.info",
+      "sha256": "757ff33ca7bddaedd126380126bed0c57b799aca5fb2af423381aa1b99e94e0d",
+      "size": 51
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v1.28.0.mod",
+      "sha256": "3f7c7260a987dce2fdfb48ce2af8b4f364873507d21abcccebab0a2743761e27",
+      "size": 124
+    },
+    {
+      "path": "compliance/source-delivery/modules/google.golang.org/protobuf/@v/v1.28.0.zip",
+      "sha256": "f06dc39ce93043d6ec91a5106c7ec958be6b4ba520cab3a21a2448d387cf15a4",
+      "size": 1573860
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/check.v1/@v/v0.0.0-20161208181325-20d25e280405.mod",
+      "sha256": "5c306e0d633cd66a11b40e2e5fbbc6da42110db7d72ea3c1524ceb45ee40c33f",
+      "size": 25
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/check.v1/@v/v1.0.0-20180628173108-788fd7840127.mod",
+      "sha256": "5c306e0d633cd66a11b40e2e5fbbc6da42110db7d72ea3c1524ceb45ee40c33f",
+      "size": 25
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/djherbis/times.v1/@v/v1.2.0.info",
+      "sha256": "97e09bdfbe4ce4a78e058a41c5549c0d5dcd21d4a65237fa589617274e9f46e3",
+      "size": 50
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/djherbis/times.v1/@v/v1.2.0.mod",
+      "sha256": "16c48757e90fba6f90fa0a15d209e0975b1c6059c1c73d03e45e9c4bd7eada0f",
+      "size": 34
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/djherbis/times.v1/@v/v1.2.0.zip",
+      "sha256": "92d3e72c68f64be010db84e1e5ddb1ee6fab93a4aad57b715c128aac75d44cea",
+      "size": 16389
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/errgo.v2/@v/v2.1.0.mod",
+      "sha256": "e305204248256627966ff85c7dc591cf2d0e7de2094d0f465849f1b62a102748",
+      "size": 133
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/tomb.v1/@v/v1.0.0-20141024135613-dd632973f1e7.info",
+      "sha256": "0b1cf4369225432986485e2544c1cd866634e4ca8f3a6c443678123005f07899",
+      "size": 78
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/tomb.v1/@v/v1.0.0-20141024135613-dd632973f1e7.mod",
+      "sha256": "3663081d0d18fd2eccbdbe45e90193d3194d587441f7afafb33674d68702e0aa",
+      "size": 24
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/tomb.v1/@v/v1.0.0-20141024135613-dd632973f1e7.zip",
+      "sha256": "34898dc0e38ba7a792ab74a3e0fa113116313fd9142ffb444b011fd392762186",
+      "size": 5099
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/yaml.v2/@v/v2.2.2.mod",
+      "sha256": "88d979d2f093d2397f756bc86efa2ca03f73a60d668ceb391b3510029f3f7cfc",
+      "size": 95
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/yaml.v2/@v/v2.2.3.mod",
+      "sha256": "88d979d2f093d2397f756bc86efa2ca03f73a60d668ceb391b3510029f3f7cfc",
+      "size": 95
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/yaml.v2/@v/v2.3.0.mod",
+      "sha256": "88d979d2f093d2397f756bc86efa2ca03f73a60d668ceb391b3510029f3f7cfc",
+      "size": 95
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/yaml.v3/@v/v3.0.0-20200313102051-9f266ea9e77c.mod",
+      "sha256": "21579860a20306fcf43b1bd234d1fba319499c77611b71c05f9bf3ba90dab939",
+      "size": 95
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/yaml.v3/@v/v3.0.0-20210107192922-496545a6307b.mod",
+      "sha256": "21579860a20306fcf43b1bd234d1fba319499c77611b71c05f9bf3ba90dab939",
+      "size": 95
+    },
+    {
+      "path": "compliance/source-delivery/modules/gopkg.in/yaml.v3/@v/v3.0.1.mod",
+      "sha256": "21579860a20306fcf43b1bd234d1fba319499c77611b71c05f9bf3ba90dab939",
+      "size": 95
+    },
+    {
+      "path": "compliance/source-delivery/modules/gotest.tools/v3/@v/v3.4.0.mod",
+      "sha256": "e5f63f3f9e5bb5bb1608fb340fb2d3a7a6e768f1e6616ae3bbf416d892996871",
+      "size": 105
+    },
+    {
+      "path": "compliance/source-delivery/modules/honnef.co/go/tools/@v/v0.0.0-20190102054323-c2f93a96b099.mod",
+      "sha256": "b1c60837ea61335f14df64f3194c3cd92e0f628f6064806718950f0d7a1dbe9e",
+      "size": 26
+    },
+    {
+      "path": "compliance/source-delivery/modules/honnef.co/go/tools/@v/v0.0.0-20190523083050-ea95bdfd59fc.mod",
+      "sha256": "b1c60837ea61335f14df64f3194c3cd92e0f628f6064806718950f0d7a1dbe9e",
+      "size": 26
+    },
+    {
+      "path": "compliance/source-delivery/modules/honnef.co/go/tools/@v/v0.0.1-2019.2.3.mod",
+      "sha256": "592e9c55bb272525a46900c55469feb97adae507e7649beab4dc1350d735f64f",
+      "size": 300
+    },
+    {
+      "path": "compliance/source-delivery/modules/mvdan.cc/interfacer/@v/v0.0.0-20180901003855-c20040233aed.mod",
+      "sha256": "c7687291f6d7923d47ba483a1506fa7b0e9d43d1326c4a0dfa0627903f1c9ddc",
+      "size": 27
+    },
+    {
+      "path": "compliance/source-delivery/modules/mvdan.cc/lint/@v/v0.0.0-20170908181259-adc824a0674b.mod",
+      "sha256": "77e8e1a87f4d93579b9b529349e00294d2c05d8f3e6798e5862ae0342e7964c0",
+      "size": 21
+    },
+    {
+      "path": "compliance/source-delivery/package.py",
+      "sha256": "98053ab6439b3cd345f8d2470d0ba94515498f1203a1443f883c01518ed5e9ab",
+      "size": 24539
+    },
+    {
+      "path": "tests/test_source_delivery.py",
+      "sha256": "868a951b5f734c48f0498bbd515005e4b2440b4872f64ae3bd7ecef115467799",
+      "size": 8082
+    }
+  ],
+  "format": 1,
+  "path_base": "repository-root",
+  "permission": "None conferred. Preserve original third-party notices and existing firmware/notices export selections.",
+  "required_retained_files": [
+    {
+      "path": "bootstrap.py",
+      "sha256": "1a4ea31376a7689fd55a1cc862cef88df4e3c84d85ed415cc9994f333395fb7a",
+      "size": 27416
+    },
+    {
+      "path": "build-contract.json",
+      "sha256": "f7dea5fd4a5980cf0483eab3308bbc0c8a572ae10a827b609ee3190224118262",
+      "size": 509
+    },
+    {
+      "path": "build.py",
+      "sha256": "29fbf6dcfb988a99870134f6a1e403f93c421fb1f60e037e3a90576e1b364845",
+      "size": 5753
+    },
+    {
+      "path": "build_native.py",
+      "sha256": "c95ee3839efa392144ab18bad5b680a6e3f77f1fe7ff7ca6bb51c852827f408f",
+      "size": 4485
+    },
+    {
+      "path": "build_support.py",
+      "sha256": "7a769749ddde077d24729eb13d730b98d8d22b41c655facb6c8cac944046d088",
+      "size": 8387
+    },
+    {
+      "path": "compliance/firmware/acquisition-lock.json",
+      "sha256": "40016dbb1c774afe8a98443d56cf7833137ccf70e47331fef735b1ec5cd5bf8b",
+      "size": 26078
+    },
+    {
+      "path": "compliance/firmware/source-catalog.json",
+      "sha256": "ebf38d824e540512cb8980f61b7ec5a98b14f50ea9795edaa515d1c59ca96a74",
+      "size": 15672
+    },
+    {
+      "path": "compliance/guest-agent/manifest.json",
+      "sha256": "9176d0a3f4260e09b54d24b688bc9d65a9a71447bb41ad8810b7aba351029078",
+      "size": 8041
+    },
+    {
+      "path": "compliance/linkage/inventory.json",
+      "sha256": "b4a115dc7962aef160c6327e357594594fbc1ae1ae88b8c0b052ab9436a5491e",
+      "size": 13580415
+    },
+    {
+      "path": "compliance/notices/historical-go.lock.json",
+      "sha256": "e98df367835bb1e408b2d5c82b97ca46e66625e5a98d083849aec2c5df793cc9",
+      "size": 1191
+    },
+    {
+      "path": "compliance/notices/inputs/go-release-catalog.json",
+      "sha256": "1ed915f72633d0a72eaa2f462740153db4fe347cb56f7d1e25ec44868568f13e",
+      "size": 2211180
+    },
+    {
+      "path": "compliance/notices/manifest.json",
+      "sha256": "a4ee6282845e1e3b17a0e963e59984eb26d10e7e8109ccfb5b1bce46e56a1831",
+      "size": 776639
+    },
+    {
+      "path": "dependencies.lock.json",
+      "sha256": "ff6fc999c3c583be22417c3ac89a08e2db82ef618f80377ca46fb5c18cedf110",
+      "size": 3857
+    },
+    {
+      "path": "link_lima.py",
+      "sha256": "1bb81a73a3305e2c7eccaeba0c7b4f6abfb87f67a0067807a54af0a663db297e",
+      "size": 7554
+    },
+    {
+      "path": "native/overrides.json",
+      "sha256": "111f5c0e07c0dc327862ed041b4e2bf39240d2dcc2fbad3cf1f401828bfbacd6",
+      "size": 1443
+    },
+    {
+      "path": "native/overrides/os-posix.c",
+      "sha256": "ca47da2c52e45f22b049b490952270a052589b24938bb6942e420df2240a684d",
+      "size": 8748
+    },
+    {
+      "path": "native/overrides/util__main-loop.c",
+      "sha256": "9593046a5cd6a3b1fbc821b2656d3b56b17b4ffdccb26e72262f60c984728d0b",
+      "size": 17413
+    },
+    {
+      "path": "native/overrides/util__oslib-posix.c",
+      "sha256": "06fba5039fbae66e7f38b210b0d85b13644232c2811205fecbbc1c263cd335a6",
+      "size": 28128
+    },
+    {
+      "path": "native/overrides/util__qemu-thread-posix.c",
+      "sha256": "1dcf0d23dbc3b639ba4ce3cd939b4ad0dc922865c98e633d86a0a90be64c66aa",
+      "size": 17442
+    },
+    {
+      "path": "prepare_sources.py",
+      "sha256": "d6e7fa587f3ab9767d3f75bc8ebdaf833c9b2a09d11616d0b2822ac5b137ec8c",
+      "size": 18155
+    },
+    {
+      "path": "source-overlays.json",
+      "sha256": "151b9bbb816d6d4b7c1185e6ba195d3a71a019da8c077f5f30fef39ef176a53f",
+      "size": 34934
+    },
+    {
+      "path": "sources.lock.json",
+      "sha256": "d8f6fafa160886dc11b35a3c2608df73225cb8e20d8cf793c6b3c584196cfb8d",
+      "size": 4418
+    },
+    {
+      "path": "src/lima/README.ja.md",
+      "sha256": "418741415660e90afbcc36505a05f29670eb6188de9f11b9508df7b80cc62db0",
+      "size": 28894
+    },
+    {
+      "path": "src/lima/README.md",
+      "sha256": "d5f695be483cb454acc1ae127711ebf841772361e02adc7c4f81e6a5c3e59be7",
+      "size": 21379
+    },
+    {
+      "path": "src/lima/cmd/limactl/edit.go",
+      "sha256": "897eb4a0da6ac746d3bd27545f26a070e70d8e3efef9a5f1f44e13ac8cfe0628",
+      "size": 3182
+    },
+    {
+      "path": "src/lima/cmd/limactl/licenses.go",
+      "sha256": "addbc6c5b066eccda4498831ea8623e61f27fb1c5ef8188eed66d957d52f6225",
+      "size": 802
+    },
+    {
+      "path": "src/lima/cmd/limactl/main.go",
+      "sha256": "6d1fd1f968a7b48040604899b4988217e698bc4f084f1dc93106b76dfc30771f",
+      "size": 3031
+    },
+    {
+      "path": "src/lima/cmd/limactl/native.go",
+      "sha256": "15cb70677cdbe191f38703839ca1ed88bc8a767bb837921a5e4b2e52c4332bef",
+      "size": 1712
+    },
+    {
+      "path": "src/lima/cmd/limactl/native_darwin_amd64.go",
+      "sha256": "551eac042f8baa35f5f890d2951bc37f6316a6d75cefbc50a1d2648911bbd337",
+      "size": 1437
+    },
+    {
+      "path": "src/lima/cmd/limactl/native_test.go",
+      "sha256": "a7ccbc282e80887ea1aa8f3be5759d9c0f1bf6e08a125564a7b48547bce36886",
+      "size": 4350
+    },
+    {
+      "path": "src/lima/cmd/limactl/native_unsupported.go",
+      "sha256": "3da3ed2adb13f33ae524448162c10873ba94012dbcbffc5002d0943c21fa74a2",
+      "size": 250
+    },
+    {
+      "path": "src/lima/cmd/limactl/prune.go",
+      "sha256": "787c4cada5c6bb4d7574d9d5d7afc857ff83b2423194210d43e3ba5951692083",
+      "size": 626
+    },
+    {
+      "path": "src/lima/cmd/limactl/start.go",
+      "sha256": "89b6cfa92a0a67924893da1ceea683deb17fadf6e6de0384247aa13c0b1dcb97",
+      "size": 11686
+    },
+    {
+      "path": "src/lima/cmd/limactl/start_templates_test.go",
+      "sha256": "f95fb880f1d038737d6904b2083c75ed74fe4a7f29bc27cf3a66dccfc79c1f4f",
+      "size": 1169
+    },
+    {
+      "path": "src/lima/cmd/limactl/stop.go",
+      "sha256": "903649290dc6ae5b7806dd641ad8aa7b4f66ea730e983bf547dabeeae1fd3860",
+      "size": 4951
+    },
+    {
+      "path": "src/lima/cmd/limactl/stop_test.go",
+      "sha256": "8ed5b9d806de0d347f71b343bc7d97a52804db57074e147be1b13987c490e981",
+      "size": 10101
+    },
+    {
+      "path": "src/lima/docs/internal.md",
+      "sha256": "c102cc7b41e6af0cce419c04f5afb0f306b3375b55c063b3c5e374c93bbfc210",
+      "size": 6515
+    },
+    {
+      "path": "src/lima/docs/single-file.md",
+      "sha256": "853a2eda4f1d5518d9c3d4e856036092181e7291ca18378a917f8fb035d13905",
+      "size": 5980
+    },
+    {
+      "path": "src/lima/go.mod",
+      "sha256": "a09783094092265a425a880f832ac8e3e3af7c05afbde2aa9fe482b8582cf571",
+      "size": 2916
+    },
+    {
+      "path": "src/lima/go.sum",
+      "sha256": "9fe34aca691f53489b3f524afdb9e66d700782467e0ac5f5e31786c604c2de66",
+      "size": 34340
+    },
+    {
+      "path": "src/lima/pkg/cidata/cidata.go",
+      "sha256": "10525934df582e8f0956ace17b3b679089349d33a66ead90c97717f48cb7eeba",
+      "size": 8618
+    },
+    {
+      "path": "src/lima/pkg/cidata/embedded_test.go",
+      "sha256": "3b247fff27959830684a74bb3bb0cc5d1fde8a9526dd274c68ae644aa2ed6b26",
+      "size": 876
+    },
+    {
+      "path": "src/lima/pkg/downloader/cache_test.go",
+      "sha256": "2dd259c68445bebb0382bceaa595ad417b3d2627015f8b93a454decc17b42700",
+      "size": 3243
+    },
+    {
+      "path": "src/lima/pkg/downloader/downloader.go",
+      "sha256": "f9c8a92a2f7061cc372b71cbf5f0e6573aa9be17ec00058710d70f7c4d9ab85a",
+      "size": 10655
+    },
+    {
+      "path": "src/lima/pkg/editutil/editutil.go",
+      "sha256": "3117a7883fa6a696961e9bdf1c6ab06703e5cb6fb43f2b7bd02fccf409ad5f8d",
+      "size": 2426
+    },
+    {
+      "path": "src/lima/pkg/editutil/storage_test.go",
+      "sha256": "1b6cae0d13e58849fc3779429a37a177b955fcfd04b611f7c36d1e65b09c91b5",
+      "size": 3126
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/NOTES.md",
+      "sha256": "d9a595069fd746c30e08dc44e62359ad0a217bb2e32e13c08b113036db29e64b",
+      "size": 1062
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/assets.go",
+      "sha256": "678758ac9859eafc897cfaa2150e1484077a7010017a7c299a62c4afb85b0d9b",
+      "size": 1049
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/assets_test.go",
+      "sha256": "dbd19f1627cbaeed4eedb7cc64de2f1ab3b440a769442555492ef5461347c84e",
+      "size": 1314
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/README.md",
+      "sha256": "45c162839a4adc345b6b6c716587df5cbeb7cc78d596c646ca98cacc70bde12f",
+      "size": 3505
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/almalinux-8.yaml",
+      "sha256": "eec68b3b6d8fe63d4caf1116150d0e4c698a43d9f19dd75c6016bbc04122dd94",
+      "size": 917
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/almalinux-9.yaml",
+      "sha256": "d05057b9e41daf21f41aaedea31b9b44fbcae9cfae54935e20fa9659de405311",
+      "size": 667
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/almalinux.yaml",
+      "sha256": "d05057b9e41daf21f41aaedea31b9b44fbcae9cfae54935e20fa9659de405311",
+      "size": 667
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/alpine.yaml",
+      "sha256": "9d939625215624e5ac964bc9c72ab2002063ba4ba3c31c9071307680169954ff",
+      "size": 943
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/apptainer-rootful.yaml",
+      "sha256": "f9b277668c79a96052598ef2f21fc4be78f67f4e6ee727287ec1fc7b3ca6c4ab",
+      "size": 1708
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/apptainer.yaml",
+      "sha256": "f915035a6fafb91a5701c97513ae9ac292044ca8bed7cbe7170a3ebddbadd41d",
+      "size": 1515
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/archlinux.yaml",
+      "sha256": "9fab4ce55c8b23f0f6e9b08b74e8bbc43b02a4d42bd8e28a1a28aac121dd4f35",
+      "size": 966
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/buildkit.yaml",
+      "sha256": "c1b096af4c8ab19c402eb65b0be7c36dd31b467c35102a806a5ff3bdf83c1284",
+      "size": 1528
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/centos-stream-8.yaml",
+      "sha256": "43670708801007ea9ad63c2999e07576868aec9436c06d49d1ec2a1f5ad2784d",
+      "size": 911
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/centos-stream-9.yaml",
+      "sha256": "957e96deb27a3d6bb15f277c461e3cebfafd6ca7b4c7e987fa400af9ff8c2e1c",
+      "size": 781
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/centos-stream.yaml",
+      "sha256": "957e96deb27a3d6bb15f277c461e3cebfafd6ca7b4c7e987fa400af9ff8c2e1c",
+      "size": 781
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/debian.yaml",
+      "sha256": "29e72492447bf29b62cd482982c63f6f200c42e289eb8ea2da15bb165b66b325",
+      "size": 687
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/default.yaml",
+      "sha256": "5e229e39a56ec7752f1a8d5db456e0a2323c189185f66a7940dd3acaab5f9822",
+      "size": 18288
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/deprecated/centos-7.yaml",
+      "sha256": "352969f885d652c8418ab83e615b492ba972d10e5cfba70213612ee505f79a7d",
+      "size": 1029
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/docker-rootful.yaml",
+      "sha256": "07b9744b59329f99510b71c9a04476a8973cf3356d392d4d991ca7a2a251cad0",
+      "size": 3575
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/docker.yaml",
+      "sha256": "85af5be49ee04566349900baf02402d91b09e1275ddaee01b84d875bdcbb96c2",
+      "size": 3557
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/experimental/9p.yaml",
+      "sha256": "cd850168bcd83b5b75c5fbac6bc36d3a2fa83efa2f9472cff7c7fcf01b072c1b",
+      "size": 1355
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/experimental/opensuse-tumbleweed.yaml",
+      "sha256": "a620b2816ab621520af52878a909dba87e31ef27888cf04a33ba6def0e95c0e5",
+      "size": 458
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/experimental/riscv64.yaml",
+      "sha256": "89f5e53928868535e43a68a4b91e5f754ed992ebf551c182abc5f74ec1bc9937",
+      "size": 1330
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/experimental/vz.yaml",
+      "sha256": "ebd5e736bb140d1ea4bf267f7d997941833c26832839d7b762f6b866bde4ba82",
+      "size": 808
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/faasd.yaml",
+      "sha256": "8bf115bcbc68e815088ebcef481825c9e664016e21889642ab942759abfbb8a5",
+      "size": 2579
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/fedora.yaml",
+      "sha256": "4c9e35860d46958b75681396add367820410dba809e89332d81d3e267ad3db51",
+      "size": 596
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/k3s.yaml",
+      "sha256": "fe39dc7dff55bccfec4e6644f20850f4bce60a0702005d5d09a2894bef4f923e",
+      "size": 2510
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/k8s.yaml",
+      "sha256": "3f6cd442bde2e67705b78d8c9a21a843b5058d449a4a797cc29011d842fd0436",
+      "size": 6731
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/nomad.yaml",
+      "sha256": "d5b0a4753e1f1baae5cff043f54c92db561d756d4c01a797d2db120c793829e6",
+      "size": 3217
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/opensuse.yaml",
+      "sha256": "6d20af5a5b223a1709e89546ef3d8d5ec118219bbda961b6c0557e6279b4798d",
+      "size": 377
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/oraclelinux-8.yaml",
+      "sha256": "82753e8ec4aec9534cf858548253a9984860e8e1952cb7dfa09ac7dd83d06290",
+      "size": 1024
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/oraclelinux-9.yaml",
+      "sha256": "f517fa910a8f5912351f04e5d9adc065bdcb8aea4a1e137d985392a08cd97bd9",
+      "size": 781
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/oraclelinux.yaml",
+      "sha256": "f517fa910a8f5912351f04e5d9adc065bdcb8aea4a1e137d985392a08cd97bd9",
+      "size": 781
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/podman-rootful.yaml",
+      "sha256": "ede9448ed44d36a5ab17e250eeb35633fb9002b852d434d30b33a6cea6c530f8",
+      "size": 2614
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/podman.yaml",
+      "sha256": "be37a13ba4da5380519b8da1954e4c5c0bd0b48f2eca0c3516cc67c6217abd8f",
+      "size": 2157
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/rocky-8.yaml",
+      "sha256": "fb1575b389e11fa23c4948d92c4d4956f977549e6fc7d48a9dad4bfd4188260e",
+      "size": 886
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/rocky-9.yaml",
+      "sha256": "89cf906c2591d53d5d6cf705c4d886fc2c6983e9d90f0fd2dcc2dbc6599babe4",
+      "size": 629
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/rocky.yaml",
+      "sha256": "89cf906c2591d53d5d6cf705c4d886fc2c6983e9d90f0fd2dcc2dbc6599babe4",
+      "size": 629
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/ubuntu-lts.yaml",
+      "sha256": "e91a0b00a2e301c84bf3eed6a2d7afd9cfb64bc2a73dd97f16ca529834a172a1",
+      "size": 1015
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/ubuntu.yaml",
+      "sha256": "856864af9113dd8654644fa24e817c0a30c159c6eb46fc0eb27acb77f318ffd5",
+      "size": 1015
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/vmnet.yaml",
+      "sha256": "4f8ce404ee7030f922464aad724925d012d37c206a97f977cc66d8f91afed746",
+      "size": 1559
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/lima-guestagent.Linux-x86_64",
+      "sha256": "b10989ec96ac40392b4d49494577fe308de8d6e734c5024722be82cdd29c464c",
+      "size": 7135232
+    },
+    {
+      "path": "src/lima/pkg/iso9660util/direct.go",
+      "sha256": "579b9f66355f373f8fe701d9359cd5b24c40b0c90a3f0cadeeee9e7c5413c0c9",
+      "size": 8218
+    },
+    {
+      "path": "src/lima/pkg/iso9660util/direct_test.go",
+      "sha256": "4f5a657b5a1325cf5426c9325441d004779e7721ef825ee023ada59841de2c5e",
+      "size": 3952
+    },
+    {
+      "path": "src/lima/pkg/iso9660util/iso9660util.go",
+      "sha256": "05f8d6c5c16bf6776761d1f41dced0ac3b89060d1a432bd8f9d43d43b7814e91",
+      "size": 1113
+    },
+    {
+      "path": "src/lima/pkg/networks/reconcile/reconcile.go",
+      "sha256": "dfb5eb57e162f20f3ca590f29a09f72ba4af322cf80e68462898a4af4a2e1fff",
+      "size": 6985
+    },
+    {
+      "path": "src/lima/pkg/networks/reconcile/reconcile_test.go",
+      "sha256": "687f1d9d7398e903e935d5581a20066726269322a6ff57d2b69ccf07d08fe66a",
+      "size": 1695
+    },
+    {
+      "path": "src/lima/pkg/qemu/command/command.go",
+      "sha256": "572287349a5e982ced018722c1e29af592c501881d219f6dd07c366474cfb759",
+      "size": 1679
+    },
+    {
+      "path": "src/lima/pkg/qemu/command/command_test.go",
+      "sha256": "16ef140c20c9c0c78b73e25c315a481db8cf1ee5ea2ee3814367f2016b8196c5",
+      "size": 2264
+    },
+    {
+      "path": "src/lima/pkg/qemu/embedded_test.go",
+      "sha256": "9d4dcecd6ca574db99bdc2e780cbca35cbc86116998d1d830d69790b4389d6bf",
+      "size": 2766
+    },
+    {
+      "path": "src/lima/pkg/qemu/imgutil/imgutil.go",
+      "sha256": "56d346ffaf546e8fef0fe9d63a446328cb310e622e4f80e750d180f422deaa65",
+      "size": 1153
+    },
+    {
+      "path": "src/lima/pkg/qemu/imgutil/imgutil_test.go",
+      "sha256": "d5f8e96471fbcf4c4b31a8efcbdd3e0ab8ca171428a3898078e067cade87bfa6",
+      "size": 910
+    },
+    {
+      "path": "src/lima/pkg/qemu/qemu.go",
+      "sha256": "8cbda87cdd4d7452b41f024302229242bcbc7ba46def8c31c719bfc8a1fc72dc",
+      "size": 24130
+    },
+    {
+      "path": "src/lima/pkg/store/dirnames/dirnames.go",
+      "sha256": "19d04cba87e667b18d24c1b9072d48ce4cc3ad033615755939275eb796878c0d",
+      "size": 1517
+    },
+    {
+      "path": "src/lima/pkg/store/dirnames/storage.go",
+      "sha256": "b704cdb013a465614c7251cd0c63acc52ecfa108d1f974010f13658399af8cea",
+      "size": 3925
+    },
+    {
+      "path": "src/lima/pkg/store/dirnames/storage_test.go",
+      "sha256": "8e5ac8ea67c764d22f10e3b762857cde7d2d7ca98913e60e28380bd6650d5ee2",
+      "size": 11878
+    },
+    {
+      "path": "src/lima/pkg/templatestore/templatestore.go",
+      "sha256": "e0e92c510667727f1cae1fc1ccc344a1a4574c68c4db991b4311ef68012eae2c",
+      "size": 1302
+    },
+    {
+      "path": "src/lima/pkg/templatestore/templatestore_test.go",
+      "sha256": "fdf0baa13371d6f533dd00f40f5ffaf12134b63d8b0fd73c8966f4a48c065955",
+      "size": 2198
+    },
+    {
+      "path": "src/qemu/accel/hvf/hvf-all.c",
+      "sha256": "da7cb474f99b57e20fc14bbdedaba406c093454fddacafb7fcd2e4f4dd863a88",
+      "size": 1751
+    },
+    {
+      "path": "src/qemu/block/builtin.c",
+      "sha256": "fefeaf28c1b6149f6568f78651b1c9319712c7f39dd8835a13185225bc4c1b67",
+      "size": 3952
+    },
+    {
+      "path": "src/qemu/block/file-posix.c",
+      "sha256": "81e19205b3008024a12e5579bf03d5ba69ac2d79e41e99d3c3b7fffdef6bb77e",
+      "size": 135424
+    },
+    {
+      "path": "src/qemu/block/meson.build",
+      "sha256": "78ea9829d4c40e7c818eb47883e0ba6b5204d0692830c841b087d76d0735de0b",
+      "size": 4534
+    },
+    {
+      "path": "src/qemu/hw/core/loader.c",
+      "sha256": "89d3b7800bbe1056b9d3bf19bacba7ea957e04438f229e418dcf8d44e62a0f62",
+      "size": 56468
+    },
+    {
+      "path": "src/qemu/hw/nvram/fw_cfg.c",
+      "sha256": "24ca4b5ac47ecb373684cfaacd2801642790b4a1c0c7a9efcb8f815362801b3b",
+      "size": 42352
+    },
+    {
+      "path": "src/qemu/include/qemu/builtin.h",
+      "sha256": "5554423608fce07193fe8e056a4046907213d4105ecd54addc7cf6d041242018",
+      "size": 742
+    },
+    {
+      "path": "src/qemu/include/qemu/datadir.h",
+      "sha256": "490ed9e628fd366c099711e445fe2b8da8966cb281675e49f8a6128063be423c",
+      "size": 1203
+    },
+    {
+      "path": "src/qemu/include/qemu/resource.h",
+      "sha256": "5015238484bc88b8feccb9c2aeb27fb1dea103fa37651217ffe327de50ec9e85",
+      "size": 434
+    },
+    {
+      "path": "src/qemu/qapi/block-core.json",
+      "sha256": "ea1bc5f9d548a0fc6c903bd0ea814378d16d71ccc6811ec6d770e998c9bfffc6",
+      "size": 191851
+    },
+    {
+      "path": "src/qemu/qemu-img.c",
+      "sha256": "f95ed5c7e7da2d970b48dbec293e9fae75145e48a820f515f1a308e371197ba3",
+      "size": 170158
+    },
+    {
+      "path": "src/qemu/scripts/gen-builtin-resources.py",
+      "sha256": "95052080b9869fe371657ee3af2bf6180c5af770620b265c79997c528839830d",
+      "size": 3513
+    },
+    {
+      "path": "src/qemu/subprojects/.gitignore",
+      "sha256": "fe156d444a785b444b229a6898397f690f885ffe05661b9d7151c3b047f5c559",
+      "size": 341
+    },
+    {
+      "path": "src/qemu/system/datadir.c",
+      "sha256": "80ce30797b3998a5821c7c3c05bc64e3ec89783cc73898e63ecd5d3fea1aa8db",
+      "size": 3751
+    },
+    {
+      "path": "src/qemu/target/i386/hvf/hvf.c",
+      "sha256": "490dd5273932bb5f079d4bb0290425b72b44c7e71dee55306dc42a55fa64b72f",
+      "size": 27931
+    },
+    {
+      "path": "src/qemu/ui/keymaps.c",
+      "sha256": "c92d14213473976ddf78fd316e960a452baa2bcfb9c77c97c72555e138eb2b75",
+      "size": 8688
+    },
+    {
+      "path": "src/qemu/util/builtin-resources.c",
+      "sha256": "60122dff59845ce803220534048cc2b0d7a2e04aa253cc93e6fb4e82dfcb0063",
+      "size": 1019
+    },
+    {
+      "path": "src/qemu/util/builtin-resources/README.md",
+      "sha256": "fab54ef683b20cb789787c77f29d7a91e98c5a5574e9601ce85a5c943f9b9cba",
+      "size": 10213
+    },
+    {
+      "path": "src/qemu/util/builtin-resources/builtin-data.S",
+      "sha256": "ed54a2c8320f2a90478862a9f03411c59522607080fc46e3f20bf4ea8255918b",
+      "size": 432
+    },
+    {
+      "path": "src/qemu/util/builtin-resources/builtin-data.bin",
+      "sha256": "4f4a697785e3e70a6d514d31ae54cd246e4d9aa77a4f8918d0005c20eb90bbf6",
+      "size": 18886688
+    },
+    {
+      "path": "src/qemu/util/builtin-resources/builtin-table.inc",
+      "sha256": "816c51967c21822733872cfa4685718525196bb24a5a7fa672151cf140215295",
+      "size": 4939
+    },
+    {
+      "path": "src/qemu/util/builtin-resources/manifest.json",
+      "sha256": "740af07c2321e280e7f5baf22bae34f6a438b5c9d38b0c7dd6c6ba5bb6ede946",
+      "size": 13617
+    },
+    {
+      "path": "src/qemu/util/builtin-resources/meson.build",
+      "sha256": "b89d77f4707faded03ab85f00a2483fa358497be5a03f9a3685acaf791d543e6",
+      "size": 800
+    },
+    {
+      "path": "src/qemu/util/builtin-resources/registry.c",
+      "sha256": "152feca8986df61fc54fdbd7682668d65548e9af80caae33030be30671e0dd2e",
+      "size": 1066
+    },
+    {
+      "path": "src/qemu/util/builtin-resources/test.py",
+      "sha256": "156b10be4bd20e4fa9ae8423cf778794898f23daaaf8f317c7327d100a8b6949",
+      "size": 6603
+    },
+    {
+      "path": "src/qemu/util/meson.build",
+      "sha256": "755093e70bcf750203478b8bad10e1910a4aac91d4f3e05875c758e3057d0259",
+      "size": 4377
+    }
+  ],
+  "self": "compliance/source-delivery/export-allowlist.json",
+  "self_hash_policy": "Exporter hashes this file in its outer manifest; no recursive self-hash."
+}

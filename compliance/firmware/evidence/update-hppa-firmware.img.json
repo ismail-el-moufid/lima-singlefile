@@ -1,0 +1,123 @@
+{
+  "sha": "db34be329162cf6b06192703065e6c1010dbe3c5",
+  "node_id": "C_kwDOCppwedoAKGRiMzRiZTMyOTE2MmNmNmIwNjE5MjcwMzA2NWU2YzEwMTBkYmUzYzU",
+  "commit": {
+    "author": {
+      "name": "Helge Deller",
+      "email": "deller@gmx.de",
+      "date": "2025-01-30T13:16:58Z"
+    },
+    "committer": {
+      "name": "Helge Deller",
+      "email": "deller@gmx.de",
+      "date": "2025-01-31T09:05:42Z"
+    },
+    "message": "target/hppa: Update SeaBIOS-hppa to version 18\n\nThis is SeaBIOS for the hppa architecture v18.\nIt allows us to emulate up to 256 GB RAM on 64-bit\nguests and to boot HP-UX 64-bit one step further.\n\nFixes:\n- Fix PDC_CACHE/PDC_CACHE_RET_SPID return value for space\n  register hashing on 64-bit HP-UX\n- Fix IRT table entries to use slot number\n- Increase PCI alignment for memory bars to 64k\n\nNew PDC functions & general enhancements:\n- Allow up to 256 GB RAM on 64-bit machines\n\nSigned-off-by: Helge Deller <deller@gmx.de>",
+    "tree": {
+      "sha": "ed4fdbdec5796d22dfe9b0bee9f11a4c5569d47b",
+      "url": "https://api.github.com/repos/utmapp/qemu/git/trees/ed4fdbdec5796d22dfe9b0bee9f11a4c5569d47b"
+    },
+    "url": "https://api.github.com/repos/utmapp/qemu/git/commits/db34be329162cf6b06192703065e6c1010dbe3c5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/utmapp/qemu/commits/db34be329162cf6b06192703065e6c1010dbe3c5",
+  "html_url": "https://github.com/utmapp/qemu/commit/db34be329162cf6b06192703065e6c1010dbe3c5",
+  "comments_url": "https://api.github.com/repos/utmapp/qemu/commits/db34be329162cf6b06192703065e6c1010dbe3c5/comments",
+  "author": {
+    "login": "hdeller",
+    "id": 32447367,
+    "node_id": "MDQ6VXNlcjMyNDQ3MzY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/32447367?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hdeller",
+    "html_url": "https://github.com/hdeller",
+    "followers_url": "https://api.github.com/users/hdeller/followers",
+    "following_url": "https://api.github.com/users/hdeller/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hdeller/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hdeller/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hdeller/subscriptions",
+    "organizations_url": "https://api.github.com/users/hdeller/orgs",
+    "repos_url": "https://api.github.com/users/hdeller/repos",
+    "events_url": "https://api.github.com/users/hdeller/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hdeller/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "hdeller",
+    "id": 32447367,
+    "node_id": "MDQ6VXNlcjMyNDQ3MzY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/32447367?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hdeller",
+    "html_url": "https://github.com/hdeller",
+    "followers_url": "https://api.github.com/users/hdeller/followers",
+    "following_url": "https://api.github.com/users/hdeller/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hdeller/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hdeller/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hdeller/subscriptions",
+    "organizations_url": "https://api.github.com/users/hdeller/orgs",
+    "repos_url": "https://api.github.com/users/hdeller/repos",
+    "events_url": "https://api.github.com/users/hdeller/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hdeller/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "644ce5df2ea7b0fe34c56ab414182dd7ecd009dc",
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/644ce5df2ea7b0fe34c56ab414182dd7ecd009dc",
+      "html_url": "https://github.com/utmapp/qemu/commit/644ce5df2ea7b0fe34c56ab414182dd7ecd009dc"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "d5f6f2fcaf5cc7e16565cf174dbaee6aa75303fc",
+      "filename": "pc-bios/hppa-firmware.img",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/db34be329162cf6b06192703065e6c1010dbe3c5/pc-bios%2Fhppa-firmware.img",
+      "raw_url": "https://github.com/utmapp/qemu/raw/db34be329162cf6b06192703065e6c1010dbe3c5/pc-bios%2Fhppa-firmware.img",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fhppa-firmware.img?ref=db34be329162cf6b06192703065e6c1010dbe3c5"
+    },
+    {
+      "sha": "577b0a1b3f9239d0e5b1fa6b4397a023297fe3bc",
+      "filename": "pc-bios/hppa-firmware64.img",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/db34be329162cf6b06192703065e6c1010dbe3c5/pc-bios%2Fhppa-firmware64.img",
+      "raw_url": "https://github.com/utmapp/qemu/raw/db34be329162cf6b06192703065e6c1010dbe3c5/pc-bios%2Fhppa-firmware64.img",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fhppa-firmware64.img?ref=db34be329162cf6b06192703065e6c1010dbe3c5"
+    },
+    {
+      "sha": "1c516b481339f511d83a4afba9a48d1ac904e93e",
+      "filename": "roms/seabios-hppa",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": null,
+      "raw_url": null,
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/roms%2Fseabios-hppa?ref=db34be329162cf6b06192703065e6c1010dbe3c5",
+      "patch": "@@ -1 +1 @@\n-Subproject commit a528f01d7abd511d3cc71b7acaab6e036ee524bd\n+Subproject commit 1c516b481339f511d83a4afba9a48d1ac904e93e"
+    }
+  ]
+}

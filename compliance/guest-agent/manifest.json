@@ -1,0 +1,213 @@
+{
+  "format": 1,
+  "scope": {
+    "description": "Original top-level notices for the nine modules recorded in the retained guest agent, plus Lima LICENSE.",
+    "go_runtime_packaged": false,
+    "file_level_inventory_complete": false,
+    "redistribution_cleared": false
+  },
+  "guest_agent": {
+    "path": "src/lima/pkg/embeddedassets/lima-guestagent.Linux-x86_64",
+    "size": 7135232,
+    "sha256": "b10989ec96ac40392b4d49494577fe308de8d6e734c5024722be82cdd29c464c",
+    "go_version": "go1.19.2",
+    "goos": "linux",
+    "goarch": "amd64",
+    "goamd64": "v1",
+    "cgo_enabled": false,
+    "lima_version": "v0.13.0",
+    "vcs_revision": "6b6073ff536ea3ae7605129489a33ed2ba11fc46",
+    "vcs_modified": false,
+    "ldflags": "-s -w -X github.com/lima-vm/lima/pkg/version.Version=v0.13.0"
+  },
+  "modules": [
+    {
+      "path": "github.com/elastic/go-libaudit/v2",
+      "version": "v2.3.2",
+      "zip_h1": "h1:qWNcA3nkwNEGh1UBDbDTVF55KR6SM1W2Ji1LGDqFEpw=",
+      "archive": {
+        "path": "cache/modules/cache/download/github.com/elastic/go-libaudit/v2/@v/v2.3.2.zip",
+        "sha256": "1b199ac2a0dbb3b28494c20f2d56eb5ed9a36b0b45c505b6be064d89d1e920f7"
+      },
+      "notices": [
+        {
+          "path": "modules/go-libaudit-v2/LICENSE.txt",
+          "source_path": "github.com/elastic/go-libaudit/v2@v2.3.2/LICENSE.txt",
+          "size": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "modules/go-libaudit-v2/NOTICE.txt",
+          "source_path": "github.com/elastic/go-libaudit/v2@v2.3.2/NOTICE.txt",
+          "size": 151,
+          "sha256": "996e4603f96e6e7823cc5648d61ea22700055b5f540a7691e63e2e3a44df4f0b"
+        }
+      ]
+    },
+    {
+      "path": "github.com/gorilla/mux",
+      "version": "v1.8.0",
+      "zip_h1": "h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=",
+      "archive": {
+        "path": "cache/modules/cache/download/github.com/gorilla/mux/@v/v1.8.0.zip",
+        "sha256": "7641911e00af9c91f089868333067c9cb9a58702d2c9ea821ee374940091c385"
+      },
+      "notices": [
+        {
+          "path": "modules/mux/LICENSE",
+          "source_path": "github.com/gorilla/mux@v1.8.0/LICENSE",
+          "size": 1486,
+          "sha256": "af984eea4080365beb209c62c42e3e197dd0d578a3ccd0a1e5dbbb1c23550211"
+        }
+      ]
+    },
+    {
+      "path": "github.com/sirupsen/logrus",
+      "version": "v1.9.0",
+      "zip_h1": "h1:trlNQbNUG3OdDrDil03MCb1H2o9nJ1x4/5LYw7byDE0=",
+      "archive": {
+        "path": "cache/modules/cache/download/github.com/sirupsen/logrus/@v/v1.9.0.zip",
+        "sha256": "bf01c93f49912b88ee2e95dc99cab91a503ec3b526d1c756145391d555b98d14"
+      },
+      "notices": [
+        {
+          "path": "modules/logrus/LICENSE",
+          "source_path": "github.com/sirupsen/logrus@v1.9.0/LICENSE",
+          "size": 1082,
+          "sha256": "51a0c9ec7f8b7634181b8d4c03e5b5d204ac21d6e72f46c313973424664b2e6b"
+        }
+      ]
+    },
+    {
+      "path": "github.com/spf13/cobra",
+      "version": "v1.6.1",
+      "zip_h1": "h1:o94oiPyS4KD1mPy2fmcYYHHfCxLqYjJOhGsCHFZtEzA=",
+      "archive": {
+        "path": "cache/modules/cache/download/github.com/spf13/cobra/@v/v1.6.1.zip",
+        "sha256": "10945bdd829f0abbedbeaecd722f4077ad3b317dedcbfc6eacde72fc8e5b3879"
+      },
+      "notices": [
+        {
+          "path": "modules/cobra/LICENSE.txt",
+          "source_path": "github.com/spf13/cobra@v1.6.1/LICENSE.txt",
+          "size": 10140,
+          "sha256": "5e3400b93bbb099e83e52bab885e7441750673c21f97988ca3f1240639b63283"
+        }
+      ]
+    },
+    {
+      "path": "github.com/spf13/pflag",
+      "version": "v1.0.5",
+      "zip_h1": "h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA=",
+      "archive": {
+        "path": "cache/modules/cache/download/github.com/spf13/pflag/@v/v1.0.5.zip",
+        "sha256": "fc6e704f2f6a84ddcdce6de0404e5340fa20c8676181bf5d381b17888107ba84"
+      },
+      "notices": [
+        {
+          "path": "modules/pflag/LICENSE",
+          "source_path": "github.com/spf13/pflag@v1.0.5/LICENSE",
+          "size": 1531,
+          "sha256": "b8514c577c1c4b46cee454d5a882b15fa411e72c5bd7f801f241591789fce61a"
+        }
+      ]
+    },
+    {
+      "path": "github.com/yalue/native_endian",
+      "version": "v1.0.2",
+      "zip_h1": "h1:e4SxBbaCoOOO4E3axd7FSriUhzc1bIzqZGG5jl6Evbg=",
+      "archive": {
+        "path": "cache/modules/cache/download/github.com/yalue/native_endian/@v/v1.0.2.zip",
+        "sha256": "22df5543af9b615e510a11d7aa70376a9640284eacdb53ee9423ec0b1a2141a0"
+      },
+      "notices": [
+        {
+          "path": "modules/native_endian/LICENSE",
+          "source_path": "github.com/yalue/native_endian@v1.0.2/LICENSE",
+          "size": 1053,
+          "sha256": "0469557d1f5eef55139432431707d76fef30b8bc286d5579e9273d12144c4b7f"
+        }
+      ]
+    },
+    {
+      "path": "go.uber.org/atomic",
+      "version": "v1.7.0",
+      "zip_h1": "h1:ADUqmZGgLDDfbSL9ZmPxKTybcoEYHgpYfELNoN+7hsw=",
+      "archive": {
+        "path": "cache/modules/cache/download/go.uber.org/atomic/@v/v1.7.0.zip",
+        "sha256": "0417b4203eb1454a0eeda59e79f426c27fcfb9e3c74077060303429cc16db307"
+      },
+      "notices": [
+        {
+          "path": "modules/atomic/LICENSE.txt",
+          "source_path": "go.uber.org/atomic@v1.7.0/LICENSE.txt",
+          "size": 1067,
+          "sha256": "edbb5a4d165ac69376c765b551c0662ff42bea87e1f1eda85f42ac90c34b09d0"
+        }
+      ]
+    },
+    {
+      "path": "go.uber.org/multierr",
+      "version": "v1.7.0",
+      "zip_h1": "h1:zaiO/rmgFjbmCXdSYJWQcdvOCsthmdaHfr3Gm2Kx4Ec=",
+      "archive": {
+        "path": "cache/modules/cache/download/go.uber.org/multierr/@v/v1.7.0.zip",
+        "sha256": "abee21bbd1cb62b0721680430ef8e098717299d10b4382876b9aa40664e6556c"
+      },
+      "notices": [
+        {
+          "path": "modules/multierr/LICENSE.txt",
+          "source_path": "go.uber.org/multierr@v1.7.0/LICENSE.txt",
+          "size": 1072,
+          "sha256": "dcdabe03bef2382a130640d1c3a4cd5ec42aba1035095c38272fde694eb72405"
+        }
+      ]
+    },
+    {
+      "path": "golang.org/x/sys",
+      "version": "v0.0.0-20220811171246-fbc7d0a398ab",
+      "zip_h1": "h1:2QkjZIsXupsJbJIdSjjUOgWK3aEtzyuh2mPt3l/CkeU=",
+      "archive": {
+        "path": "cache/modules/cache/download/golang.org/x/sys/@v/v0.0.0-20220811171246-fbc7d0a398ab.zip",
+        "sha256": "5ebd34faf34cfb7824ed6d12e95e793c8564ccc989af9f9c7998422c36ec9838"
+      },
+      "notices": [
+        {
+          "path": "modules/x-sys/LICENSE",
+          "source_path": "golang.org/x/sys@v0.0.0-20220811171246-fbc7d0a398ab/LICENSE",
+          "size": 1479,
+          "sha256": "2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067"
+        },
+        {
+          "path": "modules/x-sys/PATENTS",
+          "source_path": "golang.org/x/sys@v0.0.0-20220811171246-fbc7d0a398ab/PATENTS",
+          "size": 1303,
+          "sha256": "96f408bfae65bf137fc2525d3ecb030271c50c1e90799f87abf8846d8dd505cc"
+        }
+      ]
+    }
+  ],
+  "lima": {
+    "path": "github.com/lima-vm/lima",
+    "version": "v0.13.0",
+    "revision": "6b6073ff536ea3ae7605129489a33ed2ba11fc46",
+    "archive": {
+      "path": "downloads/lima-v0.13.0.tar.gz",
+      "sha256": "2df48d219bd8f67a3d7cfe43770f768aeb20a1b2242aaba18c58d441d5bd0d0e",
+      "archive_root": "lima-0.13.0"
+    },
+    "notices": [
+      {
+        "path": "lima/LICENSE",
+        "source_path": "lima-0.13.0/LICENSE",
+        "size": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ]
+  },
+  "packaging_verification": {
+    "module_zip_h1": "Recomputed Go dirhash.Hash1 from sorted ZIP member names and contents; matched the retained agent build record and src/lima/go.sum for all nine modules.",
+    "lima_archive": "SHA-256 matched sources.lock.json; PAX commit matched the retained agent revision.",
+    "notice_bytes": "Copied directly from verified archive members without decoding or normalization. Unpacked module caches were not used."
+  }
+}

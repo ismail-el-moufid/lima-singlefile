@@ -1,0 +1,11 @@
+/*
+ * systemd socket activation support
+ *
+ * Copyright 2017 Red Hat, Inc. and/or its affiliates
+ *
+ * Authors:
+ *  Richard W.M. Jones <rjones@redhat.com>
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2 or later.
+ * See the COPYING file in the top-level directory.
+ */

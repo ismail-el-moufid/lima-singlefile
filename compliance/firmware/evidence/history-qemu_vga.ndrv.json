@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "200280af0e19bfaeb9431eb0ee1ee2d8bf8d3a0a",
+    "node_id": "MDY6Q29tbWl0MTc3ODkzNDk3OjIwMDI4MGFmMGUxOWJmYWViOTQzMWViMGVlMWVlMmQ4YmY4ZDNhMGE=",
+    "commit": {
+      "author": {
+        "name": "Mark Cave-Ayland",
+        "email": "mark.cave-ayland@ilande.co.uk",
+        "date": "2019-01-28T21:21:57Z"
+      },
+      "committer": {
+        "name": "David Gibson",
+        "email": "david@gibson.dropbear.id.au",
+        "date": "2019-02-04T07:44:19Z"
+      },
+      "message": "QemuMacDrivers: update qemu_vga.ndrv to 90c488d built from submodule\n\nThis update to qemu_vga.ndrv includes the following changes:\n\n- Build guest resolution list from QEMU EDID data if enabled\n- Fixes to re-enable 256 color mode\n\nSigned-off-by: Mark Cave-Ayland <mark.cave-ayland@ilande.co.uk>\nSigned-off-by: David Gibson <david@gibson.dropbear.id.au>",
+      "tree": {
+        "sha": "64dc511ff30a7264992af4577c6b5c5511c24bf2",
+        "url": "https://api.github.com/repos/utmapp/qemu/git/trees/64dc511ff30a7264992af4577c6b5c5511c24bf2"
+      },
+      "url": "https://api.github.com/repos/utmapp/qemu/git/commits/200280af0e19bfaeb9431eb0ee1ee2d8bf8d3a0a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/utmapp/qemu/commits/200280af0e19bfaeb9431eb0ee1ee2d8bf8d3a0a",
+    "html_url": "https://github.com/utmapp/qemu/commit/200280af0e19bfaeb9431eb0ee1ee2d8bf8d3a0a",
+    "comments_url": "https://api.github.com/repos/utmapp/qemu/commits/200280af0e19bfaeb9431eb0ee1ee2d8bf8d3a0a/comments",
+    "author": {
+      "login": "mcayland",
+      "id": 1729603,
+      "node_id": "MDQ6VXNlcjE3Mjk2MDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1729603?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mcayland",
+      "html_url": "https://github.com/mcayland",
+      "followers_url": "https://api.github.com/users/mcayland/followers",
+      "following_url": "https://api.github.com/users/mcayland/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mcayland/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mcayland/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mcayland/subscriptions",
+      "organizations_url": "https://api.github.com/users/mcayland/orgs",
+      "repos_url": "https://api.github.com/users/mcayland/repos",
+      "events_url": "https://api.github.com/users/mcayland/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mcayland/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dgibson",
+      "id": 676485,
+      "node_id": "MDQ6VXNlcjY3NjQ4NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/676485?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dgibson",
+      "html_url": "https://github.com/dgibson",
+      "followers_url": "https://api.github.com/users/dgibson/followers",
+      "following_url": "https://api.github.com/users/dgibson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dgibson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dgibson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dgibson/subscriptions",
+      "organizations_url": "https://api.github.com/users/dgibson/orgs",
+      "repos_url": "https://api.github.com/users/dgibson/repos",
+      "events_url": "https://api.github.com/users/dgibson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dgibson/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "40e3dd069c5f050ebc39c63b51938b15380f8aa1",
+        "url": "https://api.github.com/repos/utmapp/qemu/commits/40e3dd069c5f050ebc39c63b51938b15380f8aa1",
+        "html_url": "https://github.com/utmapp/qemu/commit/40e3dd069c5f050ebc39c63b51938b15380f8aa1"
+      }
+    ]
+  }
+]

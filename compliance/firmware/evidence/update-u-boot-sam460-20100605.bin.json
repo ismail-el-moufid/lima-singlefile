@@ -1,0 +1,155 @@
+{
+  "sha": "55d38d10b84a256ca80484eb5114a4824608b85e",
+  "node_id": "MDY6Q29tbWl0MTc3ODkzNDk3OjU1ZDM4ZDEwYjg0YTI1NmNhODA0ODRlYjUxMTRhNDgyNDYwOGI4NWU=",
+  "commit": {
+    "author": {
+      "name": "Thomas Huth",
+      "email": "thuth@redhat.com",
+      "date": "2018-05-07T14:32:34Z"
+    },
+    "committer": {
+      "name": "Thomas Huth",
+      "email": "thuth@redhat.com",
+      "date": "2018-09-25T15:26:18Z"
+    },
+    "message": "trivial: Make bios files and source files non-executable\n\nThese files can not be executed on the host, so they should not be\nmarked as executable.\n\nReviewed-by: David Hildenbrand <david@redhat.com>\nSigned-off-by: Thomas Huth <thuth@redhat.com>",
+    "tree": {
+      "sha": "c59ba4bdb09af1ff9cf323e4bb48b64b71255fad",
+      "url": "https://api.github.com/repos/utmapp/qemu/git/trees/c59ba4bdb09af1ff9cf323e4bb48b64b71255fad"
+    },
+    "url": "https://api.github.com/repos/utmapp/qemu/git/commits/55d38d10b84a256ca80484eb5114a4824608b85e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/utmapp/qemu/commits/55d38d10b84a256ca80484eb5114a4824608b85e",
+  "html_url": "https://github.com/utmapp/qemu/commit/55d38d10b84a256ca80484eb5114a4824608b85e",
+  "comments_url": "https://api.github.com/repos/utmapp/qemu/commits/55d38d10b84a256ca80484eb5114a4824608b85e/comments",
+  "author": {
+    "login": "huth",
+    "id": 681184,
+    "node_id": "MDQ6VXNlcjY4MTE4NA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/681184?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/huth",
+    "html_url": "https://github.com/huth",
+    "followers_url": "https://api.github.com/users/huth/followers",
+    "following_url": "https://api.github.com/users/huth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/huth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/huth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/huth/subscriptions",
+    "organizations_url": "https://api.github.com/users/huth/orgs",
+    "repos_url": "https://api.github.com/users/huth/repos",
+    "events_url": "https://api.github.com/users/huth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/huth/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "huth",
+    "id": 681184,
+    "node_id": "MDQ6VXNlcjY4MTE4NA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/681184?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/huth",
+    "html_url": "https://github.com/huth",
+    "followers_url": "https://api.github.com/users/huth/followers",
+    "following_url": "https://api.github.com/users/huth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/huth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/huth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/huth/subscriptions",
+    "organizations_url": "https://api.github.com/users/huth/orgs",
+    "repos_url": "https://api.github.com/users/huth/repos",
+    "events_url": "https://api.github.com/users/huth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/huth/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1e7ec6cf067025552bb10def7c49f4527d2f035f",
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/1e7ec6cf067025552bb10def7c49f4527d2f035f",
+      "html_url": "https://github.com/utmapp/qemu/commit/1e7ec6cf067025552bb10def7c49f4527d2f035f"
+    }
+  ],
+  "stats": {
+    "total": 0,
+    "additions": 0,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": null,
+      "filename": "block/blkreplay.c",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/55d38d10b84a256ca80484eb5114a4824608b85e/block%2Fblkreplay.c",
+      "raw_url": "https://github.com/utmapp/qemu/raw/55d38d10b84a256ca80484eb5114a4824608b85e/block%2Fblkreplay.c",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/block%2Fblkreplay.c?ref=55d38d10b84a256ca80484eb5114a4824608b85e"
+    },
+    {
+      "sha": null,
+      "filename": "pc-bios/hppa-firmware.img",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/55d38d10b84a256ca80484eb5114a4824608b85e/pc-bios%2Fhppa-firmware.img",
+      "raw_url": "https://github.com/utmapp/qemu/raw/55d38d10b84a256ca80484eb5114a4824608b85e/pc-bios%2Fhppa-firmware.img",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fhppa-firmware.img?ref=55d38d10b84a256ca80484eb5114a4824608b85e"
+    },
+    {
+      "sha": null,
+      "filename": "pc-bios/palcode-clipper",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/55d38d10b84a256ca80484eb5114a4824608b85e/pc-bios%2Fpalcode-clipper",
+      "raw_url": "https://github.com/utmapp/qemu/raw/55d38d10b84a256ca80484eb5114a4824608b85e/pc-bios%2Fpalcode-clipper",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fpalcode-clipper?ref=55d38d10b84a256ca80484eb5114a4824608b85e"
+    },
+    {
+      "sha": null,
+      "filename": "pc-bios/u-boot-sam460-20100605.bin",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/55d38d10b84a256ca80484eb5114a4824608b85e/pc-bios%2Fu-boot-sam460-20100605.bin",
+      "raw_url": "https://github.com/utmapp/qemu/raw/55d38d10b84a256ca80484eb5114a4824608b85e/pc-bios%2Fu-boot-sam460-20100605.bin",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fu-boot-sam460-20100605.bin?ref=55d38d10b84a256ca80484eb5114a4824608b85e"
+    },
+    {
+      "sha": null,
+      "filename": "pc-bios/u-boot.e500",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/55d38d10b84a256ca80484eb5114a4824608b85e/pc-bios%2Fu-boot.e500",
+      "raw_url": "https://github.com/utmapp/qemu/raw/55d38d10b84a256ca80484eb5114a4824608b85e/pc-bios%2Fu-boot.e500",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fu-boot.e500?ref=55d38d10b84a256ca80484eb5114a4824608b85e"
+    },
+    {
+      "sha": null,
+      "filename": "replay/replay-char.c",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/55d38d10b84a256ca80484eb5114a4824608b85e/replay%2Freplay-char.c",
+      "raw_url": "https://github.com/utmapp/qemu/raw/55d38d10b84a256ca80484eb5114a4824608b85e/replay%2Freplay-char.c",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/replay%2Freplay-char.c?ref=55d38d10b84a256ca80484eb5114a4824608b85e"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+/* SPDX-License-Identifier: BSD-3-Clause */
+/*
+ * Copyright (c) 1995 Danny Gasparovski
+ */
+
+/*
+ * mbuf's in SLiRP are much simpler than the real mbufs in
+ * FreeBSD.  They are fixed size, determined by the MTU,
+ * so that one whole packet can fit.  Mbuf's cannot be
+ * chained together.  If there's more data than the mbuf
+ * could hold, an external g_malloced buffer is pointed to
+ * by m_ext (and the data pointers) and M_EXT is set in
+ * the flags
+ */

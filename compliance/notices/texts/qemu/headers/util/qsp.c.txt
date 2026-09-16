@@ -1,0 +1,58 @@
+/*
+ * qsp.c - QEMU Synchronization Profiler
+ *
+ * Copyright (C) 2018, Emilio G. Cota <cota@braap.org>
+ *
+ * License: GNU GPL, version 2 or later.
+ *   See the COPYING file in the top-level directory.
+ *
+ * QSP profiles the time spent in synchronization primitives, which can
+ * help diagnose performance problems, e.g. scalability issues when
+ * contention is high.
+ *
+ * The primitives currently supported are mutexes, recursive mutexes and
+ * condition variables. Note that not all related functions are intercepted;
+ * instead we profile only those functions that can have a performance impact,
+ * either due to blocking (e.g. cond_wait, mutex_lock) or cache line
+ * contention (e.g. mutex_lock, mutex_trylock).
+ *
+ * QSP's design focuses on speed and scalability. This is achieved
+ * by having threads do their profiling entirely on thread-local data.
+ * The appropriate thread-local data is found via a QHT, i.e. a concurrent hash
+ * table. To aggregate data in order to generate a report, we iterate over
+ * all entries in the hash table. Depending on the number of threads and
+ * synchronization objects this might be expensive, but note that it is
+ * very rarely called -- reports are generated only when requested by users.
+ *
+ * Reports are generated as a table where each row represents a call site. A
+ * call site is the triplet formed by the __file__ and __LINE__ of the caller
+ * as well as the address of the "object" (i.e. mutex, rec. mutex or condvar)
+ * being operated on. Optionally, call sites that operate on different objects
+ * of the same type can be coalesced, which can be particularly useful when
+ * profiling dynamically-allocated objects.
+ *
+ * Alternative designs considered:
+ *
+ * - Use an off-the-shelf profiler such as mutrace. This is not a viable option
+ *   for us because QEMU has __malloc_hook set (by one of the libraries it
+ *   uses); leaving this hook unset is required to avoid deadlock in mutrace.
+ *
+ * - Use a glib HT for each thread, protecting each HT with its own lock.
+ *   This isn't simpler than the current design, and is 10% slower in the
+ *   atomic_add-bench microbenchmark (-m option).
+ *
+ * - For reports, just use a binary tree as we aggregate data, instead of having
+ *   an intermediate hash table. This would simplify the code only slightly, but
+ *   would perform badly if there were many threads and objects to track.
+ *
+ * - Wrap operations on qsp entries with RCU read-side critical sections, so
+ *   that qsp_reset() can delete entries. Unfortunately, the overhead of calling
+ *   rcu_read_lock/unlock slows down atomic_add-bench -m by 24%. Having
+ *   a snapshot that is updated on qsp_reset() avoids this overhead.
+ *
+ * Related Work:
+ * - Lennart Poettering's mutrace: http://0pointer.de/blog/projects/mutrace.html
+ * - Lozi, David, Thomas, Lawall and Muller. "Remote Core Locking: Migrating
+ *   Critical-Section Execution to Improve the Performance of Multithreaded
+ *   Applications", USENIX ATC'12.
+ */

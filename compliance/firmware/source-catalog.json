@@ -1,0 +1,321 @@
+{
+  "format": 1,
+  "groups": {
+    "artwork": {
+      "acquired_source_archives": [],
+      "evidence": "Installer graphics/resources retained; inventoried to avoid silent scope exclusions.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Not firmware implementation; notice/provenance review remains with notice owners."
+      ],
+      "source_provenance_cleared": false
+    },
+    "descriptors": {
+      "acquired_source_archives": [],
+      "evidence": "Firmware descriptor metadata retained, not implementation source.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Does not attest the actual firmware build or VARS compatibility."
+      ],
+      "source_provenance_cleared": false
+    },
+    "device-trees": {
+      "acquired_source_archives": [],
+      "evidence": "Four paired DTS/DTB files. pc-bios/meson.build runs dtc -q -I dts -O dtb -o OUTPUT INPUT.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Historical dtc version and byte reproduction unverified; retain file-specific notices."
+      ],
+      "source_provenance_cleared": false
+    },
+    "edk2": {
+      "acquired_source_archives": [],
+      "evidence": "Eight compressed assets match utm-edk2-update.json. UTM replacement pin edc6681206c1a8791981a2f911d2fb8b3d2f5768 differs from locked pin. README stable202302 conflicts with roms/edk2-version stable202408. Retained config has no AArch64 secure build stanza.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "edk2",
+        "revision": "4dfdca63a93497203f197ec98ba20e2327e4afe4"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Actual UTM fork/revision/patches, nested sources, DSC/FDF/PCD/defines, toolchains, build and packaging logs and output hashes missing. i386 VARS mismatch and secure VARS missing origin remain unresolved. See SOURCE-INVENTORY.md."
+      ],
+      "source_provenance_cleared": false
+    },
+    "ipxe-efi": {
+      "acquired_source_archives": [
+        "sources/edk2-20d2e5a125e34fc8501026613a71549b2a1a3e54.tar.gz",
+        "sources/ipxe-4bd064de239dab2426b31c9789a1f4d78087dc63.tar.gz"
+      ],
+      "evidence": "Eight matching historical blobs in ipxe-efi-update.json. ipxe-efi-rom-tree.json pins iPXE 4bd064de239dab2426b31c9789a1f4d78087dc63 and EDK2 20d2e5a125e34fc8501026613a71549b2a1a3e54. Historical Makefile combines legacy and X64 EFI using EfiRom.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "ipxe",
+        "revision": "4bd064de239dab2426b31c9789a1f4d78087dc63"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "No rebuild, target-specific licence reports or historical toolchain/version metadata. EfiRom pin is a build-tool candidate, not an attestation and NOT UTM firmware source."
+      ],
+      "source_provenance_cleared": false
+    },
+    "ipxe-legacy": {
+      "acquired_source_archives": [
+        "sources/ipxe-7aee315f61aaf1be6d2fff26339f28a1137231a5.tar.gz"
+      ],
+      "evidence": "Six matching historical blobs in ipxe-legacy-update.json; ipxe-legacy-rom-tree.json pins 7aee315f61aaf1be6d2fff26339f28a1137231a5. All six binaries contain iPXE v1.0.0-591-g7aee315. Historical refresh script sets BANNER_TIMEOUT=0 and PRODUCT_NAME from git describe.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "ipxe",
+        "revision": "4bd064de239dab2426b31c9789a1f4d78087dc63"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "No rebuild or pinned historical compiler/environment; modern CONFIG=qemu is NOT the legacy recipe."
+      ],
+      "source_provenance_cleared": false
+    },
+    "keymaps": {
+      "acquired_source_archives": [],
+      "evidence": "Retained keymap text and 34 embedded resources; archive byte identities recorded.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "XKB/libxkbcommon/generator versions and historical data provenance unpinned; no blanket data license declaration."
+      ],
+      "source_provenance_cleared": false
+    },
+    "mac-drivers": {
+      "acquired_source_archives": [
+        "sources/QemuMacDrivers-90c488d5f4a407342247b9ea869df1c2d9c8e266.tar.gz"
+      ],
+      "evidence": "update-qemu_vga.ndrv.json matches blob, explicitly names source 90c488d5f4a407342247b9ea869df1c2d9c8e266.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "QemuMacDrivers",
+        "revision": "90c488d5f4a407342247b9ea869df1c2d9c8e266"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Historical PPC Mac driver compiler/SDK/build environment and recipe unverified; no rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "openbios": {
+      "acquired_source_archives": [],
+      "evidence": "README SVN r1280 claim is insufficient: update-openbios-ppc.json records byte-identical UTM WIP screamer-support replacement. SPARC32/SPARC64 plus QEMU,tcx.bin and QEMU,cgthree.bin also retained.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "openbios",
+        "revision": "c3a19c1e54977a53027d6232050e1e3e39a98a1b"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Matching implementation sources absent; actual UTM PPC fork/patches and separate SPARC/FCode source/config/toolchain provenance required."
+      ],
+      "source_provenance_cleared": false
+    },
+    "opensbi": {
+      "acquired_source_archives": [
+        "sources/opensbi-43cace6c3671e5172d0df0a8963e552bb04b7b20.tar.gz"
+      ],
+      "evidence": "Both images match update-opensbi-riscv64-generic-fw_dynamic.bin.json, v1.5.1 source 43cace6c3671e5172d0df0a8963e552bb04b7b20. roms/Makefile opensbi32-generic/opensbi64-generic uses PLATFORM=generic.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "opensbi",
+        "revision": "43cace6c3671e5172d0df0a8963e552bb04b7b20"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Exact RISC-V compiler/ISA/configuration and dependency closure unverified; no rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "palcode": {
+      "acquired_source_archives": [
+        "sources/qemu-palcode-99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf.tar.gz"
+      ],
+      "evidence": "update-palcode-clipper.json matches blob and source 99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf; source Makefile supplied. Binary has GCC 11.1.1 20210605 string.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "qemu-palcode",
+        "revision": "99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Historical Alpha toolchain, flags/configuration and dependencies unverified; no rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "pnv-nvram": {
+      "acquired_source_archives": [],
+      "evidence": "pc-bios/README gives ffspart recipe, two partition input lines and one skiboot boot to initialize NVRAM.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Actual ffspart/skiboot revisions, QEMU/machine/settings and initialization log missing. Acquired skiboot archive is not evidence of this state image origin."
+      ],
+      "source_provenance_cleared": false
+    },
+    "qboot": {
+      "acquired_source_archives": [
+        "sources/qboot-8ca302e86d685fa05b16e2b208888243da319941.tar.gz"
+      ],
+      "evidence": "qboot-update.json explicitly rebuilds 8ca302e8; retained qboot.rom matches its Git blob. Source meson.build requires Meson >=0.49.0, Ninja, objcopy and x86 -m32 freestanding compiler/linker.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "qboot",
+        "revision": "8ca302e86d685fa05b16e2b208888243da319941"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Exact compiler/binutils and Meson/Ninja versions/environment not established; no rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "qemu-optionrom": {
+      "acquired_source_archives": [],
+      "evidence": "Six images: pc-bios/optionrom C/assembly/flat.lds and scripts/signrom.py retained. Configured Makefile uses -m16/-march=i486, objcopy .text and Python checksum.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Historical compiler/binutils/configuration/source correspondence not rebuilt."
+      ],
+      "source_provenance_cleared": false
+    },
+    "s390": {
+      "acquired_source_archives": [],
+      "evidence": "s390-ccw.img matches update-s390-ccw.img.json. Retained pc-bios/s390-ccw/Makefile compiles SLOF lib/libc and lib/libnet. Binary records GCC 14.2.1 20241104 Red Hat 14.2.1-6.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Determine historical QEMU and SLOF source/config/toolchain closure for s390; do NOT substitute standalone SLOF firmware revision. No rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "seabios": {
+      "acquired_source_archives": [
+        "sources/seabios-a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8.tar.gz"
+      ],
+      "evidence": "All 12 images contain rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org; GCC 13.2.1 20230728 Red Hat Cross 13.2.1-1 and binutils 2.40-3.fc39. roms/Makefile bios/vgabios and config.seabios-*/config.vga-* recipes retained.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "seabios",
+        "revision": "a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "No rebuild; exact toolchain packages, generated configs and git-derived version inputs not captured."
+      ],
+      "source_provenance_cleared": false
+    },
+    "seabios-hppa": {
+      "acquired_source_archives": [
+        "sources/seabios-hppa-1c516b481339f511d83a4afba9a48d1ac904e93e.tar.gz"
+      ],
+      "evidence": "Both images match update-hppa-firmware.img.json v18 update, with source 1c516b481339f511d83a4afba9a48d1ac904e93e, DIFFERENT from locked gitlink. Recipe: make -C seabios-hppa parisc; see Makefile.parisc.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "seabios-hppa",
+        "revision": "3391c580960febcb9fa8f686f9666adaa462c349"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Exact PA-RISC 32/64-bit toolchains/configs and closure unverified; no rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "skiboot": {
+      "acquired_source_archives": [
+        "sources/skiboot-785a5e3070a86e18521e62fe202b87209de30fa2.tar.gz"
+      ],
+      "evidence": "update-skiboot.lid.json matches blob and 7.1-106 source 785a5e3070a86e18521e62fe202b87209de30fa2. Recipe: make -C skiboot CROSS=POWERPC64_PREFIX.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "skiboot",
+        "revision": "785a5e3070a86e18521e62fe202b87209de30fa2"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Historical toolchains, nested/build dependency closure and configurations unverified; no rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "slof": {
+      "acquired_source_archives": [
+        "sources/SLOF-ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544.tar.gz"
+      ],
+      "evidence": "update-slof.bin.json matches blob and updates source to ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544, qemu-slof-20241106; DIFFERENT from locked gitlink. Recipe: make -C SLOF CROSS=POWERPC64_PREFIX qemu -> boot_rom.bin.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "SLOF",
+        "revision": "3a259df2449fc4a4e43ab5f33f0b2c66484b4bc3"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "No rebuild; historical toolchain, config and full build/dependency closure unverified."
+      ],
+      "source_provenance_cleared": false
+    },
+    "support": {
+      "acquired_source_archives": [],
+      "evidence": "README/build/notice support material, not firmware implementation source.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Text claims can be stale; do not treat notices or recipes as build attestations."
+      ],
+      "source_provenance_cleared": false
+    },
+    "u-boot-e500": {
+      "acquired_source_archives": [],
+      "evidence": "update-u-boot.e500.json matches blob and v2021.07 source 840658b093976390e9537724f802281c9c8439f5; binary agrees. README 2072e72 claim is stale. Update identifies GCC 10.1.0 nolibc PowerPC toolchain URL. roms/Makefile qemu-ppce500_config recipe retained.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "u-boot",
+        "revision": "840658b093976390e9537724f802281c9c8439f5"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Larger source/toolchain acquisition deferred; checksummed archives, full build dependencies/config and rebuild still required."
+      ],
+      "source_provenance_cleared": false
+    },
+    "u-boot-sam460": {
+      "acquired_source_archives": [],
+      "evidence": "Binary U-Boot 2010.06.05 dated Jul 08 2018. Latest path query returns a mode-change commit whose blob does NOT match retained image; not accepted as matching provenance. roms/Makefile Sam460ex_config recipe retained.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "u-boot-sam460ex",
+        "revision": "60b3916f33e617a815973c5a6df77055b2e3a588"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Actual binary update/fork/revision/config and PowerPC toolchain unresolved; implementation source absent; do not infer revision from filename or current gitlink."
+      ],
+      "source_provenance_cleared": false
+    },
+    "unclassified": {
+      "acquired_source_archives": [],
+      "evidence": "Unknown assets are reported explicitly.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Manual classification/source review required; never automatically cleared."
+      ],
+      "source_provenance_cleared": false
+    },
+    "vbootrom": {
+      "acquired_source_archives": [],
+      "evidence": "NPCM8xx matches update-npcm8xx_bootrom.bin.json and recipe addition; no source gitlink in that commit. roms/Makefile uses ARM/AArch64 CROSS_COMPILE for NPCM7xx/8xx.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "vbootrom",
+        "revision": "1287b6e42e839ba2ab0f06268c5b53ae60df3537"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Implementation source absent; independently establish actual revisions, configs and toolchains for BOTH images; locked pin alone is insufficient."
+      ],
+      "source_provenance_cleared": false
+    },
+    "vof": {
+      "acquired_source_archives": [],
+      "evidence": "Retained pc-bios/vof implementation and Makefile: -mcpu=power4, big-endian link, objcopy .text/.data/.toc/.got2 -> vof.bin.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Historical source/configuration and PowerPC compiler/binutils correspondence not verified."
+      ],
+      "source_provenance_cleared": false
+    },
+    "vof-nvram": {
+      "acquired_source_archives": [],
+      "evidence": "Retained 16 KiB vof-nvram.bin; no generating recipe established.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Need actual generator/revision/inputs/default state and output digest; VOF C source alone does not explain this state image."
+      ],
+      "source_provenance_cleared": false
+    }
+  },
+  "license_policy": "No blanket declarations; source license files retained in archives, per-target/source notice assessment remains required."
+}

@@ -1,0 +1,6 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+/*
+ * Interval trees.
+ *
+ * Derived from include/linux/interval_tree.h and its dependencies.
+ */

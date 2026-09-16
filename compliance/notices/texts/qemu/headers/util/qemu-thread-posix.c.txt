@@ -1,0 +1,12 @@
+/*
+ * Wrappers around mutex/cond/thread functions
+ *
+ * Copyright Red Hat, Inc. 2009
+ *
+ * Author:
+ *  Marcelo Tosatti <mtosatti@redhat.com>
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2 or later.
+ * See the COPYING file in the top-level directory.
+ *
+ */

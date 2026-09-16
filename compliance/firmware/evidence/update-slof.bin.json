@@ -1,0 +1,124 @@
+{
+  "sha": "7f98b4f25ed94a3565acb1d6b54f43c1e3da1709",
+  "node_id": "C_kwDOCppwedoAKDdmOThiNGYyNWVkOTRhMzU2NWFjYjFkNmI1NGY0M2MxZTNkYTE3MDk",
+  "commit": {
+    "author": {
+      "name": "Alexey Kardashevskiy",
+      "email": "aik@ozlabs.ru",
+      "date": "2024-11-06T04:32:28Z"
+    },
+    "committer": {
+      "name": "Nicholas Piggin",
+      "email": "npiggin@gmail.com",
+      "date": "2025-03-11T12:43:18Z"
+    },
+    "message": "pseries: Update SLOF firmware image\n\nThis adds TPM pass through API.\nAlso, moves SLOF from github to gitlab.\n\nSigned-off-by: Alexey Kardashevskiy <aik@ozlabs.ru>\nSigned-off-by: Nicholas Piggin <npiggin@gmail.com>",
+    "tree": {
+      "sha": "4f6f32f3cff77189450a774e03d7724dd44a4018",
+      "url": "https://api.github.com/repos/utmapp/qemu/git/trees/4f6f32f3cff77189450a774e03d7724dd44a4018"
+    },
+    "url": "https://api.github.com/repos/utmapp/qemu/git/commits/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/utmapp/qemu/commits/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709",
+  "html_url": "https://github.com/utmapp/qemu/commit/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709",
+  "comments_url": "https://api.github.com/repos/utmapp/qemu/commits/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709/comments",
+  "author": {
+    "login": "aik",
+    "id": 1146004,
+    "node_id": "MDQ6VXNlcjExNDYwMDQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1146004?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/aik",
+    "html_url": "https://github.com/aik",
+    "followers_url": "https://api.github.com/users/aik/followers",
+    "following_url": "https://api.github.com/users/aik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/aik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/aik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/aik/subscriptions",
+    "organizations_url": "https://api.github.com/users/aik/orgs",
+    "repos_url": "https://api.github.com/users/aik/repos",
+    "events_url": "https://api.github.com/users/aik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/aik/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "npiggin",
+    "id": 19833002,
+    "node_id": "MDQ6VXNlcjE5ODMzMDAy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19833002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/npiggin",
+    "html_url": "https://github.com/npiggin",
+    "followers_url": "https://api.github.com/users/npiggin/followers",
+    "following_url": "https://api.github.com/users/npiggin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/npiggin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/npiggin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/npiggin/subscriptions",
+    "organizations_url": "https://api.github.com/users/npiggin/orgs",
+    "repos_url": "https://api.github.com/users/npiggin/repos",
+    "events_url": "https://api.github.com/users/npiggin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/npiggin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9cbbe72924b4be1870563b5101548ee2241b279d",
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/9cbbe72924b4be1870563b5101548ee2241b279d",
+      "html_url": "https://github.com/utmapp/qemu/commit/9cbbe72924b4be1870563b5101548ee2241b279d"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "a08e034fc32b0c430d285e27b3686a92a3603d19",
+      "filename": "pc-bios/README",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/utmapp/qemu/blob/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709/pc-bios%2FREADME",
+      "raw_url": "https://github.com/utmapp/qemu/raw/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709/pc-bios%2FREADME",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2FREADME?ref=7f98b4f25ed94a3565acb1d6b54f43c1e3da1709",
+      "patch": "@@ -13,8 +13,8 @@\n \n - SLOF (Slimline Open Firmware) is a free IEEE 1275 Open Firmware\n   implementation for certain IBM POWER hardware.  The sources are at\n-  https://github.com/aik/SLOF, and the image currently in qemu is\n-  built from git tag qemu-slof-20230918.\n+  https://gitlab.com/slof/slof, and the image currently in qemu is\n+  built from git tag qemu-slof-20241106.\n \n - VOF (Virtual Open Firmware) is a minimalistic firmware to work with\n   -machine pseries,x-vof=on. When enabled, the firmware acts as a slim shim and"
+    },
+    {
+      "sha": "4314e17b9ddc964c905a7b107d9aa7a651a43890",
+      "filename": "pc-bios/slof.bin",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709/pc-bios%2Fslof.bin",
+      "raw_url": "https://github.com/utmapp/qemu/raw/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709/pc-bios%2Fslof.bin",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fslof.bin?ref=7f98b4f25ed94a3565acb1d6b54f43c1e3da1709"
+    },
+    {
+      "sha": "ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544",
+      "filename": "roms/SLOF",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": null,
+      "raw_url": null,
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/roms%2FSLOF?ref=7f98b4f25ed94a3565acb1d6b54f43c1e3da1709",
+      "patch": "@@ -1 +1 @@\n-Subproject commit 3a259df2449fc4a4e43ab5f33f0b2c66484b4bc3\n+Subproject commit ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544"
+    }
+  ]
+}

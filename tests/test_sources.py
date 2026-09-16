@@ -14,6 +14,7 @@ import os
 import runpy
 import shutil
 import stat
+import subprocess
 import sys
 import tarfile
 import tempfile
@@ -435,6 +436,63 @@ class SourcePreparationTests(unittest.TestCase):
 
 
 class ProjectRecipeTests(unittest.TestCase):
+    def test_hvf_deadline_fallback_follows_headers_and_matches_overlay(self):
+        relative = "src/qemu/target/i386/hvf/hvf.c"
+        source = (PROJECT / relative).read_text()
+        prefix = source.split("static Error *invtsc_mig_blocker;", 1)[0]
+        self.assertIn("#include <Hypervisor/hv.h>", prefix)
+        self.assertIn('#include "system/hvf_int.h"', prefix)
+        self.assertGreater(
+            prefix.index("#ifndef HV_DEADLINE_FOREVER"), prefix.rindex("#include")
+        )
+        self.assertEqual(source.count("#define HV_DEADLINE_FOREVER"), 1)
+        overlays, _ = sources.read_json(PROJECT / "source-overlays.json")
+        entries = [item for item in overlays["overlays"] if item["file"] == relative]
+        self.assertEqual(len(entries), 1)
+        sources.verify_file(PROJECT / relative, entries[0]["sha256"], "HVF overlay")
+
+    def test_hvf_deadline_with_old_and_new_sdk_declarations(self):
+        compiler = shutil.which("clang")
+        if compiler is None:
+            self.skipTest("clang unavailable for SDK declaration syntax probes")
+        source = (PROJECT / "src/qemu/target/i386/hvf/hvf.c").read_text()
+        prefix = source.split("static Error *invtsc_mig_blocker;", 1)[0]
+        for sdk, declaration in (
+            ("catalina", ""),
+            ("modern-enum", "enum { HV_DEADLINE_FOREVER = (~0ull) };"),
+            ("macro", "#define HV_DEADLINE_FOREVER (~0ull)"),
+        ):
+            with self.subTest(sdk=sdk):
+                lines = []
+                for line in prefix.splitlines():
+                    if line.startswith("#include"):
+                        if line in (
+                            '#include "system/hvf_int.h"',
+                            "#include <Hypervisor/hv.h>",
+                        ):
+                            lines.extend(
+                                [
+                                    "#ifndef TEST_HV_H",
+                                    "#define TEST_HV_H",
+                                    declaration,
+                                    "#endif",
+                                ]
+                            )
+                    else:
+                        lines.append(line)
+                lines.append(
+                    '_Static_assert(HV_DEADLINE_FOREVER == (~0ull), "deadline changed");'
+                )
+                result = subprocess.run(
+                    [compiler, "-x", "c", "-std=c11", "-fsyntax-only", "-"],
+                    input="\n".join(lines) + "\n",
+                    text=True,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    timeout=30,
+                )
+                self.assertEqual(result.returncode, 0, result.stderr)
+
     def test_native_override_metadata_matches_local_files_and_qemu_bases(self):
         metadata, _ = sources.read_json(PROJECT / "native/overrides.json")
         expected = {

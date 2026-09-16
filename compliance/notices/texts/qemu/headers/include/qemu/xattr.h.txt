@@ -1,0 +1,12 @@
+/*
+ * Host xattr.h abstraction
+ *
+ * Copyright 2011 Red Hat Inc. and/or its affiliates
+ *
+ * Authors:
+ *  Avi Kivity <avi@redhat.com>
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2, or any
+ * later version.  See the COPYING file in the top-level directory.
+ *
+ */

@@ -1,0 +1,3814 @@
+{
+  "acquired_sources": [
+    {
+      "archive_root": "QemuMacDrivers-90c488d5f4a407342247b9ea869df1c2d9c8e266",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING": "6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/QemuMacDrivers-90c488d5f4a407342247b9ea869df1c2d9c8e266.tar.gz",
+      "project": "QemuMacDrivers",
+      "required_members": [
+        "COPYING"
+      ],
+      "revision": "90c488d5f4a407342247b9ea869df1c2d9c8e266",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "History-supported non-x86 source candidate; nested dependency and build closure unverified",
+      "sha256": "ca625841b01b72b419f13b98e37a661baf50962a5083249b42d1ba966e631ee1",
+      "size": 53675,
+      "url": "https://gitlab.com/qemu-project/QemuMacDrivers/-/archive/90c488d5f4a407342247b9ea869df1c2d9c8e266/QemuMacDrivers-90c488d5f4a407342247b9ea869df1c2d9c8e266.tar.gz"
+    },
+    {
+      "archive_root": "SLOF-ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544",
+      "kind": "source_archive",
+      "member_evidence": {
+        "LICENSE": "94f8ae6572ab531aa08573dbebb98bef255574880eaa6b52d0adef218970aa7f",
+        "Makefile": "6addd02afd3f16f2b839c9dabdbacf1ade96fae616f54493b785b5df6580cc93",
+        "Makefile.gen": "2a14e59f759e877f91954efb78cd3781848bedb6e7d831a43573dd9c7f0008ba",
+        "README": "2258207eeced82b7f2a99b9c79164c95cf26ef44d5483e4ee06284b1b24b8608"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/SLOF-ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544.tar.gz",
+      "project": "SLOF",
+      "required_members": [
+        "LICENSE",
+        "Makefile",
+        "Makefile.gen",
+        "README"
+      ],
+      "revision": "ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "History-supported non-x86 source candidate; nested dependency and build closure unverified",
+      "sha256": "0abcfc5f7dabfdc49c2f6297d125f9c1a4399660bfa8820dfaf69a437b6bae81",
+      "size": 882088,
+      "url": "https://gitlab.com/qemu-project/SLOF/-/archive/ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544/SLOF-ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544.tar.gz"
+    },
+    {
+      "archive_root": "edk2-20d2e5a125e34fc8501026613a71549b2a1a3e54",
+      "kind": "source_archive",
+      "member_evidence": {
+        ".gitmodules": "9a77ff2662ca582d2858521b27585445f6d5b01e80cc2d651465e80c5e1c7c1f",
+        "BaseTools/Source/C/Common/GNUmakefile": "285f98ecae8f3c23ec334931340b170feda45c6cea9dafb2d42f7beef1b8eb43",
+        "BaseTools/Source/C/EfiRom/EfiRom.c": "414907ec2083bccab3314f1d08772ad8bc4d9aa2016370192c73e4499714706c",
+        "BaseTools/Source/C/EfiRom/GNUmakefile": "faa5ee11bed1743f0d8aa17b413fd92991280a1161a1505aeab6d6e6f7bf2e6c",
+        "BaseTools/Source/C/GNUmakefile": "5df16587beb0bac5fb3fd648ab190370910ce240a03b2e1d75b37aa98250ad59"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/edk2-20d2e5a125e34fc8501026613a71549b2a1a3e54.tar.gz",
+      "project": "edk2",
+      "required_members": [
+        "BaseTools/Source/C/EfiRom/EfiRom.c",
+        "BaseTools/Source/C/EfiRom/GNUmakefile",
+        "BaseTools/Source/C/Common/GNUmakefile",
+        "BaseTools/Source/C/GNUmakefile",
+        ".gitmodules"
+      ],
+      "revision": "20d2e5a125e34fc8501026613a71549b2a1a3e54",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "EfiRom build-tool candidate only, NOT UTM firmware source",
+      "sha256": "34c0074a04dde906e6f15e2d0dcc089333e56a07cf30e487f1cbc6af937ee8c3",
+      "size": 14567879,
+      "url": "https://gitlab.com/qemu-project/edk2/-/archive/20d2e5a125e34fc8501026613a71549b2a1a3e54/edk2-20d2e5a125e34fc8501026613a71549b2a1a3e54.tar.gz"
+    },
+    {
+      "archive_root": "ipxe-4bd064de239dab2426b31c9789a1f4d78087dc63",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING": "275c34960cfe7bb213df43bc00b0079dd1b9ebc2f3b8d6acff269cb217db938c",
+        "COPYING.GPLv2": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+        "COPYING.UBDL": "5be9d2f0268908f2eeb87578d9b730caf6f7b36bdc7a520b1a176f9ac0bf1db8",
+        "src/Makefile": "f6510715103bf499c711fc7081c48792b5015e3c1d4da0cb50691e48bc1e82d1",
+        "src/Makefile.housekeeping": "eb8091f895b85413b5e0aff548db53389033fefb960e43d623abb19763482753",
+        "src/config/qemu/general.h": "c57ae1c25d8372e07460454d24c2e0f6b9e48490dc1e9027ac61cb8cd8471d60",
+        "src/util/licence.pl": "26f07cccf162018712ead012553527aa530c4873160546dd29f9f418a93e0fca"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/ipxe-4bd064de239dab2426b31c9789a1f4d78087dc63.tar.gz",
+      "project": "ipxe",
+      "required_members": [
+        "src/Makefile",
+        "src/Makefile.housekeeping",
+        "src/util/licence.pl",
+        "COPYING",
+        "src/config/qemu/general.h",
+        "COPYING.GPLv2",
+        "COPYING.UBDL"
+      ],
+      "revision": "4bd064de239dab2426b31c9789a1f4d78087dc63",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "Historically supported firmware source candidate; no rebuild performed",
+      "sha256": "4850691d6f196eaf4d6210f2de01383251b3ea1b928141da9ce28c0b06a90938",
+      "size": 3894850,
+      "url": "https://gitlab.com/qemu-project/ipxe/-/archive/4bd064de239dab2426b31c9789a1f4d78087dc63/ipxe-4bd064de239dab2426b31c9789a1f4d78087dc63.tar.gz"
+    },
+    {
+      "archive_root": "ipxe-7aee315f61aaf1be6d2fff26339f28a1137231a5",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING": "91df39d1816bfb17a4dda2d3d2c83b1f6f2d38d53e53e41e8f97ad5ac46a0cad",
+        "src/Makefile": "32f4407364ebdbcd28ff1e68e4c485e4232cea73144f3f194ebcc35ec41a583c",
+        "src/Makefile.housekeeping": "ef7dc4f8d5288fedf5e9640b584039164b9f5ca192ea8c2d1a3a5a40fa953c33",
+        "src/util/licence.pl": "62b3de6692e4de1c661072272e15181cd9478709881aab25b8c71768f414ea98"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/ipxe-7aee315f61aaf1be6d2fff26339f28a1137231a5.tar.gz",
+      "project": "ipxe",
+      "required_members": [
+        "src/Makefile",
+        "src/Makefile.housekeeping",
+        "src/util/licence.pl",
+        "COPYING"
+      ],
+      "revision": "7aee315f61aaf1be6d2fff26339f28a1137231a5",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "Historically supported firmware source candidate; no rebuild performed",
+      "sha256": "b428139fecd7f93e95ee13d00d6b3958e87c5b9a4839aea126bf0cd5223e23ff",
+      "size": 2594880,
+      "url": "https://gitlab.com/qemu-project/ipxe/-/archive/7aee315f61aaf1be6d2fff26339f28a1137231a5/ipxe-7aee315f61aaf1be6d2fff26339f28a1137231a5.tar.gz"
+    },
+    {
+      "archive_root": "opensbi-43cace6c3671e5172d0df0a8963e552bb04b7b20",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING.BSD": "82d13fb1bf6bb162629deeea9eb9c117e74548d3b707e478967691fe79a68e21",
+        "Makefile": "cb9a37cfc041f6b3c50f04f8ed3bdc7d0411233719193bf928664e7d6d4a23e3",
+        "README.md": "8d934ffe1993aefd234ee0886e2ac10a9db18ff0360f08c2e2c2e41ca8d0ce86"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/opensbi-43cace6c3671e5172d0df0a8963e552bb04b7b20.tar.gz",
+      "project": "opensbi",
+      "required_members": [
+        "COPYING.BSD",
+        "Makefile",
+        "README.md"
+      ],
+      "revision": "43cace6c3671e5172d0df0a8963e552bb04b7b20",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "History-supported non-x86 source candidate; nested dependency and build closure unverified",
+      "sha256": "f521a6b68fa7a88408ab5474e78d7e328777f0da8389d5373545a69fb4156f76",
+      "size": 435379,
+      "url": "https://gitlab.com/qemu-project/opensbi/-/archive/43cace6c3671e5172d0df0a8963e552bb04b7b20/opensbi-43cace6c3671e5172d0df0a8963e552bb04b7b20.tar.gz"
+    },
+    {
+      "archive_root": "qboot-8ca302e86d685fa05b16e2b208888243da319941",
+      "kind": "source_archive",
+      "member_evidence": {
+        "LICENSE": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad",
+        "README": "81d2caeb53701d9f1b662d19b32519a3e440a976c64c4e5816fa1623c0de43c9",
+        "flat.lds": "ae549937cc631b3ea320b0501147d74db535fd0a2f2fc1d4e00fc9655925dff4",
+        "meson.build": "bb35856ff94038db8219038a5cc2e34af121d70eaf5ba662ca5baa044e457841"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/qboot-8ca302e86d685fa05b16e2b208888243da319941.tar.gz",
+      "project": "qboot",
+      "required_members": [
+        "meson.build",
+        "flat.lds",
+        "README",
+        "LICENSE"
+      ],
+      "revision": "8ca302e86d685fa05b16e2b208888243da319941",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "Historically supported firmware source candidate; no rebuild performed",
+      "sha256": "4366905a722f49e24b0194d1bb0089ffeddb338023262ba50f2fab4f7f419681",
+      "size": 32463,
+      "url": "https://gitlab.com/qemu-project/qboot/-/archive/8ca302e86d685fa05b16e2b208888243da319941/qboot-8ca302e86d685fa05b16e2b208888243da319941.tar.gz"
+    },
+    {
+      "archive_root": "qemu-palcode-99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING": "6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100",
+        "Makefile": "807572e545ef2e6e7b9114660b9d62d0eb98eafbb84118b5e3b54c29b18354c7"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/qemu-palcode-99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf.tar.gz",
+      "project": "qemu-palcode",
+      "required_members": [
+        "COPYING",
+        "Makefile"
+      ],
+      "revision": "99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "History-supported non-x86 source candidate; nested dependency and build closure unverified",
+      "sha256": "29f62ddb6a8cca68f85f1ee99f90e19882a5ff4d8e0f524ca88ee5977adc1793",
+      "size": 89197,
+      "url": "https://gitlab.com/qemu-project/qemu-palcode/-/archive/99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf/qemu-palcode-99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf.tar.gz"
+    },
+    {
+      "archive_root": "seabios-a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "COPYING.LESSER": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+        "Makefile": "84a7817613f3961274c57ec082b160a799d616007b023dee2f4d2b97c66884ef",
+        "scripts/buildversion.py": "088e5b59d85a72cb9840c64ee6a008cea4ef4a7bf0be1eda0a2fc34a552949bb",
+        "scripts/test-build.sh": "322cf6cd1360afde919c70f85efea02eba97604216c86b673a190fc6a8908b3d",
+        "src/post.c": "b94759c0359502699a5854f33e6b6b333b8c63f7849d409116608ab4ec7f7558"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/seabios-a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8.tar.gz",
+      "project": "seabios",
+      "required_members": [
+        "Makefile",
+        "src/post.c",
+        "scripts/buildversion.py",
+        "scripts/test-build.sh",
+        "COPYING",
+        "COPYING.LESSER"
+      ],
+      "revision": "a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "Historically supported firmware source candidate; no rebuild performed",
+      "sha256": "bcd1870471d10c3fdd8ce7875545a1bad9c87f1ce69f283a15a7e803a414d9c2",
+      "size": 637031,
+      "url": "https://gitlab.com/qemu-project/seabios/-/archive/a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8/seabios-a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8.tar.gz"
+    },
+    {
+      "archive_root": "seabios-hppa-1c516b481339f511d83a4afba9a48d1ac904e93e",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "COPYING.LESSER": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+        "Makefile": "b96320505d840d358cbd58e1e1f7ad51d70beb80368f28c9cb436b911534a5cf",
+        "Makefile.parisc": "fa24a3b8e1b52a0b92505859e78ccda56fd9dfaf14664b3d3e289a54c2b6d563",
+        "README": "9ec2d0ffce505a07dc37951fcc2e94ceec3218c21e0e02c503418de894009719"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/seabios-hppa-1c516b481339f511d83a4afba9a48d1ac904e93e.tar.gz",
+      "project": "seabios-hppa",
+      "required_members": [
+        "COPYING",
+        "COPYING.LESSER",
+        "Makefile",
+        "Makefile.parisc",
+        "README"
+      ],
+      "revision": "1c516b481339f511d83a4afba9a48d1ac904e93e",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "History-supported non-x86 source candidate; nested dependency and build closure unverified",
+      "sha256": "c07974183de235c7f39188587e42322d9efee89485e69fed46a0561570bda84d",
+      "size": 726571,
+      "url": "https://gitlab.com/qemu-project/seabios-hppa/-/archive/1c516b481339f511d83a4afba9a48d1ac904e93e/seabios-hppa-1c516b481339f511d83a4afba9a48d1ac904e93e.tar.gz"
+    },
+    {
+      "archive_root": "skiboot-785a5e3070a86e18521e62fe202b87209de30fa2",
+      "kind": "source_archive",
+      "member_evidence": {
+        "Makefile": "0c261c84306243bbab57877a89ba44c099afc5c49496e1de5d30c6fc6b6891fe",
+        "Makefile.main": "ce66bc07ce338bf31ddabb9bd601b89ffbc503a149812f473f22cc60683830ee",
+        "Makefile.rules": "ba7137dceb03dd7a3285d1029e160a8c0db2ee2d14235059c41e1aa755fed660",
+        "README.md": "e82dbb9226a400bcf0a2681dfd6475dcb2536cabb06110b672f3280803f2d7eb"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/skiboot-785a5e3070a86e18521e62fe202b87209de30fa2.tar.gz",
+      "project": "skiboot",
+      "required_members": [
+        "Makefile",
+        "Makefile.main",
+        "Makefile.rules",
+        "README.md"
+      ],
+      "revision": "785a5e3070a86e18521e62fe202b87209de30fa2",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "History-supported non-x86 source candidate; nested dependency and build closure unverified",
+      "sha256": "af5cae6fb203b15cdf1f15d612affaebd8f4d88cb42aedf2542ebf4e130274a8",
+      "size": 5643408,
+      "url": "https://gitlab.com/qemu-project/skiboot/-/archive/785a5e3070a86e18521e62fe202b87209de30fa2/skiboot-785a5e3070a86e18521e62fe202b87209de30fa2.tar.gz"
+    }
+  ],
+  "acquisition_lock_sha256": "40016dbb1c774afe8a98443d56cf7833137ccf70e47331fef735b1ec5cd5bf8b",
+  "archive_files_not_retained": [],
+  "catalog_sha256": "ebf38d824e540512cb8980f61b7ec5a98b14f50ea9795edaa515d1c59ca96a74",
+  "embedded_discrepancies": [
+    {
+      "embedded_sha256": "8686f255ecea2a07803f4eb9c0481778d651267e20688466a2c265980db3ca85",
+      "embedded_size": 340992,
+      "name": "edk2-i386-secure-vars.fd",
+      "status": "missing_from_archive"
+    },
+    {
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-i386-vars.fd.bz2",
+      "archive_sha256": "be0b35d7b31ca9b66bd634c6145480debf59502692d2a99144002d4d43be4b65",
+      "archive_size": 335360,
+      "embedded_sha256": "a5c722949ba13c60b08c1ad3507ef751424941781f66d529f5f1feded8320ccb",
+      "embedded_size": 328704,
+      "name": "edk2-i386-vars.fd",
+      "status": "differs_from_archive"
+    }
+  ],
+  "embedded_resources": [
+    {
+      "archive_status": "matches",
+      "group": "seabios",
+      "name": "bios-256k.bin",
+      "sha256": "f1d4f396011197eb989029659cde250751cc711c336b8fbbe6f77cfe0dc5dcd8",
+      "size": 262144
+    },
+    {
+      "archive_status": "matches",
+      "group": "seabios",
+      "name": "bios-microvm.bin",
+      "sha256": "42780e1ab9161752848475529a25c39d7c76baee82a1b2ddff666c2f7de7bbee",
+      "size": 131072
+    },
+    {
+      "archive_status": "matches",
+      "group": "seabios",
+      "name": "bios.bin",
+      "sha256": "8244f3e5eaca828cc0a6a963f1fad15d68d8d3c0b5c80b8451b3067a85f14ae1",
+      "size": 131072
+    },
+    {
+      "archive_status": "matches",
+      "group": "edk2",
+      "name": "edk2-i386-code.fd",
+      "sha256": "640a01c241810aecb9ed8b6bdac02b6cb3264b42817fc79e186e0e906687be85",
+      "size": 3653632
+    },
+    {
+      "archive_status": "matches",
+      "group": "edk2",
+      "name": "edk2-i386-secure-code.fd",
+      "sha256": "ae1a8e7ecc68a3fde0e1415180d6c6987a7e83596d57dbe61c8313d0ac247437",
+      "size": 3653632
+    },
+    {
+      "archive_status": "missing_from_archive",
+      "group": "edk2",
+      "name": "edk2-i386-secure-vars.fd",
+      "sha256": "8686f255ecea2a07803f4eb9c0481778d651267e20688466a2c265980db3ca85",
+      "size": 340992
+    },
+    {
+      "archive_status": "differs_from_archive",
+      "group": "edk2",
+      "name": "edk2-i386-vars.fd",
+      "sha256": "a5c722949ba13c60b08c1ad3507ef751424941781f66d529f5f1feded8320ccb",
+      "size": 328704
+    },
+    {
+      "archive_status": "matches",
+      "group": "edk2",
+      "name": "edk2-licenses.txt",
+      "sha256": "1ddeaed2e7d2e9ecb960bdfc1b8ee45387aff70d056d985d145949af3951657c",
+      "size": 42903
+    },
+    {
+      "archive_status": "matches",
+      "group": "edk2",
+      "name": "edk2-x86_64-code.fd",
+      "sha256": "d23e35c96cbf47468e5c7c2ce82cfa0c825d4e916bb6bacbf3d8d81556350fe3",
+      "size": 3653632
+    },
+    {
+      "archive_status": "matches",
+      "group": "edk2",
+      "name": "edk2-x86_64-secure-code.fd",
+      "sha256": "503a256ecc227373c92a96b7c625415489df09dfdd59a1a5beee82dd847ac296",
+      "size": 3653632
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "name": "efi-e1000.rom",
+      "sha256": "f37222fcdf0481bfbaf7a16d9aaf740aeb41d3d24c187801eb6e9a628cec0fc8",
+      "size": 159232
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "name": "efi-e1000e.rom",
+      "sha256": "102c20348be2d0ebe45a77b076b31848182c2f7b4364775b6bc2ece6e97b4024",
+      "size": 159232
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "name": "efi-eepro100.rom",
+      "sha256": "2b5b55ba8afae7b5ef7116606babf60e6ceaa531c345d54542857cc3fbe3912e",
+      "size": 159232
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "name": "efi-ne2k_pci.rom",
+      "sha256": "9925e0a34547118110479d8fc4e01092a0a73e0a236416e9ff862655b46751f7",
+      "size": 157696
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "name": "efi-pcnet.rom",
+      "sha256": "71c494fde94efa9871cf43868d7e3c8f4190e406d47a5102a2a21b36ded8a162",
+      "size": 157696
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "name": "efi-rtl8139.rom",
+      "sha256": "4cdd69a7f5c6ce7aec3a3f20a034dc80e1d22aa37a739c364378952d997a32c7",
+      "size": 160768
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "name": "efi-virtio.rom",
+      "sha256": "26be36901db7f8181c306cc62bd74891d8646528965a78e40cceadba5dd7c8e7",
+      "size": 160768
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "name": "efi-vmxnet3.rom",
+      "sha256": "33e833123ad9831df94b2d623a17f91e4c779e3cb799baa97058f5972676a32a",
+      "size": 156672
+    },
+    {
+      "archive_status": "matches",
+      "group": "support",
+      "name": "firmware-COPYING",
+      "sha256": "6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100",
+      "size": 17992
+    },
+    {
+      "archive_status": "matches",
+      "group": "support",
+      "name": "firmware-COPYING.LIB",
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+      "size": 26530
+    },
+    {
+      "archive_status": "matches",
+      "group": "support",
+      "name": "firmware-notices.txt",
+      "sha256": "1081566cf16981574fca680cad318d013da7440e37297f1245452ad919b285a3",
+      "size": 4847
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/ar",
+      "sha256": "059ab719df4296edb800d399501e3823e1e6f470cc06a3a4564f4bb2dbd5c1fc",
+      "size": 28605
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/bepo",
+      "sha256": "01ccdb7e2d0b20f517e03d39cc70802ad83dfc1ed2e5d50ff9b4a4f77e37a9f8",
+      "size": 27809
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/cz",
+      "sha256": "3664b3f13e6cfff0e6d05f12000aa6610eff04f570707261ec35ca830ded6c36",
+      "size": 29209
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/da",
+      "sha256": "95ef0c168f0b25e936a7ff944da820a43af8028b515cc6709724f457e105c187",
+      "size": 29230
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/de",
+      "sha256": "cda7dc9656f007ca3e88e5bac50f20c7f61f934bcec2e87c6d61859e632ddb98",
+      "size": 29183
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/de-ch",
+      "sha256": "3260cb64fdcdf48e2b53c5d0573dc2a9410d7d3aae227ed42dda945f9ab74e06",
+      "size": 29214
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/en-gb",
+      "sha256": "e14229b7f9165bf226bf4de968fd5f6a504014a2179de08c2b2184cefe68174e",
+      "size": 29219
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/en-us",
+      "sha256": "52cf4c523e686078699ed58761c7e1443080305237a5f67a3716832570c5c8e5",
+      "size": 27086
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/es",
+      "sha256": "d9b1da8193232882705bd4a312c0923b6d91268f1e1a8eed2afbd7fc37681c06",
+      "size": 29203
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/et",
+      "sha256": "95af1e25132185e3cb271d491086ccf09cb667033afb718f1a11e974e80a838f",
+      "size": 27291
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/fi",
+      "sha256": "4c5cd5359c18635187d7af9570088a7bbd21f96d961aedbc4c9fb1e5df099281",
+      "size": 28604
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/fo",
+      "sha256": "3750b8090caea3cf6c827b97f5ecc2d1172c33d960141c50f96e61c53f682ccf",
+      "size": 29217
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/fr",
+      "sha256": "60d9baa3565b7727b4178704100bffb02cbd5b527a9dcc9f9ca76d76767b166e",
+      "size": 29204
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/fr-be",
+      "sha256": "522b5e758375e3d796fba096a46077766bd44548c8c61a4abe946e3116c1ad97",
+      "size": 29211
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/fr-ca",
+      "sha256": "9ee3fc13beec6e74f40fb6d150d7fe3b0afe4557fdf0769601e662a122a88cc0",
+      "size": 27564
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/fr-ch",
+      "sha256": "7b2ad2929f3b7b4f5d60176bd7e1852f91efbcfe2700e8df9bc9b891609a7170",
+      "size": 29215
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/hr",
+      "sha256": "e8391ed09015ce8459a98e3470daddd3a6d95c4c7e93b750098f5a321fd57482",
+      "size": 29255
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/hu",
+      "sha256": "763a938ed2fdd224b9cb8ad606d02aabc93a0e3fb7a5e5e9caafa0ec8c05d422",
+      "size": 29207
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/is",
+      "sha256": "6eb4e5bd93ca2f7a2059a31fd014444108eb684ecd97902da2492b0a0f6e3cdc",
+      "size": 29254
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/it",
+      "sha256": "12d090cdcb6af0e95a0c0330b8b7f0ac0446ab8cf7140b4f8c6c797c08e9c219",
+      "size": 29312
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/ja",
+      "sha256": "a4561aefcc2fd2f4ba01604001c9c0dc67469514ea0a665063b72e79d5d9c687",
+      "size": 27163
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/lt",
+      "sha256": "0bfc98e913451c0b9082d0317deffa03c6f0c53a1422cb4f4c1ef64dc3939d2f",
+      "size": 29166
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/lv",
+      "sha256": "be4f1e28325ae2ea927bd51e31863a327e64c0a938725fd02c2a7260660bdf77",
+      "size": 28618
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/mk",
+      "sha256": "71068ffe163ce6684b35f423e897e00c97debe0c3df555c43d26b46a79ca68e7",
+      "size": 27685
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/nl",
+      "sha256": "70cb1b41f184d61520867e639e6b69cddea4b0e2458c5502c7c40512301876c7",
+      "size": 29268
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/no",
+      "sha256": "95b3fe5258264b827ba01acc7a774bd9edbaec52c54e582a0737c33087a92514",
+      "size": 29563
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/pl",
+      "sha256": "5f3da802f81f385c58179272e48c4f8680dfdfe55383c504a6d84b3b7a8aadfb",
+      "size": 29327
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/pt",
+      "sha256": "29161e1b8b61b761c3f3bff237ca73ce4ee3316a99090890b32469824b5eed8a",
+      "size": 29195
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/pt-br",
+      "sha256": "fbb9491c0bfc4253cced9d8a20965aca98d0249c4626fe6e7d31358b24e34e8d",
+      "size": 29175
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/ru",
+      "sha256": "afa015a736cd935fc38a0df62fd6ab2f3c64b44c48b3e6d95969cbbfcdc43e91",
+      "size": 27704
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/sl",
+      "sha256": "bea8fe8ac0ca281038ac0e1788c39f090507ff0646bd4f57cc18f6873b030147",
+      "size": 4632
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/sv",
+      "sha256": "97731fbe91f254d81c005ffc232180a8dd7baeb6d699f0f0fc15e341672f96b3",
+      "size": 3346
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/th",
+      "sha256": "6dd9562a2b10c81f658ad96075fd87832777e87357620e89c7d070e4097fbbb9",
+      "size": 27829
+    },
+    {
+      "archive_status": "matches",
+      "group": "keymaps",
+      "name": "keymaps/tr",
+      "sha256": "f59f8cc154f0dc8b45166b524b9c1e649ba027e39381aac286663ad2227ddce8",
+      "size": 29142
+    },
+    {
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "name": "kvmvapic.bin",
+      "sha256": "cdf057a71b07e3b52b19cbe210bdefa59250d01a9810b960f7fe1f98eed95a27",
+      "size": 9216
+    },
+    {
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "name": "linuxboot.bin",
+      "sha256": "1ecfb26c19da9dc00cdec0d0d738db69aeea4f1231c0c0ffc483ff69b3cda6ce",
+      "size": 1024
+    },
+    {
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "name": "linuxboot_dma.bin",
+      "sha256": "9c49e255340c78fc12e54ed043462bca02fb7fca29b7cfab62ff88a5344b6950",
+      "size": 1536
+    },
+    {
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "name": "multiboot.bin",
+      "sha256": "13a3f9f119797b8776105f020f36572ce6a20fa2c60d3b8112818bfaefcdd348",
+      "size": 1024
+    },
+    {
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "name": "multiboot_dma.bin",
+      "sha256": "e01667420ee78a318ea44627d2dd68058d3377d024e6eb7237700afe2e86507d",
+      "size": 1024
+    },
+    {
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "name": "pvh.bin",
+      "sha256": "918ff03a118615c2f4611a5df2d9496aabe099b5cfaaf69e544ebf973305d59d",
+      "size": 1536
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-legacy",
+      "name": "pxe-e1000.rom",
+      "sha256": "981a728f95b7a01645645e9b753cfb764c9eb59266fa888ac58d7008fbb48c10",
+      "size": 67072
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-legacy",
+      "name": "pxe-eepro100.rom",
+      "sha256": "07b89a742e0f6d0e92dafe57b0f28c493436d0e1e07b7b77e728490c1f7b45dd",
+      "size": 61440
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-legacy",
+      "name": "pxe-ne2k_pci.rom",
+      "sha256": "bb9c0eaad36b9b4ce26c5f348bd05a832c8bf83ef38391db0ce9b51de8523ac7",
+      "size": 61440
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-legacy",
+      "name": "pxe-pcnet.rom",
+      "sha256": "92358396c05b3346c6bfd52bbf2a47978d0a8c6ddea932ee091a24faefbd489e",
+      "size": 61440
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-legacy",
+      "name": "pxe-rtl8139.rom",
+      "sha256": "d491351e37a50eb5a40e98a9f6b4d85010ee60fb9e64129d65ea10839287f138",
+      "size": 61440
+    },
+    {
+      "archive_status": "matches",
+      "group": "ipxe-legacy",
+      "name": "pxe-virtio.rom",
+      "sha256": "6994337fe07783a6233072e33771dc4f58260edc3269debe677a5227b264bfdc",
+      "size": 60416
+    },
+    {
+      "archive_status": "matches",
+      "group": "qboot",
+      "name": "qboot.rom",
+      "sha256": "9b9dfc6c25740d6225625570d71cab6805cc9216e68c8932e343266daaeb8c4b",
+      "size": 65536
+    },
+    {
+      "archive_status": "matches",
+      "group": "seabios",
+      "name": "vgabios-ati.bin",
+      "sha256": "9d4d1f32a7e059de82c09c19fc25e276a39d96a1a516605a32ba704596e10d8e",
+      "size": 39424
+    },
+    {
+      "archive_status": "matches",
+      "group": "seabios",
+      "name": "vgabios-bochs-display.bin",
+      "sha256": "d5fd6992dfdf0c980996b79c5ea13b9c8b36342c1dc94fcd682a6c3e8df850ff",
+      "size": 28672
+    },
+    {
+      "archive_status": "matches",
+      "group": "seabios",
+      "name": "vgabios-cirrus.bin",
+      "sha256": "305d3b15f67e65f1899a1664621f6b471e4345d33fd9eb4f6320b4559f6a04f2",
+      "size": 38912
+    },
+    {
+      "archive_status": "matches",
+      "group": "seabios",
+      "name": "vgabios-qxl.bin",
+      "sha256": "e81cc2807ebb9a1467b1933d192a4313424b499b73e7674257f07cd2171e01c7",
+      "size": 39424
+    },
+    {
+      "archive_status": "matches",
+      "group": "seabios",
+      "name": "vgabios-ramfb.bin",
+      "sha256": "31b26b2288ed5594b65a234e797ee7105d225d48086170b27ab518c3fb69b7de",
+      "size": 28672
+    },
+    {
+      "archive_status": "matches",
+      "group": "seabios",
+      "name": "vgabios-stdvga.bin",
+      "sha256": "651513519f9e0d5b99d3b051a8f5c68db69e987339b59a441d371068c34c146b",
+      "size": 39424
+    },
+    {
+      "archive_status": "matches",
+      "group": "seabios",
+      "name": "vgabios-virtio.bin",
+      "sha256": "746f38c2023dbbc071503113f970bcf69d49c6e7c55fa8c0e3748dbccba42772",
+      "size": 39424
+    },
+    {
+      "archive_status": "matches",
+      "group": "seabios",
+      "name": "vgabios-vmware.bin",
+      "sha256": "c12841eb2b057b6d99bfbc7ab72bea896e2b5cd694c93b026d7510de2b68ca11",
+      "size": 39424
+    },
+    {
+      "archive_status": "matches",
+      "group": "seabios",
+      "name": "vgabios.bin",
+      "sha256": "f0defab87465236d0d22b6000bd2c270e05a56ff3bb7fd209a56069caed86d57",
+      "size": 38912
+    }
+  ],
+  "firmware_rebuilt": false,
+  "format": 1,
+  "groups": {
+    "artwork": {
+      "acquired_source_archives": [],
+      "evidence": "Installer graphics/resources retained; inventoried to avoid silent scope exclusions.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Not firmware implementation; notice/provenance review remains with notice owners."
+      ],
+      "source_provenance_cleared": false
+    },
+    "descriptors": {
+      "acquired_source_archives": [],
+      "evidence": "Firmware descriptor metadata retained, not implementation source.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Does not attest the actual firmware build or VARS compatibility."
+      ],
+      "source_provenance_cleared": false
+    },
+    "device-trees": {
+      "acquired_source_archives": [],
+      "evidence": "Four paired DTS/DTB files. pc-bios/meson.build runs dtc -q -I dts -O dtb -o OUTPUT INPUT.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Historical dtc version and byte reproduction unverified; retain file-specific notices."
+      ],
+      "source_provenance_cleared": false
+    },
+    "edk2": {
+      "acquired_source_archives": [],
+      "evidence": "Eight compressed assets match utm-edk2-update.json. UTM replacement pin edc6681206c1a8791981a2f911d2fb8b3d2f5768 differs from locked pin. README stable202302 conflicts with roms/edk2-version stable202408. Retained config has no AArch64 secure build stanza.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "edk2",
+        "revision": "4dfdca63a93497203f197ec98ba20e2327e4afe4"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Actual UTM fork/revision/patches, nested sources, DSC/FDF/PCD/defines, toolchains, build and packaging logs and output hashes missing. i386 VARS mismatch and secure VARS missing origin remain unresolved. See SOURCE-INVENTORY.md."
+      ],
+      "source_provenance_cleared": false
+    },
+    "ipxe-efi": {
+      "acquired_source_archives": [
+        "sources/edk2-20d2e5a125e34fc8501026613a71549b2a1a3e54.tar.gz",
+        "sources/ipxe-4bd064de239dab2426b31c9789a1f4d78087dc63.tar.gz"
+      ],
+      "evidence": "Eight matching historical blobs in ipxe-efi-update.json. ipxe-efi-rom-tree.json pins iPXE 4bd064de239dab2426b31c9789a1f4d78087dc63 and EDK2 20d2e5a125e34fc8501026613a71549b2a1a3e54. Historical Makefile combines legacy and X64 EFI using EfiRom.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "ipxe",
+        "revision": "4bd064de239dab2426b31c9789a1f4d78087dc63"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "No rebuild, target-specific licence reports or historical toolchain/version metadata. EfiRom pin is a build-tool candidate, not an attestation and NOT UTM firmware source."
+      ],
+      "source_provenance_cleared": false
+    },
+    "ipxe-legacy": {
+      "acquired_source_archives": [
+        "sources/ipxe-7aee315f61aaf1be6d2fff26339f28a1137231a5.tar.gz"
+      ],
+      "evidence": "Six matching historical blobs in ipxe-legacy-update.json; ipxe-legacy-rom-tree.json pins 7aee315f61aaf1be6d2fff26339f28a1137231a5. All six binaries contain iPXE v1.0.0-591-g7aee315. Historical refresh script sets BANNER_TIMEOUT=0 and PRODUCT_NAME from git describe.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "ipxe",
+        "revision": "4bd064de239dab2426b31c9789a1f4d78087dc63"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "No rebuild or pinned historical compiler/environment; modern CONFIG=qemu is NOT the legacy recipe."
+      ],
+      "source_provenance_cleared": false
+    },
+    "keymaps": {
+      "acquired_source_archives": [],
+      "evidence": "Retained keymap text and 34 embedded resources; archive byte identities recorded.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "XKB/libxkbcommon/generator versions and historical data provenance unpinned; no blanket data license declaration."
+      ],
+      "source_provenance_cleared": false
+    },
+    "mac-drivers": {
+      "acquired_source_archives": [
+        "sources/QemuMacDrivers-90c488d5f4a407342247b9ea869df1c2d9c8e266.tar.gz"
+      ],
+      "evidence": "update-qemu_vga.ndrv.json matches blob, explicitly names source 90c488d5f4a407342247b9ea869df1c2d9c8e266.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "QemuMacDrivers",
+        "revision": "90c488d5f4a407342247b9ea869df1c2d9c8e266"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Historical PPC Mac driver compiler/SDK/build environment and recipe unverified; no rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "openbios": {
+      "acquired_source_archives": [],
+      "evidence": "README SVN r1280 claim is insufficient: update-openbios-ppc.json records byte-identical UTM WIP screamer-support replacement. SPARC32/SPARC64 plus QEMU,tcx.bin and QEMU,cgthree.bin also retained.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "openbios",
+        "revision": "c3a19c1e54977a53027d6232050e1e3e39a98a1b"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Matching implementation sources absent; actual UTM PPC fork/patches and separate SPARC/FCode source/config/toolchain provenance required."
+      ],
+      "source_provenance_cleared": false
+    },
+    "opensbi": {
+      "acquired_source_archives": [
+        "sources/opensbi-43cace6c3671e5172d0df0a8963e552bb04b7b20.tar.gz"
+      ],
+      "evidence": "Both images match update-opensbi-riscv64-generic-fw_dynamic.bin.json, v1.5.1 source 43cace6c3671e5172d0df0a8963e552bb04b7b20. roms/Makefile opensbi32-generic/opensbi64-generic uses PLATFORM=generic.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "opensbi",
+        "revision": "43cace6c3671e5172d0df0a8963e552bb04b7b20"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Exact RISC-V compiler/ISA/configuration and dependency closure unverified; no rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "palcode": {
+      "acquired_source_archives": [
+        "sources/qemu-palcode-99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf.tar.gz"
+      ],
+      "evidence": "update-palcode-clipper.json matches blob and source 99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf; source Makefile supplied. Binary has GCC 11.1.1 20210605 string.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "qemu-palcode",
+        "revision": "99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Historical Alpha toolchain, flags/configuration and dependencies unverified; no rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "pnv-nvram": {
+      "acquired_source_archives": [],
+      "evidence": "pc-bios/README gives ffspart recipe, two partition input lines and one skiboot boot to initialize NVRAM.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Actual ffspart/skiboot revisions, QEMU/machine/settings and initialization log missing. Acquired skiboot archive is not evidence of this state image origin."
+      ],
+      "source_provenance_cleared": false
+    },
+    "qboot": {
+      "acquired_source_archives": [
+        "sources/qboot-8ca302e86d685fa05b16e2b208888243da319941.tar.gz"
+      ],
+      "evidence": "qboot-update.json explicitly rebuilds 8ca302e8; retained qboot.rom matches its Git blob. Source meson.build requires Meson >=0.49.0, Ninja, objcopy and x86 -m32 freestanding compiler/linker.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "qboot",
+        "revision": "8ca302e86d685fa05b16e2b208888243da319941"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Exact compiler/binutils and Meson/Ninja versions/environment not established; no rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "qemu-optionrom": {
+      "acquired_source_archives": [],
+      "evidence": "Six images: pc-bios/optionrom C/assembly/flat.lds and scripts/signrom.py retained. Configured Makefile uses -m16/-march=i486, objcopy .text and Python checksum.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Historical compiler/binutils/configuration/source correspondence not rebuilt."
+      ],
+      "source_provenance_cleared": false
+    },
+    "s390": {
+      "acquired_source_archives": [],
+      "evidence": "s390-ccw.img matches update-s390-ccw.img.json. Retained pc-bios/s390-ccw/Makefile compiles SLOF lib/libc and lib/libnet. Binary records GCC 14.2.1 20241104 Red Hat 14.2.1-6.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Determine historical QEMU and SLOF source/config/toolchain closure for s390; do NOT substitute standalone SLOF firmware revision. No rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "seabios": {
+      "acquired_source_archives": [
+        "sources/seabios-a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8.tar.gz"
+      ],
+      "evidence": "All 12 images contain rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org; GCC 13.2.1 20230728 Red Hat Cross 13.2.1-1 and binutils 2.40-3.fc39. roms/Makefile bios/vgabios and config.seabios-*/config.vga-* recipes retained.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "seabios",
+        "revision": "a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "No rebuild; exact toolchain packages, generated configs and git-derived version inputs not captured."
+      ],
+      "source_provenance_cleared": false
+    },
+    "seabios-hppa": {
+      "acquired_source_archives": [
+        "sources/seabios-hppa-1c516b481339f511d83a4afba9a48d1ac904e93e.tar.gz"
+      ],
+      "evidence": "Both images match update-hppa-firmware.img.json v18 update, with source 1c516b481339f511d83a4afba9a48d1ac904e93e, DIFFERENT from locked gitlink. Recipe: make -C seabios-hppa parisc; see Makefile.parisc.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "seabios-hppa",
+        "revision": "3391c580960febcb9fa8f686f9666adaa462c349"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Exact PA-RISC 32/64-bit toolchains/configs and closure unverified; no rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "skiboot": {
+      "acquired_source_archives": [
+        "sources/skiboot-785a5e3070a86e18521e62fe202b87209de30fa2.tar.gz"
+      ],
+      "evidence": "update-skiboot.lid.json matches blob and 7.1-106 source 785a5e3070a86e18521e62fe202b87209de30fa2. Recipe: make -C skiboot CROSS=POWERPC64_PREFIX.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "skiboot",
+        "revision": "785a5e3070a86e18521e62fe202b87209de30fa2"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Historical toolchains, nested/build dependency closure and configurations unverified; no rebuild."
+      ],
+      "source_provenance_cleared": false
+    },
+    "slof": {
+      "acquired_source_archives": [
+        "sources/SLOF-ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544.tar.gz"
+      ],
+      "evidence": "update-slof.bin.json matches blob and updates source to ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544, qemu-slof-20241106; DIFFERENT from locked gitlink. Recipe: make -C SLOF CROSS=POWERPC64_PREFIX qemu -> boot_rom.bin.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "SLOF",
+        "revision": "3a259df2449fc4a4e43ab5f33f0b2c66484b4bc3"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "No rebuild; historical toolchain, config and full build/dependency closure unverified."
+      ],
+      "source_provenance_cleared": false
+    },
+    "support": {
+      "acquired_source_archives": [],
+      "evidence": "README/build/notice support material, not firmware implementation source.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Text claims can be stale; do not treat notices or recipes as build attestations."
+      ],
+      "source_provenance_cleared": false
+    },
+    "u-boot-e500": {
+      "acquired_source_archives": [],
+      "evidence": "update-u-boot.e500.json matches blob and v2021.07 source 840658b093976390e9537724f802281c9c8439f5; binary agrees. README 2072e72 claim is stale. Update identifies GCC 10.1.0 nolibc PowerPC toolchain URL. roms/Makefile qemu-ppce500_config recipe retained.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "u-boot",
+        "revision": "840658b093976390e9537724f802281c9c8439f5"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Larger source/toolchain acquisition deferred; checksummed archives, full build dependencies/config and rebuild still required."
+      ],
+      "source_provenance_cleared": false
+    },
+    "u-boot-sam460": {
+      "acquired_source_archives": [],
+      "evidence": "Binary U-Boot 2010.06.05 dated Jul 08 2018. Latest path query returns a mode-change commit whose blob does NOT match retained image; not accepted as matching provenance. roms/Makefile Sam460ex_config recipe retained.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "u-boot-sam460ex",
+        "revision": "60b3916f33e617a815973c5a6df77055b2e3a588"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Actual binary update/fork/revision/config and PowerPC toolchain unresolved; implementation source absent; do not infer revision from filename or current gitlink."
+      ],
+      "source_provenance_cleared": false
+    },
+    "unclassified": {
+      "acquired_source_archives": [],
+      "evidence": "Unknown assets are reported explicitly.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Manual classification/source review required; never automatically cleared."
+      ],
+      "source_provenance_cleared": false
+    },
+    "vbootrom": {
+      "acquired_source_archives": [],
+      "evidence": "NPCM8xx matches update-npcm8xx_bootrom.bin.json and recipe addition; no source gitlink in that commit. roms/Makefile uses ARM/AArch64 CROSS_COMPILE for NPCM7xx/8xx.",
+      "locked_tree_gitlink_candidate_only": {
+        "module": "vbootrom",
+        "revision": "1287b6e42e839ba2ab0f06268c5b53ae60df3537"
+      },
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Implementation source absent; independently establish actual revisions, configs and toolchains for BOTH images; locked pin alone is insufficient."
+      ],
+      "source_provenance_cleared": false
+    },
+    "vof": {
+      "acquired_source_archives": [],
+      "evidence": "Retained pc-bios/vof implementation and Makefile: -mcpu=power4, big-endian link, objcopy .text/.data/.toc/.got2 -> vof.bin.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Historical source/configuration and PowerPC compiler/binutils correspondence not verified."
+      ],
+      "source_provenance_cleared": false
+    },
+    "vof-nvram": {
+      "acquired_source_archives": [],
+      "evidence": "Retained 16 KiB vof-nvram.bin; no generating recipe established.",
+      "rebuild_verified": false,
+      "remaining_blockers": [
+        "Need actual generator/revision/inputs/default state and output digest; VOF C source alone does not explain this state image."
+      ],
+      "source_provenance_cleared": false
+    }
+  },
+  "qemu_archive": {
+    "archive_root": "utmapp-qemu-37ba092",
+    "filename": "qemu-v10.0.2-utm.tar.gz",
+    "revision": "37ba092d59aff24900dfd0d5e01d4ed68441ba07",
+    "sha256": "dbeaa6019cc3506a51805d1b7966ff530fbfd72e872ca75387a21bbab07d8644"
+  },
+  "recipe_files": {
+    "src/qemu/roms/Makefile": {
+      "sha256": "6e7f9a51187052bc51922466e5c42a8edeabc6e3f1189d092ce33907a9b9b5f2",
+      "size": 8109
+    },
+    "src/qemu/roms/config.seabios-128k": {
+      "sha256": "d52e34eb7a20f2153938f360b584952053ec4857a3624a548d2d72d077679c24",
+      "size": 554
+    },
+    "src/qemu/roms/config.seabios-256k": {
+      "sha256": "ae24be1993d21b62683b9b274e9f219c705c0d0106816362ae5250cbc92e18b4",
+      "size": 88
+    },
+    "src/qemu/roms/config.seabios-microvm": {
+      "sha256": "f359c2ed0abea13c3bb517d4986ac1265fd50b5e58b83a704938adc91916e87c",
+      "size": 460
+    },
+    "src/qemu/roms/config.vga-ati": {
+      "sha256": "eb500b7fd1e13d8cec76be21a5dbf30e7cb98682e9f0fa87dad41d844c44e5ec",
+      "size": 71
+    },
+    "src/qemu/roms/config.vga-bochs-display": {
+      "sha256": "31a303efb67f0aa9d79ec8cad5a32b7c6b72d4fa8227110a0e85b37fc39a6804",
+      "size": 63
+    },
+    "src/qemu/roms/config.vga-cirrus": {
+      "sha256": "888ad874052d301981a8cc6fa4bc72b1edd14ba937e7de113f71ce3fd2f8c253",
+      "size": 60
+    },
+    "src/qemu/roms/config.vga-isavga": {
+      "sha256": "5826ec704d4e4bb57089e0cbb72e7e5ccd31b7192d81084665cd4faeecb60b04",
+      "size": 59
+    },
+    "src/qemu/roms/config.vga-qxl": {
+      "sha256": "26e43ea5e98615d11573b2619f3fb3c1933d5f810e6a2c44218d99465cc3ae77",
+      "size": 128
+    },
+    "src/qemu/roms/config.vga-ramfb": {
+      "sha256": "66bec6516e41c3601af1e86d1d78410574f1fb694de509a91b55050a80f7400a",
+      "size": 59
+    },
+    "src/qemu/roms/config.vga-stdvga": {
+      "sha256": "ca7367ae57665fa01e0ebb741ba5823d646f4b65a9a87657ea163cc9f362a8a8",
+      "size": 59
+    },
+    "src/qemu/roms/config.vga-virtio": {
+      "sha256": "afa7d59e1c18ed770cf0e83e3d5dc70866f75fdde83064fbea6e115f79504066",
+      "size": 128
+    },
+    "src/qemu/roms/config.vga-vmware": {
+      "sha256": "1bd31f16dd43fb25aa92f9816cbfaae4a19a8faf29ff52bd02429fbaafb78f57",
+      "size": 128
+    },
+    "src/qemu/roms/configure-seabios.sh": {
+      "sha256": "012b5ad323c7d7a1b6aab674ce5579a41a8a9d27da2d6c6cf45f28219b64aac9",
+      "size": 111
+    },
+    "src/qemu/roms/edk2-build.config": {
+      "sha256": "0346f0e6d2517c8174244a8f9a1fe3d0cbf671c8026bb1c35d9cf2049c4482c2",
+      "size": 3763
+    },
+    "src/qemu/roms/edk2-build.py": {
+      "sha256": "88088961d7c26ff85c9a18f2575da70e615ba5e3b97e6db4716119b52524a7db",
+      "size": 15899
+    },
+    "src/qemu/roms/edk2-version": {
+      "sha256": "cbdf9ee8732f033706651cc1171a9ba43e4c3138be988ddd30adc19504089c40",
+      "size": 55
+    }
+  },
+  "redistribution_cleared": false,
+  "retained_file_count": 174,
+  "retained_files": [
+    {
+      "archive_identity": {
+        "sha256": "a99f3a06fdac5cf5d72bd0fd24647d897302c3ff8e918add65168185f8cbdf4d",
+        "size": 850
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/QEMU,cgthree.bin",
+      "archive_status": "matches",
+      "group": "openbios",
+      "path": "src/qemu/pc-bios/QEMU,cgthree.bin",
+      "sha256": "a99f3a06fdac5cf5d72bd0fd24647d897302c3ff8e918add65168185f8cbdf4d",
+      "size": 850
+    },
+    {
+      "archive_identity": {
+        "sha256": "92da99a770ab24f96c33c78382940cac8b25e88cb110634c1b32aa2d8cb852e7",
+        "size": 1402
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/QEMU,tcx.bin",
+      "archive_status": "matches",
+      "group": "openbios",
+      "path": "src/qemu/pc-bios/QEMU,tcx.bin",
+      "sha256": "92da99a770ab24f96c33c78382940cac8b25e88cb110634c1b32aa2d8cb852e7",
+      "size": 1402
+    },
+    {
+      "archive_identity": {
+        "sha256": "1081566cf16981574fca680cad318d013da7440e37297f1245452ad919b285a3",
+        "size": 4847
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/README",
+      "archive_status": "matches",
+      "group": "support",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-legacy-update.json",
+          "git_blob_sha1": "fe221a940ff93d52468c28fd4bee04377dc17487",
+          "matches": false,
+          "qemu_commit": "36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+        },
+        {
+          "evidence": "evidence/update-npcm8xx_bootrom.bin.json",
+          "git_blob_sha1": "700dcaab523f0dc46a39102a5ca270969305562e",
+          "matches": false,
+          "qemu_commit": "269b7effd906d6b22071971b7f5b4cb344403b86"
+        },
+        {
+          "evidence": "evidence/update-slof.bin.json",
+          "git_blob_sha1": "a08e034fc32b0c430d285e27b3686a92a3603d19",
+          "matches": false,
+          "qemu_commit": "7f98b4f25ed94a3565acb1d6b54f43c1e3da1709"
+        }
+      ],
+      "path": "src/qemu/pc-bios/README",
+      "sha256": "1081566cf16981574fca680cad318d013da7440e37297f1245452ad919b285a3",
+      "size": 4847
+    },
+    {
+      "archive_identity": {
+        "sha256": "36a49d253e2bd907a54ca5e61965438b65fac0cf152c9b11f83c0c965203f218",
+        "size": 3211
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/bamboo.dtb",
+      "archive_status": "matches",
+      "group": "device-trees",
+      "path": "src/qemu/pc-bios/bamboo.dtb",
+      "sha256": "36a49d253e2bd907a54ca5e61965438b65fac0cf152c9b11f83c0c965203f218",
+      "size": 3211
+    },
+    {
+      "archive_identity": {
+        "sha256": "a3244935b78facb6d96a007e234a4a72c622a5eb232b0e3731092bd9ef48c332",
+        "size": 4639
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/bamboo.dts",
+      "archive_status": "matches",
+      "group": "device-trees",
+      "path": "src/qemu/pc-bios/bamboo.dts",
+      "sha256": "a3244935b78facb6d96a007e234a4a72c622a5eb232b0e3731092bd9ef48c332",
+      "size": 4639
+    },
+    {
+      "archive_identity": {
+        "sha256": "f1d4f396011197eb989029659cde250751cc711c336b8fbbe6f77cfe0dc5dcd8",
+        "size": 262144
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/bios-256k.bin",
+      "archive_status": "matches",
+      "group": "seabios",
+      "path": "src/qemu/pc-bios/bios-256k.bin",
+      "sha256": "f1d4f396011197eb989029659cde250751cc711c336b8fbbe6f77cfe0dc5dcd8",
+      "size": 262144,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "42780e1ab9161752848475529a25c39d7c76baee82a1b2ddff666c2f7de7bbee",
+        "size": 131072
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/bios-microvm.bin",
+      "archive_status": "matches",
+      "group": "seabios",
+      "path": "src/qemu/pc-bios/bios-microvm.bin",
+      "sha256": "42780e1ab9161752848475529a25c39d7c76baee82a1b2ddff666c2f7de7bbee",
+      "size": 131072,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "8244f3e5eaca828cc0a6a963f1fad15d68d8d3c0b5c80b8451b3067a85f14ae1",
+        "size": 131072
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/bios.bin",
+      "archive_status": "matches",
+      "group": "seabios",
+      "path": "src/qemu/pc-bios/bios.bin",
+      "sha256": "8244f3e5eaca828cc0a6a963f1fad15d68d8d3c0b5c80b8451b3067a85f14ae1",
+      "size": 131072,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "3e7ed2ed8637d8c8a1e619d8a280bc2da853e7a17eab689597c7b69770e503b0",
+        "size": 9779
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/canyonlands.dtb",
+      "archive_status": "matches",
+      "group": "device-trees",
+      "path": "src/qemu/pc-bios/canyonlands.dtb",
+      "sha256": "3e7ed2ed8637d8c8a1e619d8a280bc2da853e7a17eab689597c7b69770e503b0",
+      "size": 9779
+    },
+    {
+      "archive_identity": {
+        "sha256": "19b64acfc34bbea86ea9eefc0853dcc98ad4b100c03be97d3b5880e779a871de",
+        "size": 15766
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/canyonlands.dts",
+      "archive_status": "matches",
+      "group": "device-trees",
+      "path": "src/qemu/pc-bios/canyonlands.dts",
+      "sha256": "19b64acfc34bbea86ea9eefc0853dcc98ad4b100c03be97d3b5880e779a871de",
+      "size": 15766
+    },
+    {
+      "archive_identity": {
+        "sha256": "1f507837583adea0de25d5034b66168e7ac91277320cb795b2e258336a9c610c",
+        "size": 704
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/descriptors/50-edk2-i386-secure.json",
+      "archive_status": "matches",
+      "group": "descriptors",
+      "path": "src/qemu/pc-bios/descriptors/50-edk2-i386-secure.json",
+      "sha256": "1f507837583adea0de25d5034b66168e7ac91277320cb795b2e258336a9c610c",
+      "size": 704
+    },
+    {
+      "archive_identity": {
+        "sha256": "25e359a321055df92a581a64c4c38e8e4c7f8774385688418f52f5ca58a45630",
+        "size": 729
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/descriptors/50-edk2-x86_64-secure.json",
+      "archive_status": "matches",
+      "group": "descriptors",
+      "path": "src/qemu/pc-bios/descriptors/50-edk2-x86_64-secure.json",
+      "sha256": "25e359a321055df92a581a64c4c38e8e4c7f8774385688418f52f5ca58a45630",
+      "size": 729
+    },
+    {
+      "archive_identity": {
+        "sha256": "f2c6c8ed7fd9e9c2d836c04ada145ca88a63cced27878543abba4e5160c3fd3f",
+        "size": 610
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/descriptors/60-edk2-aarch64.json",
+      "archive_status": "matches",
+      "group": "descriptors",
+      "path": "src/qemu/pc-bios/descriptors/60-edk2-aarch64.json",
+      "sha256": "f2c6c8ed7fd9e9c2d836c04ada145ca88a63cced27878543abba4e5160c3fd3f",
+      "size": 610
+    },
+    {
+      "archive_identity": {
+        "sha256": "466e6321e9c77c7fd07aa135f6dd2838e78efa47086a6dfde9193177226e7165",
+        "size": 598
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/descriptors/60-edk2-arm.json",
+      "archive_status": "matches",
+      "group": "descriptors",
+      "path": "src/qemu/pc-bios/descriptors/60-edk2-arm.json",
+      "sha256": "466e6321e9c77c7fd07aa135f6dd2838e78efa47086a6dfde9193177226e7165",
+      "size": 598
+    },
+    {
+      "archive_identity": {
+        "sha256": "75cdfb87db2cfea4f1db8cb2c3a07a83afa72901fd663dfd23ade9e9694caded",
+        "size": 655
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/descriptors/60-edk2-i386.json",
+      "archive_status": "matches",
+      "group": "descriptors",
+      "path": "src/qemu/pc-bios/descriptors/60-edk2-i386.json",
+      "sha256": "75cdfb87db2cfea4f1db8cb2c3a07a83afa72901fd663dfd23ade9e9694caded",
+      "size": 655
+    },
+    {
+      "archive_identity": {
+        "sha256": "f981a1b0fb24fe7ed037fdba45efd9a1b9d5d344a80719b3d34145f2b449db4b",
+        "size": 605
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/descriptors/60-edk2-loongarch64.json",
+      "archive_status": "matches",
+      "group": "descriptors",
+      "path": "src/qemu/pc-bios/descriptors/60-edk2-loongarch64.json",
+      "sha256": "f981a1b0fb24fe7ed037fdba45efd9a1b9d5d344a80719b3d34145f2b449db4b",
+      "size": 605
+    },
+    {
+      "archive_identity": {
+        "sha256": "a4b8a18fe51974515b0217311300ad1c5b13176d4383201dc2a69bdbe502219e",
+        "size": 585
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/descriptors/60-edk2-riscv64.json",
+      "archive_status": "matches",
+      "group": "descriptors",
+      "path": "src/qemu/pc-bios/descriptors/60-edk2-riscv64.json",
+      "sha256": "a4b8a18fe51974515b0217311300ad1c5b13176d4383201dc2a69bdbe502219e",
+      "size": 585
+    },
+    {
+      "archive_identity": {
+        "sha256": "6f8a1e4463b44625e604c420213b6c40705ce9587662a674f31230999471e1b9",
+        "size": 702
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/descriptors/60-edk2-x86_64.json",
+      "archive_status": "matches",
+      "group": "descriptors",
+      "path": "src/qemu/pc-bios/descriptors/60-edk2-x86_64.json",
+      "sha256": "6f8a1e4463b44625e604c420213b6c40705ce9587662a674f31230999471e1b9",
+      "size": 702
+    },
+    {
+      "archive_identity": {
+        "sha256": "e25816f5eeeab51112a39af5f368e2a3f22697e7f41e7a1b94865ff047c6e17d",
+        "size": 563
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/descriptors/meson.build",
+      "archive_status": "matches",
+      "group": "descriptors",
+      "path": "src/qemu/pc-bios/descriptors/meson.build",
+      "sha256": "e25816f5eeeab51112a39af5f368e2a3f22697e7f41e7a1b94865ff047c6e17d",
+      "size": 563
+    },
+    {
+      "archive_identity": {
+        "sha256": "e572812e43748a8d1c2f8c3a59e8c0f6d079da4e09085bf023f6c12b068c085f",
+        "size": 827871
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-aarch64-code.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "ee769c4bf42a5350d33345fc1b16d00156fe0c25fb3c68debd003bd844e4e3fa",
+        "size": 67108864
+      },
+      "group": "edk2",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/utm-edk2-update.json",
+          "git_blob_sha1": "33c8ea7539ff17bf0b94da70def5dd27b16c2cb6",
+          "matches": true,
+          "qemu_commit": "361d160a6894dc9b206b2699533960762763f370"
+        }
+      ],
+      "path": "src/qemu/pc-bios/edk2-aarch64-code.fd.bz2",
+      "sha256": "e572812e43748a8d1c2f8c3a59e8c0f6d079da4e09085bf023f6c12b068c085f",
+      "size": 827871
+    },
+    {
+      "archive_identity": {
+        "sha256": "89206fa3bce0a43161e6d8dc143c6246ac03f095ce9873a1243cdb99efe4ee63",
+        "size": 1114931
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-aarch64-secure-code.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "c85a57de1ac39e550a6529bd66a4214eb1d8c14dcda7e22dedf72566a769fbc7",
+        "size": 67108864
+      },
+      "group": "edk2",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/utm-edk2-update.json",
+          "git_blob_sha1": "cb41790e7ba46157d9f6175aa5f510c2511a57bb",
+          "matches": true,
+          "qemu_commit": "361d160a6894dc9b206b2699533960762763f370"
+        }
+      ],
+      "path": "src/qemu/pc-bios/edk2-aarch64-secure-code.fd.bz2",
+      "sha256": "89206fa3bce0a43161e6d8dc143c6246ac03f095ce9873a1243cdb99efe4ee63",
+      "size": 1114931
+    },
+    {
+      "archive_identity": {
+        "sha256": "d87ac8dcad15778142c6abc4e2f34f48bf3d4ea6036efd531297965d8ae0542d",
+        "size": 1570311
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-arm-code.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "c632a04ddd55dfa7136a0a36790c72f5c9b52542ecba979bbeeb5ddef99acd64",
+        "size": 67108864
+      },
+      "group": "edk2",
+      "path": "src/qemu/pc-bios/edk2-arm-code.fd.bz2",
+      "sha256": "d87ac8dcad15778142c6abc4e2f34f48bf3d4ea6036efd531297965d8ae0542d",
+      "size": 1570311
+    },
+    {
+      "archive_identity": {
+        "sha256": "e6fad86180ca1b35125afdb67cf5188807fb031365640a162644d9ee49f4afbc",
+        "size": 6710
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-arm-vars.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "f5b7f83db14d73152824a5d79f8f42050c4ed196705a0e759730f43a2ec13f23",
+        "size": 334848
+      },
+      "group": "edk2",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/utm-edk2-update.json",
+          "git_blob_sha1": "2691fee3c7d269f88849852d1d7833fdff0fd74c",
+          "matches": true,
+          "qemu_commit": "361d160a6894dc9b206b2699533960762763f370"
+        }
+      ],
+      "path": "src/qemu/pc-bios/edk2-arm-vars.fd.bz2",
+      "sha256": "e6fad86180ca1b35125afdb67cf5188807fb031365640a162644d9ee49f4afbc",
+      "size": 6710
+    },
+    {
+      "archive_identity": {
+        "sha256": "24f38c21481d77730b1df65a253288afa96cc2bcd0cd61b846c328cc611697e4",
+        "size": 950753
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-i386-code.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "640a01c241810aecb9ed8b6bdac02b6cb3264b42817fc79e186e0e906687be85",
+        "size": 3653632
+      },
+      "group": "edk2",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/utm-edk2-update.json",
+          "git_blob_sha1": "27e37d51e7e9a7165bc815e6a4454f5931e1afe1",
+          "matches": true,
+          "qemu_commit": "361d160a6894dc9b206b2699533960762763f370"
+        }
+      ],
+      "path": "src/qemu/pc-bios/edk2-i386-code.fd.bz2",
+      "sha256": "24f38c21481d77730b1df65a253288afa96cc2bcd0cd61b846c328cc611697e4",
+      "size": 950753
+    },
+    {
+      "archive_identity": {
+        "sha256": "ebb437df84455796a7b9295243b599c7e17988233b04fbb04528d689c86e06a1",
+        "size": 1243466
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-i386-secure-code.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "ae1a8e7ecc68a3fde0e1415180d6c6987a7e83596d57dbe61c8313d0ac247437",
+        "size": 3653632
+      },
+      "group": "edk2",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/utm-edk2-update.json",
+          "git_blob_sha1": "aa2e2a1bbec7cd8980b8222e1978229a3935a8a2",
+          "matches": true,
+          "qemu_commit": "361d160a6894dc9b206b2699533960762763f370"
+        }
+      ],
+      "path": "src/qemu/pc-bios/edk2-i386-secure-code.fd.bz2",
+      "sha256": "ebb437df84455796a7b9295243b599c7e17988233b04fbb04528d689c86e06a1",
+      "size": 1243466
+    },
+    {
+      "archive_identity": {
+        "sha256": "43ee321e66e4d68327e3c178f56a38c0a3938bb5eac2b8d91c5902603395077d",
+        "size": 7727
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-i386-vars.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "be0b35d7b31ca9b66bd634c6145480debf59502692d2a99144002d4d43be4b65",
+        "size": 335360
+      },
+      "group": "edk2",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/utm-edk2-update.json",
+          "git_blob_sha1": "e5d2a8704806cb24f4a3ea8af66ee6d5f57ca4cb",
+          "matches": true,
+          "qemu_commit": "361d160a6894dc9b206b2699533960762763f370"
+        }
+      ],
+      "path": "src/qemu/pc-bios/edk2-i386-vars.fd.bz2",
+      "sha256": "43ee321e66e4d68327e3c178f56a38c0a3938bb5eac2b8d91c5902603395077d",
+      "size": 7727
+    },
+    {
+      "archive_identity": {
+        "sha256": "1ddeaed2e7d2e9ecb960bdfc1b8ee45387aff70d056d985d145949af3951657c",
+        "size": 42903
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-licenses.txt",
+      "archive_status": "matches",
+      "group": "edk2",
+      "path": "src/qemu/pc-bios/edk2-licenses.txt",
+      "sha256": "1ddeaed2e7d2e9ecb960bdfc1b8ee45387aff70d056d985d145949af3951657c",
+      "size": 42903
+    },
+    {
+      "archive_identity": {
+        "sha256": "4fdedf8501cf970dffaca292f0eddec8f2a6b63c8b7d0c9372940b0eb8d46f4b",
+        "size": 1148383
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-loongarch64-code.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "edd5a67fe50f7597faecb2fe67c5733b9a31b0b345a2127c3c358a5737446ef7",
+        "size": 16777216
+      },
+      "group": "edk2",
+      "path": "src/qemu/pc-bios/edk2-loongarch64-code.fd.bz2",
+      "sha256": "4fdedf8501cf970dffaca292f0eddec8f2a6b63c8b7d0c9372940b0eb8d46f4b",
+      "size": 1148383
+    },
+    {
+      "archive_identity": {
+        "sha256": "f1c537cdb136c5ee634f1c7797db06276e0ed92c0e09e001c8156fa04f55614e",
+        "size": 233
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-loongarch64-vars.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "adbfcb31d6470ef090220baeb53559e26323b6cfb5e7614f879e89608a3ed748",
+        "size": 16777216
+      },
+      "group": "edk2",
+      "path": "src/qemu/pc-bios/edk2-loongarch64-vars.fd.bz2",
+      "sha256": "f1c537cdb136c5ee634f1c7797db06276e0ed92c0e09e001c8156fa04f55614e",
+      "size": 233
+    },
+    {
+      "archive_identity": {
+        "sha256": "e33120b298f76f3658ec9daa7ba7f579062e60decf75cd746a933625b8b76167",
+        "size": 1296526
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-riscv-code.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "c3b779f86671c0cadf9cbdb274917a20210aeceb6f58b42d68406cdddfa48869",
+        "size": 33554432
+      },
+      "group": "edk2",
+      "path": "src/qemu/pc-bios/edk2-riscv-code.fd.bz2",
+      "sha256": "e33120b298f76f3658ec9daa7ba7f579062e60decf75cd746a933625b8b76167",
+      "size": 1296526
+    },
+    {
+      "archive_identity": {
+        "sha256": "881b87567b3a20c8363c602c56b688ccfc0fb83683dab23acfcbb5eadb0b1e09",
+        "size": 235
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-riscv-vars.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "ea8094e953b1215444bd001ee1cf22818f1f7f8abcb158e62180cbaa6c1f70af",
+        "size": 33554432
+      },
+      "group": "edk2",
+      "path": "src/qemu/pc-bios/edk2-riscv-vars.fd.bz2",
+      "sha256": "881b87567b3a20c8363c602c56b688ccfc0fb83683dab23acfcbb5eadb0b1e09",
+      "size": 235
+    },
+    {
+      "archive_identity": {
+        "sha256": "128c3b01c158195facb99f6e31b80596743c6d0d9bf885177161041804292550",
+        "size": 977013
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-x86_64-code.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "d23e35c96cbf47468e5c7c2ce82cfa0c825d4e916bb6bacbf3d8d81556350fe3",
+        "size": 3653632
+      },
+      "group": "edk2",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/utm-edk2-update.json",
+          "git_blob_sha1": "e6a5dd7705b5c796dcdebe7cc72e5eaa5387c19b",
+          "matches": true,
+          "qemu_commit": "361d160a6894dc9b206b2699533960762763f370"
+        }
+      ],
+      "path": "src/qemu/pc-bios/edk2-x86_64-code.fd.bz2",
+      "sha256": "128c3b01c158195facb99f6e31b80596743c6d0d9bf885177161041804292550",
+      "size": 977013
+    },
+    {
+      "archive_identity": {
+        "sha256": "144f2b89fe32bdd912b15f0118b3becafa5c47d982d34732391096ec6b60b780",
+        "size": 1787244
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-x86_64-microvm.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "3df9c22e1551310602cf3c63f6e57fdbffcc90d608a45e02a0d26190999b205b",
+        "size": 4194304
+      },
+      "group": "edk2",
+      "path": "src/qemu/pc-bios/edk2-x86_64-microvm.fd.bz2",
+      "sha256": "144f2b89fe32bdd912b15f0118b3becafa5c47d982d34732391096ec6b60b780",
+      "size": 1787244
+    },
+    {
+      "archive_identity": {
+        "sha256": "b43f181b338c81ced47363801c0fb8492d28e3ee1f5f14c875f07ee06f5915d0",
+        "size": 1279127
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/edk2-x86_64-secure-code.fd.bz2",
+      "archive_status": "matches",
+      "decompressed": {
+        "sha256": "503a256ecc227373c92a96b7c625415489df09dfdd59a1a5beee82dd847ac296",
+        "size": 3653632
+      },
+      "group": "edk2",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/utm-edk2-update.json",
+          "git_blob_sha1": "0fd1432403fd1fc47ab4c2088e8f672f19d9f8a7",
+          "matches": true,
+          "qemu_commit": "361d160a6894dc9b206b2699533960762763f370"
+        }
+      ],
+      "path": "src/qemu/pc-bios/edk2-x86_64-secure-code.fd.bz2",
+      "sha256": "b43f181b338c81ced47363801c0fb8492d28e3ee1f5f14c875f07ee06f5915d0",
+      "size": 1279127
+    },
+    {
+      "archive_identity": {
+        "sha256": "f37222fcdf0481bfbaf7a16d9aaf740aeb41d3d24c187801eb6e9a628cec0fc8",
+        "size": 159232
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/efi-e1000.rom",
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-efi-update.json",
+          "git_blob_sha1": "6312b11c2f5868bb6e5f0f15dfa31ad7dbda0a02",
+          "matches": true,
+          "qemu_commit": "3e570a9ae9b966362596fd649f2cbcff0b2199c9"
+        }
+      ],
+      "path": "src/qemu/pc-bios/efi-e1000.rom",
+      "sha256": "f37222fcdf0481bfbaf7a16d9aaf740aeb41d3d24c187801eb6e9a628cec0fc8",
+      "size": 159232
+    },
+    {
+      "archive_identity": {
+        "sha256": "102c20348be2d0ebe45a77b076b31848182c2f7b4364775b6bc2ece6e97b4024",
+        "size": 159232
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/efi-e1000e.rom",
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-efi-update.json",
+          "git_blob_sha1": "1f9e0e9dd8d4a0a2fdcfb74fcd8fe0c73d22018e",
+          "matches": true,
+          "qemu_commit": "3e570a9ae9b966362596fd649f2cbcff0b2199c9"
+        }
+      ],
+      "path": "src/qemu/pc-bios/efi-e1000e.rom",
+      "sha256": "102c20348be2d0ebe45a77b076b31848182c2f7b4364775b6bc2ece6e97b4024",
+      "size": 159232
+    },
+    {
+      "archive_identity": {
+        "sha256": "2b5b55ba8afae7b5ef7116606babf60e6ceaa531c345d54542857cc3fbe3912e",
+        "size": 159232
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/efi-eepro100.rom",
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-efi-update.json",
+          "git_blob_sha1": "c7ccfc4fd73cc85f2f31a18a0ec61bd03c302d5a",
+          "matches": true,
+          "qemu_commit": "3e570a9ae9b966362596fd649f2cbcff0b2199c9"
+        }
+      ],
+      "path": "src/qemu/pc-bios/efi-eepro100.rom",
+      "sha256": "2b5b55ba8afae7b5ef7116606babf60e6ceaa531c345d54542857cc3fbe3912e",
+      "size": 159232
+    },
+    {
+      "archive_identity": {
+        "sha256": "9925e0a34547118110479d8fc4e01092a0a73e0a236416e9ff862655b46751f7",
+        "size": 157696
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/efi-ne2k_pci.rom",
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-efi-update.json",
+          "git_blob_sha1": "93d5b45d371f3417f1ecd20f0e31df8fe2c83075",
+          "matches": true,
+          "qemu_commit": "3e570a9ae9b966362596fd649f2cbcff0b2199c9"
+        }
+      ],
+      "path": "src/qemu/pc-bios/efi-ne2k_pci.rom",
+      "sha256": "9925e0a34547118110479d8fc4e01092a0a73e0a236416e9ff862655b46751f7",
+      "size": 157696
+    },
+    {
+      "archive_identity": {
+        "sha256": "71c494fde94efa9871cf43868d7e3c8f4190e406d47a5102a2a21b36ded8a162",
+        "size": 157696
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/efi-pcnet.rom",
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-efi-update.json",
+          "git_blob_sha1": "783bf5b3049d7551d157c94cb9c448d1aa30533f",
+          "matches": true,
+          "qemu_commit": "3e570a9ae9b966362596fd649f2cbcff0b2199c9"
+        }
+      ],
+      "path": "src/qemu/pc-bios/efi-pcnet.rom",
+      "sha256": "71c494fde94efa9871cf43868d7e3c8f4190e406d47a5102a2a21b36ded8a162",
+      "size": 157696
+    },
+    {
+      "archive_identity": {
+        "sha256": "4cdd69a7f5c6ce7aec3a3f20a034dc80e1d22aa37a739c364378952d997a32c7",
+        "size": 160768
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/efi-rtl8139.rom",
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-efi-update.json",
+          "git_blob_sha1": "debcf30acd0dfbfc0b67175eacf8b9af20dae62e",
+          "matches": true,
+          "qemu_commit": "3e570a9ae9b966362596fd649f2cbcff0b2199c9"
+        }
+      ],
+      "path": "src/qemu/pc-bios/efi-rtl8139.rom",
+      "sha256": "4cdd69a7f5c6ce7aec3a3f20a034dc80e1d22aa37a739c364378952d997a32c7",
+      "size": 160768
+    },
+    {
+      "archive_identity": {
+        "sha256": "26be36901db7f8181c306cc62bd74891d8646528965a78e40cceadba5dd7c8e7",
+        "size": 160768
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/efi-virtio.rom",
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-efi-update.json",
+          "git_blob_sha1": "70e8588ccdc6e0e25eedfc8611f2183a55112ddb",
+          "matches": true,
+          "qemu_commit": "3e570a9ae9b966362596fd649f2cbcff0b2199c9"
+        }
+      ],
+      "path": "src/qemu/pc-bios/efi-virtio.rom",
+      "sha256": "26be36901db7f8181c306cc62bd74891d8646528965a78e40cceadba5dd7c8e7",
+      "size": 160768
+    },
+    {
+      "archive_identity": {
+        "sha256": "33e833123ad9831df94b2d623a17f91e4c779e3cb799baa97058f5972676a32a",
+        "size": 156672
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/efi-vmxnet3.rom",
+      "archive_status": "matches",
+      "group": "ipxe-efi",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-efi-update.json",
+          "git_blob_sha1": "ebf59ef737d48d8bd10644b61e38d585b47ec804",
+          "matches": true,
+          "qemu_commit": "3e570a9ae9b966362596fd649f2cbcff0b2199c9"
+        }
+      ],
+      "path": "src/qemu/pc-bios/efi-vmxnet3.rom",
+      "sha256": "33e833123ad9831df94b2d623a17f91e4c779e3cb799baa97058f5972676a32a",
+      "size": 156672
+    },
+    {
+      "archive_identity": {
+        "sha256": "6d4a7dbe8c62b7574e859a86f40d93647ee32718c92031373948d6d495c2d236",
+        "size": 167644
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/hppa-firmware.img",
+      "archive_status": "matches",
+      "group": "seabios-hppa",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-hppa-firmware.img.json",
+          "git_blob_sha1": "d5f6f2fcaf5cc7e16565cf174dbaee6aa75303fc",
+          "matches": true,
+          "qemu_commit": "db34be329162cf6b06192703065e6c1010dbe3c5"
+        },
+        {
+          "evidence": "evidence/update-u-boot-sam460-20100605.bin.json",
+          "git_blob_sha1": null,
+          "matches": false,
+          "qemu_commit": "55d38d10b84a256ca80484eb5114a4824608b85e"
+        }
+      ],
+      "path": "src/qemu/pc-bios/hppa-firmware.img",
+      "sha256": "6d4a7dbe8c62b7574e859a86f40d93647ee32718c92031373948d6d495c2d236",
+      "size": 167644,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "GCC: (GNU) 13.2.1 20230728 (Red Hat Cross 13.2.1-1)"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "ba54d990a64b7cf2f8672a3e6fd6f69cc4c92228e8bf52d1b0be2e8b54303e8f",
+        "size": 206104
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/hppa-firmware64.img",
+      "archive_status": "matches",
+      "group": "seabios-hppa",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-hppa-firmware.img.json",
+          "git_blob_sha1": "577b0a1b3f9239d0e5b1fa6b4397a023297fe3bc",
+          "matches": true,
+          "qemu_commit": "db34be329162cf6b06192703065e6c1010dbe3c5"
+        }
+      ],
+      "path": "src/qemu/pc-bios/hppa-firmware64.img",
+      "sha256": "ba54d990a64b7cf2f8672a3e6fd6f69cc4c92228e8bf52d1b0be2e8b54303e8f",
+      "size": 206104,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "GCC: (GNU) 13.2.1 20230728 (Red Hat Cross 13.2.1-1)"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "059ab719df4296edb800d399501e3823e1e6f470cc06a3a4564f4bb2dbd5c1fc",
+        "size": 28605
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/ar",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/ar",
+      "sha256": "059ab719df4296edb800d399501e3823e1e6f470cc06a3a4564f4bb2dbd5c1fc",
+      "size": 28605
+    },
+    {
+      "archive_identity": {
+        "sha256": "01ccdb7e2d0b20f517e03d39cc70802ad83dfc1ed2e5d50ff9b4a4f77e37a9f8",
+        "size": 27809
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/bepo",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/bepo",
+      "sha256": "01ccdb7e2d0b20f517e03d39cc70802ad83dfc1ed2e5d50ff9b4a4f77e37a9f8",
+      "size": 27809
+    },
+    {
+      "archive_identity": {
+        "sha256": "3664b3f13e6cfff0e6d05f12000aa6610eff04f570707261ec35ca830ded6c36",
+        "size": 29209
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/cz",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/cz",
+      "sha256": "3664b3f13e6cfff0e6d05f12000aa6610eff04f570707261ec35ca830ded6c36",
+      "size": 29209
+    },
+    {
+      "archive_identity": {
+        "sha256": "95ef0c168f0b25e936a7ff944da820a43af8028b515cc6709724f457e105c187",
+        "size": 29230
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/da",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/da",
+      "sha256": "95ef0c168f0b25e936a7ff944da820a43af8028b515cc6709724f457e105c187",
+      "size": 29230
+    },
+    {
+      "archive_identity": {
+        "sha256": "cda7dc9656f007ca3e88e5bac50f20c7f61f934bcec2e87c6d61859e632ddb98",
+        "size": 29183
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/de",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/de",
+      "sha256": "cda7dc9656f007ca3e88e5bac50f20c7f61f934bcec2e87c6d61859e632ddb98",
+      "size": 29183
+    },
+    {
+      "archive_identity": {
+        "sha256": "3260cb64fdcdf48e2b53c5d0573dc2a9410d7d3aae227ed42dda945f9ab74e06",
+        "size": 29214
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/de-ch",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/de-ch",
+      "sha256": "3260cb64fdcdf48e2b53c5d0573dc2a9410d7d3aae227ed42dda945f9ab74e06",
+      "size": 29214
+    },
+    {
+      "archive_identity": {
+        "sha256": "e14229b7f9165bf226bf4de968fd5f6a504014a2179de08c2b2184cefe68174e",
+        "size": 29219
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/en-gb",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/en-gb",
+      "sha256": "e14229b7f9165bf226bf4de968fd5f6a504014a2179de08c2b2184cefe68174e",
+      "size": 29219
+    },
+    {
+      "archive_identity": {
+        "sha256": "52cf4c523e686078699ed58761c7e1443080305237a5f67a3716832570c5c8e5",
+        "size": 27086
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/en-us",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/en-us",
+      "sha256": "52cf4c523e686078699ed58761c7e1443080305237a5f67a3716832570c5c8e5",
+      "size": 27086
+    },
+    {
+      "archive_identity": {
+        "sha256": "d9b1da8193232882705bd4a312c0923b6d91268f1e1a8eed2afbd7fc37681c06",
+        "size": 29203
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/es",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/es",
+      "sha256": "d9b1da8193232882705bd4a312c0923b6d91268f1e1a8eed2afbd7fc37681c06",
+      "size": 29203
+    },
+    {
+      "archive_identity": {
+        "sha256": "95af1e25132185e3cb271d491086ccf09cb667033afb718f1a11e974e80a838f",
+        "size": 27291
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/et",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/et",
+      "sha256": "95af1e25132185e3cb271d491086ccf09cb667033afb718f1a11e974e80a838f",
+      "size": 27291
+    },
+    {
+      "archive_identity": {
+        "sha256": "4c5cd5359c18635187d7af9570088a7bbd21f96d961aedbc4c9fb1e5df099281",
+        "size": 28604
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/fi",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/fi",
+      "sha256": "4c5cd5359c18635187d7af9570088a7bbd21f96d961aedbc4c9fb1e5df099281",
+      "size": 28604
+    },
+    {
+      "archive_identity": {
+        "sha256": "3750b8090caea3cf6c827b97f5ecc2d1172c33d960141c50f96e61c53f682ccf",
+        "size": 29217
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/fo",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/fo",
+      "sha256": "3750b8090caea3cf6c827b97f5ecc2d1172c33d960141c50f96e61c53f682ccf",
+      "size": 29217
+    },
+    {
+      "archive_identity": {
+        "sha256": "60d9baa3565b7727b4178704100bffb02cbd5b527a9dcc9f9ca76d76767b166e",
+        "size": 29204
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/fr",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/fr",
+      "sha256": "60d9baa3565b7727b4178704100bffb02cbd5b527a9dcc9f9ca76d76767b166e",
+      "size": 29204
+    },
+    {
+      "archive_identity": {
+        "sha256": "522b5e758375e3d796fba096a46077766bd44548c8c61a4abe946e3116c1ad97",
+        "size": 29211
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/fr-be",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/fr-be",
+      "sha256": "522b5e758375e3d796fba096a46077766bd44548c8c61a4abe946e3116c1ad97",
+      "size": 29211
+    },
+    {
+      "archive_identity": {
+        "sha256": "9ee3fc13beec6e74f40fb6d150d7fe3b0afe4557fdf0769601e662a122a88cc0",
+        "size": 27564
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/fr-ca",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/fr-ca",
+      "sha256": "9ee3fc13beec6e74f40fb6d150d7fe3b0afe4557fdf0769601e662a122a88cc0",
+      "size": 27564
+    },
+    {
+      "archive_identity": {
+        "sha256": "7b2ad2929f3b7b4f5d60176bd7e1852f91efbcfe2700e8df9bc9b891609a7170",
+        "size": 29215
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/fr-ch",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/fr-ch",
+      "sha256": "7b2ad2929f3b7b4f5d60176bd7e1852f91efbcfe2700e8df9bc9b891609a7170",
+      "size": 29215
+    },
+    {
+      "archive_identity": {
+        "sha256": "e8391ed09015ce8459a98e3470daddd3a6d95c4c7e93b750098f5a321fd57482",
+        "size": 29255
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/hr",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/hr",
+      "sha256": "e8391ed09015ce8459a98e3470daddd3a6d95c4c7e93b750098f5a321fd57482",
+      "size": 29255
+    },
+    {
+      "archive_identity": {
+        "sha256": "763a938ed2fdd224b9cb8ad606d02aabc93a0e3fb7a5e5e9caafa0ec8c05d422",
+        "size": 29207
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/hu",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/hu",
+      "sha256": "763a938ed2fdd224b9cb8ad606d02aabc93a0e3fb7a5e5e9caafa0ec8c05d422",
+      "size": 29207
+    },
+    {
+      "archive_identity": {
+        "sha256": "6eb4e5bd93ca2f7a2059a31fd014444108eb684ecd97902da2492b0a0f6e3cdc",
+        "size": 29254
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/is",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/is",
+      "sha256": "6eb4e5bd93ca2f7a2059a31fd014444108eb684ecd97902da2492b0a0f6e3cdc",
+      "size": 29254
+    },
+    {
+      "archive_identity": {
+        "sha256": "12d090cdcb6af0e95a0c0330b8b7f0ac0446ab8cf7140b4f8c6c797c08e9c219",
+        "size": 29312
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/it",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/it",
+      "sha256": "12d090cdcb6af0e95a0c0330b8b7f0ac0446ab8cf7140b4f8c6c797c08e9c219",
+      "size": 29312
+    },
+    {
+      "archive_identity": {
+        "sha256": "a4561aefcc2fd2f4ba01604001c9c0dc67469514ea0a665063b72e79d5d9c687",
+        "size": 27163
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/ja",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/ja",
+      "sha256": "a4561aefcc2fd2f4ba01604001c9c0dc67469514ea0a665063b72e79d5d9c687",
+      "size": 27163
+    },
+    {
+      "archive_identity": {
+        "sha256": "0bfc98e913451c0b9082d0317deffa03c6f0c53a1422cb4f4c1ef64dc3939d2f",
+        "size": 29166
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/lt",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/lt",
+      "sha256": "0bfc98e913451c0b9082d0317deffa03c6f0c53a1422cb4f4c1ef64dc3939d2f",
+      "size": 29166
+    },
+    {
+      "archive_identity": {
+        "sha256": "be4f1e28325ae2ea927bd51e31863a327e64c0a938725fd02c2a7260660bdf77",
+        "size": 28618
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/lv",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/lv",
+      "sha256": "be4f1e28325ae2ea927bd51e31863a327e64c0a938725fd02c2a7260660bdf77",
+      "size": 28618
+    },
+    {
+      "archive_identity": {
+        "sha256": "ed373272262fb1fe66f43ca5eba606871b5ca635633dfb19ea4fed2fd14e47a3",
+        "size": 1544
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/meson.build",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/meson.build",
+      "sha256": "ed373272262fb1fe66f43ca5eba606871b5ca635633dfb19ea4fed2fd14e47a3",
+      "size": 1544
+    },
+    {
+      "archive_identity": {
+        "sha256": "71068ffe163ce6684b35f423e897e00c97debe0c3df555c43d26b46a79ca68e7",
+        "size": 27685
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/mk",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/mk",
+      "sha256": "71068ffe163ce6684b35f423e897e00c97debe0c3df555c43d26b46a79ca68e7",
+      "size": 27685
+    },
+    {
+      "archive_identity": {
+        "sha256": "70cb1b41f184d61520867e639e6b69cddea4b0e2458c5502c7c40512301876c7",
+        "size": 29268
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/nl",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/nl",
+      "sha256": "70cb1b41f184d61520867e639e6b69cddea4b0e2458c5502c7c40512301876c7",
+      "size": 29268
+    },
+    {
+      "archive_identity": {
+        "sha256": "95b3fe5258264b827ba01acc7a774bd9edbaec52c54e582a0737c33087a92514",
+        "size": 29563
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/no",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/no",
+      "sha256": "95b3fe5258264b827ba01acc7a774bd9edbaec52c54e582a0737c33087a92514",
+      "size": 29563
+    },
+    {
+      "archive_identity": {
+        "sha256": "5f3da802f81f385c58179272e48c4f8680dfdfe55383c504a6d84b3b7a8aadfb",
+        "size": 29327
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/pl",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/pl",
+      "sha256": "5f3da802f81f385c58179272e48c4f8680dfdfe55383c504a6d84b3b7a8aadfb",
+      "size": 29327
+    },
+    {
+      "archive_identity": {
+        "sha256": "29161e1b8b61b761c3f3bff237ca73ce4ee3316a99090890b32469824b5eed8a",
+        "size": 29195
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/pt",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/pt",
+      "sha256": "29161e1b8b61b761c3f3bff237ca73ce4ee3316a99090890b32469824b5eed8a",
+      "size": 29195
+    },
+    {
+      "archive_identity": {
+        "sha256": "fbb9491c0bfc4253cced9d8a20965aca98d0249c4626fe6e7d31358b24e34e8d",
+        "size": 29175
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/pt-br",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/pt-br",
+      "sha256": "fbb9491c0bfc4253cced9d8a20965aca98d0249c4626fe6e7d31358b24e34e8d",
+      "size": 29175
+    },
+    {
+      "archive_identity": {
+        "sha256": "afa015a736cd935fc38a0df62fd6ab2f3c64b44c48b3e6d95969cbbfcdc43e91",
+        "size": 27704
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/ru",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/ru",
+      "sha256": "afa015a736cd935fc38a0df62fd6ab2f3c64b44c48b3e6d95969cbbfcdc43e91",
+      "size": 27704
+    },
+    {
+      "archive_identity": {
+        "sha256": "bea8fe8ac0ca281038ac0e1788c39f090507ff0646bd4f57cc18f6873b030147",
+        "size": 4632
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/sl",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/sl",
+      "sha256": "bea8fe8ac0ca281038ac0e1788c39f090507ff0646bd4f57cc18f6873b030147",
+      "size": 4632
+    },
+    {
+      "archive_identity": {
+        "sha256": "97731fbe91f254d81c005ffc232180a8dd7baeb6d699f0f0fc15e341672f96b3",
+        "size": 3346
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/sv",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/sv",
+      "sha256": "97731fbe91f254d81c005ffc232180a8dd7baeb6d699f0f0fc15e341672f96b3",
+      "size": 3346
+    },
+    {
+      "archive_identity": {
+        "sha256": "6dd9562a2b10c81f658ad96075fd87832777e87357620e89c7d070e4097fbbb9",
+        "size": 27829
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/th",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/th",
+      "sha256": "6dd9562a2b10c81f658ad96075fd87832777e87357620e89c7d070e4097fbbb9",
+      "size": 27829
+    },
+    {
+      "archive_identity": {
+        "sha256": "f59f8cc154f0dc8b45166b524b9c1e649ba027e39381aac286663ad2227ddce8",
+        "size": 29142
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/keymaps/tr",
+      "archive_status": "matches",
+      "group": "keymaps",
+      "path": "src/qemu/pc-bios/keymaps/tr",
+      "sha256": "f59f8cc154f0dc8b45166b524b9c1e649ba027e39381aac286663ad2227ddce8",
+      "size": 29142
+    },
+    {
+      "archive_identity": {
+        "sha256": "cdf057a71b07e3b52b19cbe210bdefa59250d01a9810b960f7fe1f98eed95a27",
+        "size": 9216
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/kvmvapic.bin",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/kvmvapic.bin",
+      "sha256": "cdf057a71b07e3b52b19cbe210bdefa59250d01a9810b960f7fe1f98eed95a27",
+      "size": 9216
+    },
+    {
+      "archive_identity": {
+        "sha256": "1ecfb26c19da9dc00cdec0d0d738db69aeea4f1231c0c0ffc483ff69b3cda6ce",
+        "size": 1024
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/linuxboot.bin",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/linuxboot.bin",
+      "sha256": "1ecfb26c19da9dc00cdec0d0d738db69aeea4f1231c0c0ffc483ff69b3cda6ce",
+      "size": 1024
+    },
+    {
+      "archive_identity": {
+        "sha256": "9c49e255340c78fc12e54ed043462bca02fb7fca29b7cfab62ff88a5344b6950",
+        "size": 1536
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/linuxboot_dma.bin",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/linuxboot_dma.bin",
+      "sha256": "9c49e255340c78fc12e54ed043462bca02fb7fca29b7cfab62ff88a5344b6950",
+      "size": 1536
+    },
+    {
+      "archive_identity": {
+        "sha256": "2ea2a6ffcf583045f6df8e84e3fc57729707dd153ffba0af61c33e69e8316ac8",
+        "size": 2692
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/meson.build",
+      "archive_status": "matches",
+      "group": "support",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-npcm8xx_bootrom.bin.json",
+          "git_blob_sha1": "51e95cc903160df045397407fa46bae97158c873",
+          "matches": false,
+          "qemu_commit": "269b7effd906d6b22071971b7f5b4cb344403b86"
+        }
+      ],
+      "path": "src/qemu/pc-bios/meson.build",
+      "sha256": "2ea2a6ffcf583045f6df8e84e3fc57729707dd153ffba0af61c33e69e8316ac8",
+      "size": 2692
+    },
+    {
+      "archive_identity": {
+        "sha256": "13a3f9f119797b8776105f020f36572ce6a20fa2c60d3b8112818bfaefcdd348",
+        "size": 1024
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/multiboot.bin",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/multiboot.bin",
+      "sha256": "13a3f9f119797b8776105f020f36572ce6a20fa2c60d3b8112818bfaefcdd348",
+      "size": 1024
+    },
+    {
+      "archive_identity": {
+        "sha256": "e01667420ee78a318ea44627d2dd68058d3377d024e6eb7237700afe2e86507d",
+        "size": 1024
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/multiboot_dma.bin",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/multiboot_dma.bin",
+      "sha256": "e01667420ee78a318ea44627d2dd68058d3377d024e6eb7237700afe2e86507d",
+      "size": 1024
+    },
+    {
+      "archive_identity": {
+        "sha256": "2d16a54ef63b0c40760d61c72f5ad71711dc55e43ce2c7e2093ca21e9f450984",
+        "size": 768
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/npcm7xx_bootrom.bin",
+      "archive_status": "matches",
+      "group": "vbootrom",
+      "path": "src/qemu/pc-bios/npcm7xx_bootrom.bin",
+      "sha256": "2d16a54ef63b0c40760d61c72f5ad71711dc55e43ce2c7e2093ca21e9f450984",
+      "size": 768
+    },
+    {
+      "archive_identity": {
+        "sha256": "ab523991a74a5b81d59dd9cf963136489b8b9c95c93853788bf0369fce259423",
+        "size": 608
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/npcm8xx_bootrom.bin",
+      "archive_status": "matches",
+      "group": "vbootrom",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-npcm8xx_bootrom.bin.json",
+          "git_blob_sha1": "6370d6475635c4d445d2b927311edcd591949c82",
+          "matches": true,
+          "qemu_commit": "269b7effd906d6b22071971b7f5b4cb344403b86"
+        }
+      ],
+      "path": "src/qemu/pc-bios/npcm8xx_bootrom.bin",
+      "sha256": "ab523991a74a5b81d59dd9cf963136489b8b9c95c93853788bf0369fce259423",
+      "size": 608
+    },
+    {
+      "archive_identity": {
+        "sha256": "51e6d5e98985db5c7523dfea817cbacc2cdc883e6fc20e39567ba5ab101cda98",
+        "size": 673068
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/openbios-ppc",
+      "archive_status": "matches",
+      "group": "openbios",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-openbios-ppc.json",
+          "git_blob_sha1": "2f8816e57bd1fff5162c62ef0a2c152dc70bd1ea",
+          "matches": true,
+          "qemu_commit": "39858ec7347616d5f513f72185873fa2e352d7de"
+        }
+      ],
+      "path": "src/qemu/pc-bios/openbios-ppc",
+      "sha256": "51e6d5e98985db5c7523dfea817cbacc2cdc883e6fc20e39567ba5ab101cda98",
+      "size": 673068
+    },
+    {
+      "archive_identity": {
+        "sha256": "f623853eb59c276e42b1d74c020ae56904dd9cb02916cea9156daa7c42781ae7",
+        "size": 382080
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/openbios-sparc32",
+      "archive_status": "matches",
+      "group": "openbios",
+      "path": "src/qemu/pc-bios/openbios-sparc32",
+      "sha256": "f623853eb59c276e42b1d74c020ae56904dd9cb02916cea9156daa7c42781ae7",
+      "size": 382080
+    },
+    {
+      "archive_identity": {
+        "sha256": "377af41537b4e51f4ee76d704e97c4eb81b1e1d165275d94f103b7dc631117e8",
+        "size": 1593408
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/openbios-sparc64",
+      "archive_status": "matches",
+      "group": "openbios",
+      "path": "src/qemu/pc-bios/openbios-sparc64",
+      "sha256": "377af41537b4e51f4ee76d704e97c4eb81b1e1d165275d94f103b7dc631117e8",
+      "size": 1593408
+    },
+    {
+      "archive_identity": {
+        "sha256": "bf3798af44effe522ae2ec801a103bf012179f170210ff8bf217dbac56c2af51",
+        "size": 268312
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/opensbi-riscv32-generic-fw_dynamic.bin",
+      "archive_status": "matches",
+      "group": "opensbi",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-opensbi-riscv64-generic-fw_dynamic.bin.json",
+          "git_blob_sha1": "b2e740010b26835d28ba49a8041e7b28881b37d4",
+          "matches": true,
+          "qemu_commit": "b3a34eb90d8264bd73ccb25295b1a7e271a9029c"
+        }
+      ],
+      "path": "src/qemu/pc-bios/opensbi-riscv32-generic-fw_dynamic.bin",
+      "sha256": "bf3798af44effe522ae2ec801a103bf012179f170210ff8bf217dbac56c2af51",
+      "size": 268312
+    },
+    {
+      "archive_identity": {
+        "sha256": "0e6f495e3313e6e2a6e7d5a5dd613a76623bc65c230b6058bb60c372331ef12c",
+        "size": 272504
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/opensbi-riscv64-generic-fw_dynamic.bin",
+      "archive_status": "matches",
+      "group": "opensbi",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-opensbi-riscv64-generic-fw_dynamic.bin.json",
+          "git_blob_sha1": "018b4731a710d13926559766a3433a4d058edacd",
+          "matches": true,
+          "qemu_commit": "b3a34eb90d8264bd73ccb25295b1a7e271a9029c"
+        }
+      ],
+      "path": "src/qemu/pc-bios/opensbi-riscv64-generic-fw_dynamic.bin",
+      "sha256": "0e6f495e3313e6e2a6e7d5a5dd613a76623bc65c230b6058bb60c372331ef12c",
+      "size": 272504
+    },
+    {
+      "archive_identity": {
+        "sha256": "90790141bb31f4c5e2332bd3fae3f73be90504dc0a4a2df4fb99ea011974db74",
+        "size": 2078
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/optionrom/Makefile",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/optionrom/Makefile",
+      "sha256": "90790141bb31f4c5e2332bd3fae3f73be90504dc0a4a2df4fb99ea011974db74",
+      "size": 2078
+    },
+    {
+      "archive_identity": {
+        "sha256": "0c36ff55c49d7d4e22ed4f51f1a758083535f2a5121d4c85ec8dea7aca7050df",
+        "size": 70
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/optionrom/flat.lds",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/optionrom/flat.lds",
+      "sha256": "0c36ff55c49d7d4e22ed4f51f1a758083535f2a5121d4c85ec8dea7aca7050df",
+      "size": 70
+    },
+    {
+      "archive_identity": {
+        "sha256": "ac84d0df42b009c481b18caab9353c06391d47d4f8a0a85d1395f989c2831e9b",
+        "size": 5233
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/optionrom/kvmvapic.S",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/optionrom/kvmvapic.S",
+      "sha256": "ac84d0df42b009c481b18caab9353c06391d47d4f8a0a85d1395f989c2831e9b",
+      "size": 5233
+    },
+    {
+      "archive_identity": {
+        "sha256": "4edd68d2e14bfa264190f10bcdb541644ee31c834ec6defd34b1a3c8bf76681a",
+        "size": 4523
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/optionrom/linuxboot.S",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/optionrom/linuxboot.S",
+      "sha256": "4edd68d2e14bfa264190f10bcdb541644ee31c834ec6defd34b1a3c8bf76681a",
+      "size": 4523
+    },
+    {
+      "archive_identity": {
+        "sha256": "95c637c3da21688f1beeba77b56707326d8dbe6a2d8c78bd3f77eda7427f7779",
+        "size": 6171
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/optionrom/linuxboot_dma.c",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/optionrom/linuxboot_dma.c",
+      "sha256": "95c637c3da21688f1beeba77b56707326d8dbe6a2d8c78bd3f77eda7427f7779",
+      "size": 6171
+    },
+    {
+      "archive_identity": {
+        "sha256": "d9fd8e0f8fd8b55c49cbcbf7db969cf1267a469f7e64c080e982e51fb26b9840",
+        "size": 5170
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/optionrom/multiboot.S",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/optionrom/multiboot.S",
+      "sha256": "d9fd8e0f8fd8b55c49cbcbf7db969cf1267a469f7e64c080e982e51fb26b9840",
+      "size": 5170
+    },
+    {
+      "archive_identity": {
+        "sha256": "ad2d42920dd9f9c0930e5dc4edd4f603638751c1fb0ca57fccdfef3635d9ecbd",
+        "size": 48
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/optionrom/multiboot_dma.S",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/optionrom/multiboot_dma.S",
+      "sha256": "ad2d42920dd9f9c0930e5dc4edd4f603638751c1fb0ca57fccdfef3635d9ecbd",
+      "size": 48
+    },
+    {
+      "archive_identity": {
+        "sha256": "2a7f9d7955430bc7a3f10fc7ba25e5ab2c38d75e42e6293a3cd6d9350882c10a",
+        "size": 8620
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/optionrom/optionrom.h",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/optionrom/optionrom.h",
+      "sha256": "2a7f9d7955430bc7a3f10fc7ba25e5ab2c38d75e42e6293a3cd6d9350882c10a",
+      "size": 8620
+    },
+    {
+      "archive_identity": {
+        "sha256": "5980627afa5507407d2b448f7985996752d0b8f7e772fac0d8371adcde46ea6b",
+        "size": 2602
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/optionrom/optrom.h",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/optionrom/optrom.h",
+      "sha256": "5980627afa5507407d2b448f7985996752d0b8f7e772fac0d8371adcde46ea6b",
+      "size": 2602
+    },
+    {
+      "archive_identity": {
+        "sha256": "27bfebcd981323f85438b2456e0dfce5e68fda69e92b92c8ee38b2bb16b33f36",
+        "size": 2622
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/optionrom/optrom_fw_cfg.h",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/optionrom/optrom_fw_cfg.h",
+      "sha256": "27bfebcd981323f85438b2456e0dfce5e68fda69e92b92c8ee38b2bb16b33f36",
+      "size": 2622
+    },
+    {
+      "archive_identity": {
+        "sha256": "72daacfe1b7679db1d90e7439040b118bec676cf78a45cccfa01004e01334b6c",
+        "size": 4326
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/optionrom/pvh.S",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/optionrom/pvh.S",
+      "sha256": "72daacfe1b7679db1d90e7439040b118bec676cf78a45cccfa01004e01334b6c",
+      "size": 4326
+    },
+    {
+      "archive_identity": {
+        "sha256": "9d9b0cb4f7160e6f35b096a6b4c8379c14179947dfe67e555ad7dba27d19abdf",
+        "size": 4537
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/optionrom/pvh_main.c",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/optionrom/pvh_main.c",
+      "sha256": "9d9b0cb4f7160e6f35b096a6b4c8379c14179947dfe67e555ad7dba27d19abdf",
+      "size": 4537
+    },
+    {
+      "archive_identity": {
+        "sha256": "9f8da7264c7438fe4a24a2215e81893586f5cfafcd6e5fd0059fccc31a4e8839",
+        "size": 153728
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/palcode-clipper",
+      "archive_status": "matches",
+      "group": "palcode",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-palcode-clipper.json",
+          "git_blob_sha1": "aecb30403641e1f2acac0bfd472174d06fa1da5f",
+          "matches": true,
+          "qemu_commit": "c6446a1b6d8a89f4ab8fe85b5bc03bb05d337b82"
+        },
+        {
+          "evidence": "evidence/update-u-boot-sam460-20100605.bin.json",
+          "git_blob_sha1": null,
+          "matches": false,
+          "qemu_commit": "55d38d10b84a256ca80484eb5114a4824608b85e"
+        }
+      ],
+      "path": "src/qemu/pc-bios/palcode-clipper",
+      "sha256": "9f8da7264c7438fe4a24a2215e81893586f5cfafcd6e5fd0059fccc31a4e8839",
+      "size": 153728,
+      "version_string_evidence": [
+        "GCC: (GNU) 11.1.1 20210605 [master revision edd482f310f:9419bdc2360:14984ea1645da45e59872d84401394a759c2659c]"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "37bda496b0b4216cce70626492b43d9aaf0d5fcdefcce45efa09d5c583770c69",
+        "size": 9882
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/petalogix-ml605.dtb",
+      "archive_status": "matches",
+      "group": "device-trees",
+      "path": "src/qemu/pc-bios/petalogix-ml605.dtb",
+      "sha256": "37bda496b0b4216cce70626492b43d9aaf0d5fcdefcce45efa09d5c583770c69",
+      "size": 9882
+    },
+    {
+      "archive_identity": {
+        "sha256": "58559c88fcbbd97205e6c94050696ba4db40d09f9643b5e8a00ad0f53eba11a5",
+        "size": 10302
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/petalogix-ml605.dts",
+      "archive_status": "matches",
+      "group": "device-trees",
+      "path": "src/qemu/pc-bios/petalogix-ml605.dts",
+      "sha256": "58559c88fcbbd97205e6c94050696ba4db40d09f9643b5e8a00ad0f53eba11a5",
+      "size": 10302
+    },
+    {
+      "archive_identity": {
+        "sha256": "ef9f3112b7d9258cfad362dba8338ce9a8bdce59dec4d47c690b28fbefc841d7",
+        "size": 8161
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/petalogix-s3adsp1800.dtb",
+      "archive_status": "matches",
+      "group": "device-trees",
+      "path": "src/qemu/pc-bios/petalogix-s3adsp1800.dtb",
+      "sha256": "ef9f3112b7d9258cfad362dba8338ce9a8bdce59dec4d47c690b28fbefc841d7",
+      "size": 8161
+    },
+    {
+      "archive_identity": {
+        "sha256": "54f4958f22e5bdf0e7fdea26768c63ae99bf7173809ccdf7066e565f3cb78b15",
+        "size": 8076
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/petalogix-s3adsp1800.dts",
+      "archive_status": "matches",
+      "group": "device-trees",
+      "path": "src/qemu/pc-bios/petalogix-s3adsp1800.dts",
+      "sha256": "54f4958f22e5bdf0e7fdea26768c63ae99bf7173809ccdf7066e565f3cb78b15",
+      "size": 8076
+    },
+    {
+      "archive_identity": {
+        "sha256": "241ac7576721f565abd8b492b8acda036c72d233e03d1f78bddbd7b1599d863f",
+        "size": 139264
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/pnv-pnor.bin",
+      "archive_status": "matches",
+      "group": "pnv-nvram",
+      "path": "src/qemu/pc-bios/pnv-pnor.bin",
+      "sha256": "241ac7576721f565abd8b492b8acda036c72d233e03d1f78bddbd7b1599d863f",
+      "size": 139264
+    },
+    {
+      "archive_identity": {
+        "sha256": "918ff03a118615c2f4611a5df2d9496aabe099b5cfaaf69e544ebf973305d59d",
+        "size": 1536
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/pvh.bin",
+      "archive_status": "matches",
+      "group": "qemu-optionrom",
+      "path": "src/qemu/pc-bios/pvh.bin",
+      "sha256": "918ff03a118615c2f4611a5df2d9496aabe099b5cfaaf69e544ebf973305d59d",
+      "size": 1536
+    },
+    {
+      "archive_identity": {
+        "sha256": "981a728f95b7a01645645e9b753cfb764c9eb59266fa888ac58d7008fbb48c10",
+        "size": 67072
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/pxe-e1000.rom",
+      "archive_status": "matches",
+      "group": "ipxe-legacy",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-legacy-update.json",
+          "git_blob_sha1": "2e5f8b28a414960cd58f793957435e9451be8fb4",
+          "matches": true,
+          "qemu_commit": "36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+        }
+      ],
+      "path": "src/qemu/pc-bios/pxe-e1000.rom",
+      "sha256": "981a728f95b7a01645645e9b753cfb764c9eb59266fa888ac58d7008fbb48c10",
+      "size": 67072,
+      "version_string_evidence": [
+        "iPXE v1.0.0-591-g7aee315"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "07b89a742e0f6d0e92dafe57b0f28c493436d0e1e07b7b77e728490c1f7b45dd",
+        "size": 61440
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/pxe-eepro100.rom",
+      "archive_status": "matches",
+      "group": "ipxe-legacy",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-legacy-update.json",
+          "git_blob_sha1": "d292e8feca0b63b512a3b04db37caa590ca003e4",
+          "matches": true,
+          "qemu_commit": "36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+        }
+      ],
+      "path": "src/qemu/pc-bios/pxe-eepro100.rom",
+      "sha256": "07b89a742e0f6d0e92dafe57b0f28c493436d0e1e07b7b77e728490c1f7b45dd",
+      "size": 61440,
+      "version_string_evidence": [
+        "iPXE v1.0.0-591-g7aee315"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "bb9c0eaad36b9b4ce26c5f348bd05a832c8bf83ef38391db0ce9b51de8523ac7",
+        "size": 61440
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/pxe-ne2k_pci.rom",
+      "archive_status": "matches",
+      "group": "ipxe-legacy",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-legacy-update.json",
+          "git_blob_sha1": "62010cbc726fc5fb8fa8c9db9fafdb4140339d09",
+          "matches": true,
+          "qemu_commit": "36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+        }
+      ],
+      "path": "src/qemu/pc-bios/pxe-ne2k_pci.rom",
+      "sha256": "bb9c0eaad36b9b4ce26c5f348bd05a832c8bf83ef38391db0ce9b51de8523ac7",
+      "size": 61440,
+      "version_string_evidence": [
+        "iPXE v1.0.0-591-g7aee315"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "92358396c05b3346c6bfd52bbf2a47978d0a8c6ddea932ee091a24faefbd489e",
+        "size": 61440
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/pxe-pcnet.rom",
+      "archive_status": "matches",
+      "group": "ipxe-legacy",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-legacy-update.json",
+          "git_blob_sha1": "512d6d4339b7b3e3ea8b132d261d553f09bb3d96",
+          "matches": true,
+          "qemu_commit": "36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+        }
+      ],
+      "path": "src/qemu/pc-bios/pxe-pcnet.rom",
+      "sha256": "92358396c05b3346c6bfd52bbf2a47978d0a8c6ddea932ee091a24faefbd489e",
+      "size": 61440,
+      "version_string_evidence": [
+        "iPXE v1.0.0-591-g7aee315"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "d491351e37a50eb5a40e98a9f6b4d85010ee60fb9e64129d65ea10839287f138",
+        "size": 61440
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/pxe-rtl8139.rom",
+      "archive_status": "matches",
+      "group": "ipxe-legacy",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-legacy-update.json",
+          "git_blob_sha1": "67c77fbf73135d9f81467cb36d3d1c64362ba8c5",
+          "matches": true,
+          "qemu_commit": "36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+        }
+      ],
+      "path": "src/qemu/pc-bios/pxe-rtl8139.rom",
+      "sha256": "d491351e37a50eb5a40e98a9f6b4d85010ee60fb9e64129d65ea10839287f138",
+      "size": 61440,
+      "version_string_evidence": [
+        "iPXE v1.0.0-591-g7aee315"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "6994337fe07783a6233072e33771dc4f58260edc3269debe677a5227b264bfdc",
+        "size": 60416
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/pxe-virtio.rom",
+      "archive_status": "matches",
+      "group": "ipxe-legacy",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/ipxe-legacy-update.json",
+          "git_blob_sha1": "b1ec909628998aa9289b915e59416717e718a618",
+          "matches": true,
+          "qemu_commit": "36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+        }
+      ],
+      "path": "src/qemu/pc-bios/pxe-virtio.rom",
+      "sha256": "6994337fe07783a6233072e33771dc4f58260edc3269debe677a5227b264bfdc",
+      "size": 60416,
+      "version_string_evidence": [
+        "iPXE v1.0.0-591-g7aee315"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "9b9dfc6c25740d6225625570d71cab6805cc9216e68c8932e343266daaeb8c4b",
+        "size": 65536
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/qboot.rom",
+      "archive_status": "matches",
+      "group": "qboot",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/qboot-update.json",
+          "git_blob_sha1": "684000f57aad8925c81890d97345500eb266827e",
+          "matches": true,
+          "qemu_commit": "2fc7eb689704687f890688507e15bbbe71275f63"
+        }
+      ],
+      "path": "src/qemu/pc-bios/qboot.rom",
+      "sha256": "9b9dfc6c25740d6225625570d71cab6805cc9216e68c8932e343266daaeb8c4b",
+      "size": 65536
+    },
+    {
+      "archive_identity": {
+        "sha256": "93f79a2b6e0f97bc7b7c75ded89a3c4c7657af37c087cf067470771e0affda9c",
+        "size": 154542
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/qemu-nsis.bmp",
+      "archive_status": "matches",
+      "group": "artwork",
+      "path": "src/qemu/pc-bios/qemu-nsis.bmp",
+      "sha256": "93f79a2b6e0f97bc7b7c75ded89a3c4c7657af37c087cf067470771e0affda9c",
+      "size": 154542
+    },
+    {
+      "archive_identity": {
+        "sha256": "a63f8dabf35130d2da8e8e0f59e3346f3af6d6d0a050e00817c3f2393408c7b2",
+        "size": 4846
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/qemu-nsis.ico",
+      "archive_status": "matches",
+      "group": "artwork",
+      "path": "src/qemu/pc-bios/qemu-nsis.ico",
+      "sha256": "a63f8dabf35130d2da8e8e0f59e3346f3af6d6d0a050e00817c3f2393408c7b2",
+      "size": 4846
+    },
+    {
+      "archive_identity": {
+        "sha256": "9e1e5cf3d8f835501fc8bf6f6bc8353580b40c57edc4de83e4fed64518697b8a",
+        "size": 134622
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/qemu.rsrc",
+      "archive_status": "matches",
+      "group": "artwork",
+      "path": "src/qemu/pc-bios/qemu.rsrc",
+      "sha256": "9e1e5cf3d8f835501fc8bf6f6bc8353580b40c57edc4de83e4fed64518697b8a",
+      "size": 134622
+    },
+    {
+      "archive_identity": {
+        "sha256": "0f0879c3929d8fa0750960f35cf100147ab5152fbd4a0c489ae225616c1c2671",
+        "size": 32447
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/qemu_logo.svg",
+      "archive_status": "matches",
+      "group": "artwork",
+      "path": "src/qemu/pc-bios/qemu_logo.svg",
+      "sha256": "0f0879c3929d8fa0750960f35cf100147ab5152fbd4a0c489ae225616c1c2671",
+      "size": 32447
+    },
+    {
+      "archive_identity": {
+        "sha256": "d8697354bde8a7ac9e6fe3a5fbca03698de623e95433a59c248e8e09b882c6b8",
+        "size": 18752
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/qemu_vga.ndrv",
+      "archive_status": "matches",
+      "group": "mac-drivers",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-qemu_vga.ndrv.json",
+          "git_blob_sha1": "de81cfd1c57c30671d2017eb1899583fb1c887c3",
+          "matches": true,
+          "qemu_commit": "200280af0e19bfaeb9431eb0ee1ee2d8bf8d3a0a"
+        }
+      ],
+      "path": "src/qemu/pc-bios/qemu_vga.ndrv",
+      "sha256": "d8697354bde8a7ac9e6fe3a5fbca03698de623e95433a59c248e8e09b882c6b8",
+      "size": 18752
+    },
+    {
+      "archive_identity": {
+        "sha256": "d2adfe9828d5172064bf3c399acc070120a15c3634bde49317e0625ea14ede65",
+        "size": 4637
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/Makefile",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/Makefile",
+      "sha256": "d2adfe9828d5172064bf3c399acc070120a15c3634bde49317e0625ea14ede65",
+      "size": 4637
+    },
+    {
+      "archive_identity": {
+        "sha256": "8598560e3ceb059f942d26bc90d882b7c815266ebfaa37e40f8454cfe1bff3d1",
+        "size": 31939
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/bootmap.c",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/bootmap.c",
+      "sha256": "8598560e3ceb059f942d26bc90d882b7c815266ebfaa37e40f8454cfe1bff3d1",
+      "size": 31939
+    },
+    {
+      "archive_identity": {
+        "sha256": "38f9f047350ee6d4b8c8b677e54b49723142b05b01f6c2375e83817bb1be188b",
+        "size": 14858
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/bootmap.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/bootmap.h",
+      "sha256": "38f9f047350ee6d4b8c8b677e54b49723142b05b01f6c2375e83817bb1be188b",
+      "size": 14858
+    },
+    {
+      "archive_identity": {
+        "sha256": "4df8023f37d5578e1ed4dc9fe867746591418a49e5d31d58dae8e387847f6ed5",
+        "size": 950
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/bswap.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/bswap.h",
+      "sha256": "4df8023f37d5578e1ed4dc9fe867746591418a49e5d31d58dae8e387847f6ed5",
+      "size": 950
+    },
+    {
+      "archive_identity": {
+        "sha256": "7dfd77d073c2203bc5544c58f8aa406e581efa472787e5c35d52f6e3974ad128",
+        "size": 12646
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/cio.c",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/cio.c",
+      "sha256": "7dfd77d073c2203bc5544c58f8aa406e581efa472787e5c35d52f6e3974ad128",
+      "size": 12646
+    },
+    {
+      "archive_identity": {
+        "sha256": "94da565c4888252ec882c4c1643155348a97804beb5d3afe35e87f100957319e",
+        "size": 13851
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/cio.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/cio.h",
+      "sha256": "94da565c4888252ec882c4c1643155348a97804beb5d3afe35e87f100957319e",
+      "size": 13851
+    },
+    {
+      "archive_identity": {
+        "sha256": "89522ed81dd8407819e39913208694894ed6f8c38a2a008ac0c04c5f9d157f7a",
+        "size": 6513
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/dasd-ipl.c",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/dasd-ipl.c",
+      "sha256": "89522ed81dd8407819e39913208694894ed6f8c38a2a008ac0c04c5f9d157f7a",
+      "size": 6513
+    },
+    {
+      "archive_identity": {
+        "sha256": "17487dd43b3a762d160d2408ec42d5f16002b5c4d8031a824399adbbbd64eb40",
+        "size": 411
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/dasd-ipl.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/dasd-ipl.h",
+      "sha256": "17487dd43b3a762d160d2408ec42d5f16002b5c4d8031a824399adbbbd64eb40",
+      "size": 411
+    },
+    {
+      "archive_identity": {
+        "sha256": "89f4a57f1075a28b7d5ee0883865e89588f551ad2f3cf796fd3f195dd5618fde",
+        "size": 1057
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/helper.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/helper.h",
+      "sha256": "89f4a57f1075a28b7d5ee0883865e89588f551ad2f3cf796fd3f195dd5618fde",
+      "size": 1057
+    },
+    {
+      "archive_identity": {
+        "sha256": "77d4e2ff457ad304fe558622e2d67653fd738a75c2ed265e1597944fbf8b9bad",
+        "size": 1796
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/iplb.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/iplb.h",
+      "sha256": "77d4e2ff457ad304fe558622e2d67653fd738a75c2ed265e1597944fbf8b9bad",
+      "size": 1796
+    },
+    {
+      "archive_identity": {
+        "sha256": "1614c380929303cb5def605c3f154a3e59529571c30698c1cb3799d829e30b3f",
+        "size": 3047
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/jump2ipl.c",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/jump2ipl.c",
+      "sha256": "1614c380929303cb5def605c3f154a3e59529571c30698c1cb3799d829e30b3f",
+      "size": 3047
+    },
+    {
+      "archive_identity": {
+        "sha256": "9d4a0ef57a7342983f59230d16e18fda854d6d595c9cfd673688fb798b7c1dc6",
+        "size": 8577
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/main.c",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/main.c",
+      "sha256": "9d4a0ef57a7342983f59230d16e18fda854d6d595c9cfd673688fb798b7c1dc6",
+      "size": 8577
+    },
+    {
+      "archive_identity": {
+        "sha256": "f244004c803962c4c868614f406d0048c289f32a70cf97f01cb97218a0b18d55",
+        "size": 5866
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/menu.c",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/menu.c",
+      "sha256": "f244004c803962c4c868614f406d0048c289f32a70cf97f01cb97218a0b18d55",
+      "size": 5866
+    },
+    {
+      "archive_identity": {
+        "sha256": "8709e43f903bd364e011f710cec7221e553fc20ce536723337456c212f958fe5",
+        "size": 14567
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/netmain.c",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/netmain.c",
+      "sha256": "8709e43f903bd364e011f710cec7221e553fc20ce536723337456c212f958fe5",
+      "size": 14567
+    },
+    {
+      "archive_identity": {
+        "sha256": "ee295ad3ad4a67e54ecb7de8f27185cff323dd9634398fc628329307114c767e",
+        "size": 4561
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/s390-arch.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/s390-arch.h",
+      "sha256": "ee295ad3ad4a67e54ecb7de8f27185cff323dd9634398fc628329307114c767e",
+      "size": 4561
+    },
+    {
+      "archive_identity": {
+        "sha256": "a75ea350adb69465baf3ece42e5746c4d1c00e9171382ffda16de6d8606471be",
+        "size": 3988
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/s390-ccw.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/s390-ccw.h",
+      "sha256": "a75ea350adb69465baf3ece42e5746c4d1c00e9171382ffda16de6d8606471be",
+      "size": 3988
+    },
+    {
+      "archive_identity": {
+        "sha256": "040f364cdbc8ebc5a403a327023995068e1ce8ac6eecffe15a8149bc3f61197c",
+        "size": 360
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/s390-time.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/s390-time.h",
+      "sha256": "040f364cdbc8ebc5a403a327023995068e1ce8ac6eecffe15a8149bc3f61197c",
+      "size": 360
+    },
+    {
+      "archive_identity": {
+        "sha256": "e7fdd6dd971cc0dcdbe0829d48fe407fd3305539944dea3235e25511941de554",
+        "size": 3682
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/sclp.c",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/sclp.c",
+      "sha256": "e7fdd6dd971cc0dcdbe0829d48fe407fd3305539944dea3235e25511941de554",
+      "size": 3682
+    },
+    {
+      "archive_identity": {
+        "sha256": "c9f74479622ac99e8a8a05f4b0f00b39bf6a94701a2ad0190d9e5992b0adfecf",
+        "size": 3223
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/sclp.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/sclp.h",
+      "sha256": "c9f74479622ac99e8a8a05f4b0f00b39bf6a94701a2ad0190d9e5992b0adfecf",
+      "size": 3223
+    },
+    {
+      "archive_identity": {
+        "sha256": "a513b873b23321c9f803bdef5b7f195ffc50874c81fac3e9e8c33850e3631a91",
+        "size": 7310
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/scsi.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/scsi.h",
+      "sha256": "a513b873b23321c9f803bdef5b7f195ffc50874c81fac3e9e8c33850e3631a91",
+      "size": 7310
+    },
+    {
+      "archive_identity": {
+        "sha256": "22ce5f47dd0dcd149923bca271e761200bf3a581c51ca7f2b9eedb86e524cc85",
+        "size": 3122
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/start.S",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/start.S",
+      "sha256": "22ce5f47dd0dcd149923bca271e761200bf3a581c51ca7f2b9eedb86e524cc85",
+      "size": 3122
+    },
+    {
+      "archive_identity": {
+        "sha256": "5cc2615a514a22ddd68e093330d1ceb57b60ee82165f84994bc2745bfbadc33b",
+        "size": 6067
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/virtio-blkdev.c",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/virtio-blkdev.c",
+      "sha256": "5cc2615a514a22ddd68e093330d1ceb57b60ee82165f84994bc2745bfbadc33b",
+      "size": 6067
+    },
+    {
+      "archive_identity": {
+        "sha256": "160a4bd9d528578442fba0f047b23047564f6b39ce46ece8582f47590836ea2d",
+        "size": 3793
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/virtio-net.c",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/virtio-net.c",
+      "sha256": "160a4bd9d528578442fba0f047b23047564f6b39ce46ece8582f47590836ea2d",
+      "size": 3793
+    },
+    {
+      "archive_identity": {
+        "sha256": "ebedca31e48edcef9dfc0fb0316010ccc7ead9d49e9cb07d88dab00274519b2b",
+        "size": 15293
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/virtio-scsi.c",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/virtio-scsi.c",
+      "sha256": "ebedca31e48edcef9dfc0fb0316010ccc7ead9d49e9cb07d88dab00274519b2b",
+      "size": 15293
+    },
+    {
+      "archive_identity": {
+        "sha256": "7f7308f7ba7319472a987f4ca054cfcf08c4e65a0028401ee94a5bd6af2ebd80",
+        "size": 2084
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/virtio-scsi.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/virtio-scsi.h",
+      "sha256": "7f7308f7ba7319472a987f4ca054cfcf08c4e65a0028401ee94a5bd6af2ebd80",
+      "size": 2084
+    },
+    {
+      "archive_identity": {
+        "sha256": "196f30fd9ab2b7b4485ae77bca6f197ae49741c5507b64274ad4076263003a9c",
+        "size": 9550
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/virtio.c",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/virtio.c",
+      "sha256": "196f30fd9ab2b7b4485ae77bca6f197ae49741c5507b64274ad4076263003a9c",
+      "size": 9550
+    },
+    {
+      "archive_identity": {
+        "sha256": "48b055d7d1b65a08ed4ced4cefa21846c5bce629359854d08fd6fc74842197d7",
+        "size": 8011
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw/virtio.h",
+      "archive_status": "matches",
+      "group": "s390",
+      "path": "src/qemu/pc-bios/s390-ccw/virtio.h",
+      "sha256": "48b055d7d1b65a08ed4ced4cefa21846c5bce629359854d08fd6fc74842197d7",
+      "size": 8011
+    },
+    {
+      "archive_identity": {
+        "sha256": "2183fde73c33b3b4302631e3db37d40f1f6d8671fe9a6129e5cd0cb8d543d6ad",
+        "size": 96000
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/s390-ccw.img",
+      "archive_status": "matches",
+      "group": "s390",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-s390-ccw.img.json",
+          "git_blob_sha1": "47240f0a74eec17b0da3ad334157d1b0e62632b4",
+          "matches": true,
+          "qemu_commit": "9744ceb94bf963ed42685c7d28024a77de2fbe78"
+        }
+      ],
+      "path": "src/qemu/pc-bios/s390-ccw.img",
+      "sha256": "2183fde73c33b3b4302631e3db37d40f1f6d8671fe9a6129e5cd0cb8d543d6ad",
+      "size": 96000,
+      "version_string_evidence": [
+        "GCC: (GNU) 14.2.1 20241104 (Red Hat 14.2.1-6)"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "bad55219becfc1198a3dfc0cb33aa9e27eb97c0f447f499031044f920d708a7e",
+        "size": 2592960
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/skiboot.lid",
+      "archive_status": "matches",
+      "group": "skiboot",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-skiboot.lid.json",
+          "git_blob_sha1": "ffc77ee11126c9b70e6c5691f0604ca8579bd0b7",
+          "matches": true,
+          "qemu_commit": "9cbbe72924b4be1870563b5101548ee2241b279d"
+        }
+      ],
+      "path": "src/qemu/pc-bios/skiboot.lid",
+      "sha256": "bad55219becfc1198a3dfc0cb33aa9e27eb97c0f447f499031044f920d708a7e",
+      "size": 2592960
+    },
+    {
+      "archive_identity": {
+        "sha256": "d465db808aa6a760000e065adf957b504dd0ddfc129beb56e73ab34ff0841425",
+        "size": 996184
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/slof.bin",
+      "archive_status": "matches",
+      "group": "slof",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-slof.bin.json",
+          "git_blob_sha1": "4314e17b9ddc964c905a7b107d9aa7a651a43890",
+          "matches": true,
+          "qemu_commit": "7f98b4f25ed94a3565acb1d6b54f43c1e3da1709"
+        }
+      ],
+      "path": "src/qemu/pc-bios/slof.bin",
+      "sha256": "d465db808aa6a760000e065adf957b504dd0ddfc129beb56e73ab34ff0841425",
+      "size": 996184,
+      "version_string_evidence": [
+        "GCC: (GNU) 12.1.0"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "be88ed96a6f50d5ba8ad7bf019f48e7f73acee95402d90d0dac3775d9c7a8d03",
+        "size": 524288
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/u-boot-sam460-20100605.bin",
+      "archive_status": "matches",
+      "group": "u-boot-sam460",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-u-boot-sam460-20100605.bin.json",
+          "git_blob_sha1": null,
+          "matches": false,
+          "qemu_commit": "55d38d10b84a256ca80484eb5114a4824608b85e"
+        }
+      ],
+      "path": "src/qemu/pc-bios/u-boot-sam460-20100605.bin",
+      "sha256": "be88ed96a6f50d5ba8ad7bf019f48e7f73acee95402d90d0dac3775d9c7a8d03",
+      "size": 524288,
+      "version_string_evidence": [
+        "VU-Boot 2010.06.05 (Jul 08 2018 - 22:45:33)",
+        "U-Boot 2010.06.05"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "f0250e391566bca7b5e643c43b761ab9629a0b82427792a772e80c8b97836425",
+        "size": 421720
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/u-boot.e500",
+      "archive_status": "matches",
+      "group": "u-boot-e500",
+      "historical_byte_evidence": [
+        {
+          "evidence": "evidence/update-u-boot-sam460-20100605.bin.json",
+          "git_blob_sha1": null,
+          "matches": false,
+          "qemu_commit": "55d38d10b84a256ca80484eb5114a4824608b85e"
+        },
+        {
+          "evidence": "evidence/update-u-boot.e500.json",
+          "git_blob_sha1": "8e635c8a5c9e53469710be27aa0c5e5a4045c2cd",
+          "matches": true,
+          "qemu_commit": "a0c3747e14689583b84a6c15b80e7bc2209111be"
+        }
+      ],
+      "path": "src/qemu/pc-bios/u-boot.e500",
+      "sha256": "f0250e391566bca7b5e643c43b761ab9629a0b82427792a772e80c8b97836425",
+      "size": 421720,
+      "version_string_evidence": [
+        "VU-Boot 2021.07 (Jul 06 2021 - 09:21:42 +0800)",
+        "powerpc-linux-gcc (GCC) 10.1.0",
+        "GCC: (GNU) 10.1.0"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "9d4d1f32a7e059de82c09c19fc25e276a39d96a1a516605a32ba704596e10d8e",
+        "size": 39424
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vgabios-ati.bin",
+      "archive_status": "matches",
+      "group": "seabios",
+      "path": "src/qemu/pc-bios/vgabios-ati.bin",
+      "sha256": "9d4d1f32a7e059de82c09c19fc25e276a39d96a1a516605a32ba704596e10d8e",
+      "size": 39424,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "d5fd6992dfdf0c980996b79c5ea13b9c8b36342c1dc94fcd682a6c3e8df850ff",
+        "size": 28672
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vgabios-bochs-display.bin",
+      "archive_status": "matches",
+      "group": "seabios",
+      "path": "src/qemu/pc-bios/vgabios-bochs-display.bin",
+      "sha256": "d5fd6992dfdf0c980996b79c5ea13b9c8b36342c1dc94fcd682a6c3e8df850ff",
+      "size": 28672,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "305d3b15f67e65f1899a1664621f6b471e4345d33fd9eb4f6320b4559f6a04f2",
+        "size": 38912
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vgabios-cirrus.bin",
+      "archive_status": "matches",
+      "group": "seabios",
+      "path": "src/qemu/pc-bios/vgabios-cirrus.bin",
+      "sha256": "305d3b15f67e65f1899a1664621f6b471e4345d33fd9eb4f6320b4559f6a04f2",
+      "size": 38912,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "e81cc2807ebb9a1467b1933d192a4313424b499b73e7674257f07cd2171e01c7",
+        "size": 39424
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vgabios-qxl.bin",
+      "archive_status": "matches",
+      "group": "seabios",
+      "path": "src/qemu/pc-bios/vgabios-qxl.bin",
+      "sha256": "e81cc2807ebb9a1467b1933d192a4313424b499b73e7674257f07cd2171e01c7",
+      "size": 39424,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "31b26b2288ed5594b65a234e797ee7105d225d48086170b27ab518c3fb69b7de",
+        "size": 28672
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vgabios-ramfb.bin",
+      "archive_status": "matches",
+      "group": "seabios",
+      "path": "src/qemu/pc-bios/vgabios-ramfb.bin",
+      "sha256": "31b26b2288ed5594b65a234e797ee7105d225d48086170b27ab518c3fb69b7de",
+      "size": 28672,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "651513519f9e0d5b99d3b051a8f5c68db69e987339b59a441d371068c34c146b",
+        "size": 39424
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vgabios-stdvga.bin",
+      "archive_status": "matches",
+      "group": "seabios",
+      "path": "src/qemu/pc-bios/vgabios-stdvga.bin",
+      "sha256": "651513519f9e0d5b99d3b051a8f5c68db69e987339b59a441d371068c34c146b",
+      "size": 39424,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "746f38c2023dbbc071503113f970bcf69d49c6e7c55fa8c0e3748dbccba42772",
+        "size": 39424
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vgabios-virtio.bin",
+      "archive_status": "matches",
+      "group": "seabios",
+      "path": "src/qemu/pc-bios/vgabios-virtio.bin",
+      "sha256": "746f38c2023dbbc071503113f970bcf69d49c6e7c55fa8c0e3748dbccba42772",
+      "size": 39424,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "c12841eb2b057b6d99bfbc7ab72bea896e2b5cd694c93b026d7510de2b68ca11",
+        "size": 39424
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vgabios-vmware.bin",
+      "archive_status": "matches",
+      "group": "seabios",
+      "path": "src/qemu/pc-bios/vgabios-vmware.bin",
+      "sha256": "c12841eb2b057b6d99bfbc7ab72bea896e2b5cd694c93b026d7510de2b68ca11",
+      "size": 39424,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "f0defab87465236d0d22b6000bd2c270e05a56ff3bb7fd209a56069caed86d57",
+        "size": 38912
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vgabios.bin",
+      "archive_status": "matches",
+      "group": "seabios",
+      "path": "src/qemu/pc-bios/vgabios.bin",
+      "sha256": "f0defab87465236d0d22b6000bd2c270e05a56ff3bb7fd209a56069caed86d57",
+      "size": 38912,
+      "version_string_evidence": [
+        "gcc: (GCC) 13.2.1 20230728 (Red Hat Cross 13.2.1-1) binutils: version 2.40-3.fc39",
+        "rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org"
+      ]
+    },
+    {
+      "archive_identity": {
+        "sha256": "0324765bacf98b0991aa25a8e8928d81b97a38227a916c895273941a2de822b3",
+        "size": 800
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vof/Makefile",
+      "archive_status": "matches",
+      "group": "vof",
+      "path": "src/qemu/pc-bios/vof/Makefile",
+      "sha256": "0324765bacf98b0991aa25a8e8928d81b97a38227a916c895273941a2de822b3",
+      "size": 800
+    },
+    {
+      "archive_identity": {
+        "sha256": "046eca9fa11cfc502572251e2cc095e0492194f93851ba17fda3f589b01cdfbf",
+        "size": 311
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vof/bootmem.c",
+      "archive_status": "matches",
+      "group": "vof",
+      "path": "src/qemu/pc-bios/vof/bootmem.c",
+      "sha256": "046eca9fa11cfc502572251e2cc095e0492194f93851ba17fda3f589b01cdfbf",
+      "size": 311
+    },
+    {
+      "archive_identity": {
+        "sha256": "8b4a91c155089eab86df8e64ac93597b21d266ba54ea965e136c562a3ac76e9b",
+        "size": 1882
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vof/ci.c",
+      "archive_status": "matches",
+      "group": "vof",
+      "path": "src/qemu/pc-bios/vof/ci.c",
+      "sha256": "8b4a91c155089eab86df8e64ac93597b21d266ba54ea965e136c562a3ac76e9b",
+      "size": 1882
+    },
+    {
+      "archive_identity": {
+        "sha256": "f2d820d661606696e43133ea6443b5bfaa7f30e82a734d86af1ee26d0002b44f",
+        "size": 957
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vof/entry.S",
+      "archive_status": "matches",
+      "group": "vof",
+      "path": "src/qemu/pc-bios/vof/entry.S",
+      "sha256": "f2d820d661606696e43133ea6443b5bfaa7f30e82a734d86af1ee26d0002b44f",
+      "size": 957
+    },
+    {
+      "archive_identity": {
+        "sha256": "5eaee2e725d3f327aa0e211eb267613896a314a4f6984a35f065d290013ea35c",
+        "size": 998
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vof/libc.c",
+      "archive_status": "matches",
+      "group": "vof",
+      "path": "src/qemu/pc-bios/vof/libc.c",
+      "sha256": "5eaee2e725d3f327aa0e211eb267613896a314a4f6984a35f065d290013ea35c",
+      "size": 998
+    },
+    {
+      "archive_identity": {
+        "sha256": "6296afc06bcb92e8536f6ea2e72cebe5f313a3267523e782c61491be4c6ce543",
+        "size": 598
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vof/main.c",
+      "archive_status": "matches",
+      "group": "vof",
+      "path": "src/qemu/pc-bios/vof/main.c",
+      "sha256": "6296afc06bcb92e8536f6ea2e72cebe5f313a3267523e782c61491be4c6ce543",
+      "size": 598
+    },
+    {
+      "archive_identity": {
+        "sha256": "213b11adbcf0bd551159f93036421ced73a115dd83f90f185ed3698ea4f19e2c",
+        "size": 1211
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vof/vof.h",
+      "archive_status": "matches",
+      "group": "vof",
+      "path": "src/qemu/pc-bios/vof/vof.h",
+      "sha256": "213b11adbcf0bd551159f93036421ced73a115dd83f90f185ed3698ea4f19e2c",
+      "size": 1211
+    },
+    {
+      "archive_identity": {
+        "sha256": "978d78cdf69131f87beed30e6507fa68106a6fcbb37eacdbc585714e591a5aeb",
+        "size": 619
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vof/vof.lds",
+      "archive_status": "matches",
+      "group": "vof",
+      "path": "src/qemu/pc-bios/vof/vof.lds",
+      "sha256": "978d78cdf69131f87beed30e6507fa68106a6fcbb37eacdbc585714e591a5aeb",
+      "size": 619
+    },
+    {
+      "archive_identity": {
+        "sha256": "cf97201f9403212ab75287bf209bfb7710cb5f253e8fe80723cf43760a9e8a12",
+        "size": 16384
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vof-nvram.bin",
+      "archive_status": "matches",
+      "group": "vof-nvram",
+      "path": "src/qemu/pc-bios/vof-nvram.bin",
+      "sha256": "cf97201f9403212ab75287bf209bfb7710cb5f253e8fe80723cf43760a9e8a12",
+      "size": 16384
+    },
+    {
+      "archive_identity": {
+        "sha256": "8c88070f252075111468e7b2a8043209e7798c3fb136326227390ea50f168f13",
+        "size": 3456
+      },
+      "archive_member": "utmapp-qemu-37ba092/pc-bios/vof.bin",
+      "archive_status": "matches",
+      "group": "vof",
+      "path": "src/qemu/pc-bios/vof.bin",
+      "sha256": "8c88070f252075111468e7b2a8043209e7798c3fb136326227390ea50f168f13",
+      "size": 3456
+    }
+  ],
+  "scope": "All retained pc-bios regular files plus all embedded resources; not a publication/staging audit",
+  "source_provenance_cleared": false,
+  "unclassified_paths": []
+}

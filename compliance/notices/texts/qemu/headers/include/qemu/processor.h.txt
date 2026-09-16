@@ -1,0 +1,6 @@
+/*
+ * Copyright (C) 2016, Emilio G. Cota <cota@braap.org>
+ *
+ * License: GNU GPL, version 2.
+ *   See the COPYING file in the top-level directory.
+ */

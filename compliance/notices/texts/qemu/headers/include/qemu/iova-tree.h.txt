@@ -1,0 +1,10 @@
+/*
+ * An very simplified iova tree implementation based on GTree.
+ *
+ * Copyright 2018 Red Hat, Inc.
+ *
+ * Authors:
+ *  Peter Xu <peterx@redhat.com>
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2 or later.
+ */

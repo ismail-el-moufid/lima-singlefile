@@ -1,0 +1,19 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+/*
+ * Deferred calls
+ *
+ * Copyright Red Hat.
+ *
+ * This API defers a function call within a defer_call_begin()/defer_call_end()
+ * section, allowing multiple calls to batch up. This is a performance
+ * optimization that is used in the block layer to submit several I/O requests
+ * at once instead of individually:
+ *
+ *   defer_call_begin(); <-- start of section
+ *   ...
+ *   defer_call(my_func, my_obj); <-- deferred my_func(my_obj) call
+ *   defer_call(my_func, my_obj); <-- another
+ *   defer_call(my_func, my_obj); <-- another
+ *   ...
+ *   defer_call_end(); <-- end of section, my_func(my_obj) is called once
+ */

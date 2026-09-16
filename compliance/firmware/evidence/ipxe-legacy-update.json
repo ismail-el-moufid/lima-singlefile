@@ -1,0 +1,139 @@
+{
+  "sha": "36d8d02dc8c45780cae74e2ba7a6135b95c16f81",
+  "node_id": "MDY6Q29tbWl0MTc3ODkzNDk3OjM2ZDhkMDJkYzhjNDU3ODBjYWU3NGUyYmE3YTYxMzViOTVjMTZmODE=",
+  "commit": {
+    "author": {
+      "name": "Alex Williamson",
+      "email": "alex.williamson@redhat.com",
+      "date": "2011-04-18T17:46:41Z"
+    },
+    "committer": {
+      "name": "Alex Williamson",
+      "email": "alex.williamson@redhat.com",
+      "date": "2011-04-18T17:46:41Z"
+    },
+    "message": "PXE: Refresh all PXE ROMs from the ipxe submodule\n\nAdd script to make this easy to repeat later.\n\nSigned-off-by: Alex Williamson <alex.williamson@redhat.com>",
+    "tree": {
+      "sha": "b72dcaeb2daa38b109ece8bf4501bfb221abd129",
+      "url": "https://api.github.com/repos/utmapp/qemu/git/trees/b72dcaeb2daa38b109ece8bf4501bfb221abd129"
+    },
+    "url": "https://api.github.com/repos/utmapp/qemu/git/commits/36d8d02dc8c45780cae74e2ba7a6135b95c16f81",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/utmapp/qemu/commits/36d8d02dc8c45780cae74e2ba7a6135b95c16f81",
+  "html_url": "https://github.com/utmapp/qemu/commit/36d8d02dc8c45780cae74e2ba7a6135b95c16f81",
+  "comments_url": "https://api.github.com/repos/utmapp/qemu/commits/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "5ee8ad71e159e724e2fa1af6b2c502668179502a",
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/5ee8ad71e159e724e2fa1af6b2c502668179502a",
+      "html_url": "https://github.com/utmapp/qemu/commit/5ee8ad71e159e724e2fa1af6b2c502668179502a"
+    }
+  ],
+  "stats": {
+    "total": 118,
+    "additions": 108,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "fe221a940ff93d52468c28fd4bee04377dc17487",
+      "filename": "pc-bios/README",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 10,
+      "changes": 19,
+      "blob_url": "https://github.com/utmapp/qemu/blob/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2FREADME",
+      "raw_url": "https://github.com/utmapp/qemu/raw/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2FREADME",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2FREADME?ref=36d8d02dc8c45780cae74e2ba7a6135b95c16f81",
+      "patch": "@@ -18,16 +18,15 @@\n   https://github.com/dgibson/SLOF, and the image currently in qemu is\n   built from git tag qemu-slof-20110323.\n \n-- The PXE roms come from Rom-o-Matic gPXE 0.9.9 with BANNER_TIMEOUT=0\n-\n-  e1000 8086:100E\n-  eepro100 8086:1209 (also used for 8086:1229 and 8086:2449)\n-  ns8390 1050:0940\n-  pcnet32 1022:2000\n-  rtl8139 10ec:8139\n-  virtio 1af4:1000\n-\n-  http://rom-o-matic.net/\n+- The PXE roms come from the iPXE project. Built with BANNER_TIME 0.\n+  Sources available at http://ipxe.org.  Vendor:Device ID -> ROM mapping:\n+\n+\t8086:100e -> pxe-e1000.rom\n+\t8086:1209 -> pxe-eepro100.rom\n+\t1050:0940 -> pxe-ne2k_pci.rom\n+\t1022:2000 -> pxe-pcnet.rom\n+\t10ec:8139 -> pxe-rtl8139.rom\n+\t1af4:1000 -> pxe-virtio.rom\n \n - The S390 zipl loader is an addition to the official IBM s390-tools\n   package. That fork is maintained in its own git repository at:"
+    },
+    {
+      "sha": "2e5f8b28a414960cd58f793957435e9451be8fb4",
+      "filename": "pc-bios/pxe-e1000.rom",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2Fpxe-e1000.rom",
+      "raw_url": "https://github.com/utmapp/qemu/raw/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2Fpxe-e1000.rom",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fpxe-e1000.rom?ref=36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+    },
+    {
+      "sha": "d292e8feca0b63b512a3b04db37caa590ca003e4",
+      "filename": "pc-bios/pxe-eepro100.rom",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2Fpxe-eepro100.rom",
+      "raw_url": "https://github.com/utmapp/qemu/raw/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2Fpxe-eepro100.rom",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fpxe-eepro100.rom?ref=36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+    },
+    {
+      "sha": "62010cbc726fc5fb8fa8c9db9fafdb4140339d09",
+      "filename": "pc-bios/pxe-ne2k_pci.rom",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2Fpxe-ne2k_pci.rom",
+      "raw_url": "https://github.com/utmapp/qemu/raw/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2Fpxe-ne2k_pci.rom",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fpxe-ne2k_pci.rom?ref=36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+    },
+    {
+      "sha": "512d6d4339b7b3e3ea8b132d261d553f09bb3d96",
+      "filename": "pc-bios/pxe-pcnet.rom",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2Fpxe-pcnet.rom",
+      "raw_url": "https://github.com/utmapp/qemu/raw/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2Fpxe-pcnet.rom",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fpxe-pcnet.rom?ref=36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+    },
+    {
+      "sha": "67c77fbf73135d9f81467cb36d3d1c64362ba8c5",
+      "filename": "pc-bios/pxe-rtl8139.rom",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2Fpxe-rtl8139.rom",
+      "raw_url": "https://github.com/utmapp/qemu/raw/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2Fpxe-rtl8139.rom",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fpxe-rtl8139.rom?ref=36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+    },
+    {
+      "sha": "b1ec909628998aa9289b915e59416717e718a618",
+      "filename": "pc-bios/pxe-virtio.rom",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2Fpxe-virtio.rom",
+      "raw_url": "https://github.com/utmapp/qemu/raw/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/pc-bios%2Fpxe-virtio.rom",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fpxe-virtio.rom?ref=36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+    },
+    {
+      "sha": "14d586070f552e41c29ad5d8f4d153a180907631",
+      "filename": "scripts/refresh-pxe-roms.sh",
+      "status": "added",
+      "additions": 99,
+      "deletions": 0,
+      "changes": 99,
+      "blob_url": "https://github.com/utmapp/qemu/blob/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/scripts%2Frefresh-pxe-roms.sh",
+      "raw_url": "https://github.com/utmapp/qemu/raw/36d8d02dc8c45780cae74e2ba7a6135b95c16f81/scripts%2Frefresh-pxe-roms.sh",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/scripts%2Frefresh-pxe-roms.sh?ref=36d8d02dc8c45780cae74e2ba7a6135b95c16f81",
+      "patch": "@@ -0,0 +1,99 @@\n+#!/bin/bash\n+\n+# PXE ROM build script\n+#\n+# This program is free software; you can redistribute it and/or modify\n+# it under the terms of the GNU General Public License as published by\n+# the Free Software Foundation; either version 2 of the License, or\n+# (at your option) any later version.\n+#\n+# This program is distributed in the hope that it will be useful,\n+# but WITHOUT ANY WARRANTY; without even the implied warranty of\n+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n+# GNU General Public License for more details.\n+#\n+# You should have received a copy of the GNU General Public License\n+# along with this program; if not, see <http://www.gnu.org/licenses/>.\n+#\n+# Copyright (C) 2011 Red Hat, Inc.\n+#   Authors: Alex Williamson <alex.williamson@redhat.com>\n+#\n+# Usage: Run from root of qemu tree\n+# ./scripts/refresh-pxe-roms.sh\n+\n+QEMU_DIR=$PWD\n+ROM_DIR=\"pc-bios\"\n+BUILD_DIR=\"roms/ipxe\"\n+LOCAL_CONFIG=\"src/config/local/general.h\"\n+\n+function cleanup ()\n+{\n+    if [ -n \"$SAVED_CONFIG\" ]; then\n+        cp \"$SAVED_CONFIG\" \"$BUILD_DIR\"/\"$LOCAL_CONFIG\"\n+        rm \"$SAVED_CONFIG\"\n+    fi\n+    cd \"$QEMU_DIR\"\n+}\n+\n+function make_rom ()\n+{\n+    cd \"$BUILD_DIR\"/src\n+\n+    BUILD_LOG=$(mktemp)\n+\n+    echo Building \"$2\"...\n+    make bin/\"$1\".rom > \"$BUILD_LOG\" 2>&1\n+    if [ $? -ne 0 ]; then\n+        echo Build failed\n+        tail --lines=100 \"$BUILD_LOG\"\n+        rm \"$BUILD_LOG\"\n+        cleanup\n+        exit 1\n+    fi\n+    rm \"$BUILD_LOG\"\n+\n+    cp bin/\"$1\".rom \"$QEMU_DIR\"/\"$ROM_DIR\"/\"$2\"\n+\n+    cd \"$QEMU_DIR\"\n+}\n+\n+if [ ! -d \"$QEMU_DIR\"/\"$ROM_DIR\" ]; then\n+    echo \"error: can't find $ROM_DIR directory,\" \\\n+         \"run me from the root of the qemu tree\"\n+    exit 1\n+fi\n+\n+if [ ! -d \"$BUILD_DIR\"/src ]; then\n+    echo \"error: $BUILD_DIR not populated, try:\"\n+    echo \"  git submodule init $BUILD_DIR\"\n+    echo \"  git submodule update $BUILD_DIR\"\n+    exit 1\n+fi\n+\n+if [ -e \"$BUILD_DIR\"/\"$LOCAL_CONFIG\" ]; then\n+    SAVED_CONFIG=$(mktemp)\n+    cp \"$BUILD_DIR\"/\"$LOCAL_CONFIG\" \"$SAVED_CONFIG\"\n+fi\n+\n+echo \"#undef BANNER_TIMEOUT\" > \"$BUILD_DIR\"/\"$LOCAL_CONFIG\"\n+echo \"#define BANNER_TIMEOUT 0\" >> \"$BUILD_DIR\"/\"$LOCAL_CONFIG\"\n+\n+IPXE_VERSION=$(cd \"$BUILD_DIR\" && git describe --tags)\n+if [ -z \"$IPXE_VERSION\" ]; then\n+    echo \"error: unable to retrieve git version\"\n+    cleanup\n+    exit 1\n+fi\n+\n+echo \"#undef PRODUCT_NAME\" >> \"$BUILD_DIR\"/\"$LOCAL_CONFIG\"\n+echo \"#define PRODUCT_NAME \\\"iPXE $IPXE_VERSION\\\"\" >> \"$BUILD_DIR\"/\"$LOCAL_CONFIG\"\n+\n+make_rom 8086100e pxe-e1000.rom\n+make_rom 80861209 pxe-eepro100.rom\n+make_rom 10500940 pxe-ne2k_pci.rom\n+make_rom 10222000 pxe-pcnet.rom\n+make_rom 10ec8139 pxe-rtl8139.rom\n+make_rom 1af41000 pxe-virtio.rom\n+\n+echo done\n+cleanup"
+    }
+  ]
+}

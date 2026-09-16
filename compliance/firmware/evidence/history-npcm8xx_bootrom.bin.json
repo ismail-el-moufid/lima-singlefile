@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "269b7effd906d6b22071971b7f5b4cb344403b86",
+    "node_id": "C_kwDOCppwedoAKDI2OWI3ZWZmZDkwNmQ2YjIyMDcxOTcxYjdmNWI0Y2IzNDQ0MDNiODY",
+    "commit": {
+      "author": {
+        "name": "Hao Wu",
+        "email": "wuhaotsh@google.com",
+        "date": "2025-02-19T18:45:53Z"
+      },
+      "committer": {
+        "name": "Peter Maydell",
+        "email": "peter.maydell@linaro.org",
+        "date": "2025-02-20T14:20:29Z"
+      },
+      "message": "pc-bios: Add NPCM8XX vBootrom\n\nThe bootrom is a minimal bootrom used to load an NPCM8XX image.\nThe source code is located in the same repo as the NPCM7XX one:\ngithub.com/google/vbootrom/tree/master/npcm8xx.\n\nReviewed-by: Peter Maydell <peter.maydell@linaro.org>\nSigned-off-by: Hao Wu <wuhaotsh@google.com>\nMessage-id: 20250219184609.1839281-3-wuhaotsh@google.com\nSigned-off-by: Peter Maydell <peter.maydell@linaro.org>",
+      "tree": {
+        "sha": "c28db73f032cc5facf242357dbd90989fa8f1521",
+        "url": "https://api.github.com/repos/utmapp/qemu/git/trees/c28db73f032cc5facf242357dbd90989fa8f1521"
+      },
+      "url": "https://api.github.com/repos/utmapp/qemu/git/commits/269b7effd906d6b22071971b7f5b4cb344403b86",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/utmapp/qemu/commits/269b7effd906d6b22071971b7f5b4cb344403b86",
+    "html_url": "https://github.com/utmapp/qemu/commit/269b7effd906d6b22071971b7f5b4cb344403b86",
+    "comments_url": "https://api.github.com/repos/utmapp/qemu/commits/269b7effd906d6b22071971b7f5b4cb344403b86/comments",
+    "author": {
+      "login": "haowu4682",
+      "id": 5589683,
+      "node_id": "MDQ6VXNlcjU1ODk2ODM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5589683?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/haowu4682",
+      "html_url": "https://github.com/haowu4682",
+      "followers_url": "https://api.github.com/users/haowu4682/followers",
+      "following_url": "https://api.github.com/users/haowu4682/following{/other_user}",
+      "gists_url": "https://api.github.com/users/haowu4682/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/haowu4682/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/haowu4682/subscriptions",
+      "organizations_url": "https://api.github.com/users/haowu4682/orgs",
+      "repos_url": "https://api.github.com/users/haowu4682/repos",
+      "events_url": "https://api.github.com/users/haowu4682/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/haowu4682/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "pm215",
+      "id": 1682716,
+      "node_id": "MDQ6VXNlcjE2ODI3MTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1682716?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pm215",
+      "html_url": "https://github.com/pm215",
+      "followers_url": "https://api.github.com/users/pm215/followers",
+      "following_url": "https://api.github.com/users/pm215/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pm215/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pm215/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pm215/subscriptions",
+      "organizations_url": "https://api.github.com/users/pm215/orgs",
+      "repos_url": "https://api.github.com/users/pm215/repos",
+      "events_url": "https://api.github.com/users/pm215/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pm215/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "70ce076fa6dff60585c229a4b641b13e64bf03cf",
+        "url": "https://api.github.com/repos/utmapp/qemu/commits/70ce076fa6dff60585c229a4b641b13e64bf03cf",
+        "html_url": "https://github.com/utmapp/qemu/commit/70ce076fa6dff60585c229a4b641b13e64bf03cf"
+      }
+    ]
+  }
+]

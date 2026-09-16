@@ -1,0 +1,11 @@
+/*
+ * Simple interface for 128-bit atomic operations.
+ *
+ * Copyright (C) 2018 Linaro, Ltd.
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2 or later.
+ * See the COPYING file in the top-level directory.
+ *
+ * See docs/devel/atomics.rst for discussion about the guarantees each
+ * atomic primitive is meant to provide.
+ */

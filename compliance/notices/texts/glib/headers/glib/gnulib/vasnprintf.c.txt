@@ -1,0 +1,44 @@
+/* vsprintf with automatic memory allocation.
+   Copyright (C) 1999, 2002-2019 Free Software Foundation, Inc.
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU Lesser General Public License as published by
+   the Free Software Foundation; either version 2.1, or (at your option)
+   any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public License along
+   with this program; if not, see <https://www.gnu.org/licenses/>.  */
+
+/* This file can be parametrized with the following macros:
+     VASNPRINTF         The name of the function being defined.
+     FCHAR_T            The element type of the format string.
+     DCHAR_T            The element type of the destination (result) string.
+     FCHAR_T_ONLY_ASCII Set to 1 to enable verification that all characters
+                        in the format string are ASCII. MUST be set if
+                        FCHAR_T and DCHAR_T are not the same type.
+     DIRECTIVE          Structure denoting a format directive.
+                        Depends on FCHAR_T.
+     DIRECTIVES         Structure denoting the set of format directives of a
+                        format string.  Depends on FCHAR_T.
+     PRINTF_PARSE       Function that parses a format string.
+                        Depends on FCHAR_T.
+     DCHAR_CPY          memcpy like function for DCHAR_T[] arrays.
+     DCHAR_SET          memset like function for DCHAR_T[] arrays.
+     DCHAR_MBSNLEN      mbsnlen like function for DCHAR_T[] arrays.
+     SNPRINTF           The system's snprintf (or similar) function.
+                        This may be either snprintf or swprintf.
+     TCHAR_T            The element type of the argument and result string
+                        of the said SNPRINTF function.  This may be either
+                        char or wchar_t.  The code exploits that
+                        sizeof (TCHAR_T) | sizeof (DCHAR_T) and
+                        alignof (TCHAR_T) <= alignof (DCHAR_T).
+     DCHAR_IS_TCHAR     Set to 1 if DCHAR_T and TCHAR_T are the same type.
+     DCHAR_CONV_FROM_ENCODING A function to convert from char[] to DCHAR[].
+     DCHAR_IS_UINT8_T   Set to 1 if DCHAR_T is uint8_t.
+     DCHAR_IS_UINT16_T  Set to 1 if DCHAR_T is uint16_t.
+     DCHAR_IS_UINT32_T  Set to 1 if DCHAR_T is uint32_t.  */

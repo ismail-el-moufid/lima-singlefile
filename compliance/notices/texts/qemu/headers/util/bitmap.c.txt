@@ -1,0 +1,10 @@
+/*
+ * Bitmap Module
+ *
+ * Stolen from linux/src/lib/bitmap.c
+ *
+ * Copyright (C) 2010 Corentin Chary
+ *
+ * This source code is licensed under the GNU General Public License,
+ * Version 2.
+ */

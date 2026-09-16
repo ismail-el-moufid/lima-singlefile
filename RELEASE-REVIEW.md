@@ -1,13 +1,66 @@
-# Release licensing and corresponding-source review
+# Licensing and corresponding-source inventory
 
-**Reviewed: 2026-09-15. Release decision: HOLD.**
+**Evidence reviewed: 2026-09-15. Release-process update: 2026-09-16. Scope: retained
+local single-file executable and source materials; future CI release artifacts
+are outside this evidence set.**
 
-This is an engineering inventory of licensing evidence and release gaps, not legal
-advice or clearance. Passing functional tests, publishing source, or providing
-checksums does not by itself authorize redistribution. No additional permissions,
-relicensing, or exceptions from copyright holders have been established here.
+This document records component licensing evidence, source provenance, and known
+gaps for the retained artifacts. No additional permissions, relicensing, or
+exceptions from copyright holders have been established here.
+
+## Current remediation result
+
+The release workflow immediately publishes an experimental prerelease on a
+successful `v*` tag build. The evidence below concerns the retained local artifacts:
+no effective new third-party permission has been obtained, no incompatible
+implementation has been replaced, and no firmware or VARS bytes have been changed.
+The single-file design is unchanged.
+
+New evidence and delivered materials:
+
+- [Native linkage inventory](compliance/linkage/README.md): all 783 core archive
+  members mapped; 1,407 members across six selected archives checked against
+  retained object bytes. There are 152 GPLv2-only **review candidates**, not 152
+  proved surviving contributions. Alternate/portion-specific grants and exceptions
+  are preserved for review. The complete final ld map/argv and exhaustive
+  contribution-level permission determination remain unavailable.
+- [Additional notices](compliance/notices/README.md): 48 host modules, host Go
+  1.22.12, authentic historical Go 1.19.2, and native/upstream notices, including
+  NOTICE/PATENTS: 1,383 notice/context records. File-level coverage remains partial.
+- [Firmware source inventory](compliance/firmware/SOURCE-INVENTORY.md): 174 retained
+  pc-bios files and all 77 embedded resources; 11 history-supported exact-revision
+  source archives acquired. These are source candidates with recorded evidence,
+  not complete build closure or UTM EDK2 provenance.
+- [Source-delivery package](compliance/source-delivery/README.md): actual pinned
+  sources, runtime sources, 52 host/guest module ZIPs, and 283 pinned go.mod records.
+  The 406 payload files total 155,568,363 bytes, before firmware and notices.
+  Source bytes and recipes are supplied; a modified-library rebuild/relink has
+  **not** been demonstrated and recipient permissions for the combination remain
+  unsettled.
+- [Original-contribution license](LICENSE-ORIGINAL.md): MIT, strictly scoped to
+  original project material, excluding third-party code and copied evidence.
+- [Publication audit](compliance/publication/README.md): the existing export's
+  Git history/index was inspected read-only, together with current source/firmware
+  archive contents. Findings remain recorded. It is distinct from
+  the separately regenerated candidate and must not be represented as auditing
+  a future public commit.
+
+The retained executable and private archives match their build manifest, but its
+`source-overlays.json` hash differs from today's manifest. This is a provenance
+metadata mismatch, not proof that different source bytes were compiled. Rebuild
+or reconcile the exact inputs before associating this source package with a new
+binary release. Byte-identical rebuilding is useful evidence, **not a universal
+license requirement**.
 
 ## Scope and artifact
+
+Release executables are built, tested, checksummed, and published by
+`.github/workflows/build.yml` from version tags, rather than supplied from the local
+workspace. The inventory below describes the retained local evidence only; its
+hash, linkage findings, and validation results must not be represented as an audit
+of a future CI-built executable. CI release assets and their checksums are produced
+from the tagged revision; this inventory describes the separately identified local
+artifact below.
 
 The reviewed executable is `output/limactl`, 81,235,004 bytes, SHA-256:
 
@@ -19,7 +72,7 @@ It combines Lima 0.13.0, UTM QEMU `v10.0.2-utm`, statically linked native librar
 Go runtime/modules, embedded firmware, and a separately executed Linux guest agent.
 This review used source/license headers, checksum-verified archives and modules,
 linker logs, binary symbols/build metadata, and upstream firmware history. It did
-not rebuild firmware or establish bit-identical corresponding-source reproduction.
+not rebuild firmware or demonstrate a modified-library relink.
 
 The publication export is a **source distribution with prebuilt inputs**, not a
 binary-free archive: firmware, ROMs, and the guest agent remain required inputs.
@@ -50,7 +103,9 @@ resolve the conflict.** Disabling HVF alone does not remove all GPLv2-only code.
 The legal classification of the integration and any alternative permission route
 require qualified review. Possible engineering directions include genuinely
 separate programs, or replacing/relicensing every relevant incompatible component;
-none has been selected or implemented.
+none has been implemented. For the retained single-file design, effective
+permissions or complete compatible replacements remain the unresolved route;
+separating programs has not been silently substituted.
 
 Independently licensed sources and separable patches can coexist as an aggregate,
 but an integrated derivative does not automatically become exempt because it is
@@ -73,7 +128,19 @@ modules. Their pinned module hashes and top-level license/header evidence were
 reviewed; this is not a complete file-level attribution inventory for every copied
 fragment, generated table, or transitive native contribution.
 
-Prepare an actual notice bundle, including applicable upstream NOTICE material:
+The [guest-agent notice bundle](compliance/guest-agent/README.md) now packages
+Lima's LICENSE and the original top-level notices for all nine modules recorded
+in the retained Linux agent: 12 notice files in total, including go-libaudit's
+NOTICE.txt and x/sys's PATENTS. Module ZIP `h1:` checksums were verified against
+the agent build record and `go.sum` before copying. Its manifest records member
+paths and SHA-256 identities; offline tests check inventory and retained inputs.
+This is a partial notice inventory, not a complete release package. The separate
+additional-notices bundle now supplies Go 1.19.2 notices, and source-delivery
+supplies its authentic source archive. File-level attribution remains outstanding.
+
+The additional-notices bundle now includes the host/native named-file notices,
+including the following upstream NOTICE material. Its documented selection rule
+is not a complete contribution-level attribution review:
 
 - `github.com/containerd/containerd@v1.6.9/NOTICE`
 - `github.com/coreos/go-semver@v0.3.0/NOTICE`
@@ -88,12 +155,20 @@ Audit modified files for Apache-2.0 section 4(b) change notices and GPLv2 sectio
 2(a) change notices/dates. Hash manifests preserve provenance but are not an
 automatic substitute for notices required on modified files.
 
-There is no root license explicitly covering all new build/integration scripts.
-The copyright holders must choose and document the scope of permissions for their
-original contributions. Do not silently extend `src/lima/LICENSE` to parent files
-or attempt to resolve third-party incompatibility with a new blanket license.
+[LICENSE-ORIGINAL.md](LICENSE-ORIGINAL.md) now selects MIT for original
+build/audit/integration contributions with an explicit third-party exclusion.
+Confirm contributor authority/ownership before release. This does not extend
+Lima's license to parent files or resolve third-party incompatibility.
 
 ## 3. Firmware corresponding-source coverage
+
+A [repeatable offline archive comparison](compliance/firmware/README.md) now
+verifies the locked blob/manifest and QEMU archive, checks every embedded slice,
+and records **75 archive matches and two VARS discrepancies** in
+`compliance/firmware/archive-comparison.json`. Run `python3 -B audit_firmware.py`;
+exit 2 reports the unresolved discrepancies, not successful provenance clearance.
+An archive byte match does not supply missing implementation source or a build
+attestation. No firmware bytes were changed.
 
 The embedded QEMU payload has **77 resources**: 39 firmware/ROM/variable-store
 assets, 34 keymaps, and four notice texts. The aligned blob is 18,886,688 bytes,
@@ -103,10 +178,10 @@ Per-resource identities are in the
 
 | Group | Evidence and source gap |
 | --- | --- |
-| SeaBIOS / SeaVGABIOS, 12 images | Embedded version strings match `a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8` (1.16.3). Corresponding implementation source is absent; LGPLv3 and accompanying GPLv3 license texts need appropriate inclusion. QEMU configuration recipes alone are insufficient. |
+| SeaBIOS / SeaVGABIOS, 12 images | Embedded version strings match `a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8` (1.16.3). Exact-revision source archive is now supplied, including upstream license texts; complete build dependencies/configuration and accessible firmware notice coverage remain under review. QEMU configuration recipes alone are insufficient. |
 | Legacy iPXE, 6 ROMs | Binary history identifies `7aee315f61aaf1be6d2fff26339f28a1137231a5`, not the current submodule pin. Preserve the matching GPLv2 source and historical build configuration. |
-| EFI iPXE, 8 ROMs | Binary history matches `4bd064de239dab2426b31c9789a1f4d78087dc63`. Source is absent; effective licenses vary by target. Obtain target-specific license reports and the EDK2 EfiRom build-tool dependency. |
-| qboot, 1 image | Binary-update history identifies `8ca302e86d685fa05b16e2b208888243da319941`. GPLv2 source is absent; matching build environment remains to be supplied. |
+| EFI iPXE, 8 ROMs | Binary history matches `4bd064de239dab2426b31c9789a1f4d78087dc63`. Exact-revision source archive is now supplied; effective licenses vary by target. Obtain target-specific license reports and the EDK2 EfiRom build-tool dependency. |
+| qboot, 1 image | Binary-update history identifies `8ca302e86d685fa05b16e2b208888243da319941`. Exact-revision GPLv2 source archive is now supplied; build environment/closure remains under review. |
 | EDK2 code / VARS, 6 assets | Four code images match the locked QEMU archive, but exact UTM source/patch/configuration provenance is unresolved. Two VARS assets differ from or are absent in that archive; see below. |
 | QEMU option ROMs, 6 images | Implementation sources and recipes are present in `pc-bios/optionrom/` and `scripts/signrom.py`; exact compiler/binutils reproduction of prebuilts was not verified. |
 | Keymaps, 34 text assets | Match the locked archive. Generator and text inputs are retained, but XKB/libxkbcommon regeneration versions are not pinned. Review data provenance separately from the generator license. |
@@ -114,8 +189,10 @@ Per-resource identities are in the
 `sources.lock.json` fetches Lima, QEMU, libslirp, keycodemapdb, SoftFloat, and
 TestFloat. It **does not fetch firmware submodule sources**. The QEMU archive has
 no implementation source inside `roms/seabios`, `roms/ipxe`, `roms/qboot`, or
-`roms/edk2`; the local firmware submodule directories are empty. `.gitmodules`
-contains URLs, not the missing source or all required revision records.
+`roms/edk2`. Separately supplied archives are now frozen under
+`compliance/firmware/sources/`; their acquisition lock/catalog records exact
+revisions and the strength/limits of each association. They are not automatically
+installed as current submodules. `.gitmodules` alone is not source delivery.
 
 Current firmware gitlinks at the locked QEMU commit are documented by the
 [upstream ROM-directory metadata](https://api.github.com/repos/utmapp/qemu/contents/roms?ref=37ba092d59aff24900dfd0d5e01d4ed68441ba07).
@@ -149,7 +226,9 @@ establishes byte identity, not corresponding-source completeness.
 
 The retained source export additionally includes unembedded/non-x86 firmware
 (OpenBIOS, OpenSBI, SLOF, skiboot, U-Boot, and others). Those binary/source pairs
-also need review if distributed; the x86 table above is not a clearance for them.
+are now included in the retained-file/source-candidate inventory. Specific gaps
+remain for OpenBIOS, U-Boot, NPCM, historical dependencies and generated NVRAM;
+the x86 table above is not a clearance for them.
 
 ## 4. Guest agent and native reconstruction
 
@@ -170,6 +249,9 @@ The root build copies this prebuilt input; it does not rebuild it. The upstream
 recipe exists, but the host toolchain pin is Go 1.22.12, not 1.19.2, and exact
 reproduction was not tested. Record a supported rebuild recipe and supply the
 module and Go-runtime notices; Lima's Apache text alone does not cover them all.
+The nine modules' top-level notices are now packaged under
+`compliance/guest-agent/`; historical runtime notices and source are now in the
+additional-notices and source-delivery packages respectively.
 
 Native override sources and hashes are retained in `native/`. Their complete
 transformation also depends on `link_lima.py` (diagnostic transformations, flags,
@@ -177,17 +259,26 @@ entry-point renaming, archive replacement, constructor retention, and CGO linkin
 Keep all locks, overlays, bootstrap/preparation/build/link scripts, not just
 pristine QEMU or the override files, in any applicable source-delivery package.
 
-## 5. Release gates
+## 5. Outstanding licensing and source-compliance work
 
-| Gate | Status / next action |
+| Area | Findings / remaining work |
 | --- | --- |
-| Combined-work permission compatibility | **BLOCKED:** no demonstrated compatible route for the current Apache-2.0 / GPLv2-only link. Obtain qualified advice and select a permission or architecture remedy. |
+| Combined-work permission compatibility | **UNRESOLVED:** no demonstrated compatible permission route for the current Apache-2.0 / GPLv2-only link. The single-file design is retained; qualified review and effective permissions or compatible component replacements remain necessary. |
 | Firmware source and provenance | **INCOMPLETE:** supply matching source closure/build details, resolve EDK2/VARS, and review all exported firmware. |
-| Notices and modification notices | **INCOMPLETE:** assemble complete component notices; audit file-level change notices and original-code license scope. |
-| Actual source-delivery method | **UNSELECTED:** implement the applicable GPL/LGPL source/relinking method; upstream URLs alone are not proof of fulfillment. |
+| Notices and modification notices | **PARTIAL:** guest/host module and both runtime notice selections are packaged; native named-file/selected header notices are supplied. Full file-level/firmware attribution and dated modification notices remain incomplete. Original contributions now have an explicit MIT scope. |
+| Actual source-delivery method | **PARTIAL DELIVERY:** actual pinned source bytes, overlays, build/install scripts and a manual relinking recipe are packaged. A recipient-modified-library rebuild/relink, complete closure, and applicable permissions remain unverified. |
 | Portable firmware-authoring documentation | **FIXED:** optional commands now use `./firmware-assets`; normal builds need no external firmware directory. |
-| Publication payload integrity | Hash/allowlist, source reconstruction, and targeted credential checks are engineering controls, not licensing clearance. |
-| Git-staged inventory | **REQUIRED PER REVISION:** compare the exact staged candidate with the publication manifest before pushing and record the result in the local audit. An index match or private CI run does not clear the licensing release hold. |
+| Publication payload integrity | Hash/allowlist, source reconstruction, and targeted credential checks record payload integrity. |
+| Git-staged inventory | For a manifest-based export, compare the exact staged candidate with its publication manifest and record the result in the local audit. |
+
+The local exporter now includes the guest and additional notice bundles,
+firmware sources/evidence, linkage inventory, actual source-delivery package,
+publication audit and tests through explicit hash-verified selections. Use a new
+`--name` and an empty matching output directory to preserve earlier exports.
+The separate `output/source-publication-review-20260915` candidate is not the
+existing Git export or a public commit. Its external manifest/audit and validation
+results describe that candidate only; generating it did not modify the original
+repository.
 
 Local publication tooling is retained outside the export under `output/`.
 `audit-publication-index.py` compares exact staged paths, blob SHA-256 contents,

@@ -1,0 +1,11 @@
+/*
+ * Linux UFFD-WP support
+ *
+ * Copyright Virtuozzo GmbH, 2020
+ *
+ * Authors:
+ *  Andrey Gruzdev   <andrey.gruzdev@virtuozzo.com>
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2 or
+ * later.  See the COPYING file in the top-level directory.
+ */

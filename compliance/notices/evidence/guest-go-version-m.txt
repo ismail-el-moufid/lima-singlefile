@@ -1,0 +1,22 @@
+src/lima/pkg/embeddedassets/lima-guestagent.Linux-x86_64: go1.19.2
+	path	github.com/lima-vm/lima/cmd/lima-guestagent
+	mod	github.com/lima-vm/lima	(devel)	
+	dep	github.com/elastic/go-libaudit/v2	v2.3.2	h1:qWNcA3nkwNEGh1UBDbDTVF55KR6SM1W2Ji1LGDqFEpw=
+	dep	github.com/gorilla/mux	v1.8.0	h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
+	dep	github.com/sirupsen/logrus	v1.9.0	h1:trlNQbNUG3OdDrDil03MCb1H2o9nJ1x4/5LYw7byDE0=
+	dep	github.com/spf13/cobra	v1.6.1	h1:o94oiPyS4KD1mPy2fmcYYHHfCxLqYjJOhGsCHFZtEzA=
+	dep	github.com/spf13/pflag	v1.0.5	h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA=
+	dep	github.com/yalue/native_endian	v1.0.2	h1:e4SxBbaCoOOO4E3axd7FSriUhzc1bIzqZGG5jl6Evbg=
+	dep	go.uber.org/atomic	v1.7.0	h1:ADUqmZGgLDDfbSL9ZmPxKTybcoEYHgpYfELNoN+7hsw=
+	dep	go.uber.org/multierr	v1.7.0	h1:zaiO/rmgFjbmCXdSYJWQcdvOCsthmdaHfr3Gm2Kx4Ec=
+	dep	golang.org/x/sys	v0.0.0-20220811171246-fbc7d0a398ab	h1:2QkjZIsXupsJbJIdSjjUOgWK3aEtzyuh2mPt3l/CkeU=
+	build	-compiler=gc
+	build	-ldflags="-s -w -X github.com/lima-vm/lima/pkg/version.Version=v0.13.0"
+	build	CGO_ENABLED=0
+	build	GOARCH=amd64
+	build	GOOS=linux
+	build	GOAMD64=v1
+	build	vcs=git
+	build	vcs.revision=6b6073ff536ea3ae7605129489a33ed2ba11fc46
+	build	vcs.time=2022-10-25T15:31:18Z
+	build	vcs.modified=false

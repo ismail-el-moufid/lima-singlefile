@@ -1,0 +1,506 @@
+{
+  "download_limits": {
+    "metadata_bytes": 2097152,
+    "seconds_per_request": 90,
+    "source_archive_bytes": 33554432
+  },
+  "format": 1,
+  "hash_policy": "Observed SHA-256 pinned after initial HTTPS retrieval; no pre-existing independently trusted checksum/signature. PAX commits are checked, not cryptographically authenticated. GitHub metadata is frozen raw evidence, not local git history.",
+  "inputs": [
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/history-hppa-firmware.img.json",
+      "sha256": "2c963f7a6e006bbf8fff40541c1cda4f6d63ba436d2d67c9959d3585ab6a6d1f",
+      "size": 4320,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits?path=pc-bios/hppa-firmware.img&sha=37ba092d59aff24900dfd0d5e01d4ed68441ba07&per_page=1"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/history-npcm8xx_bootrom.bin.json",
+      "sha256": "62f015f71039377875ec4b22d9c4a28d3276aa3b97648dc48e2701a967a84531",
+      "size": 4221,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits?path=pc-bios/npcm8xx_bootrom.bin&sha=37ba092d59aff24900dfd0d5e01d4ed68441ba07&per_page=1"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/history-openbios-ppc.json",
+      "sha256": "bbc229a53e694f5f14647576f0567c729a404ab8b32478fb7eb8dbc36560ddde",
+      "size": 3885,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits?path=pc-bios/openbios-ppc&sha=37ba092d59aff24900dfd0d5e01d4ed68441ba07&per_page=1"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/history-opensbi-riscv64-generic-fw_dynamic.bin.json",
+      "sha256": "01aeaed9e4374969196de762ec49ccf8cf13cc195aa51351580a237a49f6d949",
+      "size": 4678,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits?path=pc-bios/opensbi-riscv64-generic-fw_dynamic.bin&sha=37ba092d59aff24900dfd0d5e01d4ed68441ba07&per_page=1"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/history-palcode-clipper.json",
+      "sha256": "3195ac1d051130326ffce984be8423a2abdf3010436b0d6aab7ecec1d691fabb",
+      "size": 4018,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits?path=pc-bios/palcode-clipper&sha=37ba092d59aff24900dfd0d5e01d4ed68441ba07&per_page=1"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/history-qemu_vga.ndrv.json",
+      "sha256": "b02a1b0c448489b3ae8241f2cc3284beb64408ddef63c0f061f16cf7d220b9dc",
+      "size": 4196,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits?path=pc-bios/qemu_vga.ndrv&sha=37ba092d59aff24900dfd0d5e01d4ed68441ba07&per_page=1"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/history-s390-ccw.img.json",
+      "sha256": "b35274a5561a68194614efc9ffedcba0dac55b0c94513a4958d6d4bc1c5c088d",
+      "size": 3970,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits?path=pc-bios/s390-ccw.img&sha=37ba092d59aff24900dfd0d5e01d4ed68441ba07&per_page=1"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/history-skiboot.lid.json",
+      "sha256": "5d6a3dd7141eed312a9335c2b74f3b89ba05a98ce9c51b6252b234b1da52042c",
+      "size": 4209,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits?path=pc-bios/skiboot.lid&sha=37ba092d59aff24900dfd0d5e01d4ed68441ba07&per_page=1"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/history-slof.bin.json",
+      "sha256": "012d0c75ba3817ef3c40b504d636c6b9b75522706befd64843eb3f2d145746a2",
+      "size": 3969,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits?path=pc-bios/slof.bin&sha=37ba092d59aff24900dfd0d5e01d4ed68441ba07&per_page=1"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/history-u-boot-sam460-20100605.bin.json",
+      "sha256": "90b22fd5cf0c6bcf3643108df412bbfaafcd44c92f5f747ca4f4d4084769a3b7",
+      "size": 3970,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits?path=pc-bios/u-boot-sam460-20100605.bin&sha=37ba092d59aff24900dfd0d5e01d4ed68441ba07&per_page=1"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/history-u-boot.e500.json",
+      "sha256": "9b533081c37311a29ba3143037b51baf04b57b5eadd75e51f41b617199807542",
+      "size": 4413,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits?path=pc-bios/u-boot.e500&sha=37ba092d59aff24900dfd0d5e01d4ed68441ba07&per_page=1"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/ipxe-efi-makefile.json",
+      "sha256": "5ed8434f4a95fc0dd81929e8b797b347b4809061c2789c57be091f7399588a99",
+      "size": 10981,
+      "url": "https://api.github.com/repos/utmapp/qemu/contents/roms/Makefile?ref=3e570a9ae9b966362596fd649f2cbcff0b2199c9"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/ipxe-efi-rom-tree.json",
+      "sha256": "cfc5a599ca799e5cdad015f9308562fd4a722ef2acf8a01fa9629ceae11e4b64",
+      "size": 24408,
+      "url": "https://api.github.com/repos/utmapp/qemu/contents/roms?ref=3e570a9ae9b966362596fd649f2cbcff0b2199c9"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/ipxe-efi-update.json",
+      "sha256": "60a7a5d7ab0bc9ee20fdf623b84560d9f6246d506f25dd8e020f479b93f92b6b",
+      "size": 8542,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/3e570a9ae9b966362596fd649f2cbcff0b2199c9"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/ipxe-legacy-rom-tree.json",
+      "sha256": "db28edc4a5ecde43108b0de950153dc254e7871375eaeaba5275d8debf9dfb26",
+      "size": 2083,
+      "url": "https://api.github.com/repos/utmapp/qemu/contents/roms?ref=36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/ipxe-legacy-update.json",
+      "sha256": "ebeecc9967fb6b8f2dc527d02554759de22dd2f850fba9b3d300a9d28b34788d",
+      "size": 10465,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/36d8d02dc8c45780cae74e2ba7a6135b95c16f81"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/locked-rom-tree.json",
+      "sha256": "7df030d51db7138316e855551e1797611ffb46463f6efb67eef8dd1e3ca2190c",
+      "size": 25180,
+      "url": "https://api.github.com/repos/utmapp/qemu/contents/roms?ref=37ba092d59aff24900dfd0d5e01d4ed68441ba07"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/qboot-update.json",
+      "sha256": "350cd8ec87bced8b6523a81bee7c736843132da9a754e02b20269946dbbdf775",
+      "size": 4734,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/2fc7eb689704687f890688507e15bbbe71275f63"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/update-hppa-firmware.img.json",
+      "sha256": "fdc5132b835919464da11b88902f0a11c4c94a4f90d99b8e96f24adfbe20cec6",
+      "size": 6001,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/db34be329162cf6b06192703065e6c1010dbe3c5"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/update-npcm8xx_bootrom.bin.json",
+      "sha256": "935031a1a65f6609c32621685d1a6062ea0be86a2eba97fdcfbdcf2419ff20c6",
+      "size": 9871,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/269b7effd906d6b22071971b7f5b4cb344403b86"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/update-openbios-ppc.json",
+      "sha256": "595413d49d07ddaf5944119b826b009f46a8ba9a9ebb50ac29d5972f263d42f3",
+      "size": 4393,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/39858ec7347616d5f513f72185873fa2e352d7de"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/update-opensbi-riscv64-generic-fw_dynamic.bin.json",
+      "sha256": "04fe80da94115362eb3adff23f2e93a06360c7354baef1a7d9b9280312e5e33c",
+      "size": 6509,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/b3a34eb90d8264bd73ccb25295b1a7e271a9029c"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/update-palcode-clipper.json",
+      "sha256": "0634df031b8a11120411f9d021e9308dcd8d912e4f948cfc1cb008af02469909",
+      "size": 5077,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/c6446a1b6d8a89f4ab8fe85b5bc03bb05d337b82"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/update-qemu_vga.ndrv.json",
+      "sha256": "1996fbfdc17f6d75f1bd4994de96468b4c6c31d50b33564bf9c5e2c82077563e",
+      "size": 5251,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/200280af0e19bfaeb9431eb0ee1ee2d8bf8d3a0a"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/update-s390-ccw.img.json",
+      "sha256": "30c9950f24be7cd09afa73746a0ae85fe4076c9daa49cd11ca7013fb950c8091",
+      "size": 4478,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/9744ceb94bf963ed42685c7d28024a77de2fbe78"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/update-skiboot.lid.json",
+      "sha256": "b593f8bb1b32f428bfe62d3bc1756a16b9a0e389ccf2593793a4c819093c0247",
+      "size": 5242,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/9cbbe72924b4be1870563b5101548ee2241b279d"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/update-slof.bin.json",
+      "sha256": "4150f659990ee16263f60925ffb2f40acc2da1b58e9b5673f04e186534ce1a6e",
+      "size": 6104,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/7f98b4f25ed94a3565acb1d6b54f43c1e3da1709"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/update-u-boot-sam460-20100605.bin.json",
+      "sha256": "1a25f0a92818112bbaa0abddd6ea588eca56dfa363a82310465aa064185271f6",
+      "size": 7252,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/55d38d10b84a256ca80484eb5114a4824608b85e"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/update-u-boot.e500.json",
+      "sha256": "531d2fb6f4aa1beee9cfa7f10b8f01e7cbaa33afe0db99168bb4936a23574783",
+      "size": 5444,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/a0c3747e14689583b84a6c15b80e7bc2209111be"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/utm-edk2-update.json",
+      "sha256": "b9bd97eaca4fed569a26770cb46dffce8e824cc70dfeaca82d68ad18846edf08",
+      "size": 8728,
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/361d160a6894dc9b206b2699533960762763f370"
+    },
+    {
+      "kind": "upstream_metadata",
+      "path": "evidence/utm-rom-tree.json",
+      "sha256": "ffa6d4ec3d21cbcfcb6344233315ab88bd10bd5d9553cb30ac9ace018e173811",
+      "size": 25180,
+      "url": "https://api.github.com/repos/utmapp/qemu/contents/roms?ref=361d160a6894dc9b206b2699533960762763f370"
+    },
+    {
+      "archive_root": "QemuMacDrivers-90c488d5f4a407342247b9ea869df1c2d9c8e266",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING": "6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/QemuMacDrivers-90c488d5f4a407342247b9ea869df1c2d9c8e266.tar.gz",
+      "project": "QemuMacDrivers",
+      "required_members": [
+        "COPYING"
+      ],
+      "revision": "90c488d5f4a407342247b9ea869df1c2d9c8e266",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "History-supported non-x86 source candidate; nested dependency and build closure unverified",
+      "sha256": "ca625841b01b72b419f13b98e37a661baf50962a5083249b42d1ba966e631ee1",
+      "size": 53675,
+      "url": "https://gitlab.com/qemu-project/QemuMacDrivers/-/archive/90c488d5f4a407342247b9ea869df1c2d9c8e266/QemuMacDrivers-90c488d5f4a407342247b9ea869df1c2d9c8e266.tar.gz"
+    },
+    {
+      "archive_root": "SLOF-ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544",
+      "kind": "source_archive",
+      "member_evidence": {
+        "LICENSE": "94f8ae6572ab531aa08573dbebb98bef255574880eaa6b52d0adef218970aa7f",
+        "Makefile": "6addd02afd3f16f2b839c9dabdbacf1ade96fae616f54493b785b5df6580cc93",
+        "Makefile.gen": "2a14e59f759e877f91954efb78cd3781848bedb6e7d831a43573dd9c7f0008ba",
+        "README": "2258207eeced82b7f2a99b9c79164c95cf26ef44d5483e4ee06284b1b24b8608"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/SLOF-ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544.tar.gz",
+      "project": "SLOF",
+      "required_members": [
+        "LICENSE",
+        "Makefile",
+        "Makefile.gen",
+        "README"
+      ],
+      "revision": "ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "History-supported non-x86 source candidate; nested dependency and build closure unverified",
+      "sha256": "0abcfc5f7dabfdc49c2f6297d125f9c1a4399660bfa8820dfaf69a437b6bae81",
+      "size": 882088,
+      "url": "https://gitlab.com/qemu-project/SLOF/-/archive/ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544/SLOF-ee03aec2c106a699aaddd2d3dd52cbd7b7e8d544.tar.gz"
+    },
+    {
+      "archive_root": "edk2-20d2e5a125e34fc8501026613a71549b2a1a3e54",
+      "kind": "source_archive",
+      "member_evidence": {
+        ".gitmodules": "9a77ff2662ca582d2858521b27585445f6d5b01e80cc2d651465e80c5e1c7c1f",
+        "BaseTools/Source/C/Common/GNUmakefile": "285f98ecae8f3c23ec334931340b170feda45c6cea9dafb2d42f7beef1b8eb43",
+        "BaseTools/Source/C/EfiRom/EfiRom.c": "414907ec2083bccab3314f1d08772ad8bc4d9aa2016370192c73e4499714706c",
+        "BaseTools/Source/C/EfiRom/GNUmakefile": "faa5ee11bed1743f0d8aa17b413fd92991280a1161a1505aeab6d6e6f7bf2e6c",
+        "BaseTools/Source/C/GNUmakefile": "5df16587beb0bac5fb3fd648ab190370910ce240a03b2e1d75b37aa98250ad59"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/edk2-20d2e5a125e34fc8501026613a71549b2a1a3e54.tar.gz",
+      "project": "edk2",
+      "required_members": [
+        "BaseTools/Source/C/EfiRom/EfiRom.c",
+        "BaseTools/Source/C/EfiRom/GNUmakefile",
+        "BaseTools/Source/C/Common/GNUmakefile",
+        "BaseTools/Source/C/GNUmakefile",
+        ".gitmodules"
+      ],
+      "revision": "20d2e5a125e34fc8501026613a71549b2a1a3e54",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "EfiRom build-tool candidate only, NOT UTM firmware source",
+      "sha256": "34c0074a04dde906e6f15e2d0dcc089333e56a07cf30e487f1cbc6af937ee8c3",
+      "size": 14567879,
+      "url": "https://gitlab.com/qemu-project/edk2/-/archive/20d2e5a125e34fc8501026613a71549b2a1a3e54/edk2-20d2e5a125e34fc8501026613a71549b2a1a3e54.tar.gz"
+    },
+    {
+      "archive_root": "ipxe-4bd064de239dab2426b31c9789a1f4d78087dc63",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING": "275c34960cfe7bb213df43bc00b0079dd1b9ebc2f3b8d6acff269cb217db938c",
+        "COPYING.GPLv2": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+        "COPYING.UBDL": "5be9d2f0268908f2eeb87578d9b730caf6f7b36bdc7a520b1a176f9ac0bf1db8",
+        "src/Makefile": "f6510715103bf499c711fc7081c48792b5015e3c1d4da0cb50691e48bc1e82d1",
+        "src/Makefile.housekeeping": "eb8091f895b85413b5e0aff548db53389033fefb960e43d623abb19763482753",
+        "src/config/qemu/general.h": "c57ae1c25d8372e07460454d24c2e0f6b9e48490dc1e9027ac61cb8cd8471d60",
+        "src/util/licence.pl": "26f07cccf162018712ead012553527aa530c4873160546dd29f9f418a93e0fca"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/ipxe-4bd064de239dab2426b31c9789a1f4d78087dc63.tar.gz",
+      "project": "ipxe",
+      "required_members": [
+        "src/Makefile",
+        "src/Makefile.housekeeping",
+        "src/util/licence.pl",
+        "COPYING",
+        "src/config/qemu/general.h",
+        "COPYING.GPLv2",
+        "COPYING.UBDL"
+      ],
+      "revision": "4bd064de239dab2426b31c9789a1f4d78087dc63",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "Historically supported firmware source candidate; no rebuild performed",
+      "sha256": "4850691d6f196eaf4d6210f2de01383251b3ea1b928141da9ce28c0b06a90938",
+      "size": 3894850,
+      "url": "https://gitlab.com/qemu-project/ipxe/-/archive/4bd064de239dab2426b31c9789a1f4d78087dc63/ipxe-4bd064de239dab2426b31c9789a1f4d78087dc63.tar.gz"
+    },
+    {
+      "archive_root": "ipxe-7aee315f61aaf1be6d2fff26339f28a1137231a5",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING": "91df39d1816bfb17a4dda2d3d2c83b1f6f2d38d53e53e41e8f97ad5ac46a0cad",
+        "src/Makefile": "32f4407364ebdbcd28ff1e68e4c485e4232cea73144f3f194ebcc35ec41a583c",
+        "src/Makefile.housekeeping": "ef7dc4f8d5288fedf5e9640b584039164b9f5ca192ea8c2d1a3a5a40fa953c33",
+        "src/util/licence.pl": "62b3de6692e4de1c661072272e15181cd9478709881aab25b8c71768f414ea98"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/ipxe-7aee315f61aaf1be6d2fff26339f28a1137231a5.tar.gz",
+      "project": "ipxe",
+      "required_members": [
+        "src/Makefile",
+        "src/Makefile.housekeeping",
+        "src/util/licence.pl",
+        "COPYING"
+      ],
+      "revision": "7aee315f61aaf1be6d2fff26339f28a1137231a5",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "Historically supported firmware source candidate; no rebuild performed",
+      "sha256": "b428139fecd7f93e95ee13d00d6b3958e87c5b9a4839aea126bf0cd5223e23ff",
+      "size": 2594880,
+      "url": "https://gitlab.com/qemu-project/ipxe/-/archive/7aee315f61aaf1be6d2fff26339f28a1137231a5/ipxe-7aee315f61aaf1be6d2fff26339f28a1137231a5.tar.gz"
+    },
+    {
+      "archive_root": "opensbi-43cace6c3671e5172d0df0a8963e552bb04b7b20",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING.BSD": "82d13fb1bf6bb162629deeea9eb9c117e74548d3b707e478967691fe79a68e21",
+        "Makefile": "cb9a37cfc041f6b3c50f04f8ed3bdc7d0411233719193bf928664e7d6d4a23e3",
+        "README.md": "8d934ffe1993aefd234ee0886e2ac10a9db18ff0360f08c2e2c2e41ca8d0ce86"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/opensbi-43cace6c3671e5172d0df0a8963e552bb04b7b20.tar.gz",
+      "project": "opensbi",
+      "required_members": [
+        "COPYING.BSD",
+        "Makefile",
+        "README.md"
+      ],
+      "revision": "43cace6c3671e5172d0df0a8963e552bb04b7b20",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "History-supported non-x86 source candidate; nested dependency and build closure unverified",
+      "sha256": "f521a6b68fa7a88408ab5474e78d7e328777f0da8389d5373545a69fb4156f76",
+      "size": 435379,
+      "url": "https://gitlab.com/qemu-project/opensbi/-/archive/43cace6c3671e5172d0df0a8963e552bb04b7b20/opensbi-43cace6c3671e5172d0df0a8963e552bb04b7b20.tar.gz"
+    },
+    {
+      "archive_root": "qboot-8ca302e86d685fa05b16e2b208888243da319941",
+      "kind": "source_archive",
+      "member_evidence": {
+        "LICENSE": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad",
+        "README": "81d2caeb53701d9f1b662d19b32519a3e440a976c64c4e5816fa1623c0de43c9",
+        "flat.lds": "ae549937cc631b3ea320b0501147d74db535fd0a2f2fc1d4e00fc9655925dff4",
+        "meson.build": "bb35856ff94038db8219038a5cc2e34af121d70eaf5ba662ca5baa044e457841"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/qboot-8ca302e86d685fa05b16e2b208888243da319941.tar.gz",
+      "project": "qboot",
+      "required_members": [
+        "meson.build",
+        "flat.lds",
+        "README",
+        "LICENSE"
+      ],
+      "revision": "8ca302e86d685fa05b16e2b208888243da319941",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "Historically supported firmware source candidate; no rebuild performed",
+      "sha256": "4366905a722f49e24b0194d1bb0089ffeddb338023262ba50f2fab4f7f419681",
+      "size": 32463,
+      "url": "https://gitlab.com/qemu-project/qboot/-/archive/8ca302e86d685fa05b16e2b208888243da319941/qboot-8ca302e86d685fa05b16e2b208888243da319941.tar.gz"
+    },
+    {
+      "archive_root": "qemu-palcode-99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING": "6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100",
+        "Makefile": "807572e545ef2e6e7b9114660b9d62d0eb98eafbb84118b5e3b54c29b18354c7"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/qemu-palcode-99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf.tar.gz",
+      "project": "qemu-palcode",
+      "required_members": [
+        "COPYING",
+        "Makefile"
+      ],
+      "revision": "99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "History-supported non-x86 source candidate; nested dependency and build closure unverified",
+      "sha256": "29f62ddb6a8cca68f85f1ee99f90e19882a5ff4d8e0f524ca88ee5977adc1793",
+      "size": 89197,
+      "url": "https://gitlab.com/qemu-project/qemu-palcode/-/archive/99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf/qemu-palcode-99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf.tar.gz"
+    },
+    {
+      "archive_root": "seabios-a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "COPYING.LESSER": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+        "Makefile": "84a7817613f3961274c57ec082b160a799d616007b023dee2f4d2b97c66884ef",
+        "scripts/buildversion.py": "088e5b59d85a72cb9840c64ee6a008cea4ef4a7bf0be1eda0a2fc34a552949bb",
+        "scripts/test-build.sh": "322cf6cd1360afde919c70f85efea02eba97604216c86b673a190fc6a8908b3d",
+        "src/post.c": "b94759c0359502699a5854f33e6b6b333b8c63f7849d409116608ab4ec7f7558"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/seabios-a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8.tar.gz",
+      "project": "seabios",
+      "required_members": [
+        "Makefile",
+        "src/post.c",
+        "scripts/buildversion.py",
+        "scripts/test-build.sh",
+        "COPYING",
+        "COPYING.LESSER"
+      ],
+      "revision": "a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "Historically supported firmware source candidate; no rebuild performed",
+      "sha256": "bcd1870471d10c3fdd8ce7875545a1bad9c87f1ce69f283a15a7e803a414d9c2",
+      "size": 637031,
+      "url": "https://gitlab.com/qemu-project/seabios/-/archive/a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8/seabios-a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8.tar.gz"
+    },
+    {
+      "archive_root": "seabios-hppa-1c516b481339f511d83a4afba9a48d1ac904e93e",
+      "kind": "source_archive",
+      "member_evidence": {
+        "COPYING": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "COPYING.LESSER": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+        "Makefile": "b96320505d840d358cbd58e1e1f7ad51d70beb80368f28c9cb436b911534a5cf",
+        "Makefile.parisc": "fa24a3b8e1b52a0b92505859e78ccda56fd9dfaf14664b3d3e289a54c2b6d563",
+        "README": "9ec2d0ffce505a07dc37951fcc2e94ceec3218c21e0e02c503418de894009719"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/seabios-hppa-1c516b481339f511d83a4afba9a48d1ac904e93e.tar.gz",
+      "project": "seabios-hppa",
+      "required_members": [
+        "COPYING",
+        "COPYING.LESSER",
+        "Makefile",
+        "Makefile.parisc",
+        "README"
+      ],
+      "revision": "1c516b481339f511d83a4afba9a48d1ac904e93e",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "History-supported non-x86 source candidate; nested dependency and build closure unverified",
+      "sha256": "c07974183de235c7f39188587e42322d9efee89485e69fed46a0561570bda84d",
+      "size": 726571,
+      "url": "https://gitlab.com/qemu-project/seabios-hppa/-/archive/1c516b481339f511d83a4afba9a48d1ac904e93e/seabios-hppa-1c516b481339f511d83a4afba9a48d1ac904e93e.tar.gz"
+    },
+    {
+      "archive_root": "skiboot-785a5e3070a86e18521e62fe202b87209de30fa2",
+      "kind": "source_archive",
+      "member_evidence": {
+        "Makefile": "0c261c84306243bbab57877a89ba44c099afc5c49496e1de5d30c6fc6b6891fe",
+        "Makefile.main": "ce66bc07ce338bf31ddabb9bd601b89ffbc503a149812f473f22cc60683830ee",
+        "Makefile.rules": "ba7137dceb03dd7a3285d1029e160a8c0db2ee2d14235059c41e1aa755fed660",
+        "README.md": "e82dbb9226a400bcf0a2681dfd6475dcb2536cabb06110b672f3280803f2d7eb"
+      },
+      "nested_sources_complete": false,
+      "path": "sources/skiboot-785a5e3070a86e18521e62fe202b87209de30fa2.tar.gz",
+      "project": "skiboot",
+      "required_members": [
+        "Makefile",
+        "Makefile.main",
+        "Makefile.rules",
+        "README.md"
+      ],
+      "revision": "785a5e3070a86e18521e62fe202b87209de30fa2",
+      "revision_verification": "Exact-commit HTTPS URL and matching tar PAX comment; not a signed attestation or proof of binary correspondence",
+      "role": "History-supported non-x86 source candidate; nested dependency and build closure unverified",
+      "sha256": "af5cae6fb203b15cdf1f15d612affaebd8f4d88cb42aedf2542ebf4e130274a8",
+      "size": 5643408,
+      "url": "https://gitlab.com/qemu-project/skiboot/-/archive/785a5e3070a86e18521e62fe202b87209de30fa2/skiboot-785a5e3070a86e18521e62fe202b87209de30fa2.tar.gz"
+    }
+  ],
+  "retrieved_on": "2026-09-15"
+}

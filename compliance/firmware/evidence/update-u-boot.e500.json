@@ -1,0 +1,112 @@
+{
+  "sha": "a0c3747e14689583b84a6c15b80e7bc2209111be",
+  "node_id": "MDY6Q29tbWl0MTc3ODkzNDk3OmEwYzM3NDdlMTQ2ODk1ODNiODRhNmMxNWI4MGU3YmMyMjA5MTExYmU=",
+  "commit": {
+    "author": {
+      "name": "Bin Meng",
+      "email": "bmeng.cn@gmail.com",
+      "date": "2021-07-06T02:46:41Z"
+    },
+    "committer": {
+      "name": "David Gibson",
+      "email": "david@gibson.dropbear.id.au",
+      "date": "2021-07-09T00:38:19Z"
+    },
+    "message": "roms/u-boot: Bump ppce500 u-boot to v2021.07 to add eTSEC support\n\nUpdate the QEMU shipped u-boot.e500 image built from U-Boot mainline\nv2021.07 release, which added eTSEC support to the QEMU ppce500 target,\nvia the following U-Boot series:\n\n  http://patchwork.ozlabs.org/project/uboot/list/?series=233875&state=*\n\nThe cross-compilation toolchain used to build the U-Boot image is:\nhttps://mirrors.edge.kernel.org/pub/tools/crosstool/files/bin/x86_64/10.1.0/x86_64-gcc-10.1.0-nolibc-powerpc-linux.tar.xz\n\nSigned-off-by: Bin Meng <bmeng.cn@gmail.com>\nSigned-off-by: David Gibson <david@gibson.dropbear.id.au>",
+    "tree": {
+      "sha": "7db76908f1b0714aea39a84483ec63a41a727c39",
+      "url": "https://api.github.com/repos/utmapp/qemu/git/trees/7db76908f1b0714aea39a84483ec63a41a727c39"
+    },
+    "url": "https://api.github.com/repos/utmapp/qemu/git/commits/a0c3747e14689583b84a6c15b80e7bc2209111be",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/utmapp/qemu/commits/a0c3747e14689583b84a6c15b80e7bc2209111be",
+  "html_url": "https://github.com/utmapp/qemu/commit/a0c3747e14689583b84a6c15b80e7bc2209111be",
+  "comments_url": "https://api.github.com/repos/utmapp/qemu/commits/a0c3747e14689583b84a6c15b80e7bc2209111be/comments",
+  "author": {
+    "login": "lbmeng",
+    "id": 8143098,
+    "node_id": "MDQ6VXNlcjgxNDMwOTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8143098?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lbmeng",
+    "html_url": "https://github.com/lbmeng",
+    "followers_url": "https://api.github.com/users/lbmeng/followers",
+    "following_url": "https://api.github.com/users/lbmeng/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lbmeng/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lbmeng/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lbmeng/subscriptions",
+    "organizations_url": "https://api.github.com/users/lbmeng/orgs",
+    "repos_url": "https://api.github.com/users/lbmeng/repos",
+    "events_url": "https://api.github.com/users/lbmeng/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lbmeng/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "dgibson",
+    "id": 676485,
+    "node_id": "MDQ6VXNlcjY3NjQ4NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/676485?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dgibson",
+    "html_url": "https://github.com/dgibson",
+    "followers_url": "https://api.github.com/users/dgibson/followers",
+    "following_url": "https://api.github.com/users/dgibson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dgibson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dgibson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dgibson/subscriptions",
+    "organizations_url": "https://api.github.com/users/dgibson/orgs",
+    "repos_url": "https://api.github.com/users/dgibson/repos",
+    "events_url": "https://api.github.com/users/dgibson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dgibson/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d423baf9b48cc4749e5f7d77214a089651bc3325",
+      "url": "https://api.github.com/repos/utmapp/qemu/commits/d423baf9b48cc4749e5f7d77214a089651bc3325",
+      "html_url": "https://github.com/utmapp/qemu/commit/d423baf9b48cc4749e5f7d77214a089651bc3325"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "8e635c8a5c9e53469710be27aa0c5e5a4045c2cd",
+      "filename": "pc-bios/u-boot.e500",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/utmapp/qemu/blob/a0c3747e14689583b84a6c15b80e7bc2209111be/pc-bios%2Fu-boot.e500",
+      "raw_url": "https://github.com/utmapp/qemu/raw/a0c3747e14689583b84a6c15b80e7bc2209111be/pc-bios%2Fu-boot.e500",
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/pc-bios%2Fu-boot.e500?ref=a0c3747e14689583b84a6c15b80e7bc2209111be"
+    },
+    {
+      "sha": "840658b093976390e9537724f802281c9c8439f5",
+      "filename": "roms/u-boot",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": null,
+      "raw_url": null,
+      "contents_url": "https://api.github.com/repos/utmapp/qemu/contents/roms%2Fu-boot?ref=a0c3747e14689583b84a6c15b80e7bc2209111be",
+      "patch": "@@ -1 +1 @@\n-Subproject commit b46dd116ce03e235f2a7d4843c6278e1da44b5e1\n+Subproject commit 840658b093976390e9537724f802281c9c8439f5"
+    }
+  ]
+}

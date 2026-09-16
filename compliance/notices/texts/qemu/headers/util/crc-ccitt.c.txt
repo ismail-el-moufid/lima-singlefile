@@ -1,0 +1,12 @@
+/*
+ * CRC16 (CCITT) Checksum Algorithm
+ *
+ * Copyright (c) 2021 Wind River Systems, Inc.
+ *
+ * Author:
+ *   Bin Meng <bin.meng@windriver.com>
+ *
+ * From Linux kernel v5.10 lib/crc-ccitt.c
+ *
+ * SPDX-License-Identifier: GPL-2.0-only
+ */

@@ -1,0 +1,9 @@
+/*
+ * vhost-user.c
+ *
+ * Copyright (c) 2013 Virtual Open Systems Sarl.
+ *
+ * This work is licensed under the terms of the GNU GPL, version 2 or later.
+ * See the COPYING file in the top-level directory.
+ *
+ */
