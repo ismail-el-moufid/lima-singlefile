@@ -48,8 +48,8 @@
     },
     {
       "path": "compliance/linkage/inventory.json",
-      "sha256": "b4a115dc7962aef160c6327e357594594fbc1ae1ae88b8c0b052ab9436a5491e",
-      "size": 13580415
+      "sha256": "a662c56e2c6413d4390ade859e87662ace5945b1b0a16ce01bf8ea029c1f406e",
+      "size": 40178787
     },
     {
       "path": "compliance/notices/historical-go.lock.json",

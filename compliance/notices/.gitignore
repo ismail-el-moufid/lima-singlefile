@@ -1,2 +1,3 @@
-/inputs/
+/inputs/*
+!/inputs/go-release-catalog.json
 /__pycache__/

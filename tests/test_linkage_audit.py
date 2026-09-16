@@ -211,6 +211,41 @@ class RetainedParserTests(unittest.TestCase):
                 audit.ninja_deps(data)
 
 
+class DeliveryFingerprintTests(unittest.TestCase):
+    def test_only_consumed_relink_evidence_changes_fingerprint(self):
+        delivery = {
+            "local_relink_inputs": [{"path": "build/input.a", "sha256": "a" * 64}],
+            "acquisition": {"sha256": "b" * 64},
+        }
+        expected = audit.delivery_relink_fingerprint(delivery)
+        self.assertNotIn("sha256", expected)
+        delivery["acquisition"]["sha256"] = "c" * 64
+        delivery["local_relink_inputs"][0]["available"] = False
+        self.assertEqual(audit.delivery_relink_fingerprint(delivery), expected)
+        delivery["local_relink_inputs"][0]["sha256"] = "d" * 64
+        self.assertNotEqual(audit.delivery_relink_fingerprint(delivery), expected)
+        delivery["local_relink_inputs"][0]["sha256"] = "a" * 64
+        delivery["local_relink_inputs"][0]["path"] = "build/other.a"
+        self.assertNotEqual(audit.delivery_relink_fingerprint(delivery), expected)
+
+    def test_projection_preserves_order_and_legacy_field_selection(self):
+        items = [
+            {"path": "build/first.a", "sha256": "a" * 64},
+            {"path": "build/second.a", "sha256": "b" * 64},
+        ]
+        delivery = {"local_relink_inputs": items}
+        expected = audit.delivery_relink_fingerprint(delivery)
+        self.assertNotEqual(
+            audit.delivery_relink_fingerprint({"local_relink_inputs": items[::-1]}),
+            expected,
+        )
+        legacy = {"private_relinking_evidence": items}
+        self.assertEqual(audit.delivery_relink_projection(legacy)["inputs"], items)
+        self.assertNotEqual(audit.delivery_relink_fingerprint(legacy), expected)
+        delivery.update(legacy)
+        self.assertEqual(audit.delivery_relink_fingerprint(delivery), expected)
+
+
 class SnapshotTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -219,7 +254,38 @@ class SnapshotTests(unittest.TestCase):
         cls.files = {f["path"]: f for f in cls.report["files"]}
         cls.retained = cls.report["linkage"]["retained_evidence"]
 
+    def require_producer_inputs(self, records):
+        missing = []
+        for record in records:
+            relative = record["path"]
+            path = ROOT / relative
+            if not path.exists() and not path.is_symlink():
+                if Path(relative).parts[0] in {"build", "downloads", "logs", "output", "prefix", "tools"}:
+                    missing.append(relative)
+                    continue
+            self.assertFalse(path.is_symlink(), relative)
+            self.assertTrue(path.is_file(), relative)
+            if "fingerprint_scope" in record:
+                self.assertEqual(relative, "compliance/source-delivery/manifest.json")
+                self.assertNotIn("sha256", record)
+                self.assertEqual(
+                    {key: value for key, value in record.items() if key not in {"path", "exists"}},
+                    audit.delivery_relink_fingerprint(json.loads(path.read_bytes())),
+                    relative,
+                )
+            else:
+                self.assertEqual(audit.file_sha(path), record["sha256"], relative)
+        if missing:
+            self.skipTest(
+                "Optional producer inputs are absent (no build or download attempted): "
+                + ", ".join(missing[:5])
+                + (" (and %d more)" % (len(missing) - 5) if len(missing) > 5 else "")
+            )
+
     def test_report_reproduces_without_writes(self):
+        self.require_producer_inputs(
+            record for record in self.report["evidence_inputs"] if record["exists"]
+        )
         # One complete regeneration in memory also verifies every current input,
         # snippet, source hash, include edge, symbol witness and report index.
         regenerated = audit.serialize(audit.generate(ROOT)).encode()
@@ -262,8 +328,15 @@ class SnapshotTests(unittest.TestCase):
                 self.assertIn(path, self.files)
         generated = [o for o in objects if "meson-generated" in o["object"]]
         self.assertEqual(len(generated), 17)
-        for obj in generated:
-            self.assertTrue(all((ROOT / p).is_file() for p in obj["source_candidates"]))
+
+    def test_generated_core_sources_match_retained_hashes(self):
+        paths = {
+            path
+            for obj in self.report["core_objects"]
+            if "meson-generated" in obj["object"]
+            for path in obj["source_candidates"]
+        }
+        self.require_producer_inputs(self.files[path] for path in sorted(paths))
 
     def test_six_recompiles_and_four_overrides(self):
         recompiles = self.report["linkage"]["recompiles"]
@@ -366,14 +439,13 @@ class SnapshotTests(unittest.TestCase):
         )
         self.assertTrue(all(a["matches_lock"] for a in self.report["source_archives"]))
 
-    def test_ignored_private_inputs_exist_and_match_direct_hashes(self):
+    def test_private_input_evidence_matches_recorded_hashes(self):
         checks = self.retained["source_delivery_input_checks"]
         self.assertEqual(len(checks), 14)
         for check in checks:
-            self.assertTrue((ROOT / check["path"]).is_file(), check["path"])
             self.assertTrue(check["exists"])
             self.assertTrue(check["matches_recorded_sha256"])
-            self.assertEqual(audit.file_sha(ROOT / check["path"]), check["sha256"])
+            self.assertEqual(check["sha256"], check["recorded_sha256"])
         self.assertTrue(
             all(
                 a["matches_manifest"]
@@ -389,6 +461,9 @@ class SnapshotTests(unittest.TestCase):
                 for r in self.report["linkage"]["recompiles"]
             )
         )
+
+    def test_ignored_private_inputs_exist_and_match_direct_hashes(self):
+        self.require_producer_inputs(self.retained["source_delivery_input_checks"])
 
     def test_all_retained_members_map_and_extraction_remains_qualified(self):
         archives = self.retained["archives"]

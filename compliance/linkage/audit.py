@@ -43,6 +43,34 @@ def file_sha(path):
     return h.hexdigest()
 
 
+def delivery_relink_projection(delivery):
+    field = (
+        "local_relink_inputs"
+        if "local_relink_inputs" in delivery
+        else "private_relinking_evidence"
+    )
+    return {
+        "field": field,
+        "inputs": [
+            {"path": item["path"], "sha256": item["sha256"]}
+            for item in delivery.get(field, [])
+        ],
+    }
+
+
+def delivery_relink_fingerprint(delivery):
+    # Whole-manifest hashing would cycle through acquisition's inventory hash.
+    projection = delivery_relink_projection(delivery)
+    canonical = json.dumps(
+        projection, sort_keys=True, separators=(",", ":"), ensure_ascii=True
+    ).encode("utf-8")
+    return {
+        "fingerprint_scope": "source-delivery-relink-projection",
+        "fingerprint_schema": "ordered-path-sha256-v1",
+        "projection_sha256": sha(canonical),
+    }
+
+
 def grants(text):
     """Per-comment signals: no file-wide 'later' cancellation or SPDX rewriting."""
     flat = re.sub(r"\s+", " ", re.sub(r"(?m)^\s*\*\s?", "", text)).lower()
@@ -332,11 +360,18 @@ class Audit:
     def fingerprint(self, path):
         if path not in self.inputs:
             p = self.root / path
-            self.inputs[path] = {
-                "path": path,
-                "exists": p.is_file(),
-                "sha256": file_sha(p) if p.is_file() else None,
-            }
+            if path == "compliance/source-delivery/manifest.json":
+                self.inputs[path] = {
+                    "path": path,
+                    "exists": p.is_file(),
+                    **delivery_relink_fingerprint(json.loads(p.read_bytes())),
+                }
+            else:
+                self.inputs[path] = {
+                    "path": path,
+                    "exists": p.is_file(),
+                    "sha256": file_sha(p) if p.is_file() else None,
+                }
         return self.inputs[path]
 
     def read(self, path):
@@ -957,9 +992,8 @@ class Audit:
     def retained_linkage(self, core, recompiles):
         delivery_path = "compliance/source-delivery/manifest.json"
         delivery = self.load_json(delivery_path)
-        selected = delivery.get(
-            "local_relink_inputs", delivery.get("private_relinking_evidence", [])
-        )
+        projection = delivery_relink_projection(delivery)
+        selected = projection["inputs"]
         delivery_checks = []
         for item in selected:
             actual = dict(self.fingerprint(item["path"]))
@@ -1259,7 +1293,7 @@ class Audit:
         self.fingerprint("build/self-contained/stamps/glib.json")
         return {
             "source_delivery_manifest": delivery_path,
-            "source_delivery_field": "local_relink_inputs",
+            "source_delivery_field": projection["field"],
             "source_delivery_input_checks": delivery_checks,
             "link_flags_file": flag_path,
             "native_link_flags": flags,
