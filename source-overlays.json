@@ -107,7 +107,7 @@
       "file": "src/lima/cmd/limactl/start_templates_test.go",
       "upstream_sha256": null,
       "upstream_mode": null,
-      "sha256": "f95fb880f1d038737d6904b2083c75ed74fe4a7f29bc27cf3a66dccfc79c1f4f",
+      "sha256": "c18c794d6ff7e533adf0f27e1d10029af3d8867a13073e34ffa8609296e708d4",
       "mode": 420
     },
     {
@@ -144,6 +144,15 @@
       "upstream_sha256": null,
       "upstream_mode": null,
       "sha256": "853a2eda4f1d5518d9c3d4e856036092181e7291ca18378a917f8fb035d13905",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "examples/alpine-docker.yaml",
+      "file": "src/lima/examples/alpine-docker.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "a65b6adfd13c442776d8c10a9a16d698fa882b7e78694f48df838fb705599193",
       "mode": 420
     },
     {
@@ -270,6 +279,15 @@
       "upstream_sha256": null,
       "upstream_mode": null,
       "sha256": "d05057b9e41daf21f41aaedea31b9b44fbcae9cfae54935e20fa9659de405311",
+      "mode": 420
+    },
+    {
+      "source": "lima",
+      "path": "pkg/embeddedassets/examples/alpine-docker.yaml",
+      "file": "src/lima/pkg/embeddedassets/examples/alpine-docker.yaml",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "a65b6adfd13c442776d8c10a9a16d698fa882b7e78694f48df838fb705599193",
       "mode": 420
     },
     {
@@ -728,7 +746,7 @@
       "file": "src/lima/pkg/templatestore/templatestore_test.go",
       "upstream_sha256": null,
       "upstream_mode": null,
-      "sha256": "fdf0baa13371d6f533dd00f40f5ffaf12134b63d8b0fd73c8966f4a48c065955",
+      "sha256": "6949ec572a4d142b2863a68a699041f2959349f82ef94a3b704dfdead38c4cef",
       "mode": 420
     },
     {
@@ -877,6 +895,15 @@
     },
     {
       "source": "qemu",
+      "path": "util/builtin-resources.c",
+      "file": "src/qemu/util/builtin-resources.c",
+      "upstream_sha256": null,
+      "upstream_mode": null,
+      "sha256": "60122dff59845ce803220534048cc2b0d7a2e04aa253cc93e6fb4e82dfcb0063",
+      "mode": 420
+    },
+    {
+      "source": "qemu",
       "path": "util/builtin-resources/README.md",
       "file": "src/qemu/util/builtin-resources/README.md",
       "upstream_sha256": null,
@@ -945,15 +972,6 @@
       "upstream_sha256": null,
       "upstream_mode": null,
       "sha256": "156b10be4bd20e4fa9ae8423cf778794898f23daaaf8f317c7327d100a8b6949",
-      "mode": 420
-    },
-    {
-      "source": "qemu",
-      "path": "util/builtin-resources.c",
-      "file": "src/qemu/util/builtin-resources.c",
-      "upstream_sha256": null,
-      "upstream_mode": null,
-      "sha256": "60122dff59845ce803220534048cc2b0d7a2e04aa253cc93e6fb4e82dfcb0063",
       "mode": 420
     },
     {

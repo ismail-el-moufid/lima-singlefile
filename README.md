@@ -28,7 +28,7 @@ linked. VM disks and instance state remain ordinary files.
 
 - Lima CLI, QEMU system emulator, and `qemu-img` in one executable.
 - In-memory BIOS/UEFI, option ROMs, and keymaps—no host-side firmware extraction.
-- 37 embedded templates and the Linux x86_64 guest agent.
+- 38 embedded templates and the Linux x86_64 guest agent.
 - HVF hardware acceleration, TCG emulation, user-mode networking, and VirtFS/9p.
 - First-use storage prompt with `~/goinfre/lima-home` as the default.
 - No third-party dylib bundle; dynamic dependencies are macOS system libraries.
@@ -60,19 +60,41 @@ third-party runtime bundle.
 
 ### Start a VM
 
-From the directory containing `limactl`:
+The default example in this guide is Alpine with Docker, `ble.sh`, and a
+colored Git-aware Bash prompt. From the directory containing `limactl`:
 
 ```sh
 ./limactl --version
 ./limactl start --list-templates
-./limactl start --name=alpine template://alpine
-./limactl shell alpine
-./limactl stop alpine
+./limactl start --name=alpine-docker template://alpine-docker
+./limactl shell alpine-docker
+./limactl stop alpine-docker
 ```
 
 Initial VM creation normally downloads an OS image. The executable is not an
 offline OS distribution, and SSH/SCP and other macOS system tools remain runtime
 dependencies. Developer Tools group membership is not required to run it.
+
+### Included setup
+
+The embedded `alpine-docker` template requires a build containing it. With an
+older executable, use the template file directly from this checkout:
+
+```sh
+./output/limactl start --name=alpine-docker ./src/lima/examples/alpine-docker.yaml
+```
+
+The template installs Docker with OpenRC, sets the VM user’s shell to Bash,
+loads a commit-pinned `ble.sh` in interactive Bash, and adds that user to the
+`docker` group. The colored prompt shows the current directory, Git branch (or
+detached commit), and a `*` for uncommitted changes. Git tab completion is enabled;
+your Git identity is not configured. First boot needs network access to Alpine repositories and
+GitHub. If `docker info` reports permission denied, stop and start the VM to
+refresh SSH group membership. Docker group membership is root-equivalent
+inside the guest.
+
+**Legacy image:** like the existing Alpine template, this uses Alpine 3.16,
+which is end-of-life. Use it for compatibility/testing, not production.
 
 ### Storage
 
@@ -89,11 +111,11 @@ choice is saved in `~/goinfre/lima-config.json` with permissions `0600`.
 - Noninteractive calls use saved/default storage without saving an unconfirmed choice.
 - Help, version, completion, and template listing do not prompt.
 - Downloads are cached under `<LIMA_HOME>/_cache`.
-- Each instance has its own directory, such as `~/goinfre/lima-home/alpine/`.
+- Each instance has its own directory, such as `~/goinfre/lima-home/alpine-docker/`.
 
 An instance directory contains `lima.yaml`, virtual disks, `cidata.iso`, logs, and
 runtime sockets. Files inside Linux live in its virtual disk; access them through
-`./limactl shell alpine` or configured shared mounts.
+`./limactl shell alpine-docker` or configured shared mounts.
 
 ## How it works
 

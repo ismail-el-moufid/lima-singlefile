@@ -36,7 +36,7 @@ func TestListTemplatesIgnoresBrokenStorage(t *testing.T) {
 		t.Fatal(err)
 	}
 	names := strings.Fields(output.String())
-	if len(names) != 37 || !sort.StringsAreSorted(names) {
+	if len(names) != 38 || !sort.StringsAreSorted(names) {
 		t.Fatalf("unexpected templates: %q", output.String())
 	}
 	if _, err := os.Stat(filepath.Join(configDir, "lima-home")); !os.IsNotExist(err) {

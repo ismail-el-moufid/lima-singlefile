@@ -120,7 +120,8 @@ jobs:
                   ).stdout
                   print(output, flush=True)
                   if args[:2] == ["start", "--list-templates"]:
-                      assert len(output.split()) == 37, output
+                      assert len(output.split()) == 38, output
+                      assert "alpine-docker" in output.split(), output
                   if args[:2] == ["--internal-qemu-img", "info"]:
                       info = json.loads(output)
                       assert info["format"] == "qcow2" and info["virtual-size"] == 16 * 1024 * 1024

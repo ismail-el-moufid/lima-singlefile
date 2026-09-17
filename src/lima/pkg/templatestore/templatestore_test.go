@@ -21,8 +21,8 @@ func TestEmbeddedTemplatesWithoutStorage(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if len(templates) != 37 {
-		t.Fatalf("got %d templates, want 37", len(templates))
+	if len(templates) != 38 {
+		t.Fatalf("got %d templates, want 38", len(templates))
 	}
 	found := map[string]bool{}
 	previous := ""
@@ -40,7 +40,7 @@ func TestEmbeddedTemplatesWithoutStorage(t *testing.T) {
 			t.Fatalf("Read(%q): %v", template.Name, err)
 		}
 	}
-	for _, name := range []string{Default, "ubuntu", "debian", "deprecated/centos-7"} {
+	for _, name := range []string{Default, "ubuntu", "debian", "alpine-docker", "deprecated/centos-7"} {
 		if !found[name] {
 			t.Errorf("missing template %q", name)
 		}

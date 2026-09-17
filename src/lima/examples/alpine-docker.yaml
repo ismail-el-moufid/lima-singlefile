@@ -1,0 +1,123 @@
+# Alpine with rootful Docker and ble.sh-enhanced Bash.
+# Uses the same legacy, end-of-life Alpine image as alpine.yaml.
+# Docker group membership grants root-equivalent access inside the VM.
+images:
+- location: "https://github.com/lima-vm/alpine-lima/releases/download/v0.2.23/alpine-lima-std-3.16.0-x86_64.iso"
+  arch: "x86_64"
+  digest: "sha512:2fe71bb7483cb9fa9a6f39b94d46818d27815dbd41bfa060df2846719e0bddf8d9073627a50ed773d7043c996b59182832cd8ce74404cdae09057a5a54b4f1ca"
+
+mounts:
+- location: "~"
+- location: "/tmp/lima"
+  writable: true
+
+firmware:
+  legacyBIOS: true
+
+containerd:
+  system: false
+  user: false
+
+provision:
+- mode: system
+  script: |
+    #!/bin/sh
+    set -eu
+    apk add --no-cache bash bash-completion docker git git-bash-completion make gawk coreutils ncurses ca-certificates shadow
+    addgroup "${LIMA_CIDATA_USER}" docker
+    chsh -s /bin/bash "${LIMA_CIDATA_USER}"
+    rc-update add docker default
+    rc-service docker start
+
+    # v0.4.0-devel3, pinned to an immutable commit (including its submodules).
+    ble_commit=1a5c451c8baa71439a6be4ea0f92750de35a7620
+    if [ ! -f /usr/local/share/blesh/ble.sh ] ||
+       [ "$(cat /usr/local/share/blesh/.lima-commit 2>/dev/null || true)" != "$ble_commit" ]; then
+      workdir=$(mktemp -d)
+      trap 'rm -rf "$workdir"' EXIT
+      git init "$workdir"
+      git -C "$workdir" remote add origin https://github.com/akinomyoga/ble.sh.git
+      git -C "$workdir" fetch --depth 1 origin "$ble_commit"
+      git -C "$workdir" checkout --detach FETCH_HEAD
+      git -C "$workdir" submodule update --init --recursive --depth 1
+      make -C "$workdir" install PREFIX=/usr/local
+      printf '%s\n' "$ble_commit" > /usr/local/share/blesh/.lima-commit
+    fi
+- mode: user
+  script: |
+    #!/bin/bash
+    set -eu
+    touch "$HOME/.bashrc"
+    if ! grep -Fq '# Lima: ble.sh' "$HOME/.bashrc"; then
+      cat >> "$HOME/.bashrc" <<'EOF'
+
+    # Lima: ble.sh (interactive shells only).
+    if [[ $- == *i* ]]; then
+      source /usr/local/share/blesh/ble.sh
+    fi
+    EOF
+    fi
+    if ! grep -Fq '# Lima: Git prompt v1' "$HOME/.bashrc"; then
+      cat >> "$HOME/.bashrc" <<'EOF'
+
+    # Lima: Git prompt v1 (interactive shells only).
+    if [[ $- == *i* ]]; then
+      if [[ -r /usr/share/bash-completion/bash_completion ]]; then
+        source /usr/share/bash-completion/bash_completion
+      fi
+      __lima_git_prompt() {
+        local branch dirty=''
+        branch=$(git symbolic-ref --quiet --short HEAD 2>/dev/null) ||
+          branch=$(git rev-parse --short HEAD 2>/dev/null) || return 0
+        if [[ -n $(git status --porcelain --untracked-files=normal 2>/dev/null) ]]; then
+          dirty='*'
+        fi
+        printf ' (%s%s)' "$branch" "$dirty"
+      }
+      if [[ ${TERM:-dumb} != dumb ]]; then
+        PS1='\[\e[1;36m\]\u@\h\[\e[0m\] \[\e[1;34m\]\w\[\e[33m\]$(__lima_git_prompt)\[\e[0m\]\n\[\e[1;32m\]\$\[\e[0m\] '
+      else
+        PS1='\u@\h \w$(__lima_git_prompt)\n\$ '
+      fi
+    fi
+    EOF
+    fi
+    # Bash reads only the first existing login startup file.
+    profile="$HOME/.bash_profile"
+    if [ ! -f "$profile" ]; then
+      if [ -f "$HOME/.bash_login" ]; then
+        profile="$HOME/.bash_login"
+      elif [ -f "$HOME/.profile" ]; then
+        profile="$HOME/.profile"
+      fi
+    fi
+    touch "$profile"
+    if ! grep -Fq '# Lima: load interactive Bash configuration' "$profile"; then
+      cat >> "$profile" <<'EOF'
+
+    # Lima: load interactive Bash configuration.
+    if [ -n "${BASH_VERSION:-}" ]; then
+      case $- in *i*) if ! declare -F ble-attach >/dev/null; then . "$HOME/.bashrc"; fi ;; esac
+    fi
+    EOF
+    fi
+
+probes:
+- script: |
+    #!/bin/sh
+    set -eu
+    test -s /usr/local/share/blesh/ble.sh
+    id -nG "$(id -un)" | tr ' ' '\n' | grep -qx docker
+    # Provisioning may have changed groups after this SSH session was opened.
+    sudo docker info >/dev/null
+  hint: Check provisioning logs in the guest; Docker must be running and ble.sh installed.
+
+message: |
+  Docker and ble.sh-enhanced Bash are installed.
+  If Docker reports permission denied, restart the VM to refresh SSH group membership:
+    limactl stop {{.Name}}
+    limactl start {{.Name}}
+  Then try:
+    limactl shell {{.Name}} docker run --rm hello-world
+  Docker group membership grants root-equivalent access inside this VM.
+  This template uses the legacy Alpine 3.16 image; do not use it for production.
