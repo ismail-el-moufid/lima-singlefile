@@ -8,6 +8,7 @@ images:
 
 mounts:
 - location: "~"
+  writable: true
 - location: "/tmp/lima"
   writable: true
 
@@ -23,7 +24,7 @@ provision:
   script: |
     #!/bin/sh
     set -eu
-    apk add --no-cache bash bash-completion docker git git-bash-completion make gawk coreutils ncurses ca-certificates shadow
+    apk add --no-cache bash bash-completion docker docker-compose git git-bash-completion make gawk coreutils ncurses ca-certificates shadow
     addgroup "${LIMA_CIDATA_USER}" docker
     chsh -s /bin/bash "${LIMA_CIDATA_USER}"
     rc-update add docker default
@@ -75,9 +76,9 @@ provision:
         printf ' (%s%s)' "$branch" "$dirty"
       }
       if [[ ${TERM:-dumb} != dumb ]]; then
-        PS1='\[\e[1;36m\]\u@\h\[\e[0m\] \[\e[1;34m\]\w\[\e[33m\]$(__lima_git_prompt)\[\e[0m\]\n\[\e[1;32m\]\$\[\e[0m\] '
+        PS1='\[\e[1;36m\]\u@\h\[\e[0m\] \[\e[1;34m\]\w\[\e[33m\]$(__lima_git_prompt)\[\e[0m\] \[\e[1;32m\]\$\[\e[0m\] '
       else
-        PS1='\u@\h \w$(__lima_git_prompt)\n\$ '
+        PS1='\u@\h \w$(__lima_git_prompt)\$ '
       fi
     fi
     EOF
@@ -110,7 +111,8 @@ probes:
     id -nG "$(id -un)" | tr ' ' '\n' | grep -qx docker
     # Provisioning may have changed groups after this SSH session was opened.
     sudo docker info >/dev/null
-  hint: Check provisioning logs in the guest; Docker must be running and ble.sh installed.
+    docker-compose --version >/dev/null
+  hint: Check provisioning logs in the guest; Docker, Docker Compose, and ble.sh must be installed.
 
 message: |
   Docker and ble.sh-enhanced Bash are installed.
