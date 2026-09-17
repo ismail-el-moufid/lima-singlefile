@@ -7,8 +7,8 @@
     },
     {
       "path": "compliance/source-delivery/acquisition.json",
-      "sha256": "57f480ed19967db939be189cf5d200269bf896ba3ffcc2f3eda5a940d746e8be",
-      "size": 260292
+      "sha256": "f446c991444929d961b7bd8b932278a0c20ea1f041b39a4aa6f2ff3ddcb651f6",
+      "size": 260651
     },
     {
       "path": "compliance/source-delivery/archives/berkeley-softfloat-3-b64af41c3276f97f0e181920400ee056b9c88037.tar.gz",
@@ -107,7 +107,7 @@
     },
     {
       "path": "compliance/source-delivery/manifest.json",
-      "sha256": "decbcce7faccfd51aeafa9b9a0108b3c21b64241582d77ee04f06954ad3595dc",
+      "sha256": "27e6982a620a8fd0e497b06f1ab282c45c2b77c91263556fc01191f237d97b83",
       "size": 95851
     },
     {
@@ -2102,7 +2102,7 @@
     },
     {
       "path": "compliance/linkage/inventory.json",
-      "sha256": "b38130c2307f75ad1744f0d71b9f7fd3b01e3e21365b75e6e0d8500ae20ac3b6",
+      "sha256": "d7fc6edb21b7143560ce0e936f94aefa5dd00d292ed831352fd8e49a4a838148",
       "size": 40178787
     },
     {
@@ -2162,8 +2162,8 @@
     },
     {
       "path": "source-overlays.json",
-      "sha256": "d9cba62b9ece5555c501a3342b462a3a8d48e693c5900c07a9e3bfc72042c664",
-      "size": 34934
+      "sha256": "785aa697d4fc1139c9166434c86421f7072d1c55da708ba9738839b4921189f3",
+      "size": 35568
     },
     {
       "path": "sources.lock.json",
@@ -2227,7 +2227,7 @@
     },
     {
       "path": "src/lima/cmd/limactl/start_templates_test.go",
-      "sha256": "f95fb880f1d038737d6904b2083c75ed74fe4a7f29bc27cf3a66dccfc79c1f4f",
+      "sha256": "c18c794d6ff7e533adf0f27e1d10029af3d8867a13073e34ffa8609296e708d4",
       "size": 1169
     },
     {
@@ -2249,6 +2249,11 @@
       "path": "src/lima/docs/single-file.md",
       "sha256": "853a2eda4f1d5518d9c3d4e856036092181e7291ca18378a917f8fb035d13905",
       "size": 5980
+    },
+    {
+      "path": "src/lima/examples/alpine-docker.yaml",
+      "sha256": "a65b6adfd13c442776d8c10a9a16d698fa882b7e78694f48df838fb705599193",
+      "size": 4389
     },
     {
       "path": "src/lima/go.mod",
@@ -2329,6 +2334,11 @@
       "path": "src/lima/pkg/embeddedassets/examples/almalinux.yaml",
       "sha256": "d05057b9e41daf21f41aaedea31b9b44fbcae9cfae54935e20fa9659de405311",
       "size": 667
+    },
+    {
+      "path": "src/lima/pkg/embeddedassets/examples/alpine-docker.yaml",
+      "sha256": "a65b6adfd13c442776d8c10a9a16d698fa882b7e78694f48df838fb705599193",
+      "size": 4389
     },
     {
       "path": "src/lima/pkg/embeddedassets/examples/alpine.yaml",
@@ -2582,8 +2592,8 @@
     },
     {
       "path": "src/lima/pkg/templatestore/templatestore_test.go",
-      "sha256": "fdf0baa13371d6f533dd00f40f5ffaf12134b63d8b0fd73c8966f4a48c065955",
-      "size": 2198
+      "sha256": "6949ec572a4d142b2863a68a699041f2959349f82ef94a3b704dfdead38c4cef",
+      "size": 2215
     },
     {
       "path": "src/qemu/accel/hvf/hvf-all.c",
