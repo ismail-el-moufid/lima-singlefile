@@ -446,6 +446,11 @@ class ProjectRecipeTests(unittest.TestCase):
             prefix.index("#ifndef HV_DEADLINE_FOREVER"), prefix.rindex("#include")
         )
         self.assertEqual(source.count("#define HV_DEADLINE_FOREVER"), 1)
+        self.assertEqual(prefix.count('#include "target/i386/cpu.h"'), 1)
+        self.assertLess(
+            prefix.index('#include "target/i386/cpu.h"'),
+            prefix.index('#include "hvf-i386.h"'),
+        )
         overlays, _ = sources.read_json(PROJECT / "source-overlays.json")
         entries = [item for item in overlays["overlays"] if item["file"] == relative]
         self.assertEqual(len(entries), 1)
@@ -466,6 +471,22 @@ class ProjectRecipeTests(unittest.TestCase):
                 lines = []
                 for line in prefix.splitlines():
                     if line.startswith("#include"):
+                        if line == '#include "qemu/osdep.h"':
+                            lines.append("#include <stdint.h>")
+                        elif line == '#include "target/i386/cpu.h"':
+                            lines.extend(
+                                [
+                                    "typedef struct CPUState CPUState;",
+                                    "typedef struct CPUArchState CPUArchState;",
+                                    "typedef CPUArchState CPUX86State;",
+                                ]
+                            )
+                        elif line == '#include "hvf-i386.h"':
+                            lines.append(
+                                (
+                                    PROJECT / "src/qemu/target/i386/hvf/hvf-i386.h"
+                                ).read_text()
+                            )
                         if line in (
                             '#include "system/hvf_int.h"',
                             "#include <Hypervisor/hv.h>",

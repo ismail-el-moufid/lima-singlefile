@@ -863,7 +863,7 @@
       "file": "src/qemu/target/i386/hvf/hvf.c",
       "upstream_sha256": "8f13761d7156ed158bf1b97a5369e3d9a9a00525421a0c222a6cd12b79c84706",
       "upstream_mode": 436,
-      "sha256": "490dd5273932bb5f079d4bb0290425b72b44c7e71dee55306dc42a55fa64b72f",
+      "sha256": "45e5791865d340fa040f9b8e99f801d839588f8fb66c55463140281c87177edc",
       "mode": 436
     },
     {

@@ -53,6 +53,9 @@
 #include "qemu/error-report.h"
 #include "qemu/memalign.h"
 
+/* hvf-i386.h requires the x86 CPU type declarations. */
+#include "target/i386/cpu.h"
+
 #include "hvf-i386.h"
 #include "system/cpus.h"
 #include "system/hvf.h"
@@ -76,7 +79,6 @@
 #include "hw/i386/apic_internal.h"
 #include "qemu/accel.h"
 #include "qemu/main-loop.h"
-#include "target/i386/cpu.h"
 
 /*
  * Catalina needs this fallback. Keep it after SDK headers: newer SDKs declare

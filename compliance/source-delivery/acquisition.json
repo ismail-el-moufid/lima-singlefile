@@ -48,7 +48,7 @@
     },
     {
       "path": "compliance/linkage/inventory.json",
-      "sha256": "a662c56e2c6413d4390ade859e87662ace5945b1b0a16ce01bf8ea029c1f406e",
+      "sha256": "b38130c2307f75ad1744f0d71b9f7fd3b01e3e21365b75e6e0d8500ae20ac3b6",
       "size": 40178787
     },
     {
@@ -108,7 +108,7 @@
     },
     {
       "path": "source-overlays.json",
-      "sha256": "151b9bbb816d6d4b7c1185e6ba195d3a71a019da8c077f5f30fef39ef176a53f",
+      "sha256": "d9cba62b9ece5555c501a3342b462a3a8d48e693c5900c07a9e3bfc72042c664",
       "size": 34934
     },
     {
@@ -603,8 +603,8 @@
     },
     {
       "path": "src/qemu/target/i386/hvf/hvf.c",
-      "sha256": "490dd5273932bb5f079d4bb0290425b72b44c7e71dee55306dc42a55fa64b72f",
-      "size": 27931
+      "sha256": "45e5791865d340fa040f9b8e99f801d839588f8fb66c55463140281c87177edc",
+      "size": 27989
     },
     {
       "path": "src/qemu/ui/keymaps.c",
