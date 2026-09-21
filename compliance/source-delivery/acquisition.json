@@ -48,7 +48,7 @@
     },
     {
       "path": "compliance/linkage/inventory.json",
-      "sha256": "9a8af7fe748c47e8dd7cbfb9efbc2264ad95fbb5db458274c076d882a0f9b118",
+      "sha256": "7f43c6d1c826e7addddd8af0fbf83e987352c9e76a883c0ff33258a060cdb917",
       "size": 40178787
     },
     {
@@ -108,7 +108,7 @@
     },
     {
       "path": "source-overlays.json",
-      "sha256": "758579f4509e188fa9c09ea8031ce72a5aff425dfcd34dd03b3a9d7246719f42",
+      "sha256": "6f107dceff442858354824cbf530dfed86f47cc7e2299681dd73c40e07f25a63",
       "size": 35568
     },
     {
@@ -199,7 +199,7 @@
     {
       "path": "src/lima/examples/alpine-docker.yaml",
       "sha256": "003c5f8c1371019c211afb8af6cbd72da9a599a2fd8f4cfea52d6a429cbd3c75",
-      "size": 4467
+      "size": 4606
     },
     {
       "path": "src/lima/go.mod",
