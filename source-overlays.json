@@ -152,7 +152,7 @@
       "file": "src/lima/examples/alpine-docker.yaml",
       "upstream_sha256": null,
       "upstream_mode": null,
-      "sha256": "db78eb12ebc283d97e42c5d10957ad0849c18da541e19c677aa5beb71f092393",
+      "sha256": "28474c4d6f9549520483ac9ec41a610bfde39b6de2f630be02df6f064511d8ec",
       "mode": 420
     },
     {
@@ -287,7 +287,7 @@
       "file": "src/lima/pkg/embeddedassets/examples/alpine-docker.yaml",
       "upstream_sha256": null,
       "upstream_mode": null,
-      "sha256": "db78eb12ebc283d97e42c5d10957ad0849c18da541e19c677aa5beb71f092393",
+      "sha256": "28474c4d6f9549520483ac9ec41a610bfde39b6de2f630be02df6f064511d8ec",
       "mode": 420
     },
     {

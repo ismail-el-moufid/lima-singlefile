@@ -1,4 +1,4 @@
-# Alpine with rootful Docker, Docker Compose, curl, and ble.sh-enhanced Bash.
+# Alpine with rootful Docker, Docker Compose, and ble.sh-enhanced Bash.
 
 images:
   - location: "https://github.com/lima-vm/alpine-lima/releases/download/v0.2.23/alpine-lima-std-3.16.0-x86_64.iso"
@@ -29,8 +29,6 @@ provision:
         bash-completion \
         docker \
         docker-cli-compose \
-        curl \
-        libcurl \
         git \
         git-bash-completion \
         make \
@@ -150,12 +148,11 @@ probes:
       id -nG "$(id -un)" | tr ' ' '\n' | grep -qx docker
       sudo docker info >/dev/null
       docker compose version >/dev/null
-      curl --version >/dev/null
 
-    hint: Check provisioning logs; Docker, Docker Compose, curl, and ble.sh must be installed.
+    hint: Check provisioning logs; Docker, Docker Compose, and ble.sh must be installed.
 
 message: |
-  Docker, Docker Compose, curl, and ble.sh-enhanced Bash are installed.
+  Docker, Docker Compose, and ble.sh-enhanced Bash are installed.
 
   If Docker reports permission denied, restart the VM to refresh SSH group membership:
 
