@@ -7,7 +7,7 @@
     },
     {
       "path": "compliance/source-delivery/acquisition.json",
-      "sha256": "6681444b76768fa868e751381641a3db6c7d14dfd45194253eb42339e1ada65b",
+      "sha256": "70cf9a9834c261886bf89f0bbf559ec2ab9c9eca2c010b75641981939e819cb2",
       "size": 260651
     },
     {
@@ -107,7 +107,7 @@
     },
     {
       "path": "compliance/source-delivery/manifest.json",
-      "sha256": "8695f11266c5695cfaacab00bd87eb646130b77d078ee1b4f08050b20e839b14",
+      "sha256": "ff5927e64f335316438c2a515f4ae43cefcde51344db4dcaed7f757bfbd3ba76",
       "size": 95851
     },
     {
@@ -2102,7 +2102,7 @@
     },
     {
       "path": "compliance/linkage/inventory.json",
-      "sha256": "cee3ec726ee602aafe2b501cbf0bc9812ff8037b4b79250549e160f7fbde3c76",
+      "sha256": "f36213dc5efff089da8afedc060156093dc68460d322b96f6ca33c258a261e7d",
       "size": 40178787
     },
     {
@@ -2162,7 +2162,7 @@
     },
     {
       "path": "source-overlays.json",
-      "sha256": "a2f5efdf3c35271195d0cd4871b9f250bc5726ac27d69d90b0d932c964d602d6",
+      "sha256": "ca380bce2927bb7949161ee8543b5b375089cabf1a1e967f8f5fc5c3e3d60de8",
       "size": 35568
     },
     {
@@ -2222,8 +2222,8 @@
     },
     {
       "path": "src/lima/cmd/limactl/start.go",
-      "sha256": "26c4ff6640c963007940eb38cf1428a583b2c5637b026e467e40e64916476216",
-      "size": 11853
+      "sha256": "2510c6a377988e07c2b6fa4e5eb6a2e8a7a2bb784d89c175d5755b292c9cec0b",
+      "size": 11968
     },
     {
       "path": "src/lima/cmd/limactl/start_templates_test.go",

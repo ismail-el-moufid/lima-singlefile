@@ -163,13 +163,14 @@ func loadOrCreateInstance(cmd *cobra.Command, args []string) (*store.Instance, e
 		if !errors.Is(err, os.ErrNotExist) {
 			return nil, err
 		}
-		if arg != "" && arg != DefaultInstanceName {
+		if arg != "" && arg != DefaultInstanceName && arg != freshInstallTemplate {
 			logrus.Infof("Creating an instance %q from template://default (Not from template://%s)", st.instName, st.instName)
 			logrus.Warnf("This form is deprecated. Use `limactl start --name=%s template://default` instead", st.instName)
 		}
-		// A no-argument first start uses the bundled development environment.
+		// A no-argument first start and the conventional development instance name
+		// use the bundled Alpine Docker environment.
 		templateName := templatestore.Default
-		if arg == "" {
+		if arg == "" || arg == freshInstallTemplate {
 			templateName = freshInstallTemplate
 		}
 		st.yBytes, err = templatestore.Read(templateName)
