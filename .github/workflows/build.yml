@@ -160,6 +160,7 @@ jobs:
                   "by GitHub Actions from this tag, not a locally supplied release binary. "
                   "Download limactl-macos-x86_64 and SHA256SUMS; verify with "
                   "`shasum -a 256 -c SHA256SUMS`, then `chmod +x limactl-macos-x86_64`. "
+                  "Start the Alpine Docker VM with `./limactl-macos-x86_64 start alpine-docker`. "
                   "Catalina compatibility and VM/HVF operation were not validated by CI.\n\n"
                   "Component licenses, notices, and source-delivery evidence are documented "
                   "in RELEASE-REVIEW.md and compliance/ at this tag."

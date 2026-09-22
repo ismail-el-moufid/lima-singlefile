@@ -66,7 +66,7 @@ colored Git-aware Bash prompt. From the directory containing `limactl`:
 ```sh
 ./limactl --version
 ./limactl start --list-templates
-./limactl start --name=alpine-docker template://alpine-docker
+./limactl start alpine-docker
 ./limactl shell alpine-docker
 ./limactl stop alpine-docker
 ```
