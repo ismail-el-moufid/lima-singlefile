@@ -275,6 +275,11 @@ def extract(archive: Path, destination: Path):
                             with path.open("xb") as output:
                                 shutil.copyfileobj(source, output)
                         path.chmod(member.mode & 0o777)
+                        os.utime(
+                            path,
+                            (member.mtime, member.mtime),
+                            follow_symlinks=False,
+                        )
                 for name, target in hardlinks.items():
                     os.link(stage / target, stage / name)
                 for name, member in members.items():

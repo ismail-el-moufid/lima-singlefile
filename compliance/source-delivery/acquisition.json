@@ -8,8 +8,8 @@
   "export_references": [
     {
       "path": "bootstrap.py",
-      "sha256": "1a4ea31376a7689fd55a1cc862cef88df4e3c84d85ed415cc9994f333395fb7a",
-      "size": 27416
+      "sha256": "5e37dff2cfe3c5664449db26af6d14a655a1f2200820ea238c2bf9c2e9fcd697",
+      "size": 27619
     },
     {
       "path": "build-contract.json",
@@ -48,7 +48,7 @@
     },
     {
       "path": "compliance/linkage/inventory.json",
-      "sha256": "0c7c041ea731ec23e691f7e17e18b58369cb931ea270650fddcbe238fb17f0e1",
+      "sha256": "201707cc499a2d3968981b0d48f630b9620f44dfdd7eb66310b204381eaf3155",
       "size": 40178787
     },
     {

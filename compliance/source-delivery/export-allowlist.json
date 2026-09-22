@@ -7,7 +7,7 @@
     },
     {
       "path": "compliance/source-delivery/acquisition.json",
-      "sha256": "82f1178f7ddcab5c8de4361e3a067084379fbd48c9e0bd2980f3856e3de42c1f",
+      "sha256": "17e4eccacd1c221cdb1e24a122a8e721aeade86fdbf979b751f68f30a348e114",
       "size": 260651
     },
     {
@@ -107,7 +107,7 @@
     },
     {
       "path": "compliance/source-delivery/manifest.json",
-      "sha256": "811a66549e4391aefb907e1aef313a2b9a606450e102ae5e70045316de6f4052",
+      "sha256": "1bf87f072867c2f91096fe0366aa0f5e9e1f1ef816b52e1e4f4f310b14ef6e93",
       "size": 95851
     },
     {
@@ -2062,8 +2062,8 @@
   "required_retained_files": [
     {
       "path": "bootstrap.py",
-      "sha256": "1a4ea31376a7689fd55a1cc862cef88df4e3c84d85ed415cc9994f333395fb7a",
-      "size": 27416
+      "sha256": "5e37dff2cfe3c5664449db26af6d14a655a1f2200820ea238c2bf9c2e9fcd697",
+      "size": 27619
     },
     {
       "path": "build-contract.json",
@@ -2102,7 +2102,7 @@
     },
     {
       "path": "compliance/linkage/inventory.json",
-      "sha256": "0c7c041ea731ec23e691f7e17e18b58369cb931ea270650fddcbe238fb17f0e1",
+      "sha256": "201707cc499a2d3968981b0d48f630b9620f44dfdd7eb66310b204381eaf3155",
       "size": 40178787
     },
     {

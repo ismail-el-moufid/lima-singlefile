@@ -183,6 +183,17 @@ class ExtractionTests(unittest.TestCase):
         bootstrap.extract(self.archive, self.destination)
         self.assertEqual((self.destination / "tool").stat().st_mode & 0o7777, 0o755)
 
+    def test_regular_file_mtime_is_preserved(self):
+        with tarfile.open(self.archive, "w") as archive:
+            for name, mtime in (("r/generated", 100), ("r/input", 50)):
+                member = tarfile.TarInfo(name)
+                member.mtime = mtime
+                member.size = 1
+                archive.addfile(member, io.BytesIO(b"x"))
+        bootstrap.extract(self.archive, self.destination)
+        self.assertEqual((self.destination / "generated").stat().st_mtime, 100)
+        self.assertEqual((self.destination / "input").stat().st_mtime, 50)
+
 
 class DownloadTests(unittest.TestCase):
     def setUp(self):
