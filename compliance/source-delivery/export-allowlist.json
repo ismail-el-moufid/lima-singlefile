@@ -7,7 +7,7 @@
     },
     {
       "path": "compliance/source-delivery/acquisition.json",
-      "sha256": "70cf9a9834c261886bf89f0bbf559ec2ab9c9eca2c010b75641981939e819cb2",
+      "sha256": "82f1178f7ddcab5c8de4361e3a067084379fbd48c9e0bd2980f3856e3de42c1f",
       "size": 260651
     },
     {
@@ -107,7 +107,7 @@
     },
     {
       "path": "compliance/source-delivery/manifest.json",
-      "sha256": "ff5927e64f335316438c2a515f4ae43cefcde51344db4dcaed7f757bfbd3ba76",
+      "sha256": "811a66549e4391aefb907e1aef313a2b9a606450e102ae5e70045316de6f4052",
       "size": 95851
     },
     {
@@ -2102,7 +2102,7 @@
     },
     {
       "path": "compliance/linkage/inventory.json",
-      "sha256": "f36213dc5efff089da8afedc060156093dc68460d322b96f6ca33c258a261e7d",
+      "sha256": "0c7c041ea731ec23e691f7e17e18b58369cb931ea270650fddcbe238fb17f0e1",
       "size": 40178787
     },
     {
@@ -2162,7 +2162,7 @@
     },
     {
       "path": "source-overlays.json",
-      "sha256": "ca380bce2927bb7949161ee8543b5b375089cabf1a1e967f8f5fc5c3e3d60de8",
+      "sha256": "f596cff2ce84054ce64a753268690ccb7756984d9be9c2ac662646f958f92770",
       "size": 35568
     },
     {
@@ -2252,8 +2252,8 @@
     },
     {
       "path": "src/lima/examples/alpine-docker.yaml",
-      "sha256": "003c5f8c1371019c211afb8af6cbd72da9a599a2fd8f4cfea52d6a429cbd3c75",
-      "size": 4606
+      "sha256": "db78eb12ebc283d97e42c5d10957ad0849c18da541e19c677aa5beb71f092393",
+      "size": 4609
     },
     {
       "path": "src/lima/go.mod",
@@ -2337,8 +2337,8 @@
     },
     {
       "path": "src/lima/pkg/embeddedassets/examples/alpine-docker.yaml",
-      "sha256": "003c5f8c1371019c211afb8af6cbd72da9a599a2fd8f4cfea52d6a429cbd3c75",
-      "size": 4606
+      "sha256": "db78eb12ebc283d97e42c5d10957ad0849c18da541e19c677aa5beb71f092393",
+      "size": 4609
     },
     {
       "path": "src/lima/pkg/embeddedassets/examples/alpine.yaml",
