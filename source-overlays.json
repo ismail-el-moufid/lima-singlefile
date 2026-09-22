@@ -98,7 +98,7 @@
       "file": "src/lima/cmd/limactl/start.go",
       "upstream_sha256": "375c2668307c1922f4e3d0eab88f91410428eaee549e883c8dd3f5fb3485eb9d",
       "upstream_mode": 436,
-      "sha256": "89b6cfa92a0a67924893da1ceea683deb17fadf6e6de0384247aa13c0b1dcb97",
+      "sha256": "26c4ff6640c963007940eb38cf1428a583b2c5637b026e467e40e64916476216",
       "mode": 420
     },
     {
@@ -287,7 +287,7 @@
       "file": "src/lima/pkg/embeddedassets/examples/alpine-docker.yaml",
       "upstream_sha256": null,
       "upstream_mode": null,
-      "sha256": "a52a2ad973068b214f4f7e3e8d4406229866609f97153ebe66e0463fda6be6da",
+      "sha256": "003c5f8c1371019c211afb8af6cbd72da9a599a2fd8f4cfea52d6a429cbd3c75",
       "mode": 420
     },
     {

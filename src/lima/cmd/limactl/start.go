@@ -25,11 +25,13 @@ import (
 	"github.com/spf13/cobra"
 )
 
+const freshInstallTemplate = "alpine-docker"
+
 func newStartCommand() *cobra.Command {
 	var startCommand = &cobra.Command{
 		Use: "start NAME|FILE.yaml|URL",
 		Example: `
-To create an instance "default" (if not created yet) from the default Ubuntu template, and start it:
+To create an instance "default" (if not created yet) from the Alpine Docker template, and start it:
 $ limactl start
 
 To create an instance "default" from a template "docker":
@@ -154,7 +156,7 @@ func loadOrCreateInstance(cmd *cobra.Command, args []string) (*store.Instance, e
 		if err == nil {
 			logrus.Infof("Using the existing instance %q", st.instName)
 			if arg == "" {
-				logrus.Infof("Hint: To create another instance, run the following command: limactl start --name=NAME template://default")
+				logrus.Infof("Hint: To create another instance, run the following command: limactl start --name=NAME template://%s", freshInstallTemplate)
 			}
 			return inst, nil
 		}
@@ -165,8 +167,12 @@ func loadOrCreateInstance(cmd *cobra.Command, args []string) (*store.Instance, e
 			logrus.Infof("Creating an instance %q from template://default (Not from template://%s)", st.instName, st.instName)
 			logrus.Warnf("This form is deprecated. Use `limactl start --name=%s template://default` instead", st.instName)
 		}
-		// Read the default template for creating a new instance
-		st.yBytes, err = templatestore.Read(templatestore.Default)
+		// A no-argument first start uses the bundled development environment.
+		templateName := templatestore.Default
+		if arg == "" {
+			templateName = freshInstallTemplate
+		}
+		st.yBytes, err = templatestore.Read(templateName)
 		if err != nil {
 			return nil, err
 		}
